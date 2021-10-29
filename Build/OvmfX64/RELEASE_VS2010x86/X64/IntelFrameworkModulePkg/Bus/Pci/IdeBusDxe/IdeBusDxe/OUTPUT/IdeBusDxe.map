@@ -1,0 +1,137 @@
+ IdeBusDxe
+
+ Timestamp is 617b114d (Fri Oct 29 00:08:29 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000001c8H .data                   CODE
+ 0001:000001d0 00000100H .rdata                  CODE
+ 0001:000002d0 00006242H .text                   CODE
+ 0001:00006518 00000038H .bss                    CODE
+ 0002:00000000 000002f4H .pdata                  DATA
+ 0003:00000000 000002e4H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       gEfiCallerIdGuid           0000000000000260     IdeBusDxe:AutoGen.obj
+ 0001:00000010       gEfiDiskInfoIdeInterfaceGuid 0000000000000270     IdeBusDxe:AutoGen.obj
+ 0001:00000020       gEfiEventExitBootServicesGuid 0000000000000280     IdeBusDxe:AutoGen.obj
+ 0001:00000030       gEfiStatusCodeSpecificDataGuid 0000000000000290     IdeBusDxe:AutoGen.obj
+ 0001:00000040       gEfiDiskInfoProtocolGuid   00000000000002a0     IdeBusDxe:AutoGen.obj
+ 0001:00000050       gEfiBlockIoProtocolGuid    00000000000002b0     IdeBusDxe:AutoGen.obj
+ 0001:00000060       gEfiIdeControllerInitProtocolGuid 00000000000002c0     IdeBusDxe:AutoGen.obj
+ 0001:00000070       gEfiPciIoProtocolGuid      00000000000002d0     IdeBusDxe:AutoGen.obj
+ 0001:00000080       gEfiDevicePathProtocolGuid 00000000000002e0     IdeBusDxe:AutoGen.obj
+ 0001:00000090       gEfiDevicePathUtilitiesProtocolGuid 00000000000002f0     IdeBusDxe:AutoGen.obj
+ 0001:000000a0       gEfiStatusCodeRuntimeProtocolGuid 0000000000000300     IdeBusDxe:AutoGen.obj
+ 0001:000000b0       gEfiDriverBindingProtocolGuid 0000000000000310     IdeBusDxe:AutoGen.obj
+ 0001:000000c0       gEfiComponentNameProtocolGuid 0000000000000320     IdeBusDxe:AutoGen.obj
+ 0001:000000d0       gEfiComponentName2ProtocolGuid 0000000000000330     IdeBusDxe:AutoGen.obj
+ 0001:000000e0       gEfiDriverDiagnosticsProtocolGuid 0000000000000340     IdeBusDxe:AutoGen.obj
+ 0001:000000f0       gEfiDriverDiagnostics2ProtocolGuid 0000000000000350     IdeBusDxe:AutoGen.obj
+ 0001:00000100       SlaveDeviceType            0000000000000360     IdeBusDxe:Ide.obj
+ 0001:00000101       MasterDeviceType           0000000000000361     IdeBusDxe:Ide.obj
+ 0001:00000108       gIDEBusDriverBinding       0000000000000368     IdeBusDxe:IdeBus.obj
+ 0001:00000138       gIDEBusComponentName       0000000000000398     IdeBusDxe:ComponentName.obj
+ 0001:00000150       gIDEBusComponentName2      00000000000003b0     IdeBusDxe:ComponentName.obj
+ 0001:00000168       mIDEBusDriverNameTable     00000000000003c8     IdeBusDxe:ComponentName.obj
+ 0001:00000188       mIDEBusControllerNameTable 00000000000003e8     IdeBusDxe:ComponentName.obj
+ 0001:000001a8       gIDEBusDriverDiagnostics   0000000000000408     IdeBusDxe:DriverDiagnostics.obj
+ 0001:000001b8       gIDEBusDriverDiagnostics2  0000000000000418     IdeBusDxe:DriverDiagnostics.obj
+ 0001:000001d0       _gUefiDriverRevision       0000000000000430     IdeBusDxe:AutoGen.obj
+ 0001:000001d8       ??_C@_1BM@ICBIINEM@?$AAC?$AAo?$AAn?$AAf?$AAi?$AAg?$AAu?$AAr?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 0000000000000438     IdeBusDxe:IdeBus.obj
+ 0001:000001f8       ??_C@_1DC@KPHNLDDL@?$AAP?$AAC?$AAI?$AA?5?$AAI?$AAD?$AAE?$AA?1?$AAA?$AAT?$AAA?$AAP?$AAI?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr?$AA?$AA@ 0000000000000458     IdeBusDxe:ComponentName.obj
+ 0001:00000230       ??_C@_1DC@EBHMOEH@?$AAP?$AAC?$AAI?$AA?5?$AAI?$AAD?$AAE?$AA?1?$AAA?$AAT?$AAA?$AAP?$AAI?$AA?5?$AAB?$AAu?$AAs?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$AA@ 0000000000000490     IdeBusDxe:ComponentName.obj
+ 0001:00000264       ??_C@_06DALJLGPG@eng?$DLen?$AA@ 00000000000004c4     IdeBusDxe:ComponentName.obj
+ 0001:0000026c       ??_C@_02LFNMGJAP@en?$AA@   00000000000004cc     IdeBusDxe:ComponentName.obj
+ 0001:00000270       ??_C@_03LKLGDMJI@eng?$AA@  00000000000004d0     IdeBusDxe:ComponentName.obj
+ 0001:00000280       ??_C@_1FA@IOPLIJGA@?$AAP?$AAC?$AAI?$AA?5?$AAI?$AAD?$AAE?$AA?1?$AAA?$AAT?$AAA?$AAP?$AAI?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?5?$AAD?$AAi?$AAa?$AAg?$AAn?$AAo?$AAs?$AAt?$AAi?$AAc?$AAs@ 00000000000004e0     IdeBusDxe:DriverDiagnostics.obj
+ 0001:000002d0       _ModuleEntryPoint          0000000000000530 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000003b8       IDEBusDriverBindingSupported 0000000000000618 f   IdeBusDxe:IdeBus.obj
+ 0001:00000554       IDEBusDriverBindingStart   00000000000007b4 f   IdeBusDxe:IdeBus.obj
+ 0001:0000112c       IDEBusDriverBindingStop    000000000000138c f   IdeBusDxe:IdeBus.obj
+ 0001:00001410       IDEBlkIoReset              0000000000001670 f   IdeBusDxe:IdeBus.obj
+ 0001:00001520       IDEBlkIoReadBlocks         0000000000001780 f   IdeBusDxe:IdeBus.obj
+ 0001:000015f0       IDEBlkIoWriteBlocks        0000000000001850 f   IdeBusDxe:IdeBus.obj
+ 0001:000016c0       IDEBlkIoFlushBlocks        0000000000001920 f   IdeBusDxe:IdeBus.obj
+ 0001:000016c4       IDEDiskInfoInquiry         0000000000001924 f   IdeBusDxe:IdeBus.obj
+ 0001:0000172c       IDEDiskInfoIdentify        000000000000198c f   IdeBusDxe:IdeBus.obj
+ 0001:00001794       IDEDiskInfoSenseData       00000000000019f4 f   IdeBusDxe:IdeBus.obj
+ 0001:000017a0       IDEDiskInfoWhichIde        0000000000001a00 f   IdeBusDxe:IdeBus.obj
+ 0001:000017b0       ClearInterrupt             0000000000001a10 f   IdeBusDxe:IdeBus.obj
+ 0001:000018a4       IDEBusComponentNameGetDriverName 0000000000001b04 f   IdeBusDxe:ComponentName.obj
+ 0001:000018d8       IDEBusComponentNameGetControllerName 0000000000001b38 f   IdeBusDxe:ComponentName.obj
+ 0001:00001a8c       IDEReadPortB               0000000000001cec f   IdeBusDxe:Ide.obj
+ 0001:00001ac4       IDEReadPortWMultiple       0000000000001d24 f   IdeBusDxe:Ide.obj
+ 0001:00001b6c       IDEWritePortB              0000000000001dcc f   IdeBusDxe:Ide.obj
+ 0001:00001ba0       IDEWritePortWMultiple      0000000000001e00 f   IdeBusDxe:Ide.obj
+ 0001:00001c48       GetIdeRegistersBaseAddr    0000000000001ea8 f   IdeBusDxe:Ide.obj
+ 0001:00001cf8       ReassignIdeResources       0000000000001f58 f   IdeBusDxe:Ide.obj
+ 0001:00001e64       DetectIDEController        00000000000020c4 f   IdeBusDxe:Ide.obj
+ 0001:0000215c       DiscoverIdeDevice          00000000000023bc f   IdeBusDxe:Ide.obj
+ 0001:00002334       DRQClear                   0000000000002594 f   IdeBusDxe:Ide.obj
+ 0001:000023c4       DRQClear2                  0000000000002624 f   IdeBusDxe:Ide.obj
+ 0001:00002454       DRQReady2                  00000000000026b4 f   IdeBusDxe:Ide.obj
+ 0001:00002504       WaitForBSYClear            0000000000002764 f   IdeBusDxe:Ide.obj
+ 0001:00002580       WaitForBSYClear2           00000000000027e0 f   IdeBusDxe:Ide.obj
+ 0001:000025e4       DRDYReady                  0000000000002844 f   IdeBusDxe:Ide.obj
+ 0001:0000267c       DRDYReady2                 00000000000028dc f   IdeBusDxe:Ide.obj
+ 0001:00002714       ReleaseIdeResources        0000000000002974 f   IdeBusDxe:Ide.obj
+ 0001:00002878       LS120GetMediaStatus        0000000000002ad8 f   IdeBusDxe:Atapi.obj
+ 0001:00002938       LS120EnableMediaStatus     0000000000002b98 f   IdeBusDxe:Atapi.obj
+ 0001:00002a08       AtapiReadPendingData       0000000000002c68 f   IdeBusDxe:Atapi.obj
+ 0001:00002aa0       PioReadWriteData           0000000000002d00 f   IdeBusDxe:Atapi.obj
+ 0001:00002bec       AtapiPacketCommandIn       0000000000002e4c f   IdeBusDxe:Atapi.obj
+ 0001:00002ddc       ATAPIIdentify              000000000000303c f   IdeBusDxe:Atapi.obj
+ 0001:0000304c       AtapiRequestSense          00000000000032ac f   IdeBusDxe:Atapi.obj
+ 0001:0000311c       ParseSenseData             000000000000337c f   IdeBusDxe:Atapi.obj
+ 0001:000031a8       AtapiReadCapacity          0000000000003408 f   IdeBusDxe:Atapi.obj
+ 0001:00003378       AtapiDetectMedia           00000000000035d8 f   IdeBusDxe:Atapi.obj
+ 0001:00003600       AtapiReadSectors           0000000000003860 f   IdeBusDxe:Atapi.obj
+ 0001:00003704       AtapiWriteSectors          0000000000003964 f   IdeBusDxe:Atapi.obj
+ 0001:00003950       AtapiBlkIoReadBlocks       0000000000003bb0 f   IdeBusDxe:Atapi.obj
+ 0001:00003b24       AtapiBlkIoWriteBlocks      0000000000003d84 f   IdeBusDxe:Atapi.obj
+ 0001:00003cf4       AtaSMARTSupport            0000000000003f54 f   IdeBusDxe:Ata.obj
+ 0001:00003eac       ATAIdentify                000000000000410c f   IdeBusDxe:Ata.obj
+ 0001:000040fc       AtaPioDataIn               000000000000435c f   IdeBusDxe:Ata.obj
+ 0001:000042b0       CheckErrorStatus           0000000000004510 f   IdeBusDxe:Ata.obj
+ 0001:00004314       AtaReadSectors             0000000000004574 f   IdeBusDxe:Ata.obj
+ 0001:000043e0       AtaWriteSectors            0000000000004640 f   IdeBusDxe:Ata.obj
+ 0001:00004614       AtaSoftReset               0000000000004874 f   IdeBusDxe:Ata.obj
+ 0001:000046ac       AtaPioDataInExt            000000000000490c f   IdeBusDxe:Ata.obj
+ 0001:000048d0       AtaCommandIssueExt         0000000000004b30 f   IdeBusDxe:Ata.obj
+ 0001:00004adc       DoAtaUdma                  0000000000004d3c f   IdeBusDxe:Ata.obj
+ 0001:00005238       AtaBlkIoReadBlocks         0000000000005498 f   IdeBusDxe:Ata.obj
+ 0001:000053e4       AtaPioDataOutExt           0000000000005644 f   IdeBusDxe:Ata.obj
+ 0001:000055f4       AtaBlkIoWriteBlocks        0000000000005854 f   IdeBusDxe:Ata.obj
+ 0001:0000578c       AtaEnableLongPhysicalSector 00000000000059ec f   IdeBusDxe:Ata.obj
+ 0001:00005878       AtaNonDataCommandIn        0000000000005ad8 f   IdeBusDxe:Ata.obj
+ 0001:00005a1c       IDEBusDriverDiagnosticsRunDiagnostics 0000000000005c7c f   IdeBusDxe:DriverDiagnostics.obj
+ 0001:00005d18       InternalAllocatePool       0000000000005f78 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00005d4c       InternalAllocateCopyPool   0000000000005fac f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00005d8c       InternalReportStatusCode   0000000000005fec f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00005e50       ReportStatusCodeWithDevicePath 00000000000060b0 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00005e98       ReportStatusCodeEx         00000000000060f8 f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:0000600c       LookupUnicodeString2       000000000000626c f   UefiLib:UefiLib.obj
+ 0001:00006198       AddUnicodeString2          00000000000063f8 f   UefiLib:UefiLib.obj
+ 0001:00006440       InternalMemCopyMem         00000000000066a0 f   BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00006480       InternalMemZeroMem         00000000000066e0 f   BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:000064a0       InternalMemCompareMem      0000000000006700 f   BaseMemoryLibRepStr:CompareMem.obj
+ 0001:000064c0       InternalMemSetMem          0000000000006720 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:000064e0       InternalMemSetMem32        0000000000006740 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00006500       InternalMemSetMem64        0000000000006760 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00006518       ChannelDeviceDetected      0000000000006778     IdeBusDxe:Ide.obj
+ 0001:00006519       SlaveDeviceExist           0000000000006779     IdeBusDxe:Ide.obj
+ 0001:0000651a       MasterDeviceExist          000000000000677a     IdeBusDxe:Ide.obj
+ 0001:00006520       gImageHandle               0000000000006780     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00006528       gST                        0000000000006788     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00006530       gBS                        0000000000006790     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00006538       gRT                        0000000000006798     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0001:00006540       mReportStatusCodeLibStatusCodeProtocol 00000000000067a0     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00006548       mDevicePathLibDevicePathUtilities 00000000000067a8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+
+ entry point at        0001:000002d0
+
+ Static symbols
+

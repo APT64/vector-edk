@@ -1,0 +1,44 @@
+ Timer
+
+ Timestamp is 617b1139 (Fri Oct 29 00:08:09 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000050H .data                   CODE
+ 0001:00000050 00000004H .rdata                  CODE
+ 0001:00000060 000002f2H .text                   CODE
+ 0001:00000358 00000040H .bss                    CODE
+ 0002:00000000 0000003cH .pdata                  DATA
+ 0003:00000000 00000018H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       gEfiCpuArchProtocolGuid    0000000000000280     Timer:AutoGen.obj
+ 0001:00000010       gEfiLegacy8259ProtocolGuid 0000000000000290     Timer:AutoGen.obj
+ 0001:00000020       gEfiTimerArchProtocolGuid  00000000000002a0     Timer:AutoGen.obj
+ 0001:00000030       mTimer                     00000000000002b0     Timer:Timer.obj
+ 0001:00000050       _gUefiDriverRevision       00000000000002d0     Timer:AutoGen.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000088       ProcessModuleEntryPointList 0000000000000308 f   Timer:AutoGen.obj
+ 0001:00000154       TimerInterruptHandler      00000000000003d4 f   Timer:Timer.obj
+ 0001:000001a8       TimerDriverRegisterHandler 0000000000000428 f   Timer:Timer.obj
+ 0001:000001e0       TimerDriverSetTimerPeriod  0000000000000460 f   Timer:Timer.obj
+ 0001:0000026c       TimerDriverGetTimerPeriod  00000000000004ec f   Timer:Timer.obj
+ 0001:0000028c       TimerDriverGenerateSoftInterrupt 000000000000050c f   Timer:Timer.obj
+ 0001:00000300       InternalMemSetMem          0000000000000580 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000320       InternalMemSetMem32        00000000000005a0 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000340       InternalMemSetMem64        00000000000005c0 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000358       mTimerHandle               00000000000005d8     Timer:Timer.obj
+ 0001:00000360       mTimerPeriod               00000000000005e0     Timer:Timer.obj
+ 0001:00000368       gImageHandle               00000000000005e8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000370       gST                        00000000000005f0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000378       gBS                        00000000000005f8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000380       mTimerNotifyFunction       0000000000000600     <common>
+ 0001:00000388       mCpu                       0000000000000608     <common>
+ 0001:00000390       mLegacy8259                0000000000000610     <common>
+
+ entry point at        0001:00000060
+
+ Static symbols
+

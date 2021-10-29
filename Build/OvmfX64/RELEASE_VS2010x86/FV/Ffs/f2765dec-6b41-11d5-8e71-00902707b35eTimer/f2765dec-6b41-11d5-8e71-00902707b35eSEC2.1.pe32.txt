@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\f2765dec-6b41-11d5-8e71-00902707b35eTimer\f2765dec-6b41-11d5-8e71-00902707b35eSEC2.1.pe32 c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\PcAtChipsetPkg\8254TimerDxe\8254Timer\OUTPUT\Timer.efi

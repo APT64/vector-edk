@@ -1,0 +1,88 @@
+## @file
+#  Status code PEIM which produces Status Code PPI.
+#
+#  Copyright (c) 2006 - 2011, Intel Corporation. All rights reserved.<BR>
+#
+#  This program and the accompanying materials
+#  are licensed and made available under the terms and conditions of the BSD License
+#  which accompanies this distribution. The full text of the license may be found at
+#  http://opensource.org/licenses/bsd-license.php
+#  THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+#
+#
+##
+
+[Defines]
+  INF_VERSION                = 0x00010016
+  BASE_NAME                  = StatusCodePei
+  FILE_GUID                  = 1EC0F53A-FDE0-4576-8F25-7A1A410F58EB
+  MODULE_TYPE                = PEIM
+  VERSION_STRING             = 1.0
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[Binaries.X64]
+  PE32|StatusCodePei.efi
+  PEI_DEPEX|StatusCodePei.depex
+
+[PatchPcd.X64]
+[Protocols.X64]
+[Ppis.X64]
+  ## PRODUCES
+  gEfiPeiStatusCodePpiGuid
+
+  ## PRODUCES
+  gEfiPeiFirmwareVolumeInfoPpiGuid
+
+  ## PRODUCES
+  gEfiPeiFirmwareVolumeInfo2PpiGuid
+
+[Guids.X64]
+  ## SOMETIMES_CONSUMES ## HOB
+  gMemoryStatusCodeRecordGuid
+
+  ## CONSUMES
+  gEfiStatusCodeDataTypeStringGuid
+
+  ## PRODUCES ## HOB
+  gEfiHobMemoryAllocStackGuid
+
+  ## PRODUCES ## HOB
+  gEfiHobMemoryAllocBspStoreGuid
+
+  ## PRODUCES ## HOB
+  gEfiHobMemoryAllocModuleGuid
+
+  ## PRODUCES ## FV
+  gEfiFirmwareFileSystem2Guid
+
+  ## CONSUMES
+  gEfiStatusCodeSpecificDataGuid
+
+  ## CONSUMES
+  gEfiStatusCodeDataTypeDebugGuid
+
+[PcdEx.X64]
+
+## @AsBuilt
+##   MSFT:RELEASE_VS2010x86_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   MSFT:RELEASE_VS2010x86_X64_ASLDLINK_FLAGS = /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:CONSOLE
+##   MSFT:RELEASE_VS2010x86_X64_VFR_FLAGS = -l -n
+##   MSFT:RELEASE_VS2010x86_X64_PP_FLAGS = /nologo /E /TC /FIAutoGen.h
+##   MSFT:RELEASE_VS2010x86_X64_GENFW_FLAGS = 
+##   MSFT:RELEASE_VS2010x86_X64_SLINK_FLAGS = /NOLOGO /LTCG
+##   MSFT:RELEASE_VS2010x86_X64_ASM_FLAGS = /nologo /c /WX /W3 /Cx /Zd
+##   MSFT:RELEASE_VS2010x86_X64_ASL_FLAGS = 
+##   MSFT:RELEASE_VS2010x86_X64_CC_FLAGS = /nologo /c /WX /GS- /X /W4 /Gs32768 /D UNICODE /O1ib2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /D MDEPKG_NDEBUG
+##   MSFT:RELEASE_VS2010x86_X64_VFRPP_FLAGS = /nologo /E /TC /DVFRCOMPILE /FI$(MODULE_NAME)StrDefs.h
+##   MSFT:RELEASE_VS2010x86_X64_ASLCC_FLAGS = /nologo /c /FIAutoGen.h /TC /Dmain=ReferenceAcpiTable
+##   MSFT:RELEASE_VS2010x86_X64_APP_FLAGS = /nologo /E /TC
+##   MSFT:RELEASE_VS2010x86_X64_OPTROM_FLAGS = -e
+##   MSFT:RELEASE_VS2010x86_X64_DLINK_FLAGS = /NOLOGO /NODEFAULTLIB /IGNORE:4001 /IGNORE:4254 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /Machine:X64 /LTCG /DLL /ENTRY:$(IMAGE_ENTRY_POINT) /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /MERGE:.data=.text /MERGE:.rdata=.text
+##   MSFT:RELEASE_VS2010x86_X64_ASLPP_FLAGS = /nologo /E /C /FIAutoGen.h
+##   MSFT:RELEASE_VS2010x86_X64_OBJCOPY_FLAGS = objcopy not needed for
+##   MSFT:RELEASE_VS2010x86_X64_MAKE_FLAGS = /nologo
+##   MSFT:RELEASE_VS2010x86_X64_ASMLINK_FLAGS = /nologo /tiny

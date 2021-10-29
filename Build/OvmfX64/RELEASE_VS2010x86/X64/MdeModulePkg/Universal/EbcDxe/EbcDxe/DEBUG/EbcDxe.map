@@ -1,0 +1,131 @@
+ EbcDxe
+
+ Timestamp is 617b1137 (Fri Oct 29 00:08:07 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000061H .data                   CODE
+ 0001:00000070 000002a0H .rdata                  CODE
+ 0001:00000310 00002ba2H .text                   CODE
+ 0001:00002ec0 000000e0H .bss                    CODE
+ 0002:00000000 00000228H .pdata                  DATA
+ 0003:00000000 00000160H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       gEfiDebugSupportProtocolGuid 0000000000000280     EbcDxe:AutoGen.obj
+ 0001:00000010       gEfiEbcProtocolGuid        0000000000000290     EbcDxe:AutoGen.obj
+ 0001:00000020       gEfiEbcVmTestProtocolGuid  00000000000002a0     EbcDxe:AutoGen.obj
+ 0001:00000030       gEfiEbcSimpleDebuggerProtocolGuid 00000000000002b0     EbcDxe:AutoGen.obj
+ 0001:00000040       mInstructionBufferTemplate 00000000000002c0     EbcDxe:EbcSupport.obj
+ 0001:00000070       mDataManipDispatchTable    00000000000002f0     EbcDxe:EbcExecute.obj
+ 0001:00000108       mJMPLen                    0000000000000388     EbcDxe:EbcExecute.obj
+ 0001:0000010c       _gUefiDriverRevision       000000000000038c     EbcDxe:AutoGen.obj
+ 0001:00000110       mVmOpcodeTable             0000000000000390     EbcDxe:EbcExecute.obj
+ 0001:00000310       _ModuleEntryPoint          0000000000000590 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000338       InitializeEbcDriver        00000000000005b8 f   EbcDxe:EbcInt.obj
+ 0001:00000708       EbcCreateThunk             0000000000000988 f   EbcDxe:EbcInt.obj
+ 0001:00000724       EbcDebugGetMaximumProcessorIndex 00000000000009a4 f   EbcDxe:EbcInt.obj
+ 0001:0000072c       EbcDebugRegisterPeriodicCallback 00000000000009ac f   EbcDxe:EbcInt.obj
+ 0001:00000760       EbcDebugRegisterExceptionCallback 00000000000009e0 f   EbcDxe:EbcInt.obj
+ 0001:000007a4       EbcDebugInvalidateInstructionCache 0000000000000a24 f   EbcDxe:EbcInt.obj
+ 0001:000007a8       EbcDebugSignalException    0000000000000a28 f   EbcDxe:EbcInt.obj
+ 0001:000008a0       CommonEbcExceptionHandler  0000000000000b20 f   EbcDxe:EbcInt.obj
+ 0001:000008b8       EbcPeriodicNotifyFunction  0000000000000b38 f   EbcDxe:EbcInt.obj
+ 0001:000008d0       EbcDebugPeriodic           0000000000000b50 f   EbcDxe:EbcInt.obj
+ 0001:000009b0       EbcUnloadImage             0000000000000c30 f   EbcDxe:EbcInt.obj
+ 0001:00000a8c       EbcRegisterICacheFlush     0000000000000d0c f   EbcDxe:EbcInt.obj
+ 0001:00000a98       EbcGetVersion              0000000000000d18 f   EbcDxe:EbcInt.obj
+ 0001:00000ab4       GetEBCStack                0000000000000d34 f   EbcDxe:EbcInt.obj
+ 0001:00000b68       EbcVmTestUnsupported       0000000000000de8 f   EbcDxe:EbcInt.obj
+ 0001:00000b74       EbcExecuteInstructions     0000000000000df4 f   EbcDxe:EbcExecute.obj
+ 0001:00000c18       EbcExecute                 0000000000000e98 f   EbcDxe:EbcExecute.obj
+ 0001:00000d70       ExecuteMOVxx               0000000000000ff0 f   EbcDxe:EbcExecute.obj
+ 0001:00001030       ExecuteBREAK               00000000000012b0 f   EbcDxe:EbcExecute.obj
+ 0001:000010d8       ExecuteJMP                 0000000000001358 f   EbcDxe:EbcExecute.obj
+ 0001:00001238       ExecuteJMP8                00000000000014b8 f   EbcDxe:EbcExecute.obj
+ 0001:00001274       ExecuteMOVI                00000000000014f4 f   EbcDxe:EbcExecute.obj
+ 0001:000013e4       ExecuteMOVIn               0000000000001664 f   EbcDxe:EbcExecute.obj
+ 0001:000014f0       ExecuteMOVREL              0000000000001770 f   EbcDxe:EbcExecute.obj
+ 0001:00001600       ExecuteMOVsnw              0000000000001880 f   EbcDxe:EbcExecute.obj
+ 0001:000016f4       ExecuteMOVsnd              0000000000001974 f   EbcDxe:EbcExecute.obj
+ 0001:000017e0       ExecutePUSHn               0000000000001a60 f   EbcDxe:EbcExecute.obj
+ 0001:00001868       ExecutePUSH                0000000000001ae8 f   EbcDxe:EbcExecute.obj
+ 0001:00001930       ExecutePOPn                0000000000001bb0 f   EbcDxe:EbcExecute.obj
+ 0001:000019c0       ExecutePOP                 0000000000001c40 f   EbcDxe:EbcExecute.obj
+ 0001:00001aa4       ExecuteCALL                0000000000001d24 f   EbcDxe:EbcExecute.obj
+ 0001:00001bec       ExecuteRET                 0000000000001e6c f   EbcDxe:EbcExecute.obj
+ 0001:00001c54       ExecuteCMP                 0000000000001ed4 f   EbcDxe:EbcExecute.obj
+ 0001:00001d88       ExecuteCMPI                0000000000002008 f   EbcDxe:EbcExecute.obj
+ 0001:00001f08       ExecuteNOT                 0000000000002188 f   EbcDxe:EbcExecute.obj
+ 0001:00001f10       ExecuteNEG                 0000000000002190 f   EbcDxe:EbcExecute.obj
+ 0001:00001f18       ExecuteADD                 0000000000002198 f   EbcDxe:EbcExecute.obj
+ 0001:00001f20       ExecuteSUB                 00000000000021a0 f   EbcDxe:EbcExecute.obj
+ 0001:00001f38       ExecuteMUL                 00000000000021b8 f   EbcDxe:EbcExecute.obj
+ 0001:00001f54       ExecuteMULU                00000000000021d4 f   EbcDxe:EbcExecute.obj
+ 0001:00001f70       ExecuteDIV                 00000000000021f0 f   EbcDxe:EbcExecute.obj
+ 0001:00001fb0       ExecuteDIVU                0000000000002230 f   EbcDxe:EbcExecute.obj
+ 0001:00001ff0       ExecuteMOD                 0000000000002270 f   EbcDxe:EbcExecute.obj
+ 0001:00002020       ExecuteMODU                00000000000022a0 f   EbcDxe:EbcExecute.obj
+ 0001:00002050       ExecuteAND                 00000000000022d0 f   EbcDxe:EbcExecute.obj
+ 0001:00002058       ExecuteOR                  00000000000022d8 f   EbcDxe:EbcExecute.obj
+ 0001:00002060       ExecuteXOR                 00000000000022e0 f   EbcDxe:EbcExecute.obj
+ 0001:00002068       ExecuteSHL                 00000000000022e8 f   EbcDxe:EbcExecute.obj
+ 0001:00002084       ExecuteSHR                 0000000000002304 f   EbcDxe:EbcExecute.obj
+ 0001:000020a0       ExecuteASHR                0000000000002320 f   EbcDxe:EbcExecute.obj
+ 0001:000020bc       ExecuteEXTNDB              000000000000233c f   EbcDxe:EbcExecute.obj
+ 0001:000020c4       ExecuteEXTNDW              0000000000002344 f   EbcDxe:EbcExecute.obj
+ 0001:000020cc       ExecuteEXTNDD              000000000000234c f   EbcDxe:EbcExecute.obj
+ 0001:000020d0       ExecuteSignedDataManip     0000000000002350 f   EbcDxe:EbcExecute.obj
+ 0001:000020d8       ExecuteUnsignedDataManip   0000000000002358 f   EbcDxe:EbcExecute.obj
+ 0001:000020e0       ExecuteDataManip           0000000000002360 f   EbcDxe:EbcExecute.obj
+ 0001:00002278       ExecuteLOADSP              00000000000024f8 f   EbcDxe:EbcExecute.obj
+ 0001:000022d8       ExecuteSTORESP             0000000000002558 f   EbcDxe:EbcExecute.obj
+ 0001:0000234c       VmReadIndex16              00000000000025cc f   EbcDxe:EbcExecute.obj
+ 0001:000023ac       VmReadIndex32              000000000000262c f   EbcDxe:EbcExecute.obj
+ 0001:000023ec       VmReadIndex64              000000000000266c f   EbcDxe:EbcExecute.obj
+ 0001:00002484       VmWriteMem32               0000000000002704 f   EbcDxe:EbcExecute.obj
+ 0001:000024c0       VmWriteMem64               0000000000002740 f   EbcDxe:EbcExecute.obj
+ 0001:000024fc       VmWriteMemN                000000000000277c f   EbcDxe:EbcExecute.obj
+ 0001:00002538       VmReadCode32               00000000000027b8 f   EbcDxe:EbcExecute.obj
+ 0001:00002538       VmReadImmed32              00000000000027b8 f   EbcDxe:EbcExecute.obj
+ 0001:00002590       VmReadImmed64              0000000000002810 f   EbcDxe:EbcExecute.obj
+ 0001:000025e0       VmReadCode16               0000000000002860 f   EbcDxe:EbcExecute.obj
+ 0001:000025e0       VmReadImmed16              0000000000002860 f   EbcDxe:EbcExecute.obj
+ 0001:00002638       VmReadMem32                00000000000028b8 f   EbcDxe:EbcExecute.obj
+ 0001:0000268c       VmReadMem64                000000000000290c f   EbcDxe:EbcExecute.obj
+ 0001:000026c0       VmReadMemN                 0000000000002940 f   EbcDxe:EbcExecute.obj
+ 0001:00002704       EbcInterpret               0000000000002984 f   EbcDxe:EbcSupport.obj
+ 0001:00002944       ExecuteEbcImageEntryPoint  0000000000002bc4 f   EbcDxe:EbcSupport.obj
+ 0001:00002a58       EbcCreateThunks            0000000000002cd8 f   EbcDxe:EbcSupport.obj
+ 0001:00002bbc       EbcLLCALLEX                0000000000002e3c f   EbcDxe:EbcSupport.obj
+ 0001:00002cdc       CopyMem                    0000000000002f5c f   BaseMemoryLibRepStr:CopyMemWrapper.obj
+ 0001:00002cf0       InternalAllocatePool       0000000000002f70 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00002d30       EbcLLCALLEXNative          0000000000002fb0 f   EbcDxe:EbcLowLevel.obj
+ 0001:00002d69       EbcLLEbcInterpret          0000000000002fe9 f   EbcDxe:EbcLowLevel.obj
+ 0001:00002dc8       EbcLLExecuteEbcImageEntryPoint 0000000000003048 f   EbcDxe:EbcLowLevel.obj
+ 0001:00002de0       InternalMemCompareMem      0000000000003060 f   BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00002e00       InternalMemCopyMem         0000000000003080 f   BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00002e40       InternalMemZeroMem         00000000000030c0 f   BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00002e60       InternalMemSetMem          00000000000030e0 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:00002e80       InternalMemSetMem32        0000000000003100 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00002ea0       InternalMemSetMem64        0000000000003120 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00002ec0       mEbcImageList              0000000000003140     EbcDxe:EbcInt.obj
+ 0001:00002ec8       mDebugPeriodicCallback     0000000000003148     EbcDxe:EbcInt.obj
+ 0001:00002ed0       mDebugExceptionCallback    0000000000003150     EbcDxe:EbcInt.obj
+ 0001:00002f28       mStackNum                  00000000000031a8     EbcDxe:EbcInt.obj
+ 0001:00002f30       mVmPtr                     00000000000031b0     EbcDxe:EbcInt.obj
+ 0001:00002f38       gImageHandle               00000000000031b8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00002f40       gST                        00000000000031c0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00002f48       gBS                        00000000000031c8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00002f50       mEbcICacheFlush            00000000000031d0     <common>
+ 0001:00002f58       mEbcPeriodicEvent          00000000000031d8     <common>
+ 0001:00002f60       mStackBuffer               00000000000031e0     <common>
+ 0001:00002f80       mStackBufferIndex          0000000000003200     <common>
+
+ entry point at        0001:00000310
+
+ Static symbols
+

@@ -1,0 +1,1210 @@
+ GetNetByAddr
+
+ Timestamp is 617b0f33 (Thu Oct 28 23:59:31 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00021964H .text                   CODE
+ 0002:00000000 00004678H .rdata                  DATA
+ 0002:00004678 0000009bH .rdata$debug            DATA
+ 0003:00000000 00000bb8H .data                   DATA
+ 0003:00000bc0 00006468H .bss                    DATA
+ 0004:00000000 000010a4H .pdata                  DATA
+ 0005:00000000 00000a74H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       _ModuleEntryPoint          00000000000002c0 f   UefiApplicationEntryPoint:ApplicationEntryPoint.obj
+ 0001:00000048       UefiBootServicesTableLibConstructor 0000000000000308 f   UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000064       ProcessLibraryConstructorList 0000000000000324 f   GetNetByAddr:AutoGen.obj
+ 0001:000003b0       ProcessLibraryDestructorList 0000000000000670 f   GetNetByAddr:AutoGen.obj
+ 0001:00000588       ProcessModuleEntryPointList 0000000000000848 f   GetNetByAddr:AutoGen.obj
+ 0001:000005ac       ShellCEntryLib             000000000000086c f   UefiShellCEntryLib:UefiShellCEntryLib.obj
+ 0001:00000660       exitCleanup                0000000000000920 f   LibC:Main.obj
+ 0001:000006d0       ShellAppMain               0000000000000990 f   LibC:Main.obj
+ 0001:00000984       DebugPrint                 0000000000000c44 f   BaseDebugLibNull:DebugLib.obj
+ 0001:00000998       DebugAssert                0000000000000c58 f   BaseDebugLibNull:DebugLib.obj
+ 0001:0000099c       DebugPrintEnabled          0000000000000c5c f   BaseDebugLibNull:DebugLib.obj
+ 0001:0000099c       DebugAssertEnabled         0000000000000c5c f   BaseDebugLibNull:DebugLib.obj
+ 0001:000009a0       __wchar_construct          0000000000000c60 f   LibWchar:ConsDecons.obj
+ 0001:000009f0       __wchar_deconstruct        0000000000000cb0 f   LibWchar:ConsDecons.obj
+ 0001:00000dac       da_ConOpen                 000000000000106c f   DevConsole:daConsole.obj
+ 0001:00000f00       __Cons_construct           00000000000011c0 f   DevConsole:daConsole.obj
+ 0001:00001110       __Cons_deconstruct         00000000000013d0 f   DevConsole:daConsole.obj
+ 0001:00001180       UefiRuntimeServicesTableLibConstructor 0000000000001440 f   UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0001:00001190       EfiGetCurrentTpl           0000000000001450 f   UefiLib:UefiLib.obj
+ 0001:000011c0       InternalPrint              0000000000001480 f   UefiLib:UefiLibPrint.obj
+ 0001:00001258       Print                      0000000000001518 f   UefiLib:UefiLibPrint.obj
+ 0001:00001288       ShellFindSE2               0000000000001548 f   UefiShellLib:UefiShellLib.obj
+ 0001:00001438       ShellLibConstructorWorker  00000000000016f8 f   UefiShellLib:UefiShellLib.obj
+ 0001:000016cc       ShellLibConstructor        000000000000198c f   UefiShellLib:UefiShellLib.obj
+ 0001:000016f8       ShellLibDestructor         00000000000019b8 f   UefiShellLib:UefiShellLib.obj
+ 0001:000017d8       ShellOpenFileByDevicePath  0000000000001a98 f   UefiShellLib:UefiShellLib.obj
+ 0001:00001a0c       ShellOpenFileByName        0000000000001ccc f   UefiShellLib:UefiShellLib.obj
+ 0001:00001b2c       ShellFindFirstFile         0000000000001dec f   UefiShellLib:UefiShellLib.obj
+ 0001:00001c10       ShellIsFile                0000000000001ed0 f   UefiShellLib:UefiShellLib.obj
+ 0001:00001c60       UefiHiiServicesLibConstructor 0000000000001f20 f   UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0001:0000228c       da_ShellOpen               000000000000254c f   DevShell:daShell.obj
+ 0001:0000281c       __ctor_DevShell            0000000000002adc f   DevShell:daShell.obj
+ 0001:00002914       __dtor_DevShell            0000000000002bd4 f   DevShell:daShell.obj
+ 0001:00002954       EslConstructor             0000000000002c14 f   EfiSocketLib:Init.obj
+ 0001:00002970       EslDestructor              0000000000002c30 f   EfiSocketLib:Init.obj
+ 0001:0000298c       EslServiceFreeProtocol     0000000000002c4c f   EfiSocketLib:UseEfiSocketLib.obj
+ 0001:00002a74       EslServiceNetworkConnect   0000000000002d34 f   EfiSocketLib:UseEfiSocketLib.obj
+ 0001:00002b90       EslServiceNetworkDisconnect 0000000000002e50 f   EfiSocketLib:UseEfiSocketLib.obj
+ 0001:00002d90       EslServiceConnect          0000000000003050 f   EfiSocketLib:Service.obj
+ 0001:00002fa4       EslSocket                  0000000000003264 f   EfiSocketLib:Socket.obj
+ 0001:000030e0       EslSocketAccept            00000000000033a0 f   EfiSocketLib:Socket.obj
+ 0001:000032d0       EslSocketAllocate          0000000000003590 f   EfiSocketLib:Socket.obj
+ 0001:00003468       EslSocketBind              0000000000003728 f   EfiSocketLib:Socket.obj
+ 0001:000035f4       EslSocketBindTest          00000000000038b4 f   EfiSocketLib:Socket.obj
+ 0001:0000367c       EslSocketClosePoll         000000000000393c f   EfiSocketLib:Socket.obj
+ 0001:00003784       EslSocketCloseStart        0000000000003a44 f   EfiSocketLib:Socket.obj
+ 0001:0000386c       EslSocketConnect           0000000000003b2c f   EfiSocketLib:Socket.obj
+ 0001:00003af4       EslSocketCopyFragmentedBuffer 0000000000003db4 f   EfiSocketLib:Socket.obj
+ 0001:00003b8c       EslSocketGetLocalAddress   0000000000003e4c f   EfiSocketLib:Socket.obj
+ 0001:00003d2c       EslSocketGetPeerAddress    0000000000003fec f   EfiSocketLib:Socket.obj
+ 0001:00003ee4       EslSocketIoFree            00000000000041a4 f   EfiSocketLib:Socket.obj
+ 0001:00003f48       EslSocketIoInit            0000000000004208 f   EfiSocketLib:Socket.obj
+ 0001:00003ff8       EslSocketIsConfigured      00000000000042b8 f   EfiSocketLib:Socket.obj
+ 0001:00004090       EslSocketListen            0000000000004350 f   EfiSocketLib:Socket.obj
+ 0001:00004214       EslSocketOptionGet         00000000000044d4 f   EfiSocketLib:Socket.obj
+ 0001:000043a4       EslSocketOptionSet         0000000000004664 f   EfiSocketLib:Socket.obj
+ 0001:00004508       EslSocketPacketAllocate    00000000000047c8 f   EfiSocketLib:Socket.obj
+ 0001:00004588       EslSocketPoll              0000000000004848 f   EfiSocketLib:Socket.obj
+ 0001:000046f8       EslSocketPortAllocate      00000000000049b8 f   EfiSocketLib:Socket.obj
+ 0001:0000497c       EslSocketPortClose         0000000000004c3c f   EfiSocketLib:Socket.obj
+ 0001:00004b88       EslSocketPortCloseComplete 0000000000004e48 f   EfiSocketLib:Socket.obj
+ 0001:00004be0       EslSocketPortCloseRxDone   0000000000004ea0 f   EfiSocketLib:Socket.obj
+ 0001:00004c28       EslSocketPortCloseStart    0000000000004ee8 f   EfiSocketLib:Socket.obj
+ 0001:00004c90       EslSocketPortCloseTxDone   0000000000004f50 f   EfiSocketLib:Socket.obj
+ 0001:00004d2c       EslSocketReceive           0000000000004fec f   EfiSocketLib:Socket.obj
+ 0001:000051c4       EslSocketRxComplete        0000000000005484 f   EfiSocketLib:Socket.obj
+ 0001:00005350       EslSocketRxStart           0000000000005610 f   EfiSocketLib:Socket.obj
+ 0001:000054a0       EslSocketShutdown          0000000000005760 f   EfiSocketLib:Socket.obj
+ 0001:000055c8       EslSocketTransmit          0000000000005888 f   EfiSocketLib:Socket.obj
+ 0001:00005780       EslSocketTxComplete        0000000000005a40 f   EfiSocketLib:Socket.obj
+ 0001:00005888       EslSocketTxStart           0000000000005b48 f   EfiSocketLib:Socket.obj
+ 0001:0000596c       EslUdp4LocalAddressGet     0000000000005c2c f   EfiSocketLib:Udp4.obj
+ 0001:000059b0       EslUdp4LocalAddressSet     0000000000005c70 f   EfiSocketLib:Udp4.obj
+ 0001:00005ab4       EslUdp4PacketFree          0000000000005d74 f   EfiSocketLib:Udp4.obj
+ 0001:00005ad8       EslUdp4PortAllocate        0000000000005d98 f   EfiSocketLib:Udp4.obj
+ 0001:00005b4c       EslUdp4Receive             0000000000005e0c f   EfiSocketLib:Udp4.obj
+ 0001:00005be8       EslUdp4RemoteAddressGet    0000000000005ea8 f   EfiSocketLib:Udp4.obj
+ 0001:00005c2c       EslUdp4RemoteAddressSet    0000000000005eec f   EfiSocketLib:Udp4.obj
+ 0001:00005c80       EslUdp4RxComplete          0000000000005f40 f   EfiSocketLib:Udp4.obj
+ 0001:00005ca4       EslUdp4SocketIsConfigured  0000000000005f64 f   EfiSocketLib:Udp4.obj
+ 0001:00005e60       EslUdp4TxBuffer            0000000000006120 f   EfiSocketLib:Udp4.obj
+ 0001:00006078       EslUdp4TxComplete          0000000000006338 f   EfiSocketLib:Udp4.obj
+ 0001:000060d0       EslUdp4VerifyLocalIpAddress 0000000000006390 f   EfiSocketLib:Udp4.obj
+ 0001:00006200       EslIp4LocalAddressGet      00000000000064c0 f   EfiSocketLib:Ip4.obj
+ 0001:00006220       EslIp4LocalAddressSet      00000000000064e0 f   EfiSocketLib:Ip4.obj
+ 0001:000062c8       EslIp4OptionGet            0000000000006588 f   EfiSocketLib:Ip4.obj
+ 0001:000062fc       EslIp4OptionSet            00000000000065bc f   EfiSocketLib:Ip4.obj
+ 0001:00006320       EslIp4PacketFree           00000000000065e0 f   EfiSocketLib:Ip4.obj
+ 0001:00006344       EslIp4PortAllocate         0000000000006604 f   EfiSocketLib:Ip4.obj
+ 0001:000063dc       EslIp4Receive              000000000000669c f   EfiSocketLib:Ip4.obj
+ 0001:000064a8       EslIp4RemoteAddressGet     0000000000006768 f   EfiSocketLib:Ip4.obj
+ 0001:000064c8       EslIp4RemoteAddressSet     0000000000006788 f   EfiSocketLib:Ip4.obj
+ 0001:00006500       EslIp4RxComplete           00000000000067c0 f   EfiSocketLib:Ip4.obj
+ 0001:00006528       EslIp4SocketIsConfigured   00000000000067e8 f   EfiSocketLib:Ip4.obj
+ 0001:000066f0       EslIp4TxBuffer             00000000000069b0 f   EfiSocketLib:Ip4.obj
+ 0001:0000692c       EslUdp6TxComplete          0000000000006bec f   EfiSocketLib:Udp6.obj
+ 0001:0000692c       EslIp4TxComplete           0000000000006bec f   EfiSocketLib:Ip4.obj
+ 0001:00006984       EslIp4VerifyLocalIpAddress 0000000000006c44 f   EfiSocketLib:Ip4.obj
+ 0001:00006ab4       EslUdp6LocalAddressGet     0000000000006d74 f   EfiSocketLib:Udp6.obj
+ 0001:00006af8       EslUdp6LocalAddressSet     0000000000006db8 f   EfiSocketLib:Udp6.obj
+ 0001:00006b84       EslUdp6PacketFree          0000000000006e44 f   EfiSocketLib:Udp6.obj
+ 0001:00006ba8       EslUdp6PortAllocate        0000000000006e68 f   EfiSocketLib:Udp6.obj
+ 0001:00006c20       EslUdp6Receive             0000000000006ee0 f   EfiSocketLib:Udp6.obj
+ 0001:00006cbc       EslUdp6RemoteAddressGet    0000000000006f7c f   EfiSocketLib:Udp6.obj
+ 0001:00006d00       EslUdp6RemoteAddressSet    0000000000006fc0 f   EfiSocketLib:Udp6.obj
+ 0001:00006d44       EslUdp6RxComplete          0000000000007004 f   EfiSocketLib:Udp6.obj
+ 0001:00006d68       EslUdp6SocketIsConfigured  0000000000007028 f   EfiSocketLib:Udp6.obj
+ 0001:00006f28       EslUdp6TxBuffer            00000000000071e8 f   EfiSocketLib:Udp6.obj
+ 0001:00007124       EslUdp6VerifyLocalIpAddress 00000000000073e4 f   EfiSocketLib:Udp6.obj
+ 0001:000073ac       EslTcp6Accept              000000000000766c f   EfiSocketLib:Tcp6.obj
+ 0001:00007430       EslTcp6ConnectComplete     00000000000076f0 f   EfiSocketLib:Tcp6.obj
+ 0001:000074c8       EslTcp6ConnectStart        0000000000007788 f   EfiSocketLib:Tcp6.obj
+ 0001:000075e0       EslTcp6Listen              00000000000078a0 f   EfiSocketLib:Tcp6.obj
+ 0001:000077dc       EslTcp6ListenComplete      0000000000007a9c f   EfiSocketLib:Tcp6.obj
+ 0001:000079c0       EslTcp6LocalAddressGet     0000000000007c80 f   EfiSocketLib:Tcp6.obj
+ 0001:00007a04       EslTcp6LocalAddressSet     0000000000007cc4 f   EfiSocketLib:Tcp6.obj
+ 0001:00007aa0       EslTcp4PacketFree          0000000000007d60 f   EfiSocketLib:Tcp4.obj
+ 0001:00007aa0       EslTcp6PacketFree          0000000000007d60 f   EfiSocketLib:Tcp6.obj
+ 0001:00007aa8       EslTcp6PortAllocate        0000000000007d68 f   EfiSocketLib:Tcp6.obj
+ 0001:00007b98       EslTcp6PortClose           0000000000007e58 f   EfiSocketLib:Tcp6.obj
+ 0001:00007bec       EslTcp6PortCloseOp         0000000000007eac f   EfiSocketLib:Tcp6.obj
+ 0001:00007c0c       EslTcp6Receive             0000000000007ecc f   EfiSocketLib:Tcp6.obj
+ 0001:00007cd8       EslTcp6RemoteAddressGet    0000000000007f98 f   EfiSocketLib:Tcp6.obj
+ 0001:00007d1c       EslTcp6RemoteAddressSet    0000000000007fdc f   EfiSocketLib:Tcp6.obj
+ 0001:00007d60       EslTcp6TxComplete          0000000000008020 f   EfiSocketLib:Tcp6.obj
+ 0001:00007d60       EslTcp4TxComplete          0000000000008020 f   EfiSocketLib:Tcp4.obj
+ 0001:00007db0       EslTcp6VerifyLocalIpAddress 0000000000008070 f   EfiSocketLib:Tcp6.obj
+ 0001:00008038       EslTcp4Accept              00000000000082f8 f   EfiSocketLib:Tcp4.obj
+ 0001:000080d8       EslTcp4ConnectComplete     0000000000008398 f   EfiSocketLib:Tcp4.obj
+ 0001:00008170       EslTcp4ConnectPoll         0000000000008430 f   EfiSocketLib:Tcp4.obj
+ 0001:00008170       EslTcp6ConnectPoll         0000000000008430 f   EfiSocketLib:Tcp6.obj
+ 0001:00008328       EslTcp4ConnectStart        00000000000085e8 f   EfiSocketLib:Tcp4.obj
+ 0001:00008440       EslTcp4Listen              0000000000008700 f   EfiSocketLib:Tcp4.obj
+ 0001:0000863c       EslTcp4ListenComplete      00000000000088fc f   EfiSocketLib:Tcp4.obj
+ 0001:00008818       EslTcp4LocalAddressGet     0000000000008ad8 f   EfiSocketLib:Tcp4.obj
+ 0001:0000885c       EslTcp4LocalAddressSet     0000000000008b1c f   EfiSocketLib:Tcp4.obj
+ 0001:0000896c       EslTcp4PortAllocate        0000000000008c2c f   EfiSocketLib:Tcp4.obj
+ 0001:00008a5c       EslTcp4PortClose           0000000000008d1c f   EfiSocketLib:Tcp4.obj
+ 0001:00008ab0       EslTcp4PortCloseOp         0000000000008d70 f   EfiSocketLib:Tcp4.obj
+ 0001:00008ad0       EslTcp4Receive             0000000000008d90 f   EfiSocketLib:Tcp4.obj
+ 0001:00008b9c       EslTcp4RemoteAddressGet    0000000000008e5c f   EfiSocketLib:Tcp4.obj
+ 0001:00008be0       EslTcp4RemoteAddressSet    0000000000008ea0 f   EfiSocketLib:Tcp4.obj
+ 0001:00008c54       EslTcp6RxComplete          0000000000008f14 f   EfiSocketLib:Tcp6.obj
+ 0001:00008c54       EslTcp4RxComplete          0000000000008f14 f   EfiSocketLib:Tcp4.obj
+ 0001:00008c7c       EslTcp6RxStart             0000000000008f3c f   EfiSocketLib:Tcp6.obj
+ 0001:00008c7c       EslTcp4RxStart             0000000000008f3c f   EfiSocketLib:Tcp4.obj
+ 0001:00008ca4       EslTcp6SocketIsConfigured  0000000000008f64 f   EfiSocketLib:Tcp6.obj
+ 0001:00008ca4       EslTcp4SocketIsConfigured  0000000000008f64 f   EfiSocketLib:Tcp4.obj
+ 0001:00008cc0       EslTcp6TxBuffer            0000000000008f80 f   EfiSocketLib:Tcp6.obj
+ 0001:00008cc0       EslTcp4TxBuffer            0000000000008f80 f   EfiSocketLib:Tcp4.obj
+ 0001:00008eec       EslTcp4TxOobComplete       00000000000091ac f   EfiSocketLib:Tcp4.obj
+ 0001:00008eec       EslTcp6TxOobComplete       00000000000091ac f   EfiSocketLib:Tcp6.obj
+ 0001:00008f40       EslTcp4VerifyLocalIpAddress 0000000000009200 f   EfiSocketLib:Tcp4.obj
+ 0001:00009070       main                       0000000000009330 f   GetNetByAddr:GetNetByAddr.obj
+ 0001:0000919c       fnullop_fcntl              000000000000945c f   DevUtility:DevGenisis.obj
+ 0001:0000919c       fnullop_flush              000000000000945c f   DevUtility:DevGenisis.obj
+ 0001:0000919c       UefiLibConstructor         000000000000945c f   UefiLib:UefiLib.obj
+ 0001:000091a0       fbadop_ioctl               0000000000009460 f   DevUtility:DevGenisis.obj
+ 0001:000091a0       fbadop_stat                0000000000009460 f   DevUtility:DevGenisis.obj
+ 0001:000091a0       fbadop_mkdir               0000000000009460 f   DevUtility:DevGenisis.obj
+ 0001:000091a0       fbadop_delete              0000000000009460 f   DevUtility:DevGenisis.obj
+ 0001:000091a0       fbadop_rename              0000000000009460 f   DevUtility:DevGenisis.obj
+ 0001:000091a0       fbadop_rmdir               0000000000009460 f   DevUtility:DevGenisis.obj
+ 0001:000091b0       __DevRegister              0000000000009470 f   DevUtility:DevGenisis.obj
+ 0001:00009288       ClassifyPath               0000000000009548 f   DevUtility:Path.obj
+ 0001:00009370       NormalizePath              0000000000009630 f   DevUtility:Path.obj
+ 0001:000093fc       ParsePath                  00000000000096bc f   DevUtility:Path.obj
+ 0001:000097e0       __DevSearch                0000000000009aa0 f   DevUtility:DevSearch.obj
+ 0001:00009898       ValidateFD                 0000000000009b58 f   LibUefi:SysCalls.obj
+ 0001:000098c4       FindFreeFD                 0000000000009b84 f   LibUefi:SysCalls.obj
+ 0001:00009904       isatty                     0000000000009bc4 f   LibUefi:SysCalls.obj
+ 0001:00009948       close                      0000000000009c08 f   LibUefi:SysCalls.obj
+ 0001:00009a14       lseek                      0000000000009cd4 f   LibUefi:SysCalls.obj
+ 0001:00009a94       open                       0000000000009d54 f   LibUefi:SysCalls.obj
+ 0001:00009bfc       fstat                      0000000000009ebc f   LibUefi:SysCalls.obj
+ 0001:00009c4c       read                       0000000000009f0c f   LibUefi:SysCalls.obj
+ 0001:00009cd8       write                      0000000000009f98 f   LibUefi:SysCalls.obj
+ 0001:00009d6c       EFI2errno                  000000000000a02c f   LibUefi:Xform.obj
+ 0001:0000a6f4       time2                      000000000000a9b4 f   LibTime:Time.obj
+ 0001:0000ad24       time                       000000000000afe4 f   LibTime:Time.obj
+ 0001:0000ae04       gmtsub                     000000000000b0c4 f   LibTime:Time.obj
+ 0001:0000af5c       Efi2Time                   000000000000b21c f   LibTime:TimeEfi.obj
+ 0001:0000afe8       Time2Efi                   000000000000b2a8 f   LibTime:TimeEfi.obj
+ 0001:0000ba54       tzset                      000000000000bd14 f   LibTime:ZoneProc.obj
+ 0001:0000be1c       DecodeOneStateful          000000000000c0dc f   LibLocale:multibyte_Utf8.obj
+ 0001:0000bec0       OneWcToMcLen               000000000000c180 f   LibLocale:multibyte_Utf8.obj
+ 0001:0000bf08       EstimateWtoM               000000000000c1c8 f   LibLocale:multibyte_Utf8.obj
+ 0001:0000bf60       EncodeUtf8                 000000000000c220 f   LibLocale:multibyte_Utf8.obj
+ 0001:0000c00c       wcrtomb                    000000000000c2cc f   LibLocale:multibyte_Utf8.obj
+ 0001:0000c050       wcsrtombs                  000000000000c310 f   LibLocale:multibyte_Utf8.obj
+ 0001:0000c3b0       towupper                   000000000000c670 f   LibLocale:iswctype_sb.obj
+ 0001:0000c3e4       towlower                   000000000000c6a4 f   LibLocale:iswctype_sb.obj
+ 0001:0000c418       sscanf                     000000000000c6d8 f   LibStdio:sscanf.obj
+ 0001:0000c498       snprintf                   000000000000c758 f   LibStdio:snprintf.obj
+ 0001:0000c53c       __svfscanf_unlocked        000000000000c7fc f   LibStdio:vfscanf.obj
+ 0001:0000dd04       __vfprintf_unlocked        000000000000dfc4 f   LibStdio:vfprintf.obj
+ 0001:00010e70       ungetc                     0000000000011130 f   LibStdio:ungetc.obj
+ 0001:00010fa4       fread                      0000000000011264 f   LibStdio:fread.obj
+ 0001:00011084       __srefill                  0000000000011344 f   LibStdio:refill.obj
+ 0001:000111a0       __sfvwrite                 0000000000011460 f   LibStdio:fvwrite.obj
+ 0001:00011494       __swsetup                  0000000000011754 f   LibStdio:wsetup.obj
+ 0001:0001154c       fflush                     000000000001180c f   LibStdio:fflush.obj
+ 0001:00011578       __sflush                   0000000000011838 f   LibStdio:fflush.obj
+ 0001:00011600       __sfp                      00000000000118c0 f   LibStdio:findfp.obj
+ 0001:0001173c       _cleanup                   00000000000119fc f   LibStdio:findfp.obj
+ 0001:00011748       __sinit                    0000000000011a08 f   LibStdio:findfp.obj
+ 0001:00011790       __smakebuf                 0000000000011a50 f   LibStdio:makebuf.obj
+ 0001:0001185c       __swhatbuf                 0000000000011b1c f   LibStdio:makebuf.obj
+ 0001:000118fc       _fwalk                     0000000000011bbc f   LibStdio:fwalk.obj
+ 0001:0001196c       __sread                    0000000000011c2c f   LibStdio:stdio.obj
+ 0001:000119b4       __swrite                   0000000000011c74 f   LibStdio:stdio.obj
+ 0001:00011a24       __sseek                    0000000000011ce4 f   LibStdio:stdio.obj
+ 0001:00011a74       __sclose                   0000000000011d34 f   LibStdio:stdio.obj
+ 0001:00011a90       abort                      0000000000011d50 f   LibStdLib:Environs.obj
+ 0001:00011b10       exit                       0000000000011dd0 f   LibStdLib:Environs.obj
+ 0001:00011b44       getenv                     0000000000011e04 f   LibStdLib:Environs.obj
+ 0001:00011bb4       malloc                     0000000000011e74 f   LibStdLib:Malloc.obj
+ 0001:00011c78       calloc                     0000000000011f38 f   LibStdLib:Malloc.obj
+ 0001:00011cb8       free                       0000000000011f78 f   LibStdLib:Malloc.obj
+ 0001:00011d38       realloc                    0000000000011ff8 f   LibStdLib:Malloc.obj
+ 0001:00011e18       _strtoumax                 00000000000120d8 f   LibStdLib:strtoumax.obj
+ 0001:00011fa4       _strtoimax                 0000000000012264 f   LibStdLib:strtoimax.obj
+ 0001:00012170       InternalAllocatePool       0000000000012430 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000121a4       AllocateZeroPool           0000000000012464 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000121c8       AllocateCopyPool           0000000000012488 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000121fc       AsciiSPrint                00000000000124bc f   BasePrintLib:PrintLib.obj
+ 0001:00012228       BasePrintLibFillBuffer     00000000000124e8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0001225c       BasePrintLibValueToString  000000000001251c f   BasePrintLib:PrintLibInternal.obj
+ 0001:000122ac       BasePrintLibSPrintMarker   000000000001256c f   BasePrintLib:PrintLibInternal.obj
+ 0001:00012f24       BasePrintLibSPrint         00000000000131e4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00012f48       __assert                   0000000000013208 f   LibC:assert.obj
+ 0001:000134a4       New_cIIO                   0000000000013764 f   LibIIO:IIO.obj
+ 0001:000135b0       IIO_EchoOne                0000000000013870 f   LibIIO:IIOecho.obj
+ 0001:000137c8       IIO_CanonRead              0000000000013a88 f   LibIIO:CanonRead.obj
+ 0001:00013a50       IIO_GetDeviceProto         0000000000013d10 f   LibIIO:IIOutilities.obj
+ 0001:00013a90       IIO_GetCursorPosition      0000000000013d50 f   LibIIO:IIOutilities.obj
+ 0001:00013afc       IIO_SetCursorPosition      0000000000013dbc f   LibIIO:IIOutilities.obj
+ 0001:00013b88       IIO_GetOutputSize          0000000000013e48 f   LibIIO:IIOutilities.obj
+ 0001:00013c34       IIO_WriteOne               0000000000013ef4 f   LibIIO:IIOwrite.obj
+ 0001:00013ef8       FileHandleGetInfo          00000000000141b8 f   BaseFileHandleLib:UefiFileHandleLib.obj
+ 0001:00013f80       FileHandleSetInfo          0000000000014240 f   BaseFileHandleLib:UefiFileHandleLib.obj
+ 0001:00013f94       FileHandleRead             0000000000014254 f   BaseFileHandleLib:UefiFileHandleLib.obj
+ 0001:00013f9c       FileHandleWrite            000000000001425c f   BaseFileHandleLib:UefiFileHandleLib.obj
+ 0001:00013fa4       FileHandleClose            0000000000014264 f   BaseFileHandleLib:UefiFileHandleLib.obj
+ 0001:00013fac       FileHandleDelete           000000000001426c f   BaseFileHandleLib:UefiFileHandleLib.obj
+ 0001:00013fb4       FileHandleSetPosition      0000000000014274 f   BaseFileHandleLib:UefiFileHandleLib.obj
+ 0001:00013fbc       FileHandleGetPosition      000000000001427c f   BaseFileHandleLib:UefiFileHandleLib.obj
+ 0001:00013fd4       FileHandleFlush            0000000000014294 f   BaseFileHandleLib:UefiFileHandleLib.obj
+ 0001:00013fdc       FileHandleIsDirectory      000000000001429c f   BaseFileHandleLib:UefiFileHandleLib.obj
+ 0001:00014020       FileHandleGetSize          00000000000142e0 f   BaseFileHandleLib:UefiFileHandleLib.obj
+ 0001:000141f0       getnetbyaddr               00000000000144b0 f   BsdSocketLib:getnetnamadr.obj
+ 0001:0001452c       setnetent                  00000000000147ec f   BsdSocketLib:getnetnamadr.obj
+ 0001:000147d4       getnetent                  0000000000014a94 f   BsdSocketLib:getnetbyht.obj
+ 0001:00014a48       __res_send                 0000000000014d08 f   BsdSocketLib:res_send.obj
+ 0001:00015b54       __res_close                0000000000015e14 f   BsdSocketLib:res_send.obj
+ 0001:00015b84       __dn_expand                0000000000015e44 f   BsdSocketLib:res_comp.obj
+ 0001:00015d08       __res_hnok                 0000000000015fc8 f   BsdSocketLib:res_comp.obj
+ 0001:00015d88       __res_query                0000000000016048 f   BsdSocketLib:res_query.obj
+ 0001:00015ef0       __res_init                 00000000000161b0 f   BsdSocketLib:res_init.obj
+ 0001:000167ac       BslFdToSocketProtocol      0000000000016a6c f   BsdSocketLib:socket.obj
+ 0001:00016814       socket                     0000000000016ad4 f   BsdSocketLib:socket.obj
+ 0001:000168e8       sendto                     0000000000016ba8 f   BsdSocketLib:sendto.obj
+ 0001:00016cac       __fp_nquery                0000000000016f6c f   BsdSocketLib:res_debug.obj
+ 0001:00017118       __sym_ntos                 00000000000173d8 f   BsdSocketLib:res_debug.obj
+ 0001:000171e8       __loc_ntoa                 00000000000174a8 f   BsdSocketLib:res_debug.obj
+ 0001:00017548       __p_secstodate             0000000000017808 f   BsdSocketLib:res_debug.obj
+ 0001:000175dc       recvfrom                   000000000001789c f   BsdSocketLib:recvfrom.obj
+ 0001:0001780c       connect                    0000000000017acc f   BsdSocketLib:connect.obj
+ 0001:000178a0       __ns_name_ntop             0000000000017b60 f   BsdSocketLib:ns_name.obj
+ 0001:00017a78       __ns_name_pack             0000000000017d38 f   BsdSocketLib:ns_name.obj
+ 0001:00017cec       __ns_name_compress         0000000000017fac f   BsdSocketLib:ns_name.obj
+ 0001:00017eb0       __res_mkquery              0000000000018170 f   BsdSocketLib:res_mkquery.obj
+ 0001:00017fe0       BslSocketWrite             00000000000182a0 f   BsdSocketLib:write.obj
+ 0001:00018000       BslSocketClose             00000000000182c0 f   BsdSocketLib:close.obj
+ 0001:00018098       BslSocketPoll              0000000000018358 f   BsdSocketLib:poll.obj
+ 0001:000180ec       BslSocketRead              00000000000183ac f   BsdSocketLib:read.obj
+ 0001:000181bc       __ns_initparse             000000000001847c f   BsdSocketLib:ns_parse.obj
+ 0001:000182fc       __ns_parserr               00000000000185bc f   BsdSocketLib:ns_parse.obj
+ 0001:000184e0       __ns_sprintrrf             00000000000187a0 f   BsdSocketLib:ns_print.obj
+ 0001:00019bfc       __ns_format_ttl            0000000000019ebc f   BsdSocketLib:ns_ttl.obj
+ 0001:00019e20       __b64_ntop                 000000000001a0e0 f   BsdSocketLib:base64.obj
+ 0001:0001a054       inet_network               000000000001a314 f   LibNetUtil:inet_network.obj
+ 0001:0001a1f4       inet_aton                  000000000001a4b4 f   LibNetUtil:inet_addr.obj
+ 0001:0001aa14       localeconv                 000000000001acd4 f   LibLocale:localeconv.obj
+ 0001:0001aaf4       strtod                     000000000001adb4 f   LibGdtoa:strtod.obj
+ 0001:0001ba7c       _strtof                    000000000001bd3c f   LibGdtoa:strtof.obj
+ 0001:0001bb3c       __dtoa                     000000000001bdfc f   LibGdtoa:dtoa.obj
+ 0001:0001c9bc       __nrv_alloc_D2A            000000000001cc7c f   LibGdtoa:dmisc.obj
+ 0001:0001ca48       __quorem_D2A               000000000001cd08 f   LibGdtoa:dmisc.obj
+ 0001:0001cba0       __ulp_D2A                  000000000001ce60 f   LibGdtoa:ulp.obj
+ 0001:0001cc18       __s2b_D2A                  000000000001ced8 f   LibGdtoa:smisc.obj
+ 0001:0001ccec       __ratio_D2A                000000000001cfac f   LibGdtoa:smisc.obj
+ 0001:0001cd6c       __match_D2A                000000000001d02c f   LibGdtoa:smisc.obj
+ 0001:0001cdb0       __copybits_D2A             000000000001d070 f   LibGdtoa:smisc.obj
+ 0001:0001ce04       __any_on_D2A               000000000001d0c4 f   LibGdtoa:smisc.obj
+ 0001:0001ce5c       __Balloc_D2A               000000000001d11c f   LibGdtoa:misc.obj
+ 0001:0001cf00       __lo0bits_D2A              000000000001d1c0 f   LibGdtoa:misc.obj
+ 0001:0001cf7c       __multadd_D2A              000000000001d23c f   LibGdtoa:misc.obj
+ 0001:0001d054       __hi0bits_D2A              000000000001d314 f   LibGdtoa:misc.obj
+ 0001:0001d0b8       __mult_D2A                 000000000001d378 f   LibGdtoa:misc.obj
+ 0001:0001d1d0       __pow5mult_D2A             000000000001d490 f   LibGdtoa:misc.obj
+ 0001:0001d2b0       __lshift_D2A               000000000001d570 f   LibGdtoa:misc.obj
+ 0001:0001d3b4       __cmp_D2A                  000000000001d674 f   LibGdtoa:misc.obj
+ 0001:0001d3f4       __diff_D2A                 000000000001d6b4 f   LibGdtoa:misc.obj
+ 0001:0001d4f8       __b2d_D2A                  000000000001d7b8 f   LibGdtoa:misc.obj
+ 0001:0001d5e0       __d2b_D2A                  000000000001d8a0 f   LibGdtoa:misc.obj
+ 0001:0001d70c       __increment_D2A            000000000001d9cc f   LibGdtoa:strtodg.obj
+ 0001:0001d7ac       __set_ones_D2A             000000000001da6c f   LibGdtoa:strtodg.obj
+ 0001:0001db04       __strtodg_D2A              000000000001ddc4 f   LibGdtoa:strtodg.obj
+ 0001:0001f04c       __rshift_D2A               000000000001f30c f   LibGdtoa:gmisc.obj
+ 0001:0001f0fc       __sum_D2A                  000000000001f3bc f   LibGdtoa:sum.obj
+ 0001:0001f288       printf                     000000000001f548 f   LibStdio:printf.obj
+ 0001:0001f2b8       fgets                      000000000001f578 f   LibStdio:fgets.obj
+ 0001:0001f3a8       fopen                      000000000001f668 f   LibStdio:fopen.obj
+ 0001:0001f438       fclose                     000000000001f6f8 f   LibStdio:fclose.obj
+ 0001:0001f51c       sprintf                    000000000001f7dc f   LibStdio:sprintf.obj
+ 0001:0001f588       fprintf                    000000000001f848 f   LibStdio:fprintf.obj
+ 0001:0001f5c0       fputs                      000000000001f880 f   LibStdio:fputs.obj
+ 0001:0001f648       __swbuf                    000000000001f908 f   LibStdio:wbuf.obj
+ 0001:0001f714       fseeko                     000000000001f9d4 f   LibStdio:fseeko.obj
+ 0001:0001fef0       New_cFIFO                  00000000000201b0 f   LibContainer:Fifo.obj
+ 0001:0001ffe0       isascii                    00000000000202a0 f   LibCtype:CClass.obj
+ 0001:0001ffec       memset                     00000000000202ac f   LibString:Misc.obj
+ 0001:0001fffc       strerror_r                 00000000000202bc f   LibString:Misc.obj
+ 0001:00020064       strerror                   0000000000020324 f   LibString:Misc.obj
+ 0001:00020098       strlen                     0000000000020358 f   LibString:Misc.obj
+ 0001:000200a0       memcpy                     0000000000020360 f   LibString:Copying.obj
+ 0001:000200a8       strncpy                    0000000000020368 f   LibString:Copying.obj
+ 0001:000200b0       strncpyX                   0000000000020370 f   LibString:Copying.obj
+ 0001:000200ec       strdup                     00000000000203ac f   LibString:Copying.obj
+ 0001:00020140       SetJump                    0000000000020400 f   BaseLib:SetJump.obj
+ 0001:000201d0       StrLen                     0000000000020490 f   BaseLib:String.obj
+ 0001:00020288       StrSize                    0000000000020548 f   BaseLib:String.obj
+ 0001:0002029c       StrCmp                     000000000002055c f   BaseLib:String.obj
+ 0001:0002034c       StrnCmp                    000000000002060c f   BaseLib:String.obj
+ 0001:00020454       AsciiStrLen                0000000000020714 f   BaseLib:String.obj
+ 0001:000204dc       AsciiStrCmp                000000000002079c f   BaseLib:String.obj
+ 0001:00020570       AsciiStriCmp               0000000000020830 f   BaseLib:String.obj
+ 0001:0002064c       AsciiStrnCmp               000000000002090c f   BaseLib:String.obj
+ 0001:00020738       AsciiStrDecimalToUintn     00000000000209f8 f   BaseLib:String.obj
+ 0001:00020800       AsciiStrToUnicodeStr       0000000000020ac0 f   BaseLib:String.obj
+ 0001:00020940       StrnCpy                    0000000000020c00 f   BaseLib:String.obj
+ 0001:00020a94       StrnCat                    0000000000020d54 f   BaseLib:String.obj
+ 0001:00020b20       UnicodeStrToAsciiStr       0000000000020de0 f   BaseLib:String.obj
+ 0001:00020c84       AsciiStrnCpy               0000000000020f44 f   BaseLib:String.obj
+ 0001:00020da0       ReadUnaligned16            0000000000021060 f   BaseLib:Unaligned.obj
+ 0001:00020dd8       ReadUnaligned32            0000000000021098 f   BaseLib:Unaligned.obj
+ 0001:00020e10       ReadUnaligned64            00000000000210d0 f   BaseLib:Unaligned.obj
+ 0001:00020e48       InternalBaseLibIsNodeInList 0000000000021108 f   BaseLib:LinkedList.obj
+ 0001:00020fcc       InsertTailList             000000000002128c f   BaseLib:LinkedList.obj
+ 0001:00021030       GetFirstNode               00000000000212f0 f   BaseLib:LinkedList.obj
+ 0001:00021078       GetNextNode                0000000000021338 f   BaseLib:LinkedList.obj
+ 0001:000210cc       IsListEmpty                000000000002138c f   BaseLib:LinkedList.obj
+ 0001:00021114       RemoveEntryList            00000000000213d4 f   BaseLib:LinkedList.obj
+ 0001:00021168       DivU64x32                  0000000000021428 f   BaseLib:DivU64x32.obj
+ 0001:000211b0       SwapBytes16                0000000000021470 f   BaseLib:SwapBytes16.obj
+ 0001:000211c0       ModU64x32                  0000000000021480 f   BaseLib:ModU64x32.obj
+ 0001:00021208       InternalAssertJumpBuffer   00000000000214c8 f   BaseLib:SetJump.obj
+ 0001:00021264       InternalMathDivU64x32      0000000000021524 f   BaseLib:Math64.obj
+ 0001:00021270       InternalMathModU64x32      0000000000021530 f   BaseLib:Math64.obj
+ 0001:00021280       InternalMathDivRemU64x32   0000000000021540 f   BaseLib:Math64.obj
+ 0001:0002129c       SwapBytes32                000000000002155c f   BaseLib:SwapBytes32.obj
+ 0001:000212d0       CopyMem                    0000000000021590 f   BaseMemoryLib:CopyMemWrapper.obj
+ 0001:00021384       CompareGuid                0000000000021644 f   BaseMemoryLib:MemLibGuid.obj
+ 0001:000213ec       ZeroMem                    00000000000216ac f   BaseMemoryLib:ZeroMemWrapper.obj
+ 0001:00021468       SetMem16                   0000000000021728 f   BaseMemoryLib:SetMem16Wrapper.obj
+ 0001:00021554       SetMem                     0000000000021814 f   BaseMemoryLib:SetMemWrapper.obj
+ 0001:000215c8       InternalMemCopyMem         0000000000021888 f   BaseMemoryLib:CopyMem.obj
+ 0001:00021610       InternalMemSetMem16        00000000000218d0 f   BaseMemoryLib:MemLibGeneric.obj
+ 0001:00021620       InternalMemZeroMem         00000000000218e0 f   BaseMemoryLib:MemLibGeneric.obj
+ 0001:00021628       InternalMemScanMem8        00000000000218e8 f   BaseMemoryLib:MemLibGeneric.obj
+ 0001:00021640       InternalMemSetMem          0000000000021900 f   BaseMemoryLib:SetMem.obj
+ 0001:00021658       strcoll                    0000000000021918 f   LibString:Comparison.obj
+ 0001:00021660       strncmp                    0000000000021920 f   LibString:Comparison.obj
+ 0001:00021668       strcasecmp                 0000000000021928 f   LibString:Comparison.obj
+ 0001:00021670       memchr                     0000000000021930 f   LibString:Searching.obj
+ 0001:00021680       strchr                     0000000000021940 f   LibString:Searching.obj
+ 0001:000216fc       strpbrk                    00000000000219bc f   LibString:Searching.obj
+ 0001:00021750       strsep                     0000000000021a10 f   LibString:strsep.obj
+ 0001:00021790       DivU64x32Remainder         0000000000021a50 f   BaseLib:DivU64x32Remainder.obj
+ 0001:000217e8       LongJump                   0000000000021aa8 f   BaseLib:LongJump.obj
+ 0001:00021840       InternalLongJump           0000000000021b00 f   BaseLib:LongJump.obj
+ 0001:000218c0       internal_FPU_rmode         0000000000021b80 f   LibC:fpu_rmode.obj
+ 0001:000218d0       ScanMem8                   0000000000021b90 f   BaseMemoryLib:ScanMem8Wrapper.obj
+ 0002:00000020       _C_CharClassTable          0000000000021c60     LibCtype:iCtype.obj
+ 0002:00000120       _C_ToLowerTable            0000000000021d60     LibCtype:iCtype.obj
+ 0002:000001a0       _C_ToUpperTable            0000000000021de0     LibCtype:iCtype.obj
+ 0002:00000220       ??_C@_0BD@FPJCFKFJ@Unknown?5Error?3?5?$CFd?4?$AA@ 0000000000021e60     LibString:Misc.obj
+ 0002:00000238       ??_C@_0CO@BCOPOIDC@System?5Error?5list?5and?5errno?4h?5ar@ 0000000000021e78     LibString:ErrorList.obj
+ 0002:00000268       ??_C@_0CA@JBGHAFDD@Buffer?5too?5small?5to?5hold?5result?$AA@ 0000000000021ea8     LibString:ErrorList.obj
+ 0002:00000288       ??_C@_0P@NFDLBHIK@Protocol?5error?$AA@ 0000000000021ec8     LibString:ErrorList.obj
+ 0002:00000298       ??_C@_0BG@JIGCCAHA@Link?5has?5been?5severed?$AA@ 0000000000021ed8     LibString:ErrorList.obj
+ 0002:000002b0       ??_C@_0BD@BLOHNAGF@Multihop?5attempted?$AA@ 0000000000021ef0     LibString:ErrorList.obj
+ 0002:000002c8       ??_C@_0BC@MPFABHFK@Programming?5error?$AA@ 0000000000021f08     LibString:ErrorList.obj
+ 0002:000002e0       ??_C@_0BE@BOJAKOGO@Attribute?5not?5found?$AA@ 0000000000021f20     LibString:ErrorList.obj
+ 0002:000002f8       ??_C@_0BF@BKBOOGBB@STREAM?5ioctl?5timeout?$AA@ 0000000000021f38     LibString:ErrorList.obj
+ 0002:00000310       ??_C@_0N@BFKFJNP@Not?5a?5STREAM?$AA@ 0000000000021f50     LibString:ErrorList.obj
+ 0002:00000320       ??_C@_0BE@HNNMKAI@No?5STREAM?5resources?$AA@ 0000000000021f60     LibString:ErrorList.obj
+ 0002:00000338       ??_C@_0BF@GGKONPHM@No?5message?5available?$AA@ 0000000000021f78     LibString:ErrorList.obj
+ 0002:00000350       ??_C@_0M@OEPJJONH@Bad?5message?$AA@ 0000000000021f90     LibString:ErrorList.obj
+ 0002:00000360       ??_C@_0BD@OIDFIKFE@Operation?5canceled?$AA@ 0000000000021fa0     LibString:ErrorList.obj
+ 0002:00000378       ??_C@_0N@JIEBMMEB@Bad?5errno?586?$AA@ 0000000000021fb8     LibString:ErrorList.obj
+ 0002:00000388       ??_C@_0BG@KLEAJEFJ@Illegal?5byte?5sequence?$AA@ 0000000000021fc8     LibString:ErrorList.obj
+ 0002:000003a0       ??_C@_0CK@NDEHDADK@Value?5too?5large?5to?5be?5stored?5in?5@ 0000000000021fe0     LibString:ErrorList.obj
+ 0002:000003d0       ??_C@_0BL@LAELPFGP@No?5message?5of?5desired?5type?$AA@ 0000000000022010     LibString:ErrorList.obj
+ 0002:000003f0       ??_C@_0BD@LJPFLIMC@Identifier?5removed?$AA@ 0000000000022030     LibString:ErrorList.obj
+ 0002:00000408       ??_C@_0BD@GDKJMNEO@Need?5authenticator?$AA@ 0000000000022048     LibString:ErrorList.obj
+ 0002:00000420       ??_C@_0BF@MOMJDFNI@Authentication?5error?$AA@ 0000000000022060     LibString:ErrorList.obj
+ 0002:00000438       ??_C@_0CC@GLJPLFOJ@Inappropriate?5file?5type?5or?5forma@ 0000000000022078     LibString:ErrorList.obj
+ 0002:00000460       ??_C@_0BJ@IHEHINLI@Function?5not?5implemented?$AA@ 00000000000220a0     LibString:ErrorList.obj
+ 0002:00000480       ??_C@_0BD@CLHBCGPB@No?5locks?5available?$AA@ 00000000000220c0     LibString:ErrorList.obj
+ 0002:00000498       ??_C@_0BK@LKNMDCLJ@Bad?5procedure?5for?5program?$AA@ 00000000000220d8     LibString:ErrorList.obj
+ 0002:000004b8       ??_C@_0BG@JOMPHNJI@Program?5version?5wrong?$AA@ 00000000000220f8     LibString:ErrorList.obj
+ 0002:000004d0       ??_C@_0BE@HDGMLIGJ@RPC?5prog?4?5not?5avail?$AA@ 0000000000022110     LibString:ErrorList.obj
+ 0002:000004e8       ??_C@_0BC@FIMLNFGC@RPC?5version?5wrong?$AA@ 0000000000022128     LibString:ErrorList.obj
+ 0002:00000500       ??_C@_0BC@ICCGLAJN@RPC?5struct?5is?5bad?$AA@ 0000000000022140     LibString:ErrorList.obj
+ 0002:00000518       ??_C@_0CC@DBGGHIAG@Too?5many?5levels?5of?5remote?5in?5pat@ 0000000000022158     LibString:ErrorList.obj
+ 0002:00000540       ??_C@_0BG@KNCBNNDC@Stale?5NFS?5file?5handle?$AA@ 0000000000022180     LibString:ErrorList.obj
+ 0002:00000558       ??_C@_0BE@KMAIMPL@Disc?5quota?5exceeded?$AA@ 0000000000022198     LibString:ErrorList.obj
+ 0002:00000570       ??_C@_0P@DAFGFIDC@Too?5many?5users?$AA@ 00000000000221b0     LibString:ErrorList.obj
+ 0002:00000580       ??_C@_0BD@LPHIGPM@Too?5many?5processes?$AA@ 00000000000221c0     LibString:ErrorList.obj
+ 0002:00000598       ??_C@_0BE@ICMCHPHH@Directory?5not?5empty?$AA@ 00000000000221d8     LibString:ErrorList.obj
+ 0002:000005b0       ??_C@_0BB@PFBILCPA@No?5route?5to?5host?$AA@ 00000000000221f0     LibString:ErrorList.obj
+ 0002:000005c8       ??_C@_0N@OHOPOBEF@Host?5is?5down?$AA@ 0000000000022208     LibString:ErrorList.obj
+ 0002:000005d8       ??_C@_0BD@CGPKCNP@File?5name?5too?5long?$AA@ 0000000000022218     LibString:ErrorList.obj
+ 0002:000005f0       ??_C@_0CC@CPDHMANB@Too?5many?5levels?5of?5symbolic?5link@ 0000000000022230     LibString:ErrorList.obj
+ 0002:00000618       ??_C@_0BD@NPDMPPFP@Connection?5refused?$AA@ 0000000000022258     LibString:ErrorList.obj
+ 0002:00000630       ??_C@_0BE@JAEOFJAL@Operation?5timed?5out?$AA@ 0000000000022270     LibString:ErrorList.obj
+ 0002:00000648       ??_C@_0CC@HOLLLFLE@Too?5many?5references?3?5can?8t?5splic@ 0000000000022288     LibString:ErrorList.obj
+ 0002:00000670       ??_C@_0CB@IOOOMFJJ@Can?8t?5send?5after?5socket?5shutdown@ 00000000000222b0     LibString:ErrorList.obj
+ 0002:00000698       ??_C@_0BI@ILAOGBJJ@Socket?5is?5not?5connected?$AA@ 00000000000222d8     LibString:ErrorList.obj
+ 0002:000006b0       ??_C@_0BM@CCONNCKE@Socket?5is?5already?5connected?$AA@ 00000000000222f0     LibString:ErrorList.obj
+ 0002:000006d0       ??_C@_0BK@OCAHGMEA@No?5buffer?5space?5available?$AA@ 0000000000022310     LibString:ErrorList.obj
+ 0002:000006f0       ??_C@_0BJ@FJAMCHKE@Connection?5reset?5by?5peer?$AA@ 0000000000022330     LibString:ErrorList.obj
+ 0002:00000710       ??_C@_0CB@DJAOADN@Software?5caused?5connection?5abort@ 0000000000022350     LibString:ErrorList.obj
+ 0002:00000738       ??_C@_0CE@JHDCOCF@Network?5dropped?5connection?5on?5re@ 0000000000022378     LibString:ErrorList.obj
+ 0002:00000760       ??_C@_0BH@CIEOBPFM@Network?5is?5unreachable?$AA@ 00000000000223a0     LibString:ErrorList.obj
+ 0002:00000778       ??_C@_0BA@LPIEBGEK@Network?5is?5down?$AA@ 00000000000223b8     LibString:ErrorList.obj
+ 0002:00000788       ??_C@_0BP@OKMOKAIP@Can?8t?5assign?5requested?5address?$AA@ 00000000000223c8     LibString:ErrorList.obj
+ 0002:000007a8       ??_C@_0BH@LOKACPE@Address?5already?5in?5use?$AA@ 00000000000223e8     LibString:ErrorList.obj
+ 0002:000007c0       ??_C@_0DA@KDGLCJJO@Address?5family?5not?5supported?5by?5@ 0000000000022400     LibString:ErrorList.obj
+ 0002:000007f0       ??_C@_0BO@EBCCBLCJ@Protocol?5family?5not?5supported?$AA@ 0000000000022430     LibString:ErrorList.obj
+ 0002:00000810       ??_C@_0BI@EDJAHLMH@Operation?5not?5supported?$AA@ 0000000000022450     LibString:ErrorList.obj
+ 0002:00000828       ??_C@_0BK@LMAIHBL@Socket?5type?5not?5supported?$AA@ 0000000000022468     LibString:ErrorList.obj
+ 0002:00000848       ??_C@_0BH@JNBKLLAJ@Protocol?5not?5supported?$AA@ 0000000000022488     LibString:ErrorList.obj
+ 0002:00000860       ??_C@_0BH@HPHKDMA@Protocol?5not?5available?$AA@ 00000000000224a0     LibString:ErrorList.obj
+ 0002:00000878       ??_C@_0BP@PDKJLOAE@Protocol?5wrong?5type?5for?5socket?$AA@ 00000000000224b8     LibString:ErrorList.obj
+ 0002:00000898       ??_C@_0BB@NDAKHOCP@Message?5too?5long?$AA@ 00000000000224d8     LibString:ErrorList.obj
+ 0002:000008b0       ??_C@_0BN@HFCIEIME@Destination?5address?5required?$AA@ 00000000000224f0     LibString:ErrorList.obj
+ 0002:000008d0       ??_C@_0BP@MCCLAMPH@Socket?5operation?5on?5non?9socket?$AA@ 0000000000022510     LibString:ErrorList.obj
+ 0002:000008f0       ??_C@_0BO@BMABNIPB@Operation?5already?5in?5progress?$AA@ 0000000000022530     LibString:ErrorList.obj
+ 0002:00000910       ??_C@_0BK@LBMNDGCG@Operation?5now?5in?5progress?$AA@ 0000000000022550     LibString:ErrorList.obj
+ 0002:00000930       ??_C@_0CB@EPFKGNAK@Resource?5temporarily?5unavailable@ 0000000000022570     LibString:ErrorList.obj
+ 0002:00000958       ??_C@_0BB@FCBJFCAJ@Result?5too?5large?$AA@ 0000000000022598     LibString:ErrorList.obj
+ 0002:00000970       ??_C@_0CB@BNEAGFJG@Numerical?5argument?5out?5of?5domain@ 00000000000225b0     LibString:ErrorList.obj
+ 0002:00000998       ??_C@_0M@LHEPIIOM@Broken?5pipe?$AA@ 00000000000225d8     LibString:ErrorList.obj
+ 0002:000009a8       ??_C@_0P@PKCJJLLM@Too?5many?5links?$AA@ 00000000000225e8     LibString:ErrorList.obj
+ 0002:000009b8       ??_C@_0BF@JEDIFMJD@Read?9only?5filesystem?$AA@ 00000000000225f8     LibString:ErrorList.obj
+ 0002:000009d0       ??_C@_0N@JPKNIBBK@Illegal?5seek?$AA@ 0000000000022610     LibString:ErrorList.obj
+ 0002:000009e0       ??_C@_0BI@FEALHKLD@No?5space?5left?5on?5device?$AA@ 0000000000022620     LibString:ErrorList.obj
+ 0002:000009f8       ??_C@_0P@LFMMIPAE@File?5too?5large?$AA@ 0000000000022638     LibString:ErrorList.obj
+ 0002:00000a08       ??_C@_0P@HJGPGMF@Text?5file?5busy?$AA@ 0000000000022648     LibString:ErrorList.obj
+ 0002:00000a18       ??_C@_0BP@NAOGGPDI@Inappropriate?5ioctl?5for?5device?$AA@ 0000000000022658     LibString:ErrorList.obj
+ 0002:00000a38       ??_C@_0BE@INBJMKGG@Too?5many?5open?5files?$AA@ 0000000000022678     LibString:ErrorList.obj
+ 0002:00000a50       ??_C@_0BO@IIFBODJE@Too?5many?5open?5files?5in?5system?$AA@ 0000000000022690     LibString:ErrorList.obj
+ 0002:00000a70       ??_C@_0BB@HMGGCEBG@Invalid?5argument?$AA@ 00000000000226b0     LibString:ErrorList.obj
+ 0002:00000a88       ??_C@_0P@NDHGCGKE@Is?5a?5directory?$AA@ 00000000000226c8     LibString:ErrorList.obj
+ 0002:00000a98       ??_C@_0BA@CJBACOOL@Not?5a?5directory?$AA@ 00000000000226d8     LibString:ErrorList.obj
+ 0002:00000aa8       ??_C@_0CC@BGJGOOF@Operation?5not?5supported?5by?5devic@ 00000000000226e8     LibString:ErrorList.obj
+ 0002:00000ad0       ??_C@_0BC@OFBLDMPL@Cross?9device?5link?$AA@ 0000000000022710     LibString:ErrorList.obj
+ 0002:00000ae8       ??_C@_0M@NAAJNNGH@File?5exists?$AA@ 0000000000022728     LibString:ErrorList.obj
+ 0002:00000af8       ??_C@_0M@KEEOMFM@Device?5busy?$AA@ 0000000000022738     LibString:ErrorList.obj
+ 0002:00000b08       ??_C@_0BG@DDDDJJIM@Block?5device?5required?$AA@ 0000000000022748     LibString:ErrorList.obj
+ 0002:00000b20       ??_C@_0M@LOEHLCJD@Bad?5address?$AA@ 0000000000022760     LibString:ErrorList.obj
+ 0002:00000b30       ??_C@_0BC@HFNFNKAI@Permission?5denied?$AA@ 0000000000022770     LibString:ErrorList.obj
+ 0002:00000b48       ??_C@_0BH@DBCLIABC@Cannot?5allocate?5memory?$AA@ 0000000000022788     LibString:ErrorList.obj
+ 0002:00000b60       ??_C@_0BK@JAEBMJJM@Resource?5deadlock?5avoided?$AA@ 00000000000227a0     LibString:ErrorList.obj
+ 0002:00000b80       ??_C@_0BD@LOHELEP@No?5child?5processes?$AA@ 00000000000227c0     LibString:ErrorList.obj
+ 0002:00000b98       ??_C@_0BE@NFGDDCEF@Bad?5file?5descriptor?$AA@ 00000000000227d8     LibString:ErrorList.obj
+ 0002:00000bb0       ??_C@_0BC@HKPNECK@Exec?5format?5error?$AA@ 00000000000227f0     LibString:ErrorList.obj
+ 0002:00000bc8       ??_C@_0BH@CCELHCFA@Argument?5list?5too?5long?$AA@ 0000000000022808     LibString:ErrorList.obj
+ 0002:00000be0       ??_C@_0BG@IEPFGEGM@Device?5not?5configured?$AA@ 0000000000022820     LibString:ErrorList.obj
+ 0002:00000bf8       ??_C@_0BD@KKNFOBBD@Input?1output?5error?$AA@ 0000000000022838     LibString:ErrorList.obj
+ 0002:00000c10       ??_C@_0BI@EAGLFFDI@Interrupted?5system?5call?$AA@ 0000000000022850     LibString:ErrorList.obj
+ 0002:00000c28       ??_C@_0BA@FKIAIBGA@No?5such?5process?$AA@ 0000000000022868     LibString:ErrorList.obj
+ 0002:00000c38       ??_C@_0BK@FMDHKPNF@No?5such?5file?5or?5directory?$AA@ 0000000000022878     LibString:ErrorList.obj
+ 0002:00000c58       ??_C@_0BI@BJFCGOHL@Operation?5not?5permitted?$AA@ 0000000000022898     LibString:ErrorList.obj
+ 0002:00000c70       ??_C@_0BC@CMDFCGIM@No?5Error?5Detected?$AA@ 00000000000228b0     LibString:ErrorList.obj
+ 0002:00000c90       sys_errlist                00000000000228d0     LibString:ErrorList.obj
+ 0002:00000fb0       ??_C@_0DK@EOJCOAME@Length?5?$DM?5_gPcd_FixedAtBuild_PcdM@ 0000000000022bf0     BaseLib:String.obj
+ 0002:00000ff0       ??_C@_0CD@BDCLIGHD@?$CI?$CIUINTN?$CJ?5String?5?$CG?50x00000001?$CJ?5?$DN?$DN@ 0000000000022c30     BaseLib:String.obj
+ 0002:00001018       ??_C@_0DF@NOKFGMJ@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 0000000000022c58     BaseLib:String.obj
+ 0002:00001050       ??_C@_0BM@DALBOILC@StrSize?5?$CISecondString?$CJ?5?$CB?$DN?50?$AA@ 0000000000022c90     BaseLib:String.obj
+ 0002:00001070       ??_C@_0BL@JAAMOCAJ@StrSize?5?$CIFirstString?$CJ?5?$CB?$DN?50?$AA@ 0000000000022cb0     BaseLib:String.obj
+ 0002:00001090       ??_C@_0DL@LFIMEMJP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pcd@ 0000000000022cd0     BaseLib:String.obj
+ 0002:000010d0       ??_C@_0DD@FDKACFG@Result?5?$DM?$DN?5?$CI?$CI?$CI?$CIUINTN?$CJ?5?$HO0?$CJ?5?9?5?$CI?$CKStr@ 0000000000022d10     BaseLib:String.obj
+ 0002:00001108       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_PcdM@ 0000000000022d48     BaseLib:String.obj
+ 0002:00001140       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ?$AA@ 0000000000022d80     BaseLib:String.obj
+ 0002:00001160       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ?$AA@ 0000000000022da0     BaseLib:String.obj
+ 0002:00001180       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pcd@ 0000000000022dc0     BaseLib:String.obj
+ 0002:000011c0       ??_C@_0BL@OFIBAIAL@AsciiStrSize?5?$CIString?$CJ?5?$CB?$DN?50?$AA@ 0000000000022e00     BaseLib:String.obj
+ 0002:000011e0       ??_C@_0BL@KAGEINIP@StrSize?5?$CIReturnValue?$CJ?5?$CB?$DN?50?$AA@ 0000000000022e20     BaseLib:String.obj
+ 0002:00001200       ??_C@_0FE@OCCFPKLD@?$CIUINTN?$CJ?5?$CISource?5?9?5?$CICHAR8?5?$CK?$CJ?5Dest@ 0000000000022e40     BaseLib:String.obj
+ 0002:00001260       ??_C@_0EA@ELKIMFNG@?$CIUINTN?$CJ?5?$CI?$CICHAR8?5?$CK?$CJ?5Destination?5?9@ 0000000000022ea0     BaseLib:String.obj
+ 0002:000012a0       ??_C@_0BL@NNBEMOEP@AsciiStrSize?5?$CISource?$CJ?5?$CB?$DN?50?$AA@ 0000000000022ee0     BaseLib:String.obj
+ 0002:000012c0       ??_C@_0DA@MIOLHJCL@?$CIUINTN?$CJ?$CIDestination?5?9?5Source?$CJ?5?$DO?5@ 0000000000022f00     BaseLib:String.obj
+ 0002:000012f0       ??_C@_0CI@LLKACKFD@?$CI?$CIUINTN?$CJ?5Destination?5?$CG?50x0000000@ 0000000000022f30     BaseLib:String.obj
+ 0002:00001318       ??_C@_0CI@FOLEBOJ@?$CIUINTN?$CJ?$CISource?5?9?5Destination?$CJ?5?$DO?$DN@ 0000000000022f58     BaseLib:String.obj
+ 0002:00001340       ??_C@_0BL@NAIOOBPB@StrSize?5?$CIDestination?$CJ?5?$CB?$DN?50?$AA@ 0000000000022f80     BaseLib:String.obj
+ 0002:00001360       ??_C@_0CA@FFIBMAAF@AsciiStrSize?5?$CIReturnValue?$CJ?5?$CB?$DN?50?$AA@ 0000000000022fa0     BaseLib:String.obj
+ 0002:00001380       ??_C@_0BA@MFHLDCJH@?$CKSource?5?$DM?50x100?$AA@ 0000000000022fc0     BaseLib:String.obj
+ 0002:00001390       ??_C@_0DL@LACPINOG@?$CIUINTN?$CJ?5?$CI?$CICHAR8?5?$CK?$CJ?5Source?5?9?5Dest@ 0000000000022fd0     BaseLib:String.obj
+ 0002:000013d0       ??_C@_0DM@LFMKMBAM@?$CIUINTN?$CJ?5?$CI?$CICHAR16?5?$CK?$CJ?5Destination?5@ 0000000000023010     BaseLib:String.obj
+ 0002:00001410       ??_C@_0BG@JJELHOCA@StrSize?5?$CISource?$CJ?5?$CB?$DN?50?$AA@ 0000000000023050     BaseLib:String.obj
+ 0002:00001428       ??_C@_0DF@CDKFFDDI@?$CIUINTN?$CJ?$CIDestination?5?9?5Source?$CJ?5?$DO?5@ 0000000000023068     BaseLib:String.obj
+ 0002:00001460       ??_C@_0DI@FFLANPHC@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 00000000000230a0     BaseLib:Unaligned.obj
+ 0002:00001498       ??_C@_0DG@IMEFJFAE@Count?5?$DM?5_gPcd_FixedAtBuild_PcdMa@ 00000000000230d8     BaseLib:LinkedList.obj
+ 0002:000014d0       ??_C@_0BP@IJJCCMAK@List?9?$DOBackLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$AA@ 0000000000023110     BaseLib:LinkedList.obj
+ 0002:000014f0       ??_C@_0CC@KDLPLAED@List?9?$DOForwardLink?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50@ 0000000000023130     BaseLib:LinkedList.obj
+ 0002:00001518       ??_C@_0BF@NJNGJMPC@List?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$AA@ 0000000000023158     BaseLib:LinkedList.obj
+ 0002:00001530       ??_C@_0DJ@IPMJJEFH@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 0000000000023170     BaseLib:LinkedList.obj
+ 0002:00001570       ??_C@_0EB@JGCKPMLP@InternalBaseLibIsNodeInList?5?$CILis@ 00000000000231b0     BaseLib:LinkedList.obj
+ 0002:000015b8       ??_C@_0DM@PHLIJEML@InternalBaseLibIsNodeInList?5?$CILis@ 00000000000231f8     BaseLib:LinkedList.obj
+ 0002:000015f8       ??_C@_0DM@NCFNNADL@InternalBaseLibIsNodeInList?5?$CILis@ 0000000000023238     BaseLib:LinkedList.obj
+ 0002:00001640       ??_C@_0EE@BFCMBGFO@InternalBaseLibIsNodeInList?5?$CILis@ 0000000000023280     BaseLib:LinkedList.obj
+ 0002:00001688       ??_C@_0BF@NMBJJECB@?$CBIsListEmpty?5?$CIEntry?$CJ?$AA@ 00000000000232c8     BaseLib:LinkedList.obj
+ 0002:000016a0       ??_C@_0DI@LOFHBOKJ@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 00000000000232e0     BaseLib:DivU64x32.obj
+ 0002:000016d8       ??_C@_0N@KGHEHMDL@Divisor?5?$CB?$DN?50?$AA@ 0000000000023318     BaseLib:DivU64x32.obj
+ 0002:000016e8       ??_C@_0DI@OIBALPKO@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 0000000000023328     BaseLib:ModU64x32.obj
+ 0002:00001720       ??_C@_0CD@OEHNCIHG@?$CI?$CIUINTN?$CJJumpBuffer?5?$CG?5?$CI8?5?9?51?$CJ?$CJ?5?$DN?$DN@ 0000000000023360     BaseLib:SetJump.obj
+ 0002:00001748       ??_C@_0DG@FPNFFIGJ@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 0000000000023388     BaseLib:SetJump.obj
+ 0002:00001780       ??_C@_0BL@CPGKAMND@JumpBuffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$AA@ 00000000000233c0     BaseLib:SetJump.obj
+ 0002:000017a0       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFF@ 00000000000233e0     BaseMemoryLib:CopyMemWrapper.obj
+ 0002:000017e0       ??_C@_0ED@ELDFININ@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 0000000000023420     BaseMemoryLib:CopyMemWrapper.obj
+ 0002:00001830       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFF@ 0000000000023470     BaseMemoryLib:CopyMemWrapper.obj
+ 0002:00001878       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFULL@ 00000000000234b8     BaseMemoryLib:MemLibGuid.obj
+ 0002:000018b0       ??_C@_0ED@PPJHOMEK@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 00000000000234f0     BaseMemoryLib:ZeroMemWrapper.obj
+ 0002:000018f8       ??_C@_0CI@MNELLLEK@?$CB?$CIBuffer?5?$DN?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?5?$CG?$CG?5Leng@ 0000000000023538     BaseMemoryLib:ZeroMemWrapper.obj
+ 0002:00001920       ??_C@_0CF@LEICOABD@?$CILength?5?$CG?5?$CIsizeof?5?$CIValue?$CJ?5?9?51?$CJ?$CJ?5@ 0000000000023560     BaseMemoryLib:SetMem16Wrapper.obj
+ 0002:00001948       ??_C@_0CO@LECKNDNC@?$CI?$CI?$CIUINTN?$CJBuffer?$CJ?5?$CG?5?$CIsizeof?5?$CIValu@ 0000000000023588     BaseMemoryLib:SetMem16Wrapper.obj
+ 0002:00001978       ??_C@_0DI@DAGDPLPG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFF@ 00000000000235b8     BaseMemoryLib:SetMem16Wrapper.obj
+ 0002:000019b0       ??_C@_0EE@KLIIODFA@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 00000000000235f0     BaseMemoryLib:SetMem16Wrapper.obj
+ 0002:00001a00       ??_C@_0EC@NPMNBIEJ@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 0000000000023640     BaseMemoryLib:SetMemWrapper.obj
+ 0002:00001a50       ??_C@_0EB@CKNPKMED@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 0000000000023690     BaseLib:DivU64x32Remainder.obj
+ 0002:00001a98       ??_C@_0DH@HBBOELBA@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 00000000000236d8     BaseLib:LongJump.obj
+ 0002:00001ad0       ??_C@_0L@KDHIOLNB@Value?5?$CB?$DN?50?$AA@ 0000000000023710     BaseLib:LongJump.obj
+ 0002:00001ae0       ??_C@_0EE@MGEDGKDP@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 0000000000023720     BaseMemoryLib:ScanMem8Wrapper.obj
+ 0002:00001b24       _gPcd_FixedAtBuild_PcdMaximumAsciiStringLength 0000000000023764     GetNetByAddr:AutoGen.obj
+ 0002:00001b24       _gPcd_FixedAtBuild_PcdMaximumLinkedListLength 0000000000023764     GetNetByAddr:AutoGen.obj
+ 0002:00001b24       _gPcd_FixedAtBuild_PcdMaximumUnicodeStringLength 0000000000023764     GetNetByAddr:AutoGen.obj
+ 0002:00001b28       _gPcd_FixedAtBuild_PcdVerifyNodeInList 0000000000023768     GetNetByAddr:AutoGen.obj
+ 0002:00001b30       ??_C@_0BE@DCHLEIGN@?$CBEFI_ERROR?5?$CIStatus?$CJ?$AA@ 0000000000023770     GetNetByAddr:AutoGen.obj
+ 0002:00001b50       ??_C@_0HM@IGKNBDND@c?3?2vector?9edk?9master?2Build?2AppPk@ 0000000000023790     GetNetByAddr:AutoGen.obj
+ 0002:00001bd0       __infinityf                0000000000023810     LibC:infinityf_ieee754.obj
+ 0002:00001c54       gmt                        0000000000023894     LibTime:ZoneProc.obj
+ 0002:00001c64       cEslAfInetApiSize          00000000000238a4     EfiSocketLib:Socket.obj
+ 0002:00001c68       __bigtens_D2A              00000000000238a8     LibGdtoa:misc.obj
+ 0002:00001c90       __tinytens_D2A             00000000000238d0     LibGdtoa:misc.obj
+ 0002:00001cd0       __tens_D2A                 0000000000023910     LibGdtoa:misc.obj
+ 0002:00001db0       _DefaultNumericLocale      00000000000239f0     LibLocale:_def_numeric.obj
+ 0002:00001de0       _DefaultMonetaryLocale     0000000000023a20     LibLocale:_def_monetary.obj
+ 0002:00001ea0       __p_class_syms             0000000000023ae0     BsdSocketLib:res_debug.obj
+ 0002:00001f60       __p_default_section_syms   0000000000023ba0     BsdSocketLib:res_debug.obj
+ 0002:00001ff0       __p_update_section_syms    0000000000023c30     BsdSocketLib:res_debug.obj
+ 0002:00002090       __p_type_syms              0000000000023cd0     BsdSocketLib:res_debug.obj
+ 0002:00002468       year_lengths               00000000000240a8     LibTime:Time.obj
+ 0002:00002470       SocketOperations           00000000000240b0     BsdSocketLib:socket.obj
+ 0002:000024d8       wildabbr                   0000000000024118     LibTime:ZoneProc.obj
+ 0002:000024e8       cEslSocketBindingEntries   0000000000024128     EfiSocketLib:Socket.obj
+ 0002:000024f0       mon_lengths                0000000000024130     LibTime:Time.obj
+ 0002:00002550       cEslTcp4Api                0000000000024190     EfiSocketLib:Tcp4.obj
+ 0002:00002658       cEslAfInet6ApiSize         0000000000024298     EfiSocketLib:Socket.obj
+ 0002:00002660       cEslTcp6Api                00000000000242a0     EfiSocketLib:Tcp6.obj
+ 0002:00002780       cEslUdp6Api                00000000000243c0     EfiSocketLib:Udp6.obj
+ 0002:00002888       _gUefiDriverRevision       00000000000244c8     GetNetByAddr:AutoGen.obj
+ 0002:00002890       cEslIp4Api                 00000000000244d0     EfiSocketLib:Ip4.obj
+ 0002:000029a0       cEslUdp4Api                00000000000245e0     EfiSocketLib:Udp4.obj
+ 0002:00002ab0       cEslSocketBinding          00000000000246f0     EfiSocketLib:Socket.obj
+ 0002:00002bf0       mEslIp4ServiceGuid         0000000000024830     EfiSocketLib:UseEfiSocketLib.obj
+ 0002:00002c00       mEslTcp4ServiceGuid        0000000000024840     EfiSocketLib:UseEfiSocketLib.obj
+ 0002:00002c10       mEslTcp6ServiceGuid        0000000000024850     EfiSocketLib:UseEfiSocketLib.obj
+ 0002:00002c20       mEslUdp4ServiceGuid        0000000000024860     EfiSocketLib:UseEfiSocketLib.obj
+ 0002:00002c30       mEslUdp6ServiceGuid        0000000000024870     EfiSocketLib:UseEfiSocketLib.obj
+ 0002:00002c40       mEfiServiceBinding         0000000000024880     EfiSocketLib:UseEfiSocketLib.obj
+ 0002:00002c60       ??_C@_1HC@IPOPJIEA@?$AAA?$AAB?$AAO?$AAR?$AAT?$AAI?$AAN?$AAG?$AA?3?$AA?5?$AAA?$AAr?$AAg?$AAv?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?5?$AAc?$AAo?$AAn?$AAt?$AAa?$AAi?$AAn?$AAs?$AA?5?$AAa?$AAn?$AA?5?$AAu@ 00000000000248a0     LibC:Main.obj
+ 0002:00002ce0       ??_C@_1EA@BKLMADFD@?$AAA?$AAB?$AAO?$AAR?$AAT?$AAI?$AAN?$AAG?$AA?3?$AA?5?$AAI?$AAn?$AAs?$AAu?$AAf?$AAf?$AAi?$AAc?$AAi?$AAe?$AAn?$AAt?$AA?5?$AAm?$AAe?$AAm?$AAo?$AAr?$AAy?$AA?4?$AA?6?$AA?$AA@ 0000000000024920     LibC:Main.obj
+ 0002:00002d20       ??_C@_1FO@FHIJBIMG@?$AAA?$AAB?$AAO?$AAR?$AAT?$AAI?$AAN?$AAG?$AA?3?$AA?5?$AAI?$AAn?$AAt?$AAe?$AAr?$AAn?$AAa?$AAl?$AA?5?$AAA?$AAr?$AAg?$AAv?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?5?$AAc?$AAo?$AAn?$AAv@ 0000000000024960     LibC:Main.obj
+ 0002:00002d80       ??_C@_06GCNMPELH@stdin?3?$AA@ 00000000000249c0     LibC:Main.obj
+ 0002:00002d88       ??_C@_07CJCKBFG@stdout?3?$AA@ 00000000000249c8     LibC:Main.obj
+ 0002:00002d90       ??_C@_07NBHIPNPM@stderr?3?$AA@ 00000000000249d0     LibC:Main.obj
+ 0002:00002da0       ??_C@_1FI@OEFNJEF@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAi?$AAn?$AAg?$AA?5?$AAS?$AAt?$AAa?$AAn?$AAd?$AAa?$AAr?$AAd?$AA?5?$AAI?$AAO?$AA?3?$AA?5@ 00000000000249e0     LibC:Main.obj
+ 0002:00002df8       ??_C@_1BA@DNLKDFLO@?$AAs?$AAt?$AAd?$AAe?$AAr?$AAr?$AA?3?$AA?$AA@ 0000000000024a38     DevConsole:daConsole.obj
+ 0002:00002e08       ??_C@_1BA@PGAEEPHD@?$AAs?$AAt?$AAd?$AAo?$AAu?$AAt?$AA?3?$AA?$AA@ 0000000000024a48     DevConsole:daConsole.obj
+ 0002:00002e18       ??_C@_1O@CFMGMDFI@?$AAs?$AAt?$AAd?$AAi?$AAn?$AA?3?$AA?$AA@ 0000000000024a58     DevConsole:daConsole.obj
+ 0002:00002e28       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$AA@ 0000000000024a68     UefiLib:UefiLibPrint.obj
+ 0002:00002e40       ??_C@_19DJOBICII@?$AA?9?$AAs?$AAf?$AAo?$AA?$AA@ 0000000000024a80     UefiShellLib:UefiShellLib.obj
+ 0002:00002e50       ??_C@_17CLELIOII@?$AAN?$AAU?$AAL?$AA?$AA@ 0000000000024a90     UefiShellLib:UefiShellLib.obj
+ 0002:00002e58       ??_C@_0BM@NLNKOJGD@Destination?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$AA@ 0000000000024a98     UefiShellLib:UefiShellLib.obj
+ 0002:00002e78       ??_C@_19MJILNOHI@?$AAU?$AAd?$AAp?$AA6?$AA?$AA@ 0000000000024ab8     EfiSocketLib:Socket.obj
+ 0002:00002e88       ??_C@_19GDICBGPD@?$AAU?$AAd?$AAp?$AA4?$AA?$AA@ 0000000000024ac8     EfiSocketLib:Socket.obj
+ 0002:00002e98       ??_C@_19CMIMLMFP@?$AAT?$AAc?$AAp?$AA6?$AA?$AA@ 0000000000024ad8     EfiSocketLib:Socket.obj
+ 0002:00002ea8       ??_C@_19IGIFHENE@?$AAT?$AAc?$AAp?$AA4?$AA?$AA@ 0000000000024ae8     EfiSocketLib:Socket.obj
+ 0002:00002eb8       ??_C@_17NIGEJLGH@?$AAI?$AAp?$AA4?$AA?$AA@ 0000000000024af8     EfiSocketLib:Socket.obj
+ 0002:00002ec0       ??_C@_05JPFGNBCG@UDPv4?$AA@ 0000000000024b00     EfiSocketLib:Udp4.obj
+ 0002:00002ec8       ??_C@_04EMGFNKGN@IPv4?$AA@ 0000000000024b08     EfiSocketLib:Ip4.obj
+ 0002:00002ed0       ??_C@_05KNGALDKE@UDPv6?$AA@ 0000000000024b10     EfiSocketLib:Udp6.obj
+ 0002:00002ed8       ??_C@_05NEBMLMBB@TCPv6?$AA@ 0000000000024b18     EfiSocketLib:Tcp6.obj
+ 0002:00002ee0       ??_C@_05OGCKNOJD@TCPv4?$AA@ 0000000000024b20     EfiSocketLib:Tcp4.obj
+ 0002:00002ee8       ??_C@_0M@PCENNPGA@?$CFd?4?$CFd?4?$CFd?4?$CFd?$AA@ 0000000000024b28     GetNetByAddr:GetNetByAddr.obj
+ 0002:00002ef8       ??_C@_1CK@JBJINICA@?$AA?$CF?$AAa?$AA?5?$AA?5?$AA?$DM?$AAI?$AAP?$AAv?$AA4?$AA?5?$AAA?$AAd?$AAd?$AAr?$AAe?$AAs?$AAs?$AA?$DO?$AA?$AN?$AA?6?$AA?$AA@ 0000000000024b38     GetNetByAddr:GetNetByAddr.obj
+ 0002:00002f30       ??_C@_1EO@JGLBJEPL@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?9?$AA?5?$AAn?$AAe?$AAt?$AAw?$AAo?$AAr?$AAk?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAf?$AAo?$AAu?$AAn?$AAd?$AA?0?$AA?5?$AAe?$AAr?$AAr?$AAn?$AAo@ 0000000000024b70     GetNetByAddr:GetNetByAddr.obj
+ 0002:00002f80       ??_C@_1DE@PCJBKFM@?$AA?$CF?$AAa?$AA?3?$AA?5?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd?$AA?0?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 0000000000024bc0     GetNetByAddr:GetNetByAddr.obj
+ 0002:00002fb4       ??_C@_15KKOHIOBF@?$AA?2?$AA?3?$AA?$AA@ 0000000000024bf4     DevUtility:Path.obj
+ 0002:00002fbc       ??_C@_03MKABNOCG@Dec?$AA@  0000000000024bfc     LibTime:Time.obj
+ 0002:00002fc0       ??_C@_03JPJOFNIA@Nov?$AA@  0000000000024c00     LibTime:Time.obj
+ 0002:00002fc4       ??_C@_03BMAOKBAD@Oct?$AA@  0000000000024c04     LibTime:Time.obj
+ 0002:00002fc8       ??_C@_03GGCAPAJC@Sep?$AA@  0000000000024c08     LibTime:Time.obj
+ 0002:00002fcc       ??_C@_03IFJFEIGA@Aug?$AA@  0000000000024c0c     LibTime:Time.obj
+ 0002:00002fd0       ??_C@_03LBGABGKK@Jul?$AA@  0000000000024c10     LibTime:Time.obj
+ 0002:00002fd4       ??_C@_03IDFGHECI@Jun?$AA@  0000000000024c14     LibTime:Time.obj
+ 0002:00002fd8       ??_C@_03CNMDKL@May?$AA@    0000000000024c18     LibTime:Time.obj
+ 0002:00002fdc       ??_C@_03LEOLGMJP@Apr?$AA@  0000000000024c1c     LibTime:Time.obj
+ 0002:00002fe0       ??_C@_03ODNJBKGA@Mar?$AA@  0000000000024c20     LibTime:Time.obj
+ 0002:00002fe4       ??_C@_03HJBDCHOM@Feb?$AA@  0000000000024c24     LibTime:Time.obj
+ 0002:00002fe8       ??_C@_03JIHJHPIE@Jan?$AA@  0000000000024c28     LibTime:Time.obj
+ 0002:00002fec       ??_C@_03FEFJNEK@Sat?$AA@   0000000000024c2c     LibTime:Time.obj
+ 0002:00002ff0       ??_C@_03IDIOELNC@Fri?$AA@  0000000000024c30     LibTime:Time.obj
+ 0002:00002ff4       ??_C@_03IOFIKPDN@Thu?$AA@  0000000000024c34     LibTime:Time.obj
+ 0002:00002ff8       ??_C@_03MHOMLAJA@Wed?$AA@  0000000000024c38     LibTime:Time.obj
+ 0002:00002ffc       ??_C@_03NAGEINEP@Tue?$AA@  0000000000024c3c     LibTime:Time.obj
+ 0002:00003000       ??_C@_03PDAGKDH@Mon?$AA@   0000000000024c40     LibTime:Time.obj
+ 0002:00003004       ??_C@_03KOEHGMDN@Sun?$AA@  0000000000024c44     LibTime:Time.obj
+ 0002:00003008       ??_C@_0BA@NFHJAOCJ@?0M4?41?40?0M10?45?40?$AA@ 0000000000024c48     LibTime:ZoneProc.obj
+ 0002:00003018       ??_C@_02CLFPBFFP@TZ?$AA@   0000000000024c58     LibTime:ZoneProc.obj
+ 0002:00003020       ??_C@_0CI@BKHCEFMF@?$CILength?5?$DO?50x007F?$CJ?5?$CG?$CG?5?$CILength?5?$DM?$DN?5@ 0000000000024c60     LibLocale:multibyte_Utf8.obj
+ 0002:00003048       ??_C@_0P@CCFDOHOB@ProcessOneByte?$AA@ 0000000000024c88     LibLocale:multibyte_Utf8.obj
+ 0002:00003058       ??_C@_0DJ@LDOBLMIP@c?3?2vector?9edk?9master?2StdLib?2LibC@ 0000000000024c98     LibLocale:multibyte_Utf8.obj
+ 0002:00003098       ??_C@_0CI@NHCOAOJN@?$CILength?5?$DO?50x07FF?$CJ?5?$CG?$CG?5?$CILength?5?$DM?$DN?5@ 0000000000024cd8     LibLocale:multibyte_Utf8.obj
+ 0002:000030c0       ??_C@_0CK@ECFFLHAE@?$CILength?5?$DO?50xFFFF?$CJ?5?$CG?$CG?5?$CILength?5?$DM?$DN?5@ 0000000000024d00     LibLocale:multibyte_Utf8.obj
+ 0002:000030f0       ??_C@_07FFCOENGO@toupper?$AA@ 0000000000024d30     LibLocale:iswctype_sb.obj
+ 0002:000030f8       ??_C@_07OJACGNH@tolower?$AA@ 0000000000024d38     LibLocale:iswctype_sb.obj
+ 0002:00003100       ??_C@_06BAPHGFFK@xdigit?$AA@ 0000000000024d40     LibLocale:iswctype_sb.obj
+ 0002:00003108       ??_C@_05NECKJAMC@upper?$AA@ 0000000000024d48     LibLocale:iswctype_sb.obj
+ 0002:00003110       ??_C@_05OLNILLAB@space?$AA@ 0000000000024d50     LibLocale:iswctype_sb.obj
+ 0002:00003118       ??_C@_05KOBGHFJJ@punct?$AA@ 0000000000024d58     LibLocale:iswctype_sb.obj
+ 0002:00003120       ??_C@_05IJDJACGD@print?$AA@ 0000000000024d60     LibLocale:iswctype_sb.obj
+ 0002:00003128       ??_C@_05IPJEPLHL@lower?$AA@ 0000000000024d68     LibLocale:iswctype_sb.obj
+ 0002:00003130       ??_C@_05KCJBMLII@graph?$AA@ 0000000000024d70     LibLocale:iswctype_sb.obj
+ 0002:00003138       ??_C@_05ODNOIFML@digit?$AA@ 0000000000024d78     LibLocale:iswctype_sb.obj
+ 0002:00003140       ??_C@_05JMDPEFNK@cntrl?$AA@ 0000000000024d80     LibLocale:iswctype_sb.obj
+ 0002:00003148       ??_C@_05BABJKOGB@blank?$AA@ 0000000000024d88     LibLocale:iswctype_sb.obj
+ 0002:00003150       ??_C@_05IAEKHIAN@alpha?$AA@ 0000000000024d90     LibLocale:iswctype_sb.obj
+ 0002:00003158       ??_C@_05IIMHCHIO@alnum?$AA@ 0000000000024d98     LibLocale:iswctype_sb.obj
+ 0002:00003160       ??_C@_07FFAIMGME@nfinity?$AA@ 0000000000024da0     LibStdio:vfscanf.obj
+ 0002:00003168       ??_C@_07KIFFHKEA@NFINITY?$AA@ 0000000000024da8     LibStdio:vfscanf.obj
+ 0002:00003170       ??_C@_03OEIAHPBN@INF?$AA@  0000000000024db0     LibStdio:vfprintf.obj
+ 0002:00003174       ??_C@_03OJHLLCGB@inf?$AA@  0000000000024db4     LibStdio:vfprintf.obj
+ 0002:00003178       ??_C@_03LKNCIKJB@NAN?$AA@  0000000000024db8     LibStdio:vfprintf.obj
+ 0002:0000317c       ??_C@_03LHCJEHON@nan?$AA@  0000000000024dbc     LibStdio:vfprintf.obj
+ 0002:00003180       ??_C@_06OJHGLDPL@?$CInull?$CJ?$AA@ 0000000000024dc0     LibStdio:vfprintf.obj
+ 0002:00003188       ??_C@_0N@KJMLEBIL@Head?5?$CB?$DN?5NULL?$AA@ 0000000000024dc8     LibStdLib:Malloc.obj
+ 0002:00003198       ??_C@_06GLDDLHNF@malloc?$AA@ 0000000000024dd8     LibStdLib:Malloc.obj
+ 0002:000031a0       ??_C@_0DB@DCBBKAPH@c?3?2vector?9edk?9master?2StdLib?2LibC@ 0000000000024de0     LibStdLib:Malloc.obj
+ 0002:000031d4       ??_C@_04LIAPHEDB@free?$AA@ 0000000000024e14     LibStdLib:Malloc.obj
+ 0002:000031e0       ??_C@_07EOOHGPEI@realloc?$AA@ 0000000000024e20     LibStdLib:Malloc.obj
+ 0002:000031e8       ??_C@_0BB@MFGDFIJM@Compromised?5Data?$AA@ 0000000000024e28     BasePrintLib:PrintLibInternal.obj
+ 0002:00003200       ??_C@_0BB@KFJAMCOC@Invalid?5Language?$AA@ 0000000000024e40     BasePrintLib:PrintLibInternal.obj
+ 0002:00003218       ??_C@_0M@FKGOBENP@End?5of?5File?$AA@ 0000000000024e58     BasePrintLib:PrintLibInternal.obj
+ 0002:00003228       ??_C@_0O@GLPDOMCP@Reserved?5?$CI30?$CJ?$AA@ 0000000000024e68     BasePrintLib:PrintLibInternal.obj
+ 0002:00003238       ??_C@_0O@NMJOLAMF@Reserved?5?$CI29?$CJ?$AA@ 0000000000024e78     BasePrintLib:PrintLibInternal.obj
+ 0002:00003248       ??_C@_0N@JEJDHPO@End?5of?5Media?$AA@ 0000000000024e88     BasePrintLib:PrintLibInternal.obj
+ 0002:00003258       ??_C@_09BOMAGJEG@CRC?5Error?$AA@ 0000000000024e98     BasePrintLib:PrintLibInternal.obj
+ 0002:00003268       ??_C@_0BD@KHMPCIOG@Security?5Violation?$AA@ 0000000000024ea8     BasePrintLib:PrintLibInternal.obj
+ 0002:00003280       ??_C@_0BF@EHOBGFMI@Incompatible?5Version?$AA@ 0000000000024ec0     BasePrintLib:PrintLibInternal.obj
+ 0002:00003298       ??_C@_0P@NCJHBCLM@Protocol?5Error?$AA@ 0000000000024ed8     BasePrintLib:PrintLibInternal.obj
+ 0002:000032a8       ??_C@_0L@DJKNJKHM@TFTP?5Error?$AA@ 0000000000024ee8     BasePrintLib:PrintLibInternal.obj
+ 0002:000032b8       ??_C@_0L@LKIFCMNO@ICMP?5Error?$AA@ 0000000000024ef8     BasePrintLib:PrintLibInternal.obj
+ 0002:000032c8       ??_C@_07LCKDCBKK@Aborted?$AA@ 0000000000024f08     BasePrintLib:PrintLibInternal.obj
+ 0002:000032d0       ??_C@_0BA@IGIBFFPH@Already?5started?$AA@ 0000000000024f10     BasePrintLib:PrintLibInternal.obj
+ 0002:000032e0       ??_C@_0M@DCJFAFHJ@Not?5started?$AA@ 0000000000024f20     BasePrintLib:PrintLibInternal.obj
+ 0002:000032f0       ??_C@_08PAFJCNGP@Time?5out?$AA@ 0000000000024f30     BasePrintLib:PrintLibInternal.obj
+ 0002:00003300       ??_C@_0L@IFPBNFC@No?5mapping?$AA@ 0000000000024f40     BasePrintLib:PrintLibInternal.obj
+ 0002:00003310       ??_C@_0M@ENKCBFEP@No?5Response?$AA@ 0000000000024f50     BasePrintLib:PrintLibInternal.obj
+ 0002:00003320       ??_C@_0O@NFHOBIDO@Access?5Denied?$AA@ 0000000000024f60     BasePrintLib:PrintLibInternal.obj
+ 0002:00003330       ??_C@_09CFCBFJND@Not?5Found?$AA@ 0000000000024f70     BasePrintLib:PrintLibInternal.obj
+ 0002:00003340       ??_C@_0O@JNCJKCCD@Media?5changed?$AA@ 0000000000024f80     BasePrintLib:PrintLibInternal.obj
+ 0002:00003350       ??_C@_08KEGAJDNN@No?5Media?$AA@ 0000000000024f90     BasePrintLib:PrintLibInternal.obj
+ 0002:00003360       ??_C@_0M@HDLEPOFA@Volume?5Full?$AA@ 0000000000024fa0     BasePrintLib:PrintLibInternal.obj
+ 0002:00003370       ??_C@_0P@EIOJGIF@Volume?5Corrupt?$AA@ 0000000000024fb0     BasePrintLib:PrintLibInternal.obj
+ 0002:00003380       ??_C@_0BB@GOILNEAA@Out?5of?5Resources?$AA@ 0000000000024fc0     BasePrintLib:PrintLibInternal.obj
+ 0002:00003398       ??_C@_0BA@LNEDDFNB@Write?5Protected?$AA@ 0000000000024fd8     BasePrintLib:PrintLibInternal.obj
+ 0002:000033a8       ??_C@_0N@HHEABDHO@Device?5Error?$AA@ 0000000000024fe8     BasePrintLib:PrintLibInternal.obj
+ 0002:000033b8       ??_C@_09NKFGCIPN@Not?5Ready?$AA@ 0000000000024ff8     BasePrintLib:PrintLibInternal.obj
+ 0002:000033c8       ??_C@_0BB@EGELJFOB@Buffer?5Too?5Small?$AA@ 0000000000025008     BasePrintLib:PrintLibInternal.obj
+ 0002:000033e0       ??_C@_0BA@FLNMPMCF@Bad?5Buffer?5Size?$AA@ 0000000000025020     BasePrintLib:PrintLibInternal.obj
+ 0002:000033f0       ??_C@_0M@BEECMOIL@Unsupported?$AA@ 0000000000025030     BasePrintLib:PrintLibInternal.obj
+ 0002:00003400       ??_C@_0BC@HOFHKGJN@Invalid?5Parameter?$AA@ 0000000000025040     BasePrintLib:PrintLibInternal.obj
+ 0002:00003418       ??_C@_0L@PLPBEPPC@Load?5Error?$AA@ 0000000000025058     BasePrintLib:PrintLibInternal.obj
+ 0002:00003428       ??_C@_0BD@IFJNJCCO@Warning?5Stale?5Data?$AA@ 0000000000025068     BasePrintLib:PrintLibInternal.obj
+ 0002:00003440       ??_C@_0BJ@ODIPDGHB@Warning?5Buffer?5Too?5Small?$AA@ 0000000000025080     BasePrintLib:PrintLibInternal.obj
+ 0002:00003460       ??_C@_0BG@ECIJMOED@Warning?5Write?5Failure?$AA@ 00000000000250a0     BasePrintLib:PrintLibInternal.obj
+ 0002:00003478       ??_C@_0BH@GKKCJEPJ@Warning?5Delete?5Failure?$AA@ 00000000000250b8     BasePrintLib:PrintLibInternal.obj
+ 0002:00003490       ??_C@_0BG@CFJMNNJK@Warning?5Unknown?5Glyph?$AA@ 00000000000250d0     BasePrintLib:PrintLibInternal.obj
+ 0002:000034a8       ??_C@_07PBILKAFL@Success?$AA@ 00000000000250e8     BasePrintLib:PrintLibInternal.obj
+ 0002:000034b0       mHexStr                    00000000000250f0     BasePrintLib:PrintLibInternal.obj
+ 0002:000034c0       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO?$AA@ 0000000000025100     BasePrintLib:PrintLibInternal.obj
+ 0002:000034d0       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO?$AA@ 0000000000025110     BasePrintLib:PrintLibInternal.obj
+ 0002:000034e0       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02x@ 0000000000025120     BasePrintLib:PrintLibInternal.obj
+ 0002:00003518       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO?$AA@ 0000000000025158     BasePrintLib:PrintLibInternal.obj
+ 0002:00003528       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d?$AA@ 0000000000025168     BasePrintLib:PrintLibInternal.obj
+ 0002:00003544       ??_C@_04JIMNDDED@?$CF08X?$AA@ 0000000000025184     BasePrintLib:PrintLibInternal.obj
+ 0002:0000354c       ??_C@_02PCIJFNDE@?$AN?6?$AA@ 000000000002518c     BasePrintLib:PrintLibInternal.obj
+ 0002:00003550       ??_C@_01LIIJDEN@?$AN?$AA@  0000000000025190     BasePrintLib:PrintLibInternal.obj
+ 0002:00003558       ??_C@_0CL@CALHJIEG@Assertion?5failed?3?5?$CI?$CFs?$CJ?0?5file?5?$CFs?0@ 0000000000025198     LibC:assert.obj
+ 0002:00003588       ??_C@_0DI@IOHIAJDA@Assertion?5failed?3?5?$CI?$CFs?$CJ?0?5file?5?$CFs?0@ 00000000000251c8     LibC:assert.obj
+ 0002:000035c0       ??_C@_0O@IDFELCHE@RowDelta?5?$DO?$DN?50?$AA@ 0000000000025200     LibIIO:IIOutilities.obj
+ 0002:000035d0       ??_C@_0BA@HPMMKBFI@IIO_CursorDelta?$AA@ 0000000000025210     LibIIO:IIOutilities.obj
+ 0002:000035e0       ??_C@_0ED@JHFGLCKO@c?3?2vector?9edk?9master?2StdLib?2LibC@ 0000000000025220     LibIIO:IIOutilities.obj
+ 0002:00003628       ??_C@_0BF@CBLMFKOC@Node?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$AA@ 0000000000025268     UefiDevicePathLib:DevicePathUtilities.obj
+ 0002:00003640       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$AA@ 0000000000025280     UefiHiiLib:HiiString.obj
+ 0002:00003657       ??_C@_00CNPNBAHC@?$AA@     0000000000025297     UefiHiiLib:HiiString.obj
+ 0002:00003658       ??_C@_03EGFGHKEJ@nis?$AA@  0000000000025298     BsdSocketLib:getnetnamadr.obj
+ 0002:00003660       ??_C@_0M@OENMNAL@yellowpages?$AA@ 00000000000252a0     BsdSocketLib:getnetnamadr.obj
+ 0002:0000366c       ??_C@_02HEKBAMME@yp?$AA@   00000000000252ac     BsdSocketLib:getnetnamadr.obj
+ 0002:00003670       ??_C@_06LKIIGAOE@domain?$AA@ 00000000000252b0     BsdSocketLib:getnetnamadr.obj
+ 0002:00003678       ??_C@_03CMKEIMKI@dns?$AA@  00000000000252b8     BsdSocketLib:getnetnamadr.obj
+ 0002:0000367c       ??_C@_04NPNJNMMP@bind?$AA@ 00000000000252bc     BsdSocketLib:getnetnamadr.obj
+ 0002:00003684       ??_C@_06CGEDKBAH@htable?$AA@ 00000000000252c4     BsdSocketLib:getnetnamadr.obj
+ 0002:00003690       ??_C@_09JLOOHMDH@hosttable?$AA@ 00000000000252d0     BsdSocketLib:getnetnamadr.obj
+ 0002:000036a0       ??_C@_0BG@KMKAEGG@?1Efi?1StdLib?1etc?1hosts?$AA@ 00000000000252e0     BsdSocketLib:getnetnamadr.obj
+ 0002:000036b8       ??_C@_05JPJINGDM@hosts?$AA@ 00000000000252f8     BsdSocketLib:getnetnamadr.obj
+ 0002:000036c0       ??_C@_0BK@LEKNANDD@?1Efi?1StdLib?1etc?1host?4conf?$AA@ 0000000000025300     BsdSocketLib:getnetnamadr.obj
+ 0002:000036dc       ??_C@_06DDPFIHHA@?6?5?7?0?3?$DL?$AA@ 000000000002531c     BsdSocketLib:getnetnamadr.obj
+ 0002:000036e8       ??_C@_0BG@FNHOPIMG@0?40?40?4?$CFu?4in?9addr?4arpa?$AA@ 0000000000025328     BsdSocketLib:getnetbydns.obj
+ 0002:00003700       ??_C@_0BH@HDLAKFMC@0?40?4?$CFu?4?$CFu?4in?9addr?4arpa?$AA@ 0000000000025340     BsdSocketLib:getnetbydns.obj
+ 0002:00003718       ??_C@_0BI@DGJEDMGF@0?4?$CFu?4?$CFu?4?$CFu?4in?9addr?4arpa?$AA@ 0000000000025358     BsdSocketLib:getnetbydns.obj
+ 0002:00003730       ??_C@_0BJ@FMHNGNCO@?$CFu?4?$CFu?4?$CFu?4?$CFu?4in?9addr?4arpa?$AA@ 0000000000025370     BsdSocketLib:getnetbydns.obj
+ 0002:00003750       ??_C@_0BC@EALALDDE@res_query?5failed?6?$AA@ 0000000000025390     BsdSocketLib:getnetbydns.obj
+ 0002:00003768       ??_C@_0BJ@NGNIGMDA@?1Efi?1StdLib?1etc?1networks?$AA@ 00000000000253a8     BsdSocketLib:getnetbyht.obj
+ 0002:00003784       ??_C@_02MAFKDGNO@?$CD?6?$AA@ 00000000000253c4     BsdSocketLib:getnetbyht.obj
+ 0002:00003788       ??_C@_02OJDBNLEE@?5?7?$AA@ 00000000000253c8     BsdSocketLib:getnetbyht.obj
+ 0002:0000378c       ??_C@_02GMHACPFF@?$CFu?$AA@ 00000000000253cc     BsdSocketLib:getnetbynis.obj
+ 0002:00003790       ??_C@_05EENHEND@?$CFu?4?$CFu?$AA@ 00000000000253d0     BsdSocketLib:getnetbynis.obj
+ 0002:00003798       ??_C@_08OANCNLAH@?$CFu?4?$CFu?4?$CFu?$AA@ 00000000000253d8     BsdSocketLib:getnetbynis.obj
+ 0002:000037a8       ??_C@_0M@CDHNGIPM@?$CFu?4?$CFu?4?$CFu?4?$CFu?$AA@ 00000000000253e8     BsdSocketLib:getnetbynis.obj
+ 0002:000037b4       ??_C@_02ONCLHLPE@?40?$AA@  00000000000253f4     BsdSocketLib:getnetbynis.obj
+ 0002:000037b8       ??_C@_0BM@KPHOALJL@res_send?3?5?$CFs?5?$CI?$FL?$CFs?$FN?4?$CFu?$CJ?3?5?$CFs?6?$AA@ 00000000000253f8     BsdSocketLib:res_send.obj
+ 0002:000037d8       ??_C@_0BC@JFLCKNFG@res_send?3?5?$CFs?3?5?$CFs?6?$AA@ 0000000000025418     BsdSocketLib:res_send.obj
+ 0002:000037f0       ??_C@_0P@DJGAACBE@?$DL?$DL?5res_send?$CI?$CJ?6?$AA@ 0000000000025430     BsdSocketLib:res_send.obj
+ 0002:00003800       ??_C@_0CI@EFFJKMPN@?$DL?$DL?5Querying?5server?5?$CI?$CD?5?$CFd?$CJ?5addres@ 0000000000025440     BsdSocketLib:res_send.obj
+ 0002:00003828       ??_C@_0L@MDDEHJBC@socket?$CIvc?$CJ?$AA@ 0000000000025468     BsdSocketLib:res_send.obj
+ 0002:00003838       ??_C@_0L@JBCDMCDP@connect?1vc?$AA@ 0000000000025478     BsdSocketLib:res_send.obj
+ 0002:00003848       ??_C@_0N@EFFFKIOH@write?5failed?$AA@ 0000000000025488     BsdSocketLib:res_send.obj
+ 0002:00003858       ??_C@_0M@CKJFJOPO@read?5failed?$AA@ 0000000000025498     BsdSocketLib:res_send.obj
+ 0002:00003868       ??_C@_0BH@FDCFHDAN@?$DL?$DL?5response?5truncated?6?$AA@ 00000000000254a8     BsdSocketLib:res_send.obj
+ 0002:00003880       ??_C@_0BD@NAEJELAM@?$DL?$DL?5undersized?3?5?$CFd?6?$AA@ 00000000000254c0     BsdSocketLib:res_send.obj
+ 0002:00003898       ??_C@_08FADONFNH@read?$CIvc?$CJ?$AA@ 00000000000254d8     BsdSocketLib:res_send.obj
+ 0002:000038a8       ??_C@_0BN@DOENLAPH@?$DL?$DL?5old?5answer?5?$CIunexpected?$CJ?3?6?$AA@ 00000000000254e8     BsdSocketLib:res_send.obj
+ 0002:000038c8       ??_C@_0L@DOCNEONK@socket?$CIdg?$CJ?$AA@ 0000000000025508     BsdSocketLib:res_send.obj
+ 0002:000038d8       ??_C@_0M@LNIIHKMM@connect?$CIdg?$CJ?$AA@ 0000000000025518     BsdSocketLib:res_send.obj
+ 0002:000038e4       ??_C@_04MIIPNNEF@send?$AA@ 0000000000025524     BsdSocketLib:res_send.obj
+ 0002:000038ec       ??_C@_06MEPBGKEC@sendto?$AA@ 000000000002552c     BsdSocketLib:res_send.obj
+ 0002:000038f8       ??_C@_0BA@FDJDJHJN@s?5out?9of?9bounds?$AA@ 0000000000025538     BsdSocketLib:res_send.obj
+ 0002:00003908       ??_C@_06LGNCCACI@select?$AA@ 0000000000025548     BsdSocketLib:res_send.obj
+ 0002:00003910       ??_C@_0M@JLKAGGKD@?$DL?$DL?5timeout?6?$AA@ 0000000000025550     BsdSocketLib:res_send.obj
+ 0002:00003920       ??_C@_08HMBBGFHE@recvfrom?$AA@ 0000000000025560     BsdSocketLib:res_send.obj
+ 0002:00003930       ??_C@_0BA@MKBCKFMM@?$DL?$DL?5old?5answer?3?6?$AA@ 0000000000025570     BsdSocketLib:res_send.obj
+ 0002:00003940       ??_C@_0BE@PGBMJPIO@?$DL?$DL?5not?5our?5server?3?6?$AA@ 0000000000025580     BsdSocketLib:res_send.obj
+ 0002:00003958       ??_C@_0BG@CDKAPFLD@?$DL?$DL?5wrong?5query?5name?3?6?$AA@ 0000000000025598     BsdSocketLib:res_send.obj
+ 0002:00003970       ??_C@_0BI@IAAECIJL@server?5rejected?5query?3?6?$AA@ 00000000000255b0     BsdSocketLib:res_send.obj
+ 0002:00003988       ??_C@_0BF@HFMIDGCN@?$DL?$DL?5truncated?5answer?6?$AA@ 00000000000255c8     BsdSocketLib:res_send.obj
+ 0002:000039a0       ??_C@_0BA@EJHJGAJK@?$DL?$DL?5got?5answer?3?6?$AA@ 00000000000255e0     BsdSocketLib:res_send.obj
+ 0002:000039b0       ??_C@_0BK@MLBMNABB@?$DL?$DL?5res_query?$CI?$CFs?0?5?$CFd?0?5?$CFd?$CJ?6?$AA@ 00000000000255f0     BsdSocketLib:res_query.obj
+ 0002:000039d0       ??_C@_0BO@JELEDMGM@?$DL?$DL?5res_query?3?5mkquery?5failed?6?$AA@ 0000000000025610     BsdSocketLib:res_query.obj
+ 0002:000039f0       ??_C@_0BK@LFKJJMDE@?$DL?$DL?5res_query?3?5send?5error?6?$AA@ 0000000000025630     BsdSocketLib:res_query.obj
+ 0002:00003a10       ??_C@_0BL@FEHNIFI@?$DL?$DL?5rcode?5?$DN?5?$CFd?0?5ancount?$DN?$CFd?6?$AA@ 0000000000025650     BsdSocketLib:res_query.obj
+ 0002:00003a30       ??_C@_0M@OKJFMMDK@LOCALDOMAIN?$AA@ 0000000000025670     BsdSocketLib:res_init.obj
+ 0002:00003a40       ??_C@_0BM@MOODCCJF@?1Efi?1StdLib?1etc?1resolv?4conf?$AA@ 0000000000025680     BsdSocketLib:res_init.obj
+ 0002:00003a5c       ??_C@_03ILLHFMNI@?5?7?6?$AA@ 000000000002569c     BsdSocketLib:res_init.obj
+ 0002:00003a60       ??_C@_06GFPLNGOC@search?$AA@ 00000000000256a0     BsdSocketLib:res_init.obj
+ 0002:00003a68       ??_C@_0L@IGDCFOEA@nameserver?$AA@ 00000000000256a8     BsdSocketLib:res_init.obj
+ 0002:00003a78       ??_C@_08DFFPGALN@sortlist?$AA@ 00000000000256b8     BsdSocketLib:res_init.obj
+ 0002:00003a88       ??_C@_07FOPBDDAL@options?$AA@ 00000000000256c8     BsdSocketLib:res_init.obj
+ 0002:00003a90       ??_C@_04PFOEMICB@conf?$AA@ 00000000000256d0     BsdSocketLib:res_init.obj
+ 0002:00003a98       ??_C@_0CC@NOIFGLPA@?$DL?$DL?5res_setoptions?$CI?$CC?$CFs?$CC?0?5?$CC?$CFs?$CC?$CJ?4?4?4@ 00000000000256d8     BsdSocketLib:res_init.obj
+ 0002:00003abc       ??_C@_06KGFOIFFC@ndots?3?$AA@ 00000000000256fc     BsdSocketLib:res_init.obj
+ 0002:00003ac8       ??_C@_0N@CHFKDCBI@?$DL?$DL?7ndots?$DN?$CFd?6?$AA@ 0000000000025708     BsdSocketLib:res_init.obj
+ 0002:00003ad8       ??_C@_05GFCDIDHO@debug?$AA@ 0000000000025718     BsdSocketLib:res_init.obj
+ 0002:00003ae0       ??_C@_0CB@CPMIDNFF@?$DL?$DL?5res_setoptions?$CI?$CC?$CFs?$CC?0?5?$CC?$CFs?$CC?$CJ?4?4?6@ 0000000000025720     BsdSocketLib:res_init.obj
+ 0002:00003b08       ??_C@_09BAOJBMNB@?$DL?$DL?7debug?6?$AA@ 0000000000025748     BsdSocketLib:res_init.obj
+ 0002:00003b14       ??_C@_05JBNIJPCK@inet6?$AA@ 0000000000025754     BsdSocketLib:res_init.obj
+ 0002:00003b20       ??_C@_0N@CFOLBNCO@no_tld_query?$AA@ 0000000000025760     BsdSocketLib:res_init.obj
+ 0002:00003b30       ??_C@_0CA@GCHLGIFE@No?5address?5associated?5with?5name?$AA@ 0000000000025770     BsdSocketLib:herror.obj
+ 0002:00003b50       ??_C@_0BF@OJBICEBL@Unknown?5server?5error?$AA@ 0000000000025790     BsdSocketLib:herror.obj
+ 0002:00003b68       ??_C@_0BJ@OJBGMHNI@Host?5name?5lookup?5failure?$AA@ 00000000000257a8     BsdSocketLib:herror.obj
+ 0002:00003b88       ??_C@_0N@LHBPPCOG@Unknown?5host?$AA@ 00000000000257c8     BsdSocketLib:herror.obj
+ 0002:00003b98       ??_C@_0BM@JHBMFJFP@Resolver?5Error?50?5?$CIno?5error?$CJ?$AA@ 00000000000257d8     BsdSocketLib:herror.obj
+ 0002:00003bb4       ??_C@_01OGPIMHDM@?$DP?$AA@ 00000000000257f4     BsdSocketLib:res_debug.obj
+ 0002:00003bb8       ??_C@_05IHGADBFD@?$CCany?$CC?$AA@ 00000000000257f8     BsdSocketLib:res_debug.obj
+ 0002:00003bc0       ??_C@_0BF@OEDJAEEH@URN?5Naming?5Authority?$AA@ 0000000000025800     BsdSocketLib:res_debug.obj
+ 0002:00003bd8       ??_C@_05DGMJPCKB@NAPTR?$AA@ 0000000000025818     BsdSocketLib:res_debug.obj
+ 0002:00003be0       ??_C@_0BI@MEBMBCEH@mail?5agent?5?$CIdeprecated?$CJ?$AA@ 0000000000025820     BsdSocketLib:res_debug.obj
+ 0002:00003bf8       ??_C@_05OOJGCLEA@MAILA?$AA@ 0000000000025838     BsdSocketLib:res_debug.obj
+ 0002:00003c00       ??_C@_0CC@LJLBDBDO@mailbox?9related?5data?5?$CIdeprecated@ 0000000000025840     BsdSocketLib:res_debug.obj
+ 0002:00003c24       ??_C@_05MFLLHIID@MAILB?$AA@ 0000000000025864     BsdSocketLib:res_debug.obj
+ 0002:00003c30       ??_C@_0O@DPANGLAB@zone?5transfer?$AA@ 0000000000025870     BsdSocketLib:res_debug.obj
+ 0002:00003c40       ??_C@_04KOGNJAPC@AXFR?$AA@ 0000000000025880     BsdSocketLib:res_debug.obj
+ 0002:00003c48       ??_C@_0BK@IGJHIEFH@incremental?5zone?5transfer?$AA@ 0000000000025888     BsdSocketLib:res_debug.obj
+ 0002:00003c64       ??_C@_04JOBNNLDD@IXFR?$AA@ 00000000000258a4     BsdSocketLib:res_debug.obj
+ 0002:00003c70       ??_C@_0BM@JNHCANEH@ATM?5address?5?$CIunimplemented?$CJ?$AA@ 00000000000258b0     BsdSocketLib:res_debug.obj
+ 0002:00003c8c       ??_C@_04IJABIBDJ@ATMA?$AA@ 00000000000258cc     BsdSocketLib:res_debug.obj
+ 0002:00003c98       ??_C@_0BB@IKMJMEJL@server?5selection?$AA@ 00000000000258d8     BsdSocketLib:res_debug.obj
+ 0002:00003cac       ??_C@_03IENKIAKD@SRV?$AA@  00000000000258ec     BsdSocketLib:res_debug.obj
+ 0002:00003cb0       ??_C@_0BP@NOFBICMP@NIMROD?5locator?5?$CIunimplemented?$CJ?$AA@ 00000000000258f0     BsdSocketLib:res_debug.obj
+ 0002:00003cd0       ??_C@_06IPMDNIEH@NIMLOC?$AA@ 0000000000025910     BsdSocketLib:res_debug.obj
+ 0002:00003cd8       ??_C@_0CE@KIPGECFC@endpoint?5identifier?5?$CIunimplement@ 0000000000025918     BsdSocketLib:res_debug.obj
+ 0002:00003cfc       ??_C@_03JJCPLEKC@EID?$AA@  000000000002593c     BsdSocketLib:res_debug.obj
+ 0002:00003d00       ??_C@_0CA@GKGLOBJN@next?5valid?5name?5?$CIunimplemented?$CJ?$AA@ 0000000000025940     BsdSocketLib:res_debug.obj
+ 0002:00003d20       ??_C@_03BJAIOILF@NXT?$AA@  0000000000025960     BsdSocketLib:res_debug.obj
+ 0002:00003d28       ??_C@_08CBBFJFMD@location?$AA@ 0000000000025968     BsdSocketLib:res_debug.obj
+ 0002:00003d34       ??_C@_03KPOLBBFN@LOC?$AA@  0000000000025974     BsdSocketLib:res_debug.obj
+ 0002:00003d38       ??_C@_0N@CKPBFNGD@IPv6?5address?$AA@ 0000000000025978     BsdSocketLib:res_debug.obj
+ 0002:00003d48       ??_C@_04OHNMNPPA@AAAA?$AA@ 0000000000025988     BsdSocketLib:res_debug.obj
+ 0002:00003d50       ??_C@_0CC@MKHEBCNH@geographical?5position?5?$CIwithdrawn@ 0000000000025990     BsdSocketLib:res_debug.obj
+ 0002:00003d74       ??_C@_04PCFDEHHD@GPOS?$AA@ 00000000000259b4     BsdSocketLib:res_debug.obj
+ 0002:00003d80       ??_C@_0BE@LEJLOACO@mapping?5information?$AA@ 00000000000259c0     BsdSocketLib:res_debug.obj
+ 0002:00003d94       ??_C@_02BOGANPAB@PX?$AA@   00000000000259d4     BsdSocketLib:res_debug.obj
+ 0002:00003d98       ??_C@_03ICHNJLJF@key?$AA@  00000000000259d8     BsdSocketLib:res_debug.obj
+ 0002:00003d9c       ??_C@_03IPIGFGOJ@KEY?$AA@  00000000000259dc     BsdSocketLib:res_debug.obj
+ 0002:00003da0       ??_C@_09CMIIOJHF@signature?$AA@ 00000000000259e0     BsdSocketLib:res_debug.obj
+ 0002:00003dac       ??_C@_03MHHAOPCC@SIG?$AA@  00000000000259ec     BsdSocketLib:res_debug.obj
+ 0002:00003db0       ??_C@_08KIILFPNJ@NSAP_PTR?$AA@ 00000000000259f0     BsdSocketLib:res_debug.obj
+ 0002:00003dc0       ??_C@_0N@JPDKLPGJ@nsap?5address?$AA@ 0000000000025a00     BsdSocketLib:res_debug.obj
+ 0002:00003dd0       ??_C@_04MMEFPECF@NSAP?$AA@ 0000000000025a10     BsdSocketLib:res_debug.obj
+ 0002:00003dd8       ??_C@_06GGLMBGMH@router?$AA@ 0000000000025a18     BsdSocketLib:res_debug.obj
+ 0002:00003de0       ??_C@_02LBFBEEGD@RT?$AA@   0000000000025a20     BsdSocketLib:res_debug.obj
+ 0002:00003de8       ??_C@_0N@MIPHLICC@ISDN?5address?$AA@ 0000000000025a28     BsdSocketLib:res_debug.obj
+ 0002:00003df8       ??_C@_04KMOPNFAB@ISDN?$AA@ 0000000000025a38     BsdSocketLib:res_debug.obj
+ 0002:00003e00       ??_C@_0M@OPOCOBFN@X25?5address?$AA@ 0000000000025a40     BsdSocketLib:res_debug.obj
+ 0002:00003e0c       ??_C@_03FFNMPEOG@X25?$AA@  0000000000025a4c     BsdSocketLib:res_debug.obj
+ 0002:00003e10       ??_C@_0BC@MOAODBBM@DCE?5or?5AFS?5server?$AA@ 0000000000025a50     BsdSocketLib:res_debug.obj
+ 0002:00003e24       ??_C@_05DBOOICKL@AFSDB?$AA@ 0000000000025a64     BsdSocketLib:res_debug.obj
+ 0002:00003e30       ??_C@_0BD@PLBMFBJL@responsible?5person?$AA@ 0000000000025a70     BsdSocketLib:res_debug.obj
+ 0002:00003e44       ??_C@_02NFDNIBGH@RP?$AA@   0000000000025a84     BsdSocketLib:res_debug.obj
+ 0002:00003e48       ??_C@_04CIMGMMMG@text?$AA@ 0000000000025a88     BsdSocketLib:res_debug.obj
+ 0002:00003e50       ??_C@_03CGKMFPEO@TXT?$AA@  0000000000025a90     BsdSocketLib:res_debug.obj
+ 0002:00003e58       ??_C@_0P@CPKKBILF@mail?5exchanger?$AA@ 0000000000025a98     BsdSocketLib:res_debug.obj
+ 0002:00003e68       ??_C@_02KJOOPCC@MX?$AA@    0000000000025aa8     BsdSocketLib:res_debug.obj
+ 0002:00003e70       ??_C@_0BE@DDHECNDI@mailbox?5information?$AA@ 0000000000025ab0     BsdSocketLib:res_debug.obj
+ 0002:00003e84       ??_C@_05NACFPAGA@MINFO?$AA@ 0000000000025ac4     BsdSocketLib:res_debug.obj
+ 0002:00003e90       ??_C@_0BB@JOJNLJHB@host?5information?$AA@ 0000000000025ad0     BsdSocketLib:res_debug.obj
+ 0002:00003ea4       ??_C@_05IAOIGBND@HINFO?$AA@ 0000000000025ae4     BsdSocketLib:res_debug.obj
+ 0002:00003eb0       ??_C@_0BE@NJGCDBFC@domain?5name?5pointer?$AA@ 0000000000025af0     BsdSocketLib:res_debug.obj
+ 0002:00003ec4       ??_C@_03PGIOJGPL@PTR?$AA@  0000000000025b04     BsdSocketLib:res_debug.obj
+ 0002:00003ec8       ??_C@_0CA@DEHEFJDK@well?9known?5service?5?$CIdeprecated?$CJ?$AA@ 0000000000025b08     BsdSocketLib:res_debug.obj
+ 0002:00003ee8       ??_C@_03GFDIHLEO@WKS?$AA@  0000000000025b28     BsdSocketLib:res_debug.obj
+ 0002:00003eec       ??_C@_04MLLLIHIP@null?$AA@ 0000000000025b2c     BsdSocketLib:res_debug.obj
+ 0002:00003ef4       ??_C@_04HIBGFPH@NULL?$AA@  0000000000025b34     BsdSocketLib:res_debug.obj
+ 0002:00003f00       ??_C@_0M@BDINODOC@mail?5rename?$AA@ 0000000000025b40     BsdSocketLib:res_debug.obj
+ 0002:00003f0c       ??_C@_02PAHBAHKI@MR?$AA@   0000000000025b4c     BsdSocketLib:res_debug.obj
+ 0002:00003f10       ??_C@_0BC@CGPKNPAJ@mail?5group?5member?$AA@ 0000000000025b50     BsdSocketLib:res_debug.obj
+ 0002:00003f24       ??_C@_02MHMEOBLM@MG?$AA@   0000000000025b64     BsdSocketLib:res_debug.obj
+ 0002:00003f28       ??_C@_07LKIJFGBI@mailbox?$AA@ 0000000000025b68     BsdSocketLib:res_debug.obj
+ 0002:00003f30       ??_C@_02LKLDBFPJ@MB?$AA@   0000000000025b70     BsdSocketLib:res_debug.obj
+ 0002:00003f38       ??_C@_0BD@DMNHBGJD@start?5of?5authority?$AA@ 0000000000025b78     BsdSocketLib:res_debug.obj
+ 0002:00003f4c       ??_C@_03JFKHDEBG@SOA?$AA@  0000000000025b8c     BsdSocketLib:res_debug.obj
+ 0002:00003f50       ??_C@_0P@CEDGKKPG@canonical?5name?$AA@ 0000000000025b90     BsdSocketLib:res_debug.obj
+ 0002:00003f60       ??_C@_05PGNGFKDN@CNAME?$AA@ 0000000000025ba0     BsdSocketLib:res_debug.obj
+ 0002:00003f68       ??_C@_0BM@GCNNFJJD@mail?5forwarder?5?$CIdeprecated?$CJ?$AA@ 0000000000025ba8     BsdSocketLib:res_debug.obj
+ 0002:00003f84       ??_C@_02NONPNAPN@MF?$AA@   0000000000025bc4     BsdSocketLib:res_debug.obj
+ 0002:00003f88       ??_C@_0BO@CFPEHICJ@mail?5destination?5?$CIdeprecated?$CJ?$AA@ 0000000000025bc8     BsdSocketLib:res_debug.obj
+ 0002:00003fa8       ??_C@_02OMOJLCHP@MD?$AA@   0000000000025be8     BsdSocketLib:res_debug.obj
+ 0002:00003fb0       ??_C@_0M@EGCOMAM@name?5server?$AA@ 0000000000025bf0     BsdSocketLib:res_debug.obj
+ 0002:00003fbc       ??_C@_02OLCMIILA@NS?$AA@   0000000000025bfc     BsdSocketLib:res_debug.obj
+ 0002:00003fc0       ??_C@_07LHEPONKL@address?$AA@ 0000000000025c00     BsdSocketLib:res_debug.obj
+ 0002:00003fc8       ??_C@_01FHEEJDEE@A?$AA@    0000000000025c08     BsdSocketLib:res_debug.obj
+ 0002:00003fcc       ??_C@_06HHJABCJL@UPDATE?$AA@ 0000000000025c0c     BsdSocketLib:res_debug.obj
+ 0002:00003fd8       ??_C@_0N@BIJIBOGD@PREREQUISITE?$AA@ 0000000000025c18     BsdSocketLib:res_debug.obj
+ 0002:00003fe8       ??_C@_04HPADIMGJ@ZONE?$AA@ 0000000000025c28     BsdSocketLib:res_debug.obj
+ 0002:00003ff0       ??_C@_0L@NCHCDFED@ADDITIONAL?$AA@ 0000000000025c30     BsdSocketLib:res_debug.obj
+ 0002:00004000       ??_C@_09KJENGKNI@AUTHORITY?$AA@ 0000000000025c40     BsdSocketLib:res_debug.obj
+ 0002:0000400c       ??_C@_06GCAIMHKN@ANSWER?$AA@ 0000000000025c4c     BsdSocketLib:res_debug.obj
+ 0002:00004014       ??_C@_05NBJHHBHJ@QUERY?$AA@ 0000000000025c54     BsdSocketLib:res_debug.obj
+ 0002:0000401c       ??_C@_04OKGDLNCL@NONE?$AA@ 0000000000025c5c     BsdSocketLib:res_debug.obj
+ 0002:00004024       ??_C@_03OMGOFJGM@ANY?$AA@  0000000000025c64     BsdSocketLib:res_debug.obj
+ 0002:00004028       ??_C@_06DMJOGCBA@HESIOD?$AA@ 0000000000025c68     BsdSocketLib:res_debug.obj
+ 0002:00004030       ??_C@_02OPKBPEAC@HS?$AA@   0000000000025c70     BsdSocketLib:res_debug.obj
+ 0002:00004034       ??_C@_05GGIKMOCE@CHAOS?$AA@ 0000000000025c74     BsdSocketLib:res_debug.obj
+ 0002:0000403c       ??_C@_02BBAPPCCJ@IN?$AA@   0000000000025c7c     BsdSocketLib:res_debug.obj
+ 0002:00004040       ??_C@_03EEBNCBOD@?5?$CFs?$AA@ 0000000000025c80     BsdSocketLib:res_debug.obj
+ 0002:00004048       ??_C@_0BD@LPLIBIC@?$DL?$DL?5ns_parserr?3?5?$CFs?6?$AA@ 0000000000025c88     BsdSocketLib:res_debug.obj
+ 0002:00004060       ??_C@_0BA@PACLMBGB@?$DL?$DL?5?$CFs?5SECTION?3?6?$AA@ 0000000000025ca0     BsdSocketLib:res_debug.obj
+ 0002:00004070       ??_C@_01LFCBOECM@?4?$AA@   0000000000025cb0     BsdSocketLib:res_debug.obj
+ 0002:00004078       ??_C@_0BO@OIKKGPJO@?$DL?$DL?7?$CFs?0?5type?5?$DN?5?$CFs?0?5class?5?$DN?5?$CFs?6?$AA@ 0000000000025cb8     BsdSocketLib:res_debug.obj
+ 0002:00004098       ??_C@_0BE@IDAOCDID@?$DL?$DL?5ns_sprintrr?3?5?$CFs?6?$AA@ 0000000000025cd8     BsdSocketLib:res_debug.obj
+ 0002:000040b0       ??_C@_0BF@DKDLNLGA@?$DL?$DL?5ns_initparse?3?5?$CFs?6?$AA@ 0000000000025cf0     BsdSocketLib:res_debug.obj
+ 0002:000040c8       ??_C@_0DA@DLKEMDIC@?$DL?$DL?5?9?$DO?$DOHEADER?$DM?$DM?9?5opcode?3?5?$CFs?0?5stat@ 0000000000025d08     BsdSocketLib:res_debug.obj
+ 0002:000040f8       ??_C@_08KKAJPIMB@?$DL?5flags?3?$AA@ 0000000000025d38     BsdSocketLib:res_debug.obj
+ 0002:00004104       ??_C@_03DGLDJGMO@?5qr?$AA@ 0000000000025d44     BsdSocketLib:res_debug.obj
+ 0002:00004108       ??_C@_03ELHKHECM@?5aa?$AA@ 0000000000025d48     BsdSocketLib:res_debug.obj
+ 0002:0000410c       ??_C@_03GDKBHHDF@?5tc?$AA@ 0000000000025d4c     BsdSocketLib:res_debug.obj
+ 0002:00004110       ??_C@_03CIGNJNEA@?5rd?$AA@ 0000000000025d50     BsdSocketLib:res_debug.obj
+ 0002:00004114       ??_C@_03FFBKGJAF@?5ra?$AA@ 0000000000025d54     BsdSocketLib:res_debug.obj
+ 0002:00004118       ??_C@_03JGAAHEM@?5?$DP?$DP?$AA@ 0000000000025d58     BsdSocketLib:res_debug.obj
+ 0002:0000411c       ??_C@_03DGANIAGJ@?5ad?$AA@ 0000000000025d5c     BsdSocketLib:res_debug.obj
+ 0002:00004120       ??_C@_03DFIJFEAH@?5cd?$AA@ 0000000000025d60     BsdSocketLib:res_debug.obj
+ 0002:00004128       ??_C@_08CIGDJLON@?$DL?5?$CFs?3?5?$CFd?$AA@ 0000000000025d68     BsdSocketLib:res_debug.obj
+ 0002:00004138       ??_C@_08OAMCLEFF@?0?5?$CFs?3?5?$CFd?$AA@ 0000000000025d78     BsdSocketLib:res_debug.obj
+ 0002:00004144       ??_C@_02DPKJAMEF@?$CFd?$AA@ 0000000000025d84     BsdSocketLib:res_debug.obj
+ 0002:00004148       ??_C@_09PHJLGIAA@?$CFld?4?$CF?42ld?$AA@ 0000000000025d88     BsdSocketLib:res_debug.obj
+ 0002:00004158       ??_C@_0CA@DLGPDBJO@?$DL?5error?3?5unknown?5LOC?5RR?5version?$AA@ 0000000000025d98     BsdSocketLib:res_debug.obj
+ 0002:00004178       ??_C@_0DP@DFDILMHK@?$CFd?5?$CF?42d?5?$CF?42d?4?$CF?43d?5?$CFc?5?$CFd?5?$CF?42d?5?$CF?42@ 0000000000025db8     BsdSocketLib:res_debug.obj
+ 0002:000041b8       ??_C@_0BJ@NPJPFJML@?$CF04d?$CF02d?$CF02d?$CF02d?$CF02d?$CF02d?$AA@ 0000000000025df8     BsdSocketLib:res_debug.obj
+ 0002:000041d8       ??_C@_0CA@NAPJONBI@?$DL?$DL?5res_mkquery?$CI?$CFd?0?5?$CFs?0?5?$CFd?0?5?$CFd?$CJ?6?$AA@ 0000000000025e18     BsdSocketLib:res_mkquery.obj
+ 0002:000041f8       ??_C@_08DIAEFPGH@HOSTNAME?$AA@ 0000000000025e38     BsdSocketLib:gethostname.obj
+ 0002:00004208       ??_C@_0O@EFDFKGGL@PREREQUISITES?$AA@ 0000000000025e48     BsdSocketLib:res_data.obj
+ 0002:00004218       ??_C@_08IPHAHKJC@NOCHANGE?$AA@ 0000000000025e58     BsdSocketLib:res_data.obj
+ 0002:00004224       ??_C@_02JODNFKLN@14?$AA@   0000000000025e64     BsdSocketLib:res_data.obj
+ 0002:00004228       ??_C@_07CEGBLCK@ZONEERR?$AA@ 0000000000025e68     BsdSocketLib:res_data.obj
+ 0002:00004230       ??_C@_07EJMDHCDA@NOTAUTH?$AA@ 0000000000025e70     BsdSocketLib:res_data.obj
+ 0002:00004238       ??_C@_07MEFLBFPJ@NXRRSET?$AA@ 0000000000025e78     BsdSocketLib:res_data.obj
+ 0002:00004240       ??_C@_07LCCFCNML@YXRRSET?$AA@ 0000000000025e80     BsdSocketLib:res_data.obj
+ 0002:00004248       ??_C@_08JNPEGKLI@YXDOMAIN?$AA@ 0000000000025e88     BsdSocketLib:res_data.obj
+ 0002:00004258       ??_C@_07IJODECFP@REFUSED?$AA@ 0000000000025e98     BsdSocketLib:res_data.obj
+ 0002:00004260       ??_C@_06GBNPKLGH@NOTIMP?$AA@ 0000000000025ea0     BsdSocketLib:res_data.obj
+ 0002:00004268       ??_C@_08FFFFEFAA@NXDOMAIN?$AA@ 0000000000025ea8     BsdSocketLib:res_data.obj
+ 0002:00004278       ??_C@_08IKFFGNOI@SERVFAIL?$AA@ 0000000000025eb8     BsdSocketLib:res_data.obj
+ 0002:00004288       ??_C@_07GNDGLGGP@FORMERR?$AA@ 0000000000025ec8     BsdSocketLib:res_data.obj
+ 0002:00004290       ??_C@_07JLIAMAKP@NOERROR?$AA@ 0000000000025ed0     BsdSocketLib:res_data.obj
+ 0002:00004298       ??_C@_07PIEPBGKM@ZONEREF?$AA@ 0000000000025ed8     BsdSocketLib:res_data.obj
+ 0002:000042a0       ??_C@_08MKCCFOCK@ZONEINIT?$AA@ 0000000000025ee0     BsdSocketLib:res_data.obj
+ 0002:000042ac       ??_C@_02NBHMMMHK@13?$AA@   0000000000025eec     BsdSocketLib:res_data.obj
+ 0002:000042b0       ??_C@_02MIGHPNDL@12?$AA@   0000000000025ef0     BsdSocketLib:res_data.obj
+ 0002:000042b4       ??_C@_02ODEKKOPI@11?$AA@   0000000000025ef4     BsdSocketLib:res_data.obj
+ 0002:000042b8       ??_C@_02PKFBJPLJ@10?$AA@   0000000000025ef8     BsdSocketLib:res_data.obj
+ 0002:000042bc       ??_C@_01LAKCGALK@9?$AA@    0000000000025efc     BsdSocketLib:res_data.obj
+ 0002:000042c0       ??_C@_01KJLJFBPL@8?$AA@    0000000000025f00     BsdSocketLib:res_data.obj
+ 0002:000042c4       ??_C@_01COCBENDE@7?$AA@    0000000000025f04     BsdSocketLib:res_data.obj
+ 0002:000042c8       ??_C@_01DHDKHMHF@6?$AA@    0000000000025f08     BsdSocketLib:res_data.obj
+ 0002:000042cc       ??_C@_06LMEIPPMP@NOTIFY?$AA@ 0000000000025f0c     BsdSocketLib:res_data.obj
+ 0002:000042d8       ??_C@_07LBJIDCOB@CQUERYU?$AA@ 0000000000025f18     BsdSocketLib:res_data.obj
+ 0002:000042e0       ??_C@_07DDIDKKLI@CQUERYM?$AA@ 0000000000025f20     BsdSocketLib:res_data.obj
+ 0002:000042e8       ??_C@_06CMKKDPAO@IQUERY?$AA@ 0000000000025f28     BsdSocketLib:res_data.obj
+ 0002:000042f0       ??_C@_04MCDFJPOH@?$EA?7?7?7?$AA@ 0000000000025f30     BsdSocketLib:ns_print.obj
+ 0002:000042f8       ??_C@_06NOJLBGIH@?5?$CFs?5?$CFs?$AA@ 0000000000025f38     BsdSocketLib:ns_print.obj
+ 0002:00004300       ??_C@_01CLKCMJKC@?5?$AA@   0000000000025f40     BsdSocketLib:ns_print.obj
+ 0002:00004304       ??_C@_03LCDIHAAP@?5?$CI?6?$AA@ 0000000000025f44     BsdSocketLib:ns_print.obj
+ 0002:00004308       ??_C@_05MHDJKCKJ@?7?7?7?7?7?$AA@ 0000000000025f48     BsdSocketLib:ns_print.obj
+ 0002:00004310       ??_C@_03GCJPIGPI@?$CFLu?$AA@ 0000000000025f50     BsdSocketLib:ns_print.obj
+ 0002:00004318       ??_C@_09BPLGGKIK@?$DL?5serial?6?$AA@ 0000000000025f58     BsdSocketLib:ns_print.obj
+ 0002:00004328       ??_C@_0L@KMMPJEFP@?$DL?5refresh?6?$AA@ 0000000000025f68     BsdSocketLib:ns_print.obj
+ 0002:00004338       ??_C@_08DIBBNKO@?$DL?5retry?6?$AA@ 0000000000025f78     BsdSocketLib:ns_print.obj
+ 0002:00004348       ??_C@_09LGOCJHMJ@?$DL?5expiry?6?$AA@ 0000000000025f88     BsdSocketLib:ns_print.obj
+ 0002:00004354       ??_C@_02HMLFPPOG@?5?$CJ?$AA@ 0000000000025f94     BsdSocketLib:ns_print.obj
+ 0002:00004358       ??_C@_0L@MBDHGGHJ@?$DL?5minimum?6?$AA@ 0000000000025f98     BsdSocketLib:ns_print.obj
+ 0002:00004364       ??_C@_03IOOJPBPG@?$CFu?5?$AA@ 0000000000025fa4     BsdSocketLib:ns_print.obj
+ 0002:00004368       ??_C@_06DFGKFENJ@?$CFu?5?$CFu?5?$AA@ 0000000000025fa8     BsdSocketLib:ns_print.obj
+ 0002:00004370       ??_C@_09KBLKMPIJ@?$CFu?5?$CFu?5?$CFu?5?$AA@ 0000000000025fb0     BsdSocketLib:ns_print.obj
+ 0002:0000437c       ??_C@_06MIJFHOOD@?5?$CFu?5?$CI?5?$AA@ 0000000000025fbc     BsdSocketLib:ns_print.obj
+ 0002:00004384       ??_C@_05EBKNNAAH@?6?7?7?7?7?$AA@ 0000000000025fc4     BsdSocketLib:ns_print.obj
+ 0002:0000438c       ??_C@_03JDANDILB@?$CFd?5?$AA@ 0000000000025fcc     BsdSocketLib:ns_print.obj
+ 0002:00004390       ??_C@_01PKGAHCOL@?$CJ?$AA@ 0000000000025fd0     BsdSocketLib:ns_print.obj
+ 0002:00004398       ??_C@_0N@CDPGHNCO@0x?$CF04x?5?$CFu?5?$CFu?$AA@ 0000000000025fd8     BsdSocketLib:ns_print.obj
+ 0002:000043a8       ??_C@_02GFKOMOKH@?5?$CI?$AA@ 0000000000025fe8     BsdSocketLib:ns_print.obj
+ 0002:000043ac       ??_C@_03GPBFEAEB@?6?7?7?$AA@ 0000000000025fec     BsdSocketLib:ns_print.obj
+ 0002:000043b0       ??_C@_0M@CCMBLFNP@?5?$CFs?5?$CFd?5?$CFLu?5?$AA@ 0000000000025ff0     BsdSocketLib:ns_print.obj
+ 0002:000043bc       ??_C@_03IKGEINEE@?$CFs?5?$AA@ 0000000000025ffc     BsdSocketLib:ns_print.obj
+ 0002:000043c0       ??_C@_0BA@BMDNLAMI@unknown?5RR?5type?$AA@ 0000000000026000     BsdSocketLib:ns_print.obj
+ 0002:000043d0       ??_C@_0BA@CJGBAHPH@RR?5format?5error?$AA@ 0000000000026010     BsdSocketLib:ns_print.obj
+ 0002:000043e0       ??_C@_09NAHCKKEG@?2?$CD?$CI?7?7?$DL?5?$CFs?$AA@ 0000000000026020     BsdSocketLib:ns_print.obj
+ 0002:000043ec       ??_C@_02NMOLBIHC@?6?7?$AA@ 000000000002602c     BsdSocketLib:ns_print.obj
+ 0002:000043f0       ??_C@_05CNDJFPDP@?$CF02x?5?$AA@ 0000000000026030     BsdSocketLib:ns_print.obj
+ 0002:000043f8       ??_C@_02LNAEAIDO@?$DL?5?$AA@ 0000000000026038     BsdSocketLib:ns_print.obj
+ 0002:000043fc       ??_C@_01BJJEKLCA@?$CC?$AA@ 000000000002603c     BsdSocketLib:ns_print.obj
+ 0002:00004400       ??_C@_03JMMBEAFB@?6?$CC?2?$AA@ 0000000000026040     BsdSocketLib:ns_print.obj
+ 0002:00004404       ??_C@_01KICIPPFI@?2?$AA@   0000000000026044     BsdSocketLib:ns_print.obj
+ 0002:00004408       ??_C@_0P@LKBJECJ@len?5?$DM?$DN?5?$CKbuflen?$AA@ 0000000000026048     BsdSocketLib:ns_print.obj
+ 0002:00004418       ??_C@_06HEBHPMEI@addlen?$AA@ 0000000000026058     BsdSocketLib:ns_print.obj
+ 0002:00004420       ??_C@_0DE@KEHINMIF@c?3?2vector?9edk?9master?2StdLib?2BsdS@ 0000000000026060     BsdSocketLib:ns_print.obj
+ 0002:00004454       ??_C@_02KNHHEEKP@?5?5?$AA@ 0000000000026094     BsdSocketLib:ns_print.obj
+ 0002:00004458       ??_C@_01GPOEFGEJ@?7?$AA@   0000000000026098     BsdSocketLib:ns_print.obj
+ 0002:0000445c       ??_C@_04PEOOHEKN@?$CFd?$CFc?$AA@ 000000000002609c     BsdSocketLib:ns_ttl.obj
+ 0002:00004468       ??_C@_0BC@GMEENAFH@?$FLinet_ntoa?5error?$FN?$AA@ 00000000000260a8     LibNetUtil:inet_ntoa.obj
+ 0002:0000447c       ??_C@_02NJNOFBBI@?$CFx?$AA@ 00000000000260bc     LibNetUtil:inet_ntop.obj
+ 0002:00004480       ??_C@_1CI@LEOIGPHJ@?$AA?6?$AAC?$AAa?$AAu?$AAg?$AAh?$AAt?$AA?5?$AAs?$AAi?$AAg?$AAn?$AAa?$AAl?$AA?5?$AA?$CF?$AAd?$AA?4?$AA?6?$AA?$AA@ 00000000000260c0     LibSignal:Signal.obj
+ 0002:000044a8       ??_C@_02HBFAAMOG@nf?$AA@   00000000000260e8     LibGdtoa:strtod.obj
+ 0002:000044ac       ??_C@_05KMOPHDFI@inity?$AA@ 00000000000260ec     LibGdtoa:strtod.obj
+ 0002:000044b4       ??_C@_02LCNFMBND@an?$AA@   00000000000260f4     LibGdtoa:strtod.obj
+ 0002:000044b8       ??_C@_08KEBCLIFP@Infinity?$AA@ 00000000000260f8     LibGdtoa:dtoa.obj
+ 0002:000044c4       ??_C@_03ICJPMMHB@NaN?$AA@  0000000000026104     LibGdtoa:dtoa.obj
+ 0002:000044c8       ??_C@_01GBGANLPD@0?$AA@    0000000000026108     LibGdtoa:dtoa.obj
+ 0002:000044d0       ??_C@_0N@DFGEMFMI@Self?5?$CB?$DN?5NULL?$AA@ 0000000000026110     LibContainer:Fifo.obj
+ 0002:000044e0       ??_C@_0DK@HKIOKFNF@c?3?2vector?9edk?9master?2StdLib?2LibC@ 0000000000026120     LibContainer:Fifo.obj
+ 0002:00004520       ??_C@_0N@KPNBOCLA@FIFO_IsEmpty?$AA@ 0000000000026160     LibContainer:Fifo.obj
+ 0002:00004530       ??_C@_0M@LHAKPCNM@FIFO_IsFull?$AA@ 0000000000026170     LibContainer:Fifo.obj
+ 0002:00004540       ??_C@_0N@LBHOADMO@FIFO_Enqueue?$AA@ 0000000000026180     LibContainer:Fifo.obj
+ 0002:00004550       ??_C@_0BB@EKHBJDKA@pElement?5?$CB?$DN?5NULL?$AA@ 0000000000026190     LibContainer:Fifo.obj
+ 0002:00004568       ??_C@_0N@HPNDFHKK@FIFO_Dequeue?$AA@ 00000000000261a8     LibContainer:Fifo.obj
+ 0002:00004578       ??_C@_0L@ICALPNMG@Count?5?$CB?$DN?50?$AA@ 00000000000261b8     LibContainer:Fifo.obj
+ 0002:00004588       ??_C@_0N@CJLEDFNJ@FIFO_GetRDex?$AA@ 00000000000261c8     LibContainer:Fifo.obj
+ 0002:00004598       ??_C@_0N@OBFELKKJ@FIFO_GetWDex?$AA@ 00000000000261d8     LibContainer:Fifo.obj
+ 0002:000045a8       ??_C@_0M@BLMNFLCB@FIFO_Delete?$AA@ 00000000000261e8     LibContainer:Fifo.obj
+ 0002:000045b8       ??_C@_0L@GCDDJGHC@FIFO_Flush?$AA@ 00000000000261f8     LibContainer:Fifo.obj
+ 0002:000045c8       ??_C@_0O@CEMJFGGE@FIFO_Truncate?$AA@ 0000000000026208     LibContainer:Fifo.obj
+ 0002:000045d8       __real@3fe0000000000000    0000000000026218      CIL library: CIL module
+ 0002:000045e0       __mask@@NegDouble@         0000000000026220      CIL library: CIL module
+ 0002:000045f0       __real@401c000000000000    0000000000026230      CIL library: CIL module
+ 0002:000045f8       __real@3ff0000000000000    0000000000026238      CIL library: CIL module
+ 0002:00004600       __real@4014000000000000    0000000000026240      CIL library: CIL module
+ 0002:00004608       __real@4024000000000000    0000000000026248      CIL library: CIL module
+ 0002:00004610       __real@3fc68a288b60c8b3    0000000000026250      CIL library: CIL module
+ 0002:00004618       __real@3fd34413509f79fb    0000000000026258      CIL library: CIL module
+ 0002:00004620       __real@3fd287a7636f4361    0000000000026260      CIL library: CIL module
+ 0002:00004628       __real@3ff8000000000000    0000000000026268      CIL library: CIL module
+ 0002:00004630       __real@3fe0000035afe535    0000000000026270      CIL library: CIL module
+ 0002:00004638       __real@bff0000000000000    0000000000026278      CIL library: CIL module
+ 0002:00004640       __real@3fdfffff94a03595    0000000000026280      CIL library: CIL module
+ 0002:00004648       __real@3fcfffff94a03595    0000000000026288      CIL library: CIL module
+ 0002:00004650       __real@41dfffffffc00000    0000000000026290      CIL library: CIL module
+ 0002:00004658       __real@4000000000000000    0000000000026298      CIL library: CIL module
+ 0002:00004660       __real@43f0000000000000    00000000000262a0      CIL library: CIL module
+ 0002:00004668       __real@0000000000000000    00000000000262a8      CIL library: CIL module
+ 0002:00004670       __real@3cc203af9ee75616    00000000000262b0      CIL library: CIL module
+ 0003:00000000       _cClass                    0000000000026360     LibCtype:iCtype.obj
+ 0003:00000008       _lConvT                    0000000000026368     LibCtype:iCtype.obj
+ 0003:00000010       _uConvT                    0000000000026370     LibCtype:iCtype.obj
+ 0003:00000030       gEfiCallerIdGuid           0000000000026390     GetNetByAddr:AutoGen.obj
+ 0003:00000040       gEfiFileInfoGuid           00000000000263a0     GetNetByAddr:AutoGen.obj
+ 0003:00000050       gEfiShellEnvironment2ExtGuid 00000000000263b0     GetNetByAddr:AutoGen.obj
+ 0003:00000060       gEfiShellParametersProtocolGuid 00000000000263c0     GetNetByAddr:AutoGen.obj
+ 0003:00000070       gEfiShellInterfaceGuid     00000000000263d0     GetNetByAddr:AutoGen.obj
+ 0003:00000080       gEfiHiiFontProtocolGuid    00000000000263e0     GetNetByAddr:AutoGen.obj
+ 0003:00000090       gEfiSimpleFileSystemProtocolGuid 00000000000263f0     GetNetByAddr:AutoGen.obj
+ 0003:000000a0       gEfiShellProtocolGuid      0000000000026400     GetNetByAddr:AutoGen.obj
+ 0003:000000b0       gEfiShellEnvironment2Guid  0000000000026410     GetNetByAddr:AutoGen.obj
+ 0003:000000c0       gEfiHiiStringProtocolGuid  0000000000026420     GetNetByAddr:AutoGen.obj
+ 0003:000000d0       gEfiHiiImageProtocolGuid   0000000000026430     GetNetByAddr:AutoGen.obj
+ 0003:000000e0       gEfiHiiDatabaseProtocolGuid 0000000000026440     GetNetByAddr:AutoGen.obj
+ 0003:000000f0       gEfiHiiConfigRoutingProtocolGuid 0000000000026450     GetNetByAddr:AutoGen.obj
+ 0003:00000100       gEfiSocketProtocolGuid     0000000000026460     GetNetByAddr:AutoGen.obj
+ 0003:00000110       gEfiIp4ConfigProtocolGuid  0000000000026470     GetNetByAddr:AutoGen.obj
+ 0003:00000120       gEfiIp6ConfigProtocolGuid  0000000000026480     GetNetByAddr:AutoGen.obj
+ 0003:00000130       gEfiIp4ProtocolGuid        0000000000026490     GetNetByAddr:AutoGen.obj
+ 0003:00000140       gEfiIp4ServiceBindingProtocolGuid 00000000000264a0     GetNetByAddr:AutoGen.obj
+ 0003:00000150       gEfiTcp4ProtocolGuid       00000000000264b0     GetNetByAddr:AutoGen.obj
+ 0003:00000160       gEfiTcp4ServiceBindingProtocolGuid 00000000000264c0     GetNetByAddr:AutoGen.obj
+ 0003:00000170       gEfiTcp6ProtocolGuid       00000000000264d0     GetNetByAddr:AutoGen.obj
+ 0003:00000180       gEfiTcp6ServiceBindingProtocolGuid 00000000000264e0     GetNetByAddr:AutoGen.obj
+ 0003:00000190       gEfiUdp4ProtocolGuid       00000000000264f0     GetNetByAddr:AutoGen.obj
+ 0003:000001a0       gEfiUdp4ServiceBindingProtocolGuid 0000000000026500     GetNetByAddr:AutoGen.obj
+ 0003:000001b0       gEfiUdp6ProtocolGuid       0000000000026510     GetNetByAddr:AutoGen.obj
+ 0003:000001c0       gEfiUdp6ServiceBindingProtocolGuid 0000000000026520     GetNetByAddr:AutoGen.obj
+ 0003:000001d4       __mlocale_changed          0000000000026534     LibLocale:localeconv.obj
+ 0003:000001e0       _CurrentNumericLocale      0000000000026540     LibLocale:_def_numeric.obj
+ 0003:000001e8       _CurrentMonetaryLocale     0000000000026548     LibLocale:_def_monetary.obj
+ 0003:000001f0       __nlocale_changed          0000000000026550     LibLocale:localeconv.obj
+ 0003:00000200       _res_opcodes               0000000000026560     BsdSocketLib:res_data.obj
+ 0003:00000280       _res_resultcodes           00000000000265e0     BsdSocketLib:res_data.obj
+ 0003:00000300       _res_sectioncodes          0000000000026660     BsdSocketLib:res_data.obj
+ 0003:00000320       _ns_flagdata               0000000000026680     BsdSocketLib:ns_parse.obj
+ 0003:000003e0       h_errlist                  0000000000026740     BsdSocketLib:herror.obj
+ 0003:000004e4       _fltused                   0000000000026844     LibGdtoa:ulp.obj
+ 0003:00000510       __sF                       0000000000026870     LibStdio:findfp.obj
+ 0003:00000708       __sglue                    0000000000026a68     LibStdio:findfp.obj
+ 0003:00000920       tzname                     0000000000026c80     LibTime:ZoneProc.obj
+ 0003:00000968       mpfnEslConstructor         0000000000026cc8     EfiSocketLib:UseEfiSocketLib.obj
+ 0003:000009d0       daDeviceList               0000000000026d30     DevUtility:DevGenisis.obj
+ 0003:000009e0       cEslAfInetApi              0000000000026d40     EfiSocketLib:Socket.obj
+ 0003:00000a10       cEslAfInet6Api             0000000000026d70     EfiSocketLib:Socket.obj
+ 0003:00000a40       mpfnEslDestructor          0000000000026da0     EfiSocketLib:UseEfiSocketLib.obj
+ 0003:00000a48       EmptyParamList             0000000000026da8     UefiShellLib:UefiShellLib.obj
+ 0003:00000a58       SfoParamList               0000000000026db8     UefiShellLib:UefiShellLib.obj
+ 0003:00000a80       mStatusString              0000000000026de0     BasePrintLib:PrintLibInternal.obj
+ 0003:00006b20       gImageHandle               000000000002ce80     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00006b28       gST                        000000000002ce88     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00006b30       gBS                        000000000002ce90     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00006b38       errno                      000000000002ce98     LibC:errno.obj
+ 0003:00006b3c       __sse2_available           000000000002ce9c     LibC:errno.obj
+ 0003:00006b40       EFIerrno                   000000000002cea0     LibC:errno.obj
+ 0003:00006b48       __wchar_bitmap             000000000002cea8     LibWchar:ConsDecons.obj
+ 0003:00006b50       gRT                        000000000002ceb0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00006b58       gHiiFont                   000000000002ceb8     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00006b60       gHiiString                 000000000002cec0     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00006b68       gHiiImage                  000000000002cec8     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00006b70       gHiiDatabase               000000000002ced0     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00006b78       gHiiConfigRouting          000000000002ced8     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0003:00006b80       daDefaultDevice            000000000002cee0     DevUtility:DevGenisis.obj
+ 0003:00006b88       lclptr                     000000000002cee8     LibTime:ZoneProc.obj
+ 0003:00006b90       gmtptr                     000000000002cef0     LibTime:ZoneProc.obj
+ 0003:00006b9c       timezone                   000000000002cefc     LibTime:ZoneProc.obj
+ 0003:00006ba0       daylight                   000000000002cf00     LibTime:ZoneProc.obj
+ 0003:00006ba4       __scanfdebug               000000000002cf04     LibStdio:vfscanf.obj
+ 0003:00006bc8       mUefiFormBrowser2          000000000002cf28     UefiHiiLib:HiiLib.obj
+ 0003:00006be8       __dtoa_result_D2A          000000000002cf48     <common>
+ 0003:00006bf0       h_errno                    000000000002cf50     <common>
+ 0003:00006c00       _res                       000000000002cf60     <common>
+ 0003:00006e28       __sdidinit                 000000000002d188     <common>
+ 0003:00006e40       __sFext                    000000000002d1a0     <common>
+ 0003:00006f40       mEslLayer                  000000000002d2a0     <common>
+ 0003:00006f88       gEfiShellParametersProtocol 000000000002d2e8     <common>
+ 0003:00006f90       mEfiShellEnvironment2      000000000002d2f0     <common>
+ 0003:00006f98       gEfiShellProtocol          000000000002d2f8     <common>
+ 0003:00006fa0       mEfiShellInterface         000000000002d300     <common>
+ 0003:00006fc0       FileFunctionMap            000000000002d320     <common>
+ 0003:00007010       mEfiShellEnvironment2Handle 000000000002d370     <common>
+ 0003:00007018       __wchar_bitmap_size        000000000002d378     <common>
+ 0003:00007020       gMD                        000000000002d380     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:00000a1c       da_ConClose                0000000000000cdc f    CIL library: CIL module
+ 0001:00000a60       da_ConSeek                 0000000000000d20 f    CIL library: CIL module
+ 0001:00000ad0       da_ConWrite                0000000000000d90 f    CIL library: CIL module
+ 0001:00000b78       da_ConRead                 0000000000000e38 f    CIL library: CIL module
+ 0001:00000cc0       da_ConStat                 0000000000000f80 f    CIL library: CIL module
+ 0001:00000d9c       da_ConIoctl                000000000000105c f    CIL library: CIL module
+ 0001:00000e20       da_ConPoll                 00000000000010e0 f    CIL library: CIL module
+ 0001:00001cfc       da_ShellClose              0000000000001fbc f    CIL library: CIL module
+ 0001:00001d24       da_ShellDelete             0000000000001fe4 f    CIL library: CIL module
+ 0001:00001d54       da_ShellSeek               0000000000002014 f    CIL library: CIL module
+ 0001:00001e38       da_ShellMkdir              00000000000020f8 f    CIL library: CIL module
+ 0001:00001f60       da_ShellRead               0000000000002220 f    CIL library: CIL module
+ 0001:00001ff8       da_ShellWrite              00000000000022b8 f    CIL library: CIL module
+ 0001:000020a4       da_ShellStat               0000000000002364 f    CIL library: CIL module
+ 0001:00002178       da_ShellIoctl              0000000000002438 f    CIL library: CIL module
+ 0001:0000250c       da_ShellPoll               00000000000027cc f    CIL library: CIL module
+ 0001:00002540       da_ShellRename             0000000000002800 f    CIL library: CIL module
+ 0001:000026b0       da_ShellRmdir              0000000000002970 f    CIL library: CIL module
+ 0001:0000919c       eofread                    000000000000945c f    CIL library: CIL module
+ 0001:00009ef8       timesub                    000000000000a1b8 f    CIL library: CIL module
+ 0001:0000a1fc       normalize_overflow         000000000000a4bc f    CIL library: CIL module
+ 0001:0000a26c       time2sub                   000000000000a52c f    CIL library: CIL module
+ 0001:0000ab80       time1                      000000000000ae40 f    CIL library: CIL module
+ 0001:0000ae80       localsub                   000000000000b140 f    CIL library: CIL module
+ 0001:0000b084       settzname                  000000000000b344 f    CIL library: CIL module
+ 0001:0000b194       getnum                     000000000000b454 f    CIL library: CIL module
+ 0001:0000b1d4       getsecs                    000000000000b494 f    CIL library: CIL module
+ 0001:0000b28c       getrule                    000000000000b54c f    CIL library: CIL module
+ 0001:0000b384       transtime                  000000000000b644 f    CIL library: CIL module
+ 0001:0000b590       tzparse                    000000000000b850 f    CIL library: CIL module
+ 0001:0000bbc0       ProcessOneByte             000000000000be80 f    CIL library: CIL module
+ 0001:0000c12c       __wctoint                  000000000000c3ec f    CIL library: CIL module
+ 0001:0000d51c       __sccl                     000000000000d7dc f    CIL library: CIL module
+ 0001:0000d66c       parsefloat                 000000000000d92c f    CIL library: CIL module
+ 0001:0000da24       __sbprintf                 000000000000dce4 f    CIL library: CIL module
+ 0001:0000daf8       __ultoa                    000000000000ddb8 f    CIL library: CIL module
+ 0001:0000dc34       __wcsconv                  000000000000def4 f    CIL library: CIL module
+ 0001:000100e0       __find_arguments           00000000000103a0 f    CIL library: CIL module
+ 0001:00010ac0       __grow_type_table          0000000000010d80 f    CIL library: CIL module
+ 0001:00010b90       cvt                        0000000000010e50 f    CIL library: CIL module
+ 0001:00010cc8       exponent                   0000000000010f88 f    CIL library: CIL module
+ 0001:00010d94       __submore                  0000000000011054 f    CIL library: CIL module
+ 0001:0001105c       lflush                     000000000001131c f    CIL library: CIL module
+ 0001:00012f90       IIO_Read                   0000000000013250 f    CIL library: CIL module
+ 0001:000130a8       IIO_Write                  0000000000013368 f    CIL library: CIL module
+ 0001:00013290       IIO_Echo                   0000000000013550 f    CIL library: CIL module
+ 0001:00013444       IIO_Delete                 0000000000013704 f    CIL library: CIL module
+ 0001:00013e8c       BuildBitmap                000000000001414c f    CIL library: CIL module
+ 0001:0001405c       init_services              000000000001431c f    CIL library: CIL module
+ 0001:00014590       getnetanswer               0000000000014850 f    CIL library: CIL module
+ 0001:00014944       Aerror                     0000000000014c04 f    CIL library: CIL module
+ 0001:000149f0       Perror                     0000000000014cb0 f    CIL library: CIL module
+ 0001:000165f4       res_setoptions             00000000000168b4 f    CIL library: CIL module
+ 0001:000169cc       do_section                 0000000000016c8c f    CIL library: CIL module
+ 0001:00017158       precsize_ntoa              0000000000017418 f    CIL library: CIL module
+ 0001:0001810c       skiprr                     00000000000183cc f    CIL library: CIL module
+ 0001:00019888       charstr                    0000000000019b48 f    CIL library: CIL module
+ 0001:00019988       addname                    0000000000019c48 f    CIL library: CIL module
+ 0001:00019a90       addlen                     0000000000019d50 f    CIL library: CIL module
+ 0001:00019ae4       addstr                     0000000000019da4 f    CIL library: CIL module
+ 0001:00019b48       addtab                     0000000000019e08 f    CIL library: CIL module
+ 0001:00019dbc       fmt1                       000000000001a07c f    CIL library: CIL module
+ 0001:0001a440       inet_ntop4                 000000000001a700 f    CIL library: CIL module
+ 0001:0001a4bc       inet_ntop6                 000000000001a77c f    CIL library: CIL module
+ 0001:0001a75c       selscan                    000000000001aa1c f    CIL library: CIL module
+ 0001:0001d844       rvOK                       000000000001db04 f    CIL library: CIL module
+ 0001:0001f9b8       FIFO_NumInQueue            000000000001fc78 f    CIL library: CIL module
+ 0001:0001f9e4       FIFO_FreeSpace             000000000001fca4 f    CIL library: CIL module
+ 0001:0001fa10       FIFO_IsEmpty               000000000001fcd0 f    CIL library: CIL module
+ 0001:0001fa50       FIFO_IsFull                000000000001fd10 f    CIL library: CIL module
+ 0001:0001faa0       FIFO_Enqueue               000000000001fd60 f    CIL library: CIL module
+ 0001:0001fbb4       FIFO_Dequeue               000000000001fe74 f    CIL library: CIL module
+ 0001:0001fcf0       FIFO_Read                  000000000001ffb0 f    CIL library: CIL module
+ 0001:0001fcf8       FIFO_Copy                  000000000001ffb8 f    CIL library: CIL module
+ 0001:0001fd00       FIFO_GetRDex               000000000001ffc0 f    CIL library: CIL module
+ 0001:0001fd38       FIFO_GetWDex               000000000001fff8 f    CIL library: CIL module
+ 0001:0001fd70       FIFO_Delete                0000000000020030 f    CIL library: CIL module
+ 0001:0001fdcc       FIFO_Flush                 000000000002008c f    CIL library: CIL module
+ 0001:0001fe90       FIFO_Truncate              0000000000020150 f    CIL library: CIL module
+ 0001:00021698       BuildBitmap                0000000000021958 f   LibString:Searching.obj

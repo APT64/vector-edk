@@ -1,0 +1,74 @@
+ FvbServicesRuntimeDxe
+
+ Timestamp is 617b1143 (Fri Oct 29 00:08:19 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000168H .data                   CODE
+ 0001:00000168 00000004H .rdata                  CODE
+ 0001:00000170 00000d02H .text                   CODE
+ 0001:00000e78 00000098H .bss                    CODE
+ 0002:00000000 00000084H .pdata                  DATA
+ 0003:00000000 00000058H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       gEfiEventVirtualAddressChangeGuid 0000000000000280     FvbServicesRuntimeDxe:AutoGen.obj
+ 0001:00000010       gEfiHobListGuid            0000000000000290     FvbServicesRuntimeDxe:AutoGen.obj
+ 0001:00000020       gEfiEventExitBootServicesGuid 00000000000002a0     FvbServicesRuntimeDxe:AutoGen.obj
+ 0001:00000030       gEfiDxeServicesTableGuid   00000000000002b0     FvbServicesRuntimeDxe:AutoGen.obj
+ 0001:00000040       gEfiFirmwareVolumeBlockProtocolGuid 00000000000002c0     FvbServicesRuntimeDxe:AutoGen.obj
+ 0001:00000050       gEfiDevicePathProtocolGuid 00000000000002d0     FvbServicesRuntimeDxe:AutoGen.obj
+ 0001:00000060       gPcdProtocolGuid           00000000000002e0     FvbServicesRuntimeDxe:AutoGen.obj
+ 0001:00000070       gEfiDevicePathUtilitiesProtocolGuid 00000000000002f0     FvbServicesRuntimeDxe:AutoGen.obj
+ 0001:00000080       mPlatformFvbMediaInfo      0000000000000300     FvbServicesRuntimeDxe:FvbInfo.obj
+ 0001:000000d0       mFvMemmapDevicePathTemplate 0000000000000350     FvbServicesRuntimeDxe:FwBlockService.obj
+ 0001:000000f0       mFvPIWGDevicePathTemplate  0000000000000370     FvbServicesRuntimeDxe:FwBlockService.obj
+ 0001:00000110       mFvbDeviceTemplate         0000000000000390     FvbServicesRuntimeDxe:FwBlockService.obj
+ 0001:00000168       _gUefiDriverRevision       00000000000003e8     FvbServicesRuntimeDxe:AutoGen.obj
+ 0001:00000170       _ModuleEntryPoint          00000000000003f0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000240       ProcessLibraryConstructorList 00000000000004c0 f   FvbServicesRuntimeDxe:AutoGen.obj
+ 0001:00000328       FvbVirtualddressChangeEvent 00000000000005a8 f   FvbServicesRuntimeDxe:FwBlockService.obj
+ 0001:000003c8       FvbProtocolGetPhysicalAddress 0000000000000648 f   FvbServicesRuntimeDxe:FwBlockService.obj
+ 0001:00000414       FvbProtocolGetBlockSize    0000000000000694 f   FvbServicesRuntimeDxe:FwBlockService.obj
+ 0001:000004cc       FvbProtocolGetAttributes   000000000000074c f   FvbServicesRuntimeDxe:FwBlockService.obj
+ 0001:0000050c       FvbProtocolSetAttributes   000000000000078c f   FvbServicesRuntimeDxe:FwBlockService.obj
+ 0001:000005dc       FvbProtocolEraseBlocks     000000000000085c f   FvbServicesRuntimeDxe:FwBlockService.obj
+ 0001:000006c4       FvbProtocolWrite           0000000000000944 f   FvbServicesRuntimeDxe:FwBlockService.obj
+ 0001:00000724       FvbProtocolRead            00000000000009a4 f   FvbServicesRuntimeDxe:FwBlockService.obj
+ 0001:0000077c       ValidateFvHeader           00000000000009fc f   FvbServicesRuntimeDxe:FwBlockService.obj
+ 0001:000007d0       FvbInitialize              0000000000000a50 f   FvbServicesRuntimeDxe:FwBlockService.obj
+ 0001:00000bf8       GetFvbInfo                 0000000000000e78 f   FvbServicesRuntimeDxe:FvbInfo.obj
+ 0001:00000c80       GetPcdProtocol             0000000000000f00 f   DxePcdLib:DxePcdLib.obj
+ 0001:00000cbc       InternalAllocateCopyPool   0000000000000f3c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000d24       EfiGetSystemConfigurationTable 0000000000000fa4 f   UefiLib:UefiLib.obj
+ 0001:00000d88       RuntimeLibExitBootServicesEvent 0000000000001008 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:00000d90       RuntimeLibVirtualNotifyEvent 0000000000001010 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:00000dc0       InternalMemCopyMem         0000000000001040 f   BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000e00       InternalMemSetMem          0000000000001080 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000e20       InternalMemZeroMem         00000000000010a0 f   BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000e40       InternalMemSetMem32        00000000000010c0 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000e60       InternalMemSetMem64        00000000000010e0 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000e91       mEfiGoneVirtual            0000000000001111     UefiRuntimeLib:RuntimeLib.obj
+ 0001:00000e92       mEfiAtRuntime              0000000000001112     UefiRuntimeLib:RuntimeLib.obj
+ 0001:00000e98       mPcd                       0000000000001118     DxePcdLib:DxePcdLib.obj
+ 0001:00000ea0       mPiPcd                     0000000000001120     DxePcdLib:DxePcdLib.obj
+ 0001:00000ea8       mPcdInfo                   0000000000001128     DxePcdLib:DxePcdLib.obj
+ 0001:00000eb0       mPiPcdInfo                 0000000000001130     DxePcdLib:DxePcdLib.obj
+ 0001:00000eb8       gImageHandle               0000000000001138     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000ec0       gST                        0000000000001140     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000ec8       gBS                        0000000000001148     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000ed0       gRT                        0000000000001150     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0001:00000ed8       mHobList                   0000000000001158     DxeHobLib:HobLib.obj
+ 0001:00000ee0       gDS                        0000000000001160     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0001:00000ee8       mDevicePathLibDevicePathUtilities 0000000000001168     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00000ef0       mInternalRT                0000000000001170     <common>
+ 0001:00000ef8       mEfiVirtualNotifyEvent     0000000000001178     <common>
+ 0001:00000f00       mEfiExitBootServicesEvent  0000000000001180     <common>
+ 0001:00000f08       mFvbModuleGlobal           0000000000001188     <common>
+
+ entry point at        0001:00000170
+
+ Static symbols
+

@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\f50248a9-2f4d-4de9-86ae-bda84d07a41cNtfs\f50248a9-2f4d-4de9-86ae-bda84d07a41cSEC2.1.pe32 c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\NtfsPkg\NtfsDxe\Ntfs\OUTPUT\Ntfs.efi

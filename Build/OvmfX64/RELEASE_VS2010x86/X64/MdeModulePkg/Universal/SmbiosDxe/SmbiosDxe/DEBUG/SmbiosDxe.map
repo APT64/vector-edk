@@ -1,0 +1,50 @@
+ SmbiosDxe
+
+ Timestamp is 617b1155 (Fri Oct 29 00:08:37 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 0000004fH .data                   CODE
+ 0001:00000050 00000004H .rdata                  CODE
+ 0001:00000060 00000e02H .text                   CODE
+ 0001:00000e80 000000b0H .bss                    CODE
+ 0002:00000000 00000078H .pdata                  DATA
+ 0003:00000000 00000084H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       gEfiSmbiosTableGuid        0000000000000280     SmbiosDxe:AutoGen.obj
+ 0001:00000010       gEfiSmbiosProtocolGuid     0000000000000290     SmbiosDxe:AutoGen.obj
+ 0001:00000020       gEfiDevicePathUtilitiesProtocolGuid 00000000000002a0     SmbiosDxe:AutoGen.obj
+ 0001:00000030       EntryPointStructureData    00000000000002b0     SmbiosDxe:SmbiosDxe.obj
+ 0001:00000050       _gUefiDriverRevision       00000000000002d0     SmbiosDxe:AutoGen.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002e0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000ac       ProcessModuleEntryPointList 000000000000032c f   SmbiosDxe:AutoGen.obj
+ 0001:00000244       GetSmbiosStructureSize     00000000000004c4 f   SmbiosDxe:SmbiosDxe.obj
+ 0001:000002c8       SmbiosAdd                  0000000000000548 f   SmbiosDxe:SmbiosDxe.obj
+ 0001:00000540       SmbiosUpdateString         00000000000007c0 f   SmbiosDxe:SmbiosDxe.obj
+ 0001:000008c0       SmbiosRemove               0000000000000b40 f   SmbiosDxe:SmbiosDxe.obj
+ 0001:000009cc       SmbiosGetNext              0000000000000c4c f   SmbiosDxe:SmbiosDxe.obj
+ 0001:00000a7c       SmbiosCreateTable          0000000000000cfc f   SmbiosDxe:SmbiosDxe.obj
+ 0001:00000d08       SmbiosTableConstruction    0000000000000f88 f   SmbiosDxe:SmbiosDxe.obj
+ 0001:00000d3c       InternalAllocatePool       0000000000000fbc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000d70       EfiAcquireLockOrFail       0000000000000ff0 f   UefiLib:UefiLib.obj
+ 0001:00000db0       InternalMemCopyMem         0000000000001030 f   BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000df0       InternalMemZeroMem         0000000000001070 f   BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000e10       InternalMemSetMem          0000000000001090 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000e30       InternalMemSetMem32        00000000000010b0 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000e50       InternalMemSetMem64        00000000000010d0 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000e80       mPreAllocatedPages         0000000000001100     SmbiosDxe:SmbiosDxe.obj
+ 0001:00000e88       EntryPointStructure        0000000000001108     SmbiosDxe:SmbiosDxe.obj
+ 0001:00000e90       gImageHandle               0000000000001110     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000e98       gST                        0000000000001118     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000ea0       gBS                        0000000000001120     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000ea8       gRT                        0000000000001128     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0001:00000eb0       mDevicePathLibDevicePathUtilities 0000000000001130     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00000ec0       mPrivateData               0000000000001140     <common>
+
+ entry point at        0001:00000060
+
+ Static symbols
+

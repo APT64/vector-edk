@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\eaea9aec-c9c1-46e2-9d52-432ad25a9b0bfsbg\eaea9aec-c9c1-46e2-9d52-432ad25a9b0bSEC1.1.pe32 c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\MdeModulePkg\Application\fsbg\fsbg\OUTPUT\fsbg.efi

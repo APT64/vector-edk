@@ -1,0 +1,8 @@
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\StdLib\LibC\Time\Time\OUTPUT\Time.obj
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\StdLib\LibC\Time\Time\OUTPUT\ZoneProc.obj
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\StdLib\LibC\Time\Time\OUTPUT\strftime.obj
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\StdLib\LibC\Time\Time\OUTPUT\strptime.obj
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\StdLib\LibC\Time\Time\OUTPUT\TimeEfi.obj
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\StdLib\LibC\Time\Time\OUTPUT\gettimeofday.obj
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\StdLib\LibC\Time\Time\OUTPUT\timegm.obj
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\StdLib\LibC\Time\Time\OUTPUT\itimer.obj

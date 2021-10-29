@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_RAW -o c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\7bb28b99-61bb-11d5-9a5d-0090273fc14d\7bb28b99-61bb-11d5-9a5d-0090273fc14dSEC1.raw c:\vector-edk-master\MdeModulePkg\Logo\Logo.bmp

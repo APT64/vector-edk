@@ -1,0 +1,61 @@
+ AcpiPlatform
+
+ Timestamp is 617b1157 (Fri Oct 29 00:08:39 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000060H .data                   CODE
+ 0001:00000060 00000052H .rdata                  CODE
+ 0001:000000c0 00000d82H .text                   CODE
+ 0001:00000e48 00000048H .bss                    CODE
+ 0002:00000000 00000090H .pdata                  DATA
+ 0003:00000000 000000b4H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       gEfiXenInfoGuid            0000000000000280     AcpiPlatform:AutoGen.obj
+ 0001:00000010       gEfiHobListGuid            0000000000000290     AcpiPlatform:AutoGen.obj
+ 0001:00000020       gEfiDxeServicesTableGuid   00000000000002a0     AcpiPlatform:AutoGen.obj
+ 0001:00000030       gEfiAcpiTableProtocolGuid  00000000000002b0     AcpiPlatform:AutoGen.obj
+ 0001:00000040       gEfiDevicePathUtilitiesProtocolGuid 00000000000002c0     AcpiPlatform:AutoGen.obj
+ 0001:00000050       gEfiFirmwareVolume2ProtocolGuid 00000000000002d0     AcpiPlatform:AutoGen.obj
+ 0001:00000060       _gPcd_FixedAtBuild_PcdAcpiTableStorageFile 00000000000002e0     AcpiPlatform:AutoGen.obj
+ 0001:00000084       _gUefiDriverRevision       0000000000000304     AcpiPlatform:AutoGen.obj
+ 0001:00000088       ??_C@_08KPNDKLJK@RSD?5PTR?5?$AA@ 0000000000000308     AcpiPlatform:Xen.obj
+ 0001:00000094       ??_C@_04FKBPEJO@FACP?$AA@  0000000000000314     AcpiPlatform:Xen.obj
+ 0001:000000a0       ??_C@_0BC@EJEODHKB@etc?1system?9states?$AA@ 0000000000000320     AcpiPlatform:Qemu.obj
+ 0001:000000c0       _ModuleEntryPoint          0000000000000340 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000001fc       InstallAcpiTable           000000000000047c f   AcpiPlatform:AcpiPlatform.obj
+ 0001:00000204       FindAcpiTablesInFv         0000000000000484 f   AcpiPlatform:AcpiPlatform.obj
+ 0001:0000039c       InstallXenTables           000000000000061c f   AcpiPlatform:Xen.obj
+ 0001:00000b28       QemuInstallAcpiTable       0000000000000da8 f   AcpiPlatform:Qemu.obj
+ 0001:00000b54       AllocatePool               0000000000000dd4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00000b88       EfiGetSystemConfigurationTable 0000000000000e08 f   UefiLib:UefiLib.obj
+ 0001:00000bec       QemuFwCfgRead16            0000000000000e6c f   QemuFwCfgLib:QemuFwCfgLib.obj
+ 0001:00000c24       QemuFwCfgRead32            0000000000000ea4 f   QemuFwCfgLib:QemuFwCfgLib.obj
+ 0001:00000c5c       QemuFwCfgFindFile          0000000000000edc f   QemuFwCfgLib:QemuFwCfgLib.obj
+ 0001:00000d70       InternalMemCopyMem         0000000000000ff0 f   BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000db0       InternalMemZeroMem         0000000000001030 f   BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000dd0       IoReadFifo8                0000000000001050 f   QemuFwCfgLib:IoLibExAsm.obj
+ 0001:00000ddc       IoWriteFifo8               000000000000105c f   QemuFwCfgLib:IoLibExAsm.obj
+ 0001:00000df0       InternalMemSetMem          0000000000001070 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000e10       InternalMemSetMem32        0000000000001090 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000e30       InternalMemSetMem64        00000000000010b0 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000e48       XenAcpiRsdpStructurePtr    00000000000010c8     AcpiPlatform:Xen.obj
+ 0001:00000e50       gImageHandle               00000000000010d0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000e58       gST                        00000000000010d8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000e60       gBS                        00000000000010e0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000e68       gRT                        00000000000010e8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0001:00000e70       mHobList                   00000000000010f0     DxeHobLib:HobLib.obj
+ 0001:00000e80       gDS                        0000000000001100     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0001:00000e88       mDevicePathLibDevicePathUtilities 0000000000001108     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+
+ entry point at        0001:000000c0
+
+ Static symbols
+
+ 0001:00000638       QemuInstallAcpiMadtTable   00000000000008b8 f    CIL library: CIL module
+ 0001:000007a4       PopulateFwData             0000000000000a24 f    CIL library: CIL module
+ 0001:00000894       GetSuspendStates           0000000000000b14 f    CIL library: CIL module
+ 0001:00000984       QemuInstallAcpiSsdtTable   0000000000000c04 f    CIL library: CIL module

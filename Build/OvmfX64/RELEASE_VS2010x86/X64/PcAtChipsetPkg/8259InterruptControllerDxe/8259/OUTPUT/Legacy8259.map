@@ -1,0 +1,51 @@
+ Legacy8259
+
+ Timestamp is 617b1137 (Fri Oct 29 00:08:07 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000072H .data                   CODE
+ 0001:00000078 00000004H .rdata                  CODE
+ 0001:00000080 000005c2H .text                   CODE
+ 0001:00000648 0000002cH .bss                    CODE
+ 0002:00000000 0000003cH .pdata                  DATA
+ 0003:00000000 00000024H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       gEfiLegacy8259ProtocolGuid 0000000000000280     Legacy8259:AutoGen.obj
+ 0001:00000010       gEfiPciIoProtocolGuid      0000000000000290     Legacy8259:AutoGen.obj
+ 0001:00000020       mInterrupt8259             00000000000002a0     Legacy8259:8259.obj
+ 0001:00000068       mMasterBase                00000000000002e8     Legacy8259:8259.obj
+ 0001:00000069       mSlaveBase                 00000000000002e9     Legacy8259:8259.obj
+ 0001:0000006c       mMode                      00000000000002ec     Legacy8259:8259.obj
+ 0001:00000070       mProtectedModeMask         00000000000002f0     Legacy8259:8259.obj
+ 0001:00000078       _gUefiDriverRevision       00000000000002f8     Legacy8259:AutoGen.obj
+ 0001:00000080       _ModuleEntryPoint          0000000000000300 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000a8       ProcessModuleEntryPointList 0000000000000328 f   Legacy8259:AutoGen.obj
+ 0001:0000015c       Interrupt8259ReadMask      00000000000003dc f   Legacy8259:8259.obj
+ 0001:000001ac       Interrupt8259SetVectorBase 000000000000042c f   Legacy8259:8259.obj
+ 0001:00000264       Interrupt8259GetMask       00000000000004e4 f   Legacy8259:8259.obj
+ 0001:000002ac       Interrupt8259SetMask       000000000000052c f   Legacy8259:8259.obj
+ 0001:000002f4       Interrupt8259SetMode       0000000000000574 f   Legacy8259:8259.obj
+ 0001:0000043c       Interrupt8259GetVector     00000000000006bc f   Legacy8259:8259.obj
+ 0001:0000046c       Interrupt8259EnableIrq     00000000000006ec f   Legacy8259:8259.obj
+ 0001:000004ec       Interrupt8259DisableIrq    000000000000076c f   Legacy8259:8259.obj
+ 0001:0000055c       Interrupt8259GetInterruptLine 00000000000007dc f   Legacy8259:8259.obj
+ 0001:000005c4       Interrupt8259EndOfInterrupt 0000000000000844 f   Legacy8259:8259.obj
+ 0001:000005f0       InternalMemSetMem          0000000000000870 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000610       InternalMemSetMem32        0000000000000890 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000630       InternalMemSetMem64        00000000000008b0 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000648       m8259Handle                00000000000008c8     Legacy8259:8259.obj
+ 0001:00000650       mProtectedModeEdgeLevel    00000000000008d0     Legacy8259:8259.obj
+ 0001:00000658       gImageHandle               00000000000008d8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000660       gST                        00000000000008e0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000668       gBS                        00000000000008e8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000670       mLegacyModeEdgeLevel       00000000000008f0     <common>
+ 0001:00000672       mLegacyModeMask            00000000000008f2     <common>
+
+ entry point at        0001:00000080
+
+ Static symbols
+

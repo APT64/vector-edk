@@ -1,0 +1,14 @@
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\MdePkg\Library\BasePcdLibNull\BasePcdLibNull\OUTPUT\BasePcdLibNull.lib
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\MdePkg\Library\BaseLib\BaseLib\OUTPUT\BaseLib.lib
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\MdePkg\Library\BaseDebugLibNull\BaseDebugLibNull\OUTPUT\BaseDebugLibNull.lib
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\MdePkg\Library\BaseMemoryLib\BaseMemoryLib\OUTPUT\BaseMemoryLib.lib
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\MdePkg\Library\UefiBootServicesTableLib\UefiBootServicesTableLib\OUTPUT\UefiBootServicesTableLib.lib
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\MdePkg\Library\UefiMemoryAllocationLib\UefiMemoryAllocationLib\OUTPUT\UefiMemoryAllocationLib.lib
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\MdePkg\Library\BasePrintLib\BasePrintLib\OUTPUT\BasePrintLib.lib
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\MdePkg\Library\UefiDevicePathLib\UefiDevicePathLib\OUTPUT\UefiDevicePathLib.lib
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\MdePkg\Library\UefiRuntimeServicesTableLib\UefiRuntimeServicesTableLib\OUTPUT\UefiRuntimeServicesTableLib.lib
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\MdePkg\Library\UefiLib\UefiLib\OUTPUT\UefiLib.lib
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\StdLib\EfiSocketLib\EfiSocketLib\OUTPUT\EfiSocketLib.lib
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\MdePkg\Library\UefiRuntimeLib\UefiRuntimeLib\OUTPUT\UefiRuntimeLib.lib
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\MdePkg\Library\UefiDriverEntryPoint\UefiDriverEntryPoint\OUTPUT\UefiDriverEntryPoint.lib
+c:\vector-edk-master\Build\AppPkg\DEBUG_VS2010x86\X64\StdLib\SocketDxe\SocketDxe\OUTPUT\SocketDxe.lib

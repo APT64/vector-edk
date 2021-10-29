@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_VERSION -n 1.0 -o c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\4110465d-5ff3-4f4b-b580-24ed0d06747aSmbiosPlatformDxe\4110465d-5ff3-4f4b-b580-24ed0d06747aSEC4.ver

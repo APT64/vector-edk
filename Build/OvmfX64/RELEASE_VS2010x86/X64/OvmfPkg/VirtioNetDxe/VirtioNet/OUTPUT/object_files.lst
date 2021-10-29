@@ -1,0 +1,16 @@
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\VirtioNetDxe\VirtioNet\OUTPUT\ComponentName.obj
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\VirtioNetDxe\VirtioNet\OUTPUT\DriverBinding.obj
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\VirtioNetDxe\VirtioNet\OUTPUT\EntryPoint.obj
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\VirtioNetDxe\VirtioNet\OUTPUT\Events.obj
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\VirtioNetDxe\VirtioNet\OUTPUT\SnpGetStatus.obj
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\VirtioNetDxe\VirtioNet\OUTPUT\SnpInitialize.obj
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\VirtioNetDxe\VirtioNet\OUTPUT\SnpMcastIpToMac.obj
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\VirtioNetDxe\VirtioNet\OUTPUT\SnpReceive.obj
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\VirtioNetDxe\VirtioNet\OUTPUT\SnpReceiveFilters.obj
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\VirtioNetDxe\VirtioNet\OUTPUT\SnpSharedHelpers.obj
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\VirtioNetDxe\VirtioNet\OUTPUT\SnpShutdown.obj
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\VirtioNetDxe\VirtioNet\OUTPUT\SnpStart.obj
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\VirtioNetDxe\VirtioNet\OUTPUT\SnpStop.obj
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\VirtioNetDxe\VirtioNet\OUTPUT\SnpTransmit.obj
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\VirtioNetDxe\VirtioNet\OUTPUT\SnpUnsupported.obj
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\VirtioNetDxe\VirtioNet\OUTPUT\AutoGen.obj

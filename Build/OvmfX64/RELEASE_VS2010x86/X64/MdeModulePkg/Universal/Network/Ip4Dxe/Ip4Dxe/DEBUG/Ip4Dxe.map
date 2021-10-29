@@ -1,0 +1,261 @@
+ Ip4Dxe
+
+ Timestamp is 617b1160 (Fri Oct 29 00:08:48 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000434H .data                   CODE
+ 0001:00000440 0000041aH .rdata                  CODE
+ 0001:00000860 00009752H .text                   CODE
+ 0001:00009fc0 000000a0H .bss                    CODE
+ 0002:00000000 00000528H .pdata                  DATA
+ 0003:00000000 0000049cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       gEfiIp4ProtocolGuid        0000000000000280     Ip4Dxe:AutoGen.obj
+ 0001:00000010       gEfiManagedNetworkServiceBindingProtocolGuid 0000000000000290     Ip4Dxe:AutoGen.obj
+ 0001:00000020       gEfiIp4ConfigProtocolGuid  00000000000002a0     Ip4Dxe:AutoGen.obj
+ 0001:00000030       gEfiArpServiceBindingProtocolGuid 00000000000002b0     Ip4Dxe:AutoGen.obj
+ 0001:00000040       gEfiIp4ServiceBindingProtocolGuid 00000000000002c0     Ip4Dxe:AutoGen.obj
+ 0001:00000050       gEfiManagedNetworkProtocolGuid 00000000000002d0     Ip4Dxe:AutoGen.obj
+ 0001:00000060       gEfiArpProtocolGuid        00000000000002e0     Ip4Dxe:AutoGen.obj
+ 0001:00000070       gEfiIpSec2ProtocolGuid     00000000000002f0     Ip4Dxe:AutoGen.obj
+ 0001:00000080       gEfiDevicePathProtocolGuid 0000000000000300     Ip4Dxe:AutoGen.obj
+ 0001:00000090       gEfiDevicePathUtilitiesProtocolGuid 0000000000000310     Ip4Dxe:AutoGen.obj
+ 0001:000000a0       gEfiHiiFontProtocolGuid    0000000000000320     Ip4Dxe:AutoGen.obj
+ 0001:000000b0       gEfiHiiStringProtocolGuid  0000000000000330     Ip4Dxe:AutoGen.obj
+ 0001:000000c0       gEfiHiiImageProtocolGuid   0000000000000340     Ip4Dxe:AutoGen.obj
+ 0001:000000d0       gEfiHiiDatabaseProtocolGuid 0000000000000350     Ip4Dxe:AutoGen.obj
+ 0001:000000e0       gEfiHiiConfigRoutingProtocolGuid 0000000000000360     Ip4Dxe:AutoGen.obj
+ 0001:000000f0       gEfiDriverBindingProtocolGuid 0000000000000370     Ip4Dxe:AutoGen.obj
+ 0001:00000100       gEfiComponentNameProtocolGuid 0000000000000380     Ip4Dxe:AutoGen.obj
+ 0001:00000110       gEfiComponentName2ProtocolGuid 0000000000000390     Ip4Dxe:AutoGen.obj
+ 0001:00000120       gEfiLoadedImageProtocolGuid 00000000000003a0     Ip4Dxe:AutoGen.obj
+ 0001:00000130       gEfiSimpleNetworkProtocolGuid 00000000000003b0     Ip4Dxe:AutoGen.obj
+ 0001:00000140       gEfiDpcProtocolGuid        00000000000003c0     Ip4Dxe:AutoGen.obj
+ 0001:00000150       mIcmpClass                 00000000000003d0     Ip4Dxe:Ip4Icmp.obj
+ 0001:00000178       mIp4SupportedIcmp          00000000000003f8     Ip4Dxe:Ip4Icmp.obj
+ 0001:000001a8       mRouteAlertOption          0000000000000428     Ip4Dxe:Ip4Igmp.obj
+ 0001:000001b0       mEfiIp4ProtocolTemplete    0000000000000430     Ip4Dxe:Ip4Impl.obj
+ 0001:000001f0       gIp4DriverBinding          0000000000000470     Ip4Dxe:Ip4Driver.obj
+ 0001:00000220       gIp4ComponentName          00000000000004a0     Ip4Dxe:ComponentName.obj
+ 0001:00000238       gIp4ComponentName2         00000000000004b8     Ip4Dxe:ComponentName.obj
+ 0001:00000250       mIp4DriverNameTable        00000000000004d0     Ip4Dxe:ComponentName.obj
+ 0001:00000270       mStatusString              00000000000004f0     BasePrintLib:PrintLibInternal.obj
+ 0001:000003b0       gIp4AllMasks               0000000000000630     DxeNetLib:DxeNetLib.obj
+ 0001:00000440       _gUefiDriverRevision       00000000000006c0     Ip4Dxe:AutoGen.obj
+ 0001:00000448       ??_C@_1DG@IHGHICFA@?$AAI?$AAP?$AA4?$AA?5?$AAN?$AAe?$AAt?$AAw?$AAo?$AAr?$AAk?$AA?5?$AAS?$AAe?$AAr?$AAv?$AAi?$AAc?$AAe?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$AA@ 00000000000006c8     Ip4Dxe:ComponentName.obj
+ 0001:00000480       ??_C@_06DALJLGPG@eng?$DLen?$AA@ 0000000000000700     Ip4Dxe:ComponentName.obj
+ 0001:00000488       ??_C@_02LFNMGJAP@en?$AA@   0000000000000708     Ip4Dxe:ComponentName.obj
+ 0001:0000048c       ??_C@_03LKLGDMJI@eng?$AA@  000000000000070c     Ip4Dxe:ComponentName.obj
+ 0001:00000490       ??_C@_1CG@HLBCDCEC@?$AAI?$AAP?$AAv?$AA4?$AA?5?$AA?$CI?$AAN?$AAo?$AAt?$AA?5?$AAs?$AAt?$AAa?$AAr?$AAt?$AAe?$AAd?$AA?$CJ?$AA?$AA@ 0000000000000710     Ip4Dxe:ComponentName.obj
+ 0001:000004b8       ??_C@_1DC@IHJIMGND@?$AAI?$AAP?$AAv?$AA4?$AA?5?$AA?$CI?$AAS?$AAr?$AAc?$AAI?$AAP?$AA?$DN?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd?$AA?$CJ?$AA?$AA@ 0000000000000738     Ip4Dxe:ComponentName.obj
+ 0001:000004f0       ??_C@_0BB@MFGDFIJM@Compromised?5Data?$AA@ 0000000000000770     BasePrintLib:PrintLibInternal.obj
+ 0001:00000508       ??_C@_0BB@KFJAMCOC@Invalid?5Language?$AA@ 0000000000000788     BasePrintLib:PrintLibInternal.obj
+ 0001:00000520       ??_C@_0M@FKGOBENP@End?5of?5File?$AA@ 00000000000007a0     BasePrintLib:PrintLibInternal.obj
+ 0001:00000530       ??_C@_0O@GLPDOMCP@Reserved?5?$CI30?$CJ?$AA@ 00000000000007b0     BasePrintLib:PrintLibInternal.obj
+ 0001:00000540       ??_C@_0O@NMJOLAMF@Reserved?5?$CI29?$CJ?$AA@ 00000000000007c0     BasePrintLib:PrintLibInternal.obj
+ 0001:00000550       ??_C@_0N@JEJDHPO@End?5of?5Media?$AA@ 00000000000007d0     BasePrintLib:PrintLibInternal.obj
+ 0001:00000560       ??_C@_09BOMAGJEG@CRC?5Error?$AA@ 00000000000007e0     BasePrintLib:PrintLibInternal.obj
+ 0001:00000570       ??_C@_0BD@KHMPCIOG@Security?5Violation?$AA@ 00000000000007f0     BasePrintLib:PrintLibInternal.obj
+ 0001:00000588       ??_C@_0BF@EHOBGFMI@Incompatible?5Version?$AA@ 0000000000000808     BasePrintLib:PrintLibInternal.obj
+ 0001:000005a0       ??_C@_0P@NCJHBCLM@Protocol?5Error?$AA@ 0000000000000820     BasePrintLib:PrintLibInternal.obj
+ 0001:000005b0       ??_C@_0L@DJKNJKHM@TFTP?5Error?$AA@ 0000000000000830     BasePrintLib:PrintLibInternal.obj
+ 0001:000005c0       ??_C@_0L@LKIFCMNO@ICMP?5Error?$AA@ 0000000000000840     BasePrintLib:PrintLibInternal.obj
+ 0001:000005d0       ??_C@_07LCKDCBKK@Aborted?$AA@ 0000000000000850     BasePrintLib:PrintLibInternal.obj
+ 0001:000005d8       ??_C@_0BA@IGIBFFPH@Already?5started?$AA@ 0000000000000858     BasePrintLib:PrintLibInternal.obj
+ 0001:000005e8       ??_C@_0M@DCJFAFHJ@Not?5started?$AA@ 0000000000000868     BasePrintLib:PrintLibInternal.obj
+ 0001:000005f8       ??_C@_08PAFJCNGP@Time?5out?$AA@ 0000000000000878     BasePrintLib:PrintLibInternal.obj
+ 0001:00000608       ??_C@_0L@IFPBNFC@No?5mapping?$AA@ 0000000000000888     BasePrintLib:PrintLibInternal.obj
+ 0001:00000618       ??_C@_0M@ENKCBFEP@No?5Response?$AA@ 0000000000000898     BasePrintLib:PrintLibInternal.obj
+ 0001:00000628       ??_C@_0O@NFHOBIDO@Access?5Denied?$AA@ 00000000000008a8     BasePrintLib:PrintLibInternal.obj
+ 0001:00000638       ??_C@_09CFCBFJND@Not?5Found?$AA@ 00000000000008b8     BasePrintLib:PrintLibInternal.obj
+ 0001:00000648       ??_C@_0O@JNCJKCCD@Media?5changed?$AA@ 00000000000008c8     BasePrintLib:PrintLibInternal.obj
+ 0001:00000658       ??_C@_08KEGAJDNN@No?5Media?$AA@ 00000000000008d8     BasePrintLib:PrintLibInternal.obj
+ 0001:00000668       ??_C@_0M@HDLEPOFA@Volume?5Full?$AA@ 00000000000008e8     BasePrintLib:PrintLibInternal.obj
+ 0001:00000678       ??_C@_0P@EIOJGIF@Volume?5Corrupt?$AA@ 00000000000008f8     BasePrintLib:PrintLibInternal.obj
+ 0001:00000688       ??_C@_0BB@GOILNEAA@Out?5of?5Resources?$AA@ 0000000000000908     BasePrintLib:PrintLibInternal.obj
+ 0001:000006a0       ??_C@_0BA@LNEDDFNB@Write?5Protected?$AA@ 0000000000000920     BasePrintLib:PrintLibInternal.obj
+ 0001:000006b0       ??_C@_0N@HHEABDHO@Device?5Error?$AA@ 0000000000000930     BasePrintLib:PrintLibInternal.obj
+ 0001:000006c0       ??_C@_09NKFGCIPN@Not?5Ready?$AA@ 0000000000000940     BasePrintLib:PrintLibInternal.obj
+ 0001:000006d0       ??_C@_0BB@EGELJFOB@Buffer?5Too?5Small?$AA@ 0000000000000950     BasePrintLib:PrintLibInternal.obj
+ 0001:000006e8       ??_C@_0BA@FLNMPMCF@Bad?5Buffer?5Size?$AA@ 0000000000000968     BasePrintLib:PrintLibInternal.obj
+ 0001:000006f8       ??_C@_0M@BEECMOIL@Unsupported?$AA@ 0000000000000978     BasePrintLib:PrintLibInternal.obj
+ 0001:00000708       ??_C@_0BC@HOFHKGJN@Invalid?5Parameter?$AA@ 0000000000000988     BasePrintLib:PrintLibInternal.obj
+ 0001:00000720       ??_C@_0L@PLPBEPPC@Load?5Error?$AA@ 00000000000009a0     BasePrintLib:PrintLibInternal.obj
+ 0001:00000730       ??_C@_0BD@IFJNJCCO@Warning?5Stale?5Data?$AA@ 00000000000009b0     BasePrintLib:PrintLibInternal.obj
+ 0001:00000748       ??_C@_0BJ@ODIPDGHB@Warning?5Buffer?5Too?5Small?$AA@ 00000000000009c8     BasePrintLib:PrintLibInternal.obj
+ 0001:00000768       ??_C@_0BG@ECIJMOED@Warning?5Write?5Failure?$AA@ 00000000000009e8     BasePrintLib:PrintLibInternal.obj
+ 0001:00000780       ??_C@_0BH@GKKCJEPJ@Warning?5Delete?5Failure?$AA@ 0000000000000a00     BasePrintLib:PrintLibInternal.obj
+ 0001:00000798       ??_C@_0BG@CFJMNNJK@Warning?5Unknown?5Glyph?$AA@ 0000000000000a18     BasePrintLib:PrintLibInternal.obj
+ 0001:000007b0       ??_C@_07PBILKAFL@Success?$AA@ 0000000000000a30     BasePrintLib:PrintLibInternal.obj
+ 0001:000007b8       mHexStr                    0000000000000a38     BasePrintLib:PrintLibInternal.obj
+ 0001:000007c8       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO?$AA@ 0000000000000a48     BasePrintLib:PrintLibInternal.obj
+ 0001:000007d8       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO?$AA@ 0000000000000a58     BasePrintLib:PrintLibInternal.obj
+ 0001:000007e8       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02x@ 0000000000000a68     BasePrintLib:PrintLibInternal.obj
+ 0001:00000820       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO?$AA@ 0000000000000aa0     BasePrintLib:PrintLibInternal.obj
+ 0001:00000830       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d?$AA@ 0000000000000ab0     BasePrintLib:PrintLibInternal.obj
+ 0001:0000084c       ??_C@_04JIMNDDED@?$CF08X?$AA@ 0000000000000acc     BasePrintLib:PrintLibInternal.obj
+ 0001:00000854       ??_C@_02PCIJFNDE@?$AN?6?$AA@ 0000000000000ad4     BasePrintLib:PrintLibInternal.obj
+ 0001:00000858       ??_C@_01LIIJDEN@?$AN?$AA@  0000000000000ad8     BasePrintLib:PrintLibInternal.obj
+ 0001:00000860       _DriverUnloadHandler       0000000000000ae0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000009e4       _ModuleEntryPoint          0000000000000c64 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000a88       ProcessLibraryConstructorList 0000000000000d08 f   Ip4Dxe:AutoGen.obj
+ 0001:00000b80       Ip4DriverBindingSupported  0000000000000e00 f   Ip4Dxe:Ip4Driver.obj
+ 0001:00000bf8       Ip4CreateService           0000000000000e78 f   Ip4Dxe:Ip4Driver.obj
+ 0001:00000f04       Ip4CleanService            0000000000001184 f   Ip4Dxe:Ip4Driver.obj
+ 0001:000010bc       Ip4DestroyChildEntryInHandleBuffer 000000000000133c f   Ip4Dxe:Ip4Driver.obj
+ 0001:0000110c       Ip4DriverBindingStart      000000000000138c f   Ip4Dxe:Ip4Driver.obj
+ 0001:00001294       Ip4DriverBindingStop       0000000000001514 f   Ip4Dxe:Ip4Driver.obj
+ 0001:000016dc       Ip4ServiceBindingCreateChild 000000000000195c f   Ip4Dxe:Ip4Driver.obj
+ 0001:00001830       Ip4ServiceBindingDestroyChild 0000000000001ab0 f   Ip4Dxe:Ip4Driver.obj
+ 0001:00001a30       Ip4FreeLinkTxToken         0000000000001cb0 f   Ip4Dxe:Ip4If.obj
+ 0001:00001a60       Ip4CreateArpQue            0000000000001ce0 f   Ip4Dxe:Ip4If.obj
+ 0001:00001b18       Ip4CreateLinkRxToken       0000000000001d98 f   Ip4Dxe:Ip4If.obj
+ 0001:00001bc4       Ip4CancelFrameArp          0000000000001e44 f   Ip4Dxe:Ip4If.obj
+ 0001:00001c6c       Ip4CancelFrames            0000000000001eec f   Ip4Dxe:Ip4If.obj
+ 0001:00001d3c       Ip4CreateInterface         0000000000001fbc f   Ip4Dxe:Ip4If.obj
+ 0001:00001e7c       Ip4SetAddress              00000000000020fc f   Ip4Dxe:Ip4If.obj
+ 0001:00002028       Ip4CancelInstanceFrame     00000000000022a8 f   Ip4Dxe:Ip4If.obj
+ 0001:00002030       Ip4CancelReceive           00000000000022b0 f   Ip4Dxe:Ip4If.obj
+ 0001:00002094       Ip4FreeInterface           0000000000002314 f   Ip4Dxe:Ip4If.obj
+ 0001:0000215c       Ip4OnArpResolvedDpc        00000000000023dc f   Ip4Dxe:Ip4If.obj
+ 0001:000022d4       Ip4OnArpResolved           0000000000002554 f   Ip4Dxe:Ip4If.obj
+ 0001:000022f0       Ip4OnFrameSentDpc          0000000000002570 f   Ip4Dxe:Ip4If.obj
+ 0001:0000233c       Ip4OnFrameSent             00000000000025bc f   Ip4Dxe:Ip4If.obj
+ 0001:00002358       Ip4SendFrame               00000000000025d8 f   Ip4Dxe:Ip4If.obj
+ 0001:000026f8       Ip4RecycleFrame            0000000000002978 f   Ip4Dxe:Ip4If.obj
+ 0001:00002734       Ip4OnFrameReceivedDpc      00000000000029b4 f   Ip4Dxe:Ip4If.obj
+ 0001:00002848       Ip4OnFrameReceived         0000000000002ac8 f   Ip4Dxe:Ip4If.obj
+ 0001:00002864       Ip4ReceiveFrame            0000000000002ae4 f   Ip4Dxe:Ip4If.obj
+ 0001:00002908       Ip4ComponentNameGetDriverName 0000000000002b88 f   Ip4Dxe:ComponentName.obj
+ 0001:0000293c       UpdateName                 0000000000002bbc f   Ip4Dxe:ComponentName.obj
+ 0001:00002a34       Ip4ComponentNameGetControllerName 0000000000002cb4 f   Ip4Dxe:ComponentName.obj
+ 0001:00002b1c       Ip4GetHostCast             0000000000002d9c f   Ip4Dxe:Ip4Common.obj
+ 0001:00002c20       Ip4NtohHead                0000000000002ea0 f   Ip4Dxe:Ip4Common.obj
+ 0001:00002c8c       Ip4SetVariableData         0000000000002f0c f   Ip4Dxe:Ip4Common.obj
+ 0001:00002e5c       EfiIp4GetModeData          00000000000030dc f   Ip4Dxe:Ip4Impl.obj
+ 0001:0000302c       Ip4ServiceConfigMnp        00000000000032ac f   Ip4Dxe:Ip4Impl.obj
+ 0001:000030d8       Ip4AutoConfigCallBackDpc   0000000000003358 f   Ip4Dxe:Ip4Impl.obj
+ 0001:0000339c       Ip4AutoConfigCallBack      000000000000361c f   Ip4Dxe:Ip4Impl.obj
+ 0001:000033c0       Ip4StartAutoConfig         0000000000003640 f   Ip4Dxe:Ip4Impl.obj
+ 0001:00003524       Ip4InitProtocol            00000000000037a4 f   Ip4Dxe:Ip4Impl.obj
+ 0001:00003604       Ip4ConfigProtocol          0000000000003884 f   Ip4Dxe:Ip4Impl.obj
+ 0001:000038d0       Ip4CleanProtocol           0000000000003b50 f   Ip4Dxe:Ip4Impl.obj
+ 0001:00003a14       EfiIp4Configure            0000000000003c94 f   Ip4Dxe:Ip4Impl.obj
+ 0001:00003c44       Ip4Groups                  0000000000003ec4 f   Ip4Dxe:Ip4Impl.obj
+ 0001:000040c8       EfiIp4Groups               0000000000004348 f   Ip4Dxe:Ip4Impl.obj
+ 0001:000041d4       EfiIp4Routes               0000000000004454 f   Ip4Dxe:Ip4Impl.obj
+ 0001:000043cc       Ip4TokenExist              000000000000464c f   Ip4Dxe:Ip4Impl.obj
+ 0001:000043ec       Ip4TxTokenValid            000000000000466c f   Ip4Dxe:Ip4Impl.obj
+ 0001:000045e0       Ip4FreeTxToken             0000000000004860 f   Ip4Dxe:Ip4Impl.obj
+ 0001:00004690       Ip4OnPacketSent            0000000000004910 f   Ip4Dxe:Ip4Impl.obj
+ 0001:000046a8       EfiIp4Transmit             0000000000004928 f   Ip4Dxe:Ip4Impl.obj
+ 0001:00004b10       EfiIp4Receive              0000000000004d90 f   Ip4Dxe:Ip4Impl.obj
+ 0001:00004bf0       Ip4CancelTxTokens          0000000000004e70 f   Ip4Dxe:Ip4Impl.obj
+ 0001:00004c4c       Ip4CancelRxTokens          0000000000004ecc f   Ip4Dxe:Ip4Impl.obj
+ 0001:00004cd4       Ip4Cancel                  0000000000004f54 f   Ip4Dxe:Ip4Impl.obj
+ 0001:00004da0       EfiIp4Cancel               0000000000005020 f   Ip4Dxe:Ip4Impl.obj
+ 0001:00004e3c       EfiIp4Poll                 00000000000050bc f   Ip4Dxe:Ip4Impl.obj
+ 0001:00004e70       Ip4SentPacketTicking       00000000000050f0 f   Ip4Dxe:Ip4Impl.obj
+ 0001:00004eb8       Ip4TimerTicking            0000000000005138 f   Ip4Dxe:Ip4Impl.obj
+ 0001:00005010       Ip4PrependHead             0000000000005290 f   Ip4Dxe:Ip4Output.obj
+ 0001:0000516c       Ip4SysPacketSent           00000000000053ec f   Ip4Dxe:Ip4Output.obj
+ 0001:00005174       Ip4Output                  00000000000053f4 f   Ip4Dxe:Ip4Output.obj
+ 0001:00005518       Ip4CancelPacketFragments   0000000000005798 f   Ip4Dxe:Ip4Output.obj
+ 0001:0000552c       Ip4FreeAssembleEntry       00000000000057ac f   Ip4Dxe:Ip4Input.obj
+ 0001:00005590       Ip4TrimPacket              0000000000005810 f   Ip4Dxe:Ip4Input.obj
+ 0001:00005604       Ip4OnFreeFragments         0000000000005884 f   Ip4Dxe:Ip4Input.obj
+ 0001:0000560c       Ip4Reassemble              000000000000588c f   Ip4Dxe:Ip4Input.obj
+ 0001:00005970       Ip4IpSecFree               0000000000005bf0 f   Ip4Dxe:Ip4Input.obj
+ 0001:000059a8       Ip4IpSecProcessPacket      0000000000005c28 f   Ip4Dxe:Ip4Input.obj
+ 0001:00005d2c       Ip4PreProcessPacket        0000000000005fac f   Ip4Dxe:Ip4Input.obj
+ 0001:00005edc       Ip4AccpetFrame             000000000000615c f   Ip4Dxe:Ip4Input.obj
+ 0001:00006078       Ip4OnRecyclePacket         00000000000062f8 f   Ip4Dxe:Ip4Input.obj
+ 0001:00006118       Ip4WrapRxData              0000000000006398 f   Ip4Dxe:Ip4Input.obj
+ 0001:0000622c       Ip4InstanceDeliverPacket   00000000000064ac f   Ip4Dxe:Ip4Input.obj
+ 0001:0000644c       Ip4InterfaceEnquePacket    00000000000066cc f   Ip4Dxe:Ip4Input.obj
+ 0001:000066d8       Ip4Demultiplex             0000000000006958 f   Ip4Dxe:Ip4Input.obj
+ 0001:0000679c       Ip4InitIgmp                0000000000006a1c f   Ip4Dxe:Ip4Igmp.obj
+ 0001:00006890       Ip4SendIgmpMessage         0000000000006b10 f   Ip4Dxe:Ip4Igmp.obj
+ 0001:000069a8       Ip4IgmpHandle              0000000000006c28 f   Ip4Dxe:Ip4Igmp.obj
+ 0001:00006b34       Ip4CreateRouteTable        0000000000006db4 f   Ip4Dxe:Ip4Route.obj
+ 0001:00006b94       Ip4FreeRouteTable          0000000000006e14 f   Ip4Dxe:Ip4Route.obj
+ 0001:00006c90       Ip4AddRoute                0000000000006f10 f   Ip4Dxe:Ip4Route.obj
+ 0001:00006d80       Ip4DelRoute                0000000000007000 f   Ip4Dxe:Ip4Route.obj
+ 0001:00006e9c       Ip4FindRouteCache          000000000000711c f   Ip4Dxe:Ip4Route.obj
+ 0001:00006ef0       Ip4Route                   0000000000007170 f   Ip4Dxe:Ip4Route.obj
+ 0001:000070b0       Ip4BuildEfiRouteTable      0000000000007330 f   Ip4Dxe:Ip4Route.obj
+ 0001:00007234       Ip4ProcessIcmpRedirect     00000000000074b4 f   Ip4Dxe:Ip4Icmp.obj
+ 0001:000073a8       Ip4IcmpReplyEcho           0000000000007628 f   Ip4Dxe:Ip4Icmp.obj
+ 0001:00007490       Ip4IcmpHandle              0000000000007710 f   Ip4Dxe:Ip4Icmp.obj
+ 0001:000075bc       Ip4OptionIsValid           000000000000783c f   Ip4Dxe:Ip4Option.obj
+ 0001:0000768c       Ip4CopyOption              000000000000790c f   Ip4Dxe:Ip4Option.obj
+ 0001:0000779c       UnicodeSPrint              0000000000007a1c f   BasePrintLib:PrintLib.obj
+ 0001:000077d0       BasePrintLibFillBuffer     0000000000007a50 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00007804       BasePrintLibConvertValueToString 0000000000007a84 f   BasePrintLib:PrintLibInternal.obj
+ 0001:000079a8       BasePrintLibSPrintMarker   0000000000007c28 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00008658       BasePrintLibSPrint         00000000000088d8 f   BasePrintLib:PrintLibInternal.obj
+ 0001:0000867c       InternalAllocatePool       00000000000088fc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000086b0       AllocateZeroPool           0000000000008930 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000086d4       InternalAllocateCopyPool   0000000000008954 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00008714       DevicePathFromHandle       0000000000008994 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00008748       EfiTestChildHandle         00000000000089c8 f   UefiLib:UefiLib.obj
+ 0001:0000879c       LookupUnicodeString2       0000000000008a1c f   UefiLib:UefiLib.obj
+ 0001:00008928       AddUnicodeString2          0000000000008ba8 f   UefiLib:UefiLib.obj
+ 0001:00008bd0       FreeUnicodeStringTable     0000000000008e50 f   UefiLib:UefiLib.obj
+ 0001:00008c48       NetGetIpClass              0000000000008ec8 f   DxeNetLib:DxeNetLib.obj
+ 0001:00008c84       NetMapClean                0000000000008f04 f   DxeNetLib:DxeNetLib.obj
+ 0001:00008d08       NetMapAllocItem            0000000000008f88 f   DxeNetLib:DxeNetLib.obj
+ 0001:00008d78       NetMapInsertTail           0000000000008ff8 f   DxeNetLib:DxeNetLib.obj
+ 0001:00008ddc       NetMapIterate              000000000000905c f   DxeNetLib:DxeNetLib.obj
+ 0001:00008e38       NetLibDestroyServiceChild  00000000000090b8 f   DxeNetLib:DxeNetLib.obj
+ 0001:00008e84       NetLibGetSnpHandle         0000000000009104 f   DxeNetLib:DxeNetLib.obj
+ 0001:00008f4c       NetLibGetVlanId            00000000000091cc f   DxeNetLib:DxeNetLib.obj
+ 0001:00008f94       NetLibGetMacString         0000000000009214 f   DxeNetLib:DxeNetLib.obj
+ 0001:00009174       NetbufAllocStruct          00000000000093f4 f   DxeNetLib:NetBuffer.obj
+ 0001:00009218       NetbufAlloc                0000000000009498 f   DxeNetLib:NetBuffer.obj
+ 0001:000092a8       NetbufFreeVector           0000000000009528 f   DxeNetLib:NetBuffer.obj
+ 0001:00009328       NetbufFree                 00000000000095a8 f   DxeNetLib:NetBuffer.obj
+ 0001:00009354       NetbufClone                00000000000095d4 f   DxeNetLib:NetBuffer.obj
+ 0001:00009428       NetbufDuplicate            00000000000096a8 f   DxeNetLib:NetBuffer.obj
+ 0001:000094b4       NetbufGetByte              0000000000009734 f   DxeNetLib:NetBuffer.obj
+ 0001:00009510       NetbufGetFragmentFree      0000000000009790 f   DxeNetLib:NetBuffer.obj
+ 0001:00009518       NetbufGetFragment          0000000000009798 f   DxeNetLib:NetBuffer.obj
+ 0001:000097c4       NetbufFromExt              0000000000009a44 f   DxeNetLib:NetBuffer.obj
+ 0001:00009a6c       NetbufBuildExt             0000000000009cec f   DxeNetLib:NetBuffer.obj
+ 0001:00009ac4       NetbufAllocSpace           0000000000009d44 f   DxeNetLib:NetBuffer.obj
+ 0001:00009c04       NetbufTrim                 0000000000009e84 f   DxeNetLib:NetBuffer.obj
+ 0001:00009cb8       NetbufCopy                 0000000000009f38 f   DxeNetLib:NetBuffer.obj
+ 0001:00009e10       NetblockChecksum           000000000000a090 f   DxeNetLib:NetBuffer.obj
+ 0001:00009e54       NetbufChecksum             000000000000a0d4 f   DxeNetLib:NetBuffer.obj
+ 0001:00009ee0       InternalMemZeroMem         000000000000a160 f   BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00009f00       InternalMemCompareMem      000000000000a180 f   BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00009f20       InternalMemCopyMem         000000000000a1a0 f   BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00009f60       InternalMemSetMem          000000000000a1e0 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:00009f80       InternalMemSetMem32        000000000000a200 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00009fa0       InternalMemSetMem64        000000000000a220 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00009fc0       gIp4ControllerNameTable    000000000000a240     Ip4Dxe:ComponentName.obj
+ 0001:00009fc8       mIpSec                     000000000000a248     Ip4Dxe:Ip4Impl.obj
+ 0001:00009fd0       gImageHandle               000000000000a250     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00009fd8       gST                        000000000000a258     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00009fe0       gBS                        000000000000a260     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00009fe8       gRT                        000000000000a268     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0001:00009ff0       gHiiFont                   000000000000a270     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0001:00009ff8       gHiiString                 000000000000a278     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0001:0000a000       gHiiImage                  000000000000a280     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0001:0000a008       gHiiDatabase               000000000000a288     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0001:0000a010       gHiiConfigRouting          000000000000a290     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0001:0000a018       mUefiFormBrowser2          000000000000a298     UefiHiiLib:HiiLib.obj
+ 0001:0000a020       mDevicePathLibDevicePathUtilities 000000000000a2a0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:0000a028       mDpc                       000000000000a2a8     <common>
+ 0001:0000a030       mIp4Id                     000000000000a2b0     <common>
+ 0001:0000a040       mZeroMacAddress            000000000000a2c0     <common>
+
+ entry point at        0001:000009e4
+
+ Static symbols
+

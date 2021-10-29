@@ -1,0 +1,5 @@
+/Ic:\vector-edk-master\OvmfPkg\AcpiTables
+/Ic:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\AcpiTables\AcpiTables\DEBUG
+/Ic:\vector-edk-master\MdePkg
+/Ic:\vector-edk-master\MdePkg\Include
+/Ic:\vector-edk-master\MdePkg\Include\X64

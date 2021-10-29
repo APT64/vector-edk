@@ -1,0 +1,97 @@
+ S3SaveStateDxe
+
+ Timestamp is 617b1158 (Fri Oct 29 00:08:40 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000000b0H .data                   CODE
+ 0001:000000b0 00000004H .rdata                  CODE
+ 0001:000000c0 000024a3H .text                   CODE
+ 0001:00002568 00000088H .bss                    CODE
+ 0002:00000000 000001e0H .pdata                  DATA
+ 0003:00000000 00000180H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       gEfiS3SaveStateProtocolGuid 0000000000000260     S3SaveStateDxe:AutoGen.obj
+ 0001:00000010       gPcdProtocolGuid           0000000000000270     S3SaveStateDxe:AutoGen.obj
+ 0001:00000020       gEfiDevicePathUtilitiesProtocolGuid 0000000000000280     S3SaveStateDxe:AutoGen.obj
+ 0001:00000030       gEfiSmmBase2ProtocolGuid   0000000000000290     S3SaveStateDxe:AutoGen.obj
+ 0001:00000040       gEfiDxeSmmReadyToLockProtocolGuid 00000000000002a0     S3SaveStateDxe:AutoGen.obj
+ 0001:00000050       gEfiSmmReadyToLockProtocolGuid 00000000000002b0     S3SaveStateDxe:AutoGen.obj
+ 0001:00000060       mBootScriptDataGuid        00000000000002c0     DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00000070       mBootScriptDataOrgGuid     00000000000002d0     DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00000080       mBootScriptHeaderDataGuid  00000000000002e0     DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00000090       mS3SaveState               00000000000002f0     S3SaveStateDxe:S3SaveState.obj
+ 0001:000000b0       _gUefiDriverRevision       0000000000000310     S3SaveStateDxe:AutoGen.obj
+ 0001:000000c0       _ModuleEntryPoint          0000000000000320 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000f4       ProcessLibraryConstructorList 0000000000000354 f   S3SaveStateDxe:AutoGen.obj
+ 0001:000001e8       BootScriptWriteIoWrite     0000000000000448 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:000002c8       BootScriptWriteIoReadWrite 0000000000000528 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:000003bc       BootScriptWriteMemWrite    000000000000061c f   S3SaveStateDxe:S3SaveState.obj
+ 0001:000004a0       BootScriptWriteMemReadWrite 0000000000000700 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:00000598       BootScriptWritePciCfgWrite 00000000000007f8 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:000006a0       BootScriptWritePciCfgReadWrite 0000000000000900 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:000007c0       BootScriptWritePciCfg2Write 0000000000000a20 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:000008d8       BootScriptWritePciCfg2ReadWrite 0000000000000b38 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:00000a08       BootScriptWriteSmbusExecute 0000000000000c68 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:00000bd0       BootScriptWriteStall       0000000000000e30 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:00000c4c       BootScriptWriteDispatch    0000000000000eac f   S3SaveStateDxe:S3SaveState.obj
+ 0001:00000cc8       BootScriptWriteMemPoll     0000000000000f28 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:00000e00       BootScriptWriteDispatch2   0000000000001060 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:00000e90       BootScriptWriteIoPoll      00000000000010f0 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:00000f90       BootScriptWritePciConfigPoll 00000000000011f0 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:000010bc       BootScriptWritePciConfig2Poll 000000000000131c f   S3SaveStateDxe:S3SaveState.obj
+ 0001:000011f8       BootScriptWrite            0000000000001458 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:00001358       BootScriptInsert           00000000000015b8 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:000014c8       BootScriptLabel            0000000000001728 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:00001628       BootScriptCompare          0000000000001888 f   S3SaveStateDxe:S3SaveState.obj
+ 0001:000016c8       AllocateAcpiNvsPool        0000000000001928 f   LockBoxDxeLib:LockBoxDxe.obj
+ 0001:000017c0       SaveLockBox                0000000000001a20 f   LockBoxDxeLib:LockBoxLib.obj
+ 0001:00001888       UpdateLockBox              0000000000001ae8 f   LockBoxDxeLib:LockBoxLib.obj
+ 0001:0000190c       RestoreLockBox             0000000000001b6c f   LockBoxDxeLib:LockBoxLib.obj
+ 0001:000019c0       S3BootScriptInternalCloseTable 0000000000001c20 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00001a28       S3BootScriptEventCallBack  0000000000001c88 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00001b04       S3BootScriptSmmEventCallBack 0000000000001d64 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00001b74       S3BootScriptLibInitialize  0000000000001dd4 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00001d38       S3BootScriptGetBootTimeEntryAddAddress 0000000000001f98 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00001e7c       S3BootScriptGetEntryAddAddress 00000000000020dc f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00001fb0       SyncBootScript             0000000000002210 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00001fec       S3BootScriptSaveInformation 000000000000224c f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:0000208c       S3BootScriptCalculateInsertAddress 00000000000022ec f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00002168       S3BootScriptMoveLastOpcode 00000000000023c8 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:00002308       S3BootScriptLabelInternal  0000000000002568 f   DxeS3BootScriptLib:BootScriptSave.obj
+ 0001:000023c0       GetPcdProtocol             0000000000002620 f   DxePcdLib:DxePcdLib.obj
+ 0001:000023fc       PciCf8Read8                000000000000265c f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00002444       SaveAndDisableInterrupts   00000000000026a4 f   BaseLib:Cpu.obj
+ 0001:00002470       CpuPause                   00000000000026d0 f   BaseLib:CpuPause.obj
+ 0001:00002480       InternalMemSetMem          00000000000026e0 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:000024a0       InternalMemCopyMem         0000000000002700 f   BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000024e0       InternalMemZeroMem         0000000000002740 f   BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00002500       InternalMemSetMem32        0000000000002760 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00002520       InternalMemSetMem64        0000000000002780 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00002540       DisableInterrupts          00000000000027a0 f   BaseLib:DisableInterrupts.obj
+ 0001:00002550       EnableInterrupts           00000000000027b0 f   BaseLib:EnableInterrupts.obj
+ 0001:00002560       AsmReadEflags              00000000000027c0 f   BaseLib:ReadEflags.obj
+ 0001:00002568       mHandle                    00000000000027c8     S3SaveStateDxe:S3SaveState.obj
+ 0001:00002570       gImageHandle               00000000000027d0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00002578       gST                        00000000000027d8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00002580       gBS                        00000000000027e0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00002588       gRT                        00000000000027e8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0001:00002590       mLockBoxGlobal             00000000000027f0     LockBoxDxeLib:LockBoxLib.obj
+ 0001:000025a8       mPcd                       0000000000002808     DxePcdLib:DxePcdLib.obj
+ 0001:000025b0       mPiPcd                     0000000000002810     DxePcdLib:DxePcdLib.obj
+ 0001:000025b8       mPcdInfo                   0000000000002818     DxePcdLib:DxePcdLib.obj
+ 0001:000025c0       mPiPcdInfo                 0000000000002820     DxePcdLib:DxePcdLib.obj
+ 0001:000025c8       mDevicePathLibDevicePathUtilities 0000000000002828     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:000025d0       mEnterRuntimeEvent         0000000000002830     <common>
+ 0001:000025d8       mS3BootScriptTablePtr      0000000000002838     <common>
+ 0001:000025e0       mS3BootScriptTableSmmPtr   0000000000002840     <common>
+ 0001:000025e8       mLockBoxLength             0000000000002848     <common>
+
+ entry point at        0001:000000c0
+
+ Static symbols
+
+ 0001:00001788       FindHeaderByGuid           00000000000019e8 f    CIL library: CIL module

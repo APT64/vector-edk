@@ -1,0 +1,223 @@
+ UefiPxe4BcDxe
+
+ Timestamp is 617b1165 (Fri Oct 29 00:08:53 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000004e8H .data                   CODE
+ 0001:000004f0 00000602H .rdata                  CODE
+ 0001:00000b00 00007242H .text                   CODE
+ 0001:00007d48 00000068H .bss                    CODE
+ 0002:00000000 000002e8H .pdata                  DATA
+ 0003:00000000 000003c8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       gEfiSmbiosTableGuid        0000000000000260     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000010       gEfiArpServiceBindingProtocolGuid 0000000000000270     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000020       gEfiArpProtocolGuid        0000000000000280     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000030       gEfiMtftp4ServiceBindingProtocolGuid 0000000000000290     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000040       gEfiMtftp4ProtocolGuid     00000000000002a0     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000050       gEfiUdp4ServiceBindingProtocolGuid 00000000000002b0     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000060       gEfiDhcp4ServiceBindingProtocolGuid 00000000000002c0     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000070       gEfiPxeBaseCodeCallbackProtocolGuid 00000000000002d0     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000080       gEfiPxeBaseCodeProtocolGuid 00000000000002e0     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000090       gEfiLoadFileProtocolGuid   00000000000002f0     UefiPxe4BcDxe:AutoGen.obj
+ 0001:000000a0       gEfiDhcp4ProtocolGuid      0000000000000300     UefiPxe4BcDxe:AutoGen.obj
+ 0001:000000b0       gEfiUdp4ProtocolGuid       0000000000000310     UefiPxe4BcDxe:AutoGen.obj
+ 0001:000000c0       gEfiNetworkInterfaceIdentifierProtocolGuid_31 0000000000000320     UefiPxe4BcDxe:AutoGen.obj
+ 0001:000000d0       gEfiIp4ServiceBindingProtocolGuid 0000000000000330     UefiPxe4BcDxe:AutoGen.obj
+ 0001:000000e0       gEfiIp4ProtocolGuid        0000000000000340     UefiPxe4BcDxe:AutoGen.obj
+ 0001:000000f0       gEfiDevicePathProtocolGuid 0000000000000350     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000100       gEfiDevicePathUtilitiesProtocolGuid 0000000000000360     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000110       gEfiHiiFontProtocolGuid    0000000000000370     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000120       gEfiHiiStringProtocolGuid  0000000000000380     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000130       gEfiHiiImageProtocolGuid   0000000000000390     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000140       gEfiHiiDatabaseProtocolGuid 00000000000003a0     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000150       gEfiHiiConfigRoutingProtocolGuid 00000000000003b0     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000160       gEfiDriverBindingProtocolGuid 00000000000003c0     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000170       gEfiComponentNameProtocolGuid 00000000000003d0     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000180       gEfiComponentName2ProtocolGuid 00000000000003e0     UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000190       gEfiLoadedImageProtocolGuid 00000000000003f0     UefiPxe4BcDxe:AutoGen.obj
+ 0001:000001a0       gEfiSimpleNetworkProtocolGuid 0000000000000400     UefiPxe4BcDxe:AutoGen.obj
+ 0001:000001b0       gEfiDpcProtocolGuid        0000000000000410     UefiPxe4BcDxe:AutoGen.obj
+ 0001:000001c0       mMtftpOptions              0000000000000420     UefiPxe4BcDxe:PxeBcMtftp.obj
+ 0001:000001e0       mInterestedDhcp4Tags       0000000000000440     UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:000001e8       mPxeDhcpTimeout            0000000000000448     UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:000001f8       mLoadFileProtocolTemplate  0000000000000458     UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00000200       mPxeBcProtocolTemplate     0000000000000460     UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00000270       mPxeBcCallBackTemplate     00000000000004d0     UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00000280       gPxeBcDriverBinding        00000000000004e0     UefiPxe4BcDxe:PxeBcDriver.obj
+ 0001:000002b0       gPxeBcComponentName        0000000000000510     UefiPxe4BcDxe:ComponentName.obj
+ 0001:000002c8       gPxeBcComponentName2       0000000000000528     UefiPxe4BcDxe:ComponentName.obj
+ 0001:000002e0       mPxeBcDriverNameTable      0000000000000540     UefiPxe4BcDxe:ComponentName.obj
+ 0001:00000300       mPxeBcControllerNameTable  0000000000000560     UefiPxe4BcDxe:ComponentName.obj
+ 0001:00000320       gIp4AllMasks               0000000000000580     DxeNetLib:DxeNetLib.obj
+ 0001:000003b0       mStatusString              0000000000000610     BasePrintLib:PrintLibInternal.obj
+ 0001:000004f0       _gUefiDriverRevision       0000000000000750     UefiPxe4BcDxe:AutoGen.obj
+ 0001:000004f8       ??_C@_1BO@MKJHNEPA@?$AAP?$AAX?$AAE?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr?$AA?$AA@ 0000000000000758     UefiPxe4BcDxe:ComponentName.obj
+ 0001:00000518       ??_C@_1DE@DLEHGBLE@?$AAU?$AAE?$AAF?$AAI?$AA?5?$AAP?$AAX?$AAE?$AA?5?$AAB?$AAa?$AAs?$AAe?$AA?5?$AAC?$AAo?$AAd?$AAe?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$AA@ 0000000000000778     UefiPxe4BcDxe:ComponentName.obj
+ 0001:0000054c       ??_C@_06DALJLGPG@eng?$DLen?$AA@ 00000000000007ac     UefiPxe4BcDxe:ComponentName.obj
+ 0001:00000554       ??_C@_02LFNMGJAP@en?$AA@   00000000000007b4     UefiPxe4BcDxe:ComponentName.obj
+ 0001:00000558       ??_C@_03LKLGDMJI@eng?$AA@  00000000000007b8     UefiPxe4BcDxe:ComponentName.obj
+ 0001:0000055c       ??_C@_01LFCBOECM@?4?$AA@   00000000000007bc     UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00000560       ??_C@_0DK@LPFJBBNC@PXE?9E05?3?5Download?5buffer?5is?5smal@ 00000000000007c0     UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:000005a0       ??_C@_0CA@DKKMBBFI@PXE?9E07?3?5Network?5device?5error?4?6?$AA@ 0000000000000800     UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:000005c0       ??_C@_0CK@KDODIHKJ@PXE?9E09?3?5Could?5not?5allocate?5I?1O?5@ 0000000000000820     UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:000005f0       ??_C@_0CP@BMPADBBD@PXE?9E12?3?5Could?5not?5detect?5networ@ 0000000000000850     UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00000620       ??_C@_0BN@EBHALIAM@PXE?9E16?3?5No?5offer?5received?4?6?$AA@ 0000000000000880     UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00000640       ??_C@_0CD@PPLMCNPL@PXE?9E18?3?5Server?5response?5timeout@ 00000000000008a0     UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00000668       ??_C@_0CB@LDGBAGOA@PXE?9E21?3?5Remote?5boot?5cancelled?4?6@ 00000000000008c8     UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00000690       ??_C@_0DC@ECCNBKEH@PXE?9E22?3?5Client?5received?5ICMP?5er@ 00000000000008f0     UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:000006c8       ??_C@_0DC@DALEJIMP@PXE?9E23?3?5Client?5received?5TFTP?5er@ 0000000000000928     UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00000700       ??_C@_0CE@FOIGNOLC@PXE?9E99?3?5Unexpected?5network?5erro@ 0000000000000960     UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00000728       ??_C@_0CB@IIAGGHCA@PXEClient?3Arch?3xxxxx?3UNDI?3003000@ 0000000000000988     UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:0000074c       ??_C@_04HBMEJGJK@?$CFa?5?6?$AA@ 00000000000009ac     UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:00000754       ??_C@_05LKLPEAOK@?$CI?$CFd?$CJ?5?$AA@ 00000000000009b4     UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:0000075c       ??_C@_03LFOMKALF@?$CFa?$AN?$AA@ 00000000000009bc     UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:00000760       ??_C@_09HCCMHGIN@multicast?$AA@ 00000000000009c0     UefiPxe4BcDxe:PxeBcMtftp.obj
+ 0001:0000076c       ??_C@_05GHDOEBHJ@tsize?$AA@ 00000000000009cc     UefiPxe4BcDxe:PxeBcMtftp.obj
+ 0001:00000778       ??_C@_07DDHNKDGP@timeout?$AA@ 00000000000009d8     UefiPxe4BcDxe:PxeBcMtftp.obj
+ 0001:00000780       ??_C@_07JPIGAOKK@blksize?$AA@ 00000000000009e0     UefiPxe4BcDxe:PxeBcMtftp.obj
+ 0001:00000788       ??_C@_0BB@MFGDFIJM@Compromised?5Data?$AA@ 00000000000009e8     BasePrintLib:PrintLibInternal.obj
+ 0001:000007a0       ??_C@_0BB@KFJAMCOC@Invalid?5Language?$AA@ 0000000000000a00     BasePrintLib:PrintLibInternal.obj
+ 0001:000007b8       ??_C@_0M@FKGOBENP@End?5of?5File?$AA@ 0000000000000a18     BasePrintLib:PrintLibInternal.obj
+ 0001:000007c8       ??_C@_0O@GLPDOMCP@Reserved?5?$CI30?$CJ?$AA@ 0000000000000a28     BasePrintLib:PrintLibInternal.obj
+ 0001:000007d8       ??_C@_0O@NMJOLAMF@Reserved?5?$CI29?$CJ?$AA@ 0000000000000a38     BasePrintLib:PrintLibInternal.obj
+ 0001:000007e8       ??_C@_0N@JEJDHPO@End?5of?5Media?$AA@ 0000000000000a48     BasePrintLib:PrintLibInternal.obj
+ 0001:000007f8       ??_C@_09BOMAGJEG@CRC?5Error?$AA@ 0000000000000a58     BasePrintLib:PrintLibInternal.obj
+ 0001:00000808       ??_C@_0BD@KHMPCIOG@Security?5Violation?$AA@ 0000000000000a68     BasePrintLib:PrintLibInternal.obj
+ 0001:00000820       ??_C@_0BF@EHOBGFMI@Incompatible?5Version?$AA@ 0000000000000a80     BasePrintLib:PrintLibInternal.obj
+ 0001:00000838       ??_C@_0P@NCJHBCLM@Protocol?5Error?$AA@ 0000000000000a98     BasePrintLib:PrintLibInternal.obj
+ 0001:00000848       ??_C@_0L@DJKNJKHM@TFTP?5Error?$AA@ 0000000000000aa8     BasePrintLib:PrintLibInternal.obj
+ 0001:00000858       ??_C@_0L@LKIFCMNO@ICMP?5Error?$AA@ 0000000000000ab8     BasePrintLib:PrintLibInternal.obj
+ 0001:00000868       ??_C@_07LCKDCBKK@Aborted?$AA@ 0000000000000ac8     BasePrintLib:PrintLibInternal.obj
+ 0001:00000870       ??_C@_0BA@IGIBFFPH@Already?5started?$AA@ 0000000000000ad0     BasePrintLib:PrintLibInternal.obj
+ 0001:00000880       ??_C@_0M@DCJFAFHJ@Not?5started?$AA@ 0000000000000ae0     BasePrintLib:PrintLibInternal.obj
+ 0001:00000890       ??_C@_08PAFJCNGP@Time?5out?$AA@ 0000000000000af0     BasePrintLib:PrintLibInternal.obj
+ 0001:000008a0       ??_C@_0L@IFPBNFC@No?5mapping?$AA@ 0000000000000b00     BasePrintLib:PrintLibInternal.obj
+ 0001:000008b0       ??_C@_0M@ENKCBFEP@No?5Response?$AA@ 0000000000000b10     BasePrintLib:PrintLibInternal.obj
+ 0001:000008c0       ??_C@_0O@NFHOBIDO@Access?5Denied?$AA@ 0000000000000b20     BasePrintLib:PrintLibInternal.obj
+ 0001:000008d0       ??_C@_09CFCBFJND@Not?5Found?$AA@ 0000000000000b30     BasePrintLib:PrintLibInternal.obj
+ 0001:000008e0       ??_C@_0O@JNCJKCCD@Media?5changed?$AA@ 0000000000000b40     BasePrintLib:PrintLibInternal.obj
+ 0001:000008f0       ??_C@_08KEGAJDNN@No?5Media?$AA@ 0000000000000b50     BasePrintLib:PrintLibInternal.obj
+ 0001:00000900       ??_C@_0M@HDLEPOFA@Volume?5Full?$AA@ 0000000000000b60     BasePrintLib:PrintLibInternal.obj
+ 0001:00000910       ??_C@_0P@EIOJGIF@Volume?5Corrupt?$AA@ 0000000000000b70     BasePrintLib:PrintLibInternal.obj
+ 0001:00000920       ??_C@_0BB@GOILNEAA@Out?5of?5Resources?$AA@ 0000000000000b80     BasePrintLib:PrintLibInternal.obj
+ 0001:00000938       ??_C@_0BA@LNEDDFNB@Write?5Protected?$AA@ 0000000000000b98     BasePrintLib:PrintLibInternal.obj
+ 0001:00000948       ??_C@_0N@HHEABDHO@Device?5Error?$AA@ 0000000000000ba8     BasePrintLib:PrintLibInternal.obj
+ 0001:00000958       ??_C@_09NKFGCIPN@Not?5Ready?$AA@ 0000000000000bb8     BasePrintLib:PrintLibInternal.obj
+ 0001:00000968       ??_C@_0BB@EGELJFOB@Buffer?5Too?5Small?$AA@ 0000000000000bc8     BasePrintLib:PrintLibInternal.obj
+ 0001:00000980       ??_C@_0BA@FLNMPMCF@Bad?5Buffer?5Size?$AA@ 0000000000000be0     BasePrintLib:PrintLibInternal.obj
+ 0001:00000990       ??_C@_0M@BEECMOIL@Unsupported?$AA@ 0000000000000bf0     BasePrintLib:PrintLibInternal.obj
+ 0001:000009a0       ??_C@_0BC@HOFHKGJN@Invalid?5Parameter?$AA@ 0000000000000c00     BasePrintLib:PrintLibInternal.obj
+ 0001:000009b8       ??_C@_0L@PLPBEPPC@Load?5Error?$AA@ 0000000000000c18     BasePrintLib:PrintLibInternal.obj
+ 0001:000009c8       ??_C@_0BD@IFJNJCCO@Warning?5Stale?5Data?$AA@ 0000000000000c28     BasePrintLib:PrintLibInternal.obj
+ 0001:000009e0       ??_C@_0BJ@ODIPDGHB@Warning?5Buffer?5Too?5Small?$AA@ 0000000000000c40     BasePrintLib:PrintLibInternal.obj
+ 0001:00000a00       ??_C@_0BG@ECIJMOED@Warning?5Write?5Failure?$AA@ 0000000000000c60     BasePrintLib:PrintLibInternal.obj
+ 0001:00000a18       ??_C@_0BH@GKKCJEPJ@Warning?5Delete?5Failure?$AA@ 0000000000000c78     BasePrintLib:PrintLibInternal.obj
+ 0001:00000a30       ??_C@_0BG@CFJMNNJK@Warning?5Unknown?5Glyph?$AA@ 0000000000000c90     BasePrintLib:PrintLibInternal.obj
+ 0001:00000a48       ??_C@_07PBILKAFL@Success?$AA@ 0000000000000ca8     BasePrintLib:PrintLibInternal.obj
+ 0001:00000a50       mHexStr                    0000000000000cb0     BasePrintLib:PrintLibInternal.obj
+ 0001:00000a60       ??_C@_0O@MLOLIMFM@?$DMnull?5string?$DO?$AA@ 0000000000000cc0     BasePrintLib:PrintLibInternal.obj
+ 0001:00000a70       ??_C@_0M@BJJDNPHK@?$DMnull?5guid?$DO?$AA@ 0000000000000cd0     BasePrintLib:PrintLibInternal.obj
+ 0001:00000a80       ??_C@_0DB@PMLHLBMO@?$CF08x?9?$CF04x?9?$CF04x?9?$CF02x?$CF02x?9?$CF02x?$CF02x@ 0000000000000ce0     BasePrintLib:PrintLibInternal.obj
+ 0001:00000ab8       ??_C@_0M@LHGBCIKM@?$DMnull?5time?$DO?$AA@ 0000000000000d18     BasePrintLib:PrintLibInternal.obj
+ 0001:00000ac8       ??_C@_0BK@FCPKCIDD@?$CF02d?1?$CF02d?1?$CF04d?5?5?$CF02d?3?$CF02d?$AA@ 0000000000000d28     BasePrintLib:PrintLibInternal.obj
+ 0001:00000ae4       ??_C@_04JIMNDDED@?$CF08X?$AA@ 0000000000000d44     BasePrintLib:PrintLibInternal.obj
+ 0001:00000aec       ??_C@_02PCIJFNDE@?$AN?6?$AA@ 0000000000000d4c     BasePrintLib:PrintLibInternal.obj
+ 0001:00000af0       ??_C@_01LIIJDEN@?$AN?$AA@  0000000000000d50     BasePrintLib:PrintLibInternal.obj
+ 0001:00000b00       _DriverUnloadHandler       0000000000000d60 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000c84       _ModuleEntryPoint          0000000000000ee4 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000d28       ProcessLibraryConstructorList 0000000000000f88 f   UefiPxe4BcDxe:AutoGen.obj
+ 0001:00000e20       PxeBcDriverBindingSupported 0000000000001080 f   UefiPxe4BcDxe:PxeBcDriver.obj
+ 0001:00000ed4       PxeBcDriverBindingStart    0000000000001134 f   UefiPxe4BcDxe:PxeBcDriver.obj
+ 0001:000015c0       PxeBcDriverBindingStop     0000000000001820 f   UefiPxe4BcDxe:PxeBcDriver.obj
+ 0001:00001920       PxeBcComponentNameGetDriverName 0000000000001b80 f   UefiPxe4BcDxe:ComponentName.obj
+ 0001:00001954       PxeBcComponentNameGetControllerName 0000000000001bb4 f   UefiPxe4BcDxe:ComponentName.obj
+ 0001:00001b20       UpdateArpCache             0000000000001d80 f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00001bf8       ArpCacheUpdateTimeout      0000000000001e58 f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00001c00       FindInArpCache             0000000000001e60 f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00001c98       IcmpErrorListenHandlerDpc  0000000000001ef8 f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00001ddc       IcmpErrorListenHandler     000000000000203c f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00001df8       EfiPxeBcStart              0000000000002058 f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00001fe8       EfiPxeBcStop               0000000000002248 f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00002100       EfiPxeBcDhcp               0000000000002360 f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00002520       EfiPxeBcDiscover           0000000000002780 f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00002abc       EfiPxeBcMtftp              0000000000002d1c f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00002d9c       EfiPxeBcUdpWrite           0000000000002ffc f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:000030ec       CheckIpByFilter            000000000000334c f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00003238       EfiPxeBcUdpRead            0000000000003498 f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:0000368c       EfiPxeBcSetIpFilter        00000000000038ec f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00003894       EfiPxeBcArp                0000000000003af4 f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00003988       EfiPxeBcSetParameters      0000000000003be8 f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00003ad0       EfiPxeBcSetStationIP       0000000000003d30 f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00003c8c       EfiPxeBcSetPackets         0000000000003eec f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00003ddc       EfiPxeLoadFileCallback     000000000000403c f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:00003e80       DiscoverBootFile           00000000000040e0 f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:0000409c       EfiPxeLoadFile             00000000000042fc f   UefiPxe4BcDxe:PxeBcImpl.obj
+ 0001:0000442c       PxeBcCopyEfiDhcp4Packet    000000000000468c f   UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:00004468       PxeBcParseCachedDhcpPacket 00000000000046c8 f   UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:0000468c       PxeBcTryBinl               00000000000048ec f   UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:000047c0       PxeBcCheckSelectedOffer    0000000000004a20 f   UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:000049f0       PxeBcCacheDhcpOffer        0000000000004c50 f   UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:00004b08       PxeBcSelectOffer           0000000000004d68 f   UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:00004cd8       PxeBcDhcpCallBack          0000000000004f38 f   UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:00004eb0       PxeBcBuildDhcpOptions      0000000000005110 f   UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:000051b4       PxeBcDiscvBootService      0000000000005414 f   UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:00005690       PxeBcParseExtendOptions    00000000000058f0 f   UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:000056c8       PxeBcParseVendorOptions    0000000000005928 f   UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:000058c4       PxeBcDisplayBootItem       0000000000005b24 f   UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:00005910       PxeBcSelectBootPrompt      0000000000005b70 f   UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:00005c10       PxeBcSelectBootMenu        0000000000005e70 f   UefiPxe4BcDxe:PxeBcDhcp.obj
+ 0001:00005f9c       PxeBcCheckPacket           00000000000061fc f   UefiPxe4BcDxe:PxeBcMtftp.obj
+ 0001:00006068       PxeBcTftpGetFileSize       00000000000062c8 f   UefiPxe4BcDxe:PxeBcMtftp.obj
+ 0001:000062bc       PxeBcTftpReadFile          000000000000651c f   UefiPxe4BcDxe:PxeBcMtftp.obj
+ 0001:000063d4       PxeBcTftpWriteFile         0000000000006634 f   UefiPxe4BcDxe:PxeBcMtftp.obj
+ 0001:000064d0       PxeBcTftpReadDirectory     0000000000006730 f   UefiPxe4BcDxe:PxeBcMtftp.obj
+ 0001:000065e8       PxeBcCommonNotify          0000000000006848 f   UefiPxe4BcDxe:PxeBcSupport.obj
+ 0001:000065ec       PxeBcConfigureUdpWriteInstance 000000000000684c f   UefiPxe4BcDxe:PxeBcSupport.obj
+ 0001:00006700       UtoA10                     0000000000006960 f   UefiPxe4BcDxe:PxeBcSupport.obj
+ 0001:00006780       InternalAllocatePool       00000000000069e0 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000067b4       AllocateZeroPool           0000000000006a14 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000067d8       InternalAllocateCopyPool   0000000000006a38 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00006818       DevicePathFromHandle       0000000000006a78 f   UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:0000684c       LookupUnicodeString2       0000000000006aac f   UefiLib:UefiLib.obj
+ 0001:000069d8       AsciiInternalPrint         0000000000006c38 f   UefiLib:UefiLibPrint.obj
+ 0001:00006a6c       AsciiPrint                 0000000000006ccc f   UefiLib:UefiLibPrint.obj
+ 0001:00006a9c       NetIp4IsUnicast            0000000000006cfc f   DxeNetLib:DxeNetLib.obj
+ 0001:00006b0c       NetLibCreateServiceChild   0000000000006d6c f   DxeNetLib:DxeNetLib.obj
+ 0001:00006b58       NetLibDestroyServiceChild  0000000000006db8 f   DxeNetLib:DxeNetLib.obj
+ 0001:00006ba4       NetLibGetSnpHandle         0000000000006e04 f   DxeNetLib:DxeNetLib.obj
+ 0001:00006c6c       NetLibDetectMedia          0000000000006ecc f   DxeNetLib:DxeNetLib.obj
+ 0001:00006e58       NetLibGetNicHandle         00000000000070b8 f   DxeNetLib:DxeNetLib.obj
+ 0001:00006ea4       NetLibGetSystemGuid        0000000000007104 f   DxeNetLib:DxeNetLib.obj
+ 0001:00006f60       BasePrintLibFillBuffer     00000000000071c0 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00006f94       BasePrintLibSPrintMarker   00000000000071f4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00007c44       BasePrintLibSPrint         0000000000007ea4 f   BasePrintLib:PrintLibInternal.obj
+ 0001:00007c70       InternalMemCopyMem         0000000000007ed0 f   BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00007cb0       InternalMemZeroMem         0000000000007f10 f   BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00007cd0       InternalMemCompareMem      0000000000007f30 f   BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00007cf0       InternalMemSetMem          0000000000007f50 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:00007d10       InternalMemSetMem32        0000000000007f70 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00007d30       InternalMemSetMem64        0000000000007f90 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00007d48       gImageHandle               0000000000007fa8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00007d50       gST                        0000000000007fb0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00007d58       gBS                        0000000000007fb8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00007d60       gRT                        0000000000007fc0     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0001:00007d68       gHiiFont                   0000000000007fc8     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0001:00007d70       gHiiString                 0000000000007fd0     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0001:00007d78       gHiiImage                  0000000000007fd8     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0001:00007d80       gHiiDatabase               0000000000007fe0     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0001:00007d88       gHiiConfigRouting          0000000000007fe8     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0001:00007d90       mUefiFormBrowser2          0000000000007ff0     UefiHiiLib:HiiLib.obj
+ 0001:00007d98       mDevicePathLibDevicePathUtilities 0000000000007ff8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00007da0       mZeroIp4Addr               0000000000008000     DxeNetLib:DxeNetLib.obj
+ 0001:00007da8       mDpc                       0000000000008008     <common>
+
+ entry point at        0001:00000c84
+
+ Static symbols
+

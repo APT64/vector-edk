@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\2FB92EFA-2EE0-4bae-9EB6-7464125E1EF7UhciDxe\2FB92EFA-2EE0-4bae-9EB6-7464125E1EF7SEC2.1.pe32 c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\MdeModulePkg\Bus\Pci\UhciDxe\UhciDxe\OUTPUT\UhciDxe.efi

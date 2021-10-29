@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\22dc2b60-fe40-42ac-b01f-3ab1fad9aad8EmuVariableFvbRuntimeDxe\22dc2b60-fe40-42ac-b01f-3ab1fad9aad8SEC1.1.dpx c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\EmuVariableFvbRuntimeDxe\Fvb\OUTPUT\EmuVariableFvbRuntimeDxe.depex

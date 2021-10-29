@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PEI_DEPEX -o c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\1EC0F53A-FDE0-4576-8F25-7A1A410F58EBStatusCodePei\1EC0F53A-FDE0-4576-8F25-7A1A410F58EBSEC1.1.dpx c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\IntelFrameworkModulePkg\Universal\StatusCode\Pei\StatusCodePei\OUTPUT\StatusCodePei.depex

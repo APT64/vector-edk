@@ -1,0 +1,10 @@
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\MdePkg\Library\BaseLib\BaseLib\OUTPUT\BaseLib.lib
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\MdePkg\Library\BaseMemoryLibRepStr\BaseMemoryLibRepStr\OUTPUT\BaseMemoryLibRepStr.lib
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\MdePkg\Library\DxePcdLib\DxePcdLib\OUTPUT\DxePcdLib.lib
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\MdePkg\Library\BaseDebugPrintErrorLevelLib\BaseDebugPrintErrorLevelLib\OUTPUT\BaseDebugPrintErrorLevelLib.lib
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\MdePkg\Library\BasePrintLib\BasePrintLib\OUTPUT\BasePrintLib.lib
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\MdePkg\Library\BaseIoLibIntrinsic\BaseIoLibIntrinsic\OUTPUT\BaseIoLibIntrinsic.lib
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\Library\PlatformDebugLibIoPort\PlatformDebugLibIoPort\OUTPUT\PlatformDebugLibIoPort.lib
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\MdePkg\Library\UefiBootServicesTableLib\UefiBootServicesTableLib\OUTPUT\UefiBootServicesTableLib.lib
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\MdePkg\Library\UefiDriverEntryPoint\UefiDriverEntryPoint\OUTPUT\UefiDriverEntryPoint.lib
+c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\PcAtChipsetPkg\8259InterruptControllerDxe\8259\OUTPUT\Legacy8259.lib

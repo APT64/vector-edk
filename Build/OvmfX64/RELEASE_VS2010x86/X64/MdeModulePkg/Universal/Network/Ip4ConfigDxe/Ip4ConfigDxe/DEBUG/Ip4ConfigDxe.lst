@@ -1,0 +1,349 @@
+//
+//  VFR compiler version  2.00 (UEFI 2.4) Build 2649
+//
+#line 1 "c:\\vector-edk-master\\MdeModulePkg\\Universal\\Network\\Ip4ConfigDxe\\Ip4ConfigDxe.vfr"
+#line 1 "c:\\vector-edk-master\\Build\\OvmfX64\\RELEASE_VS2010x86\\X64\\MdeModulePkg\\Universal\\Network\\Ip4ConfigDxe\\Ip4ConfigDxe\\DEBUG\\Ip4ConfigDxeStrDefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern unsigned char Ip4ConfigDxeStrings[];
+
+
+
+
+#line 37 "c:\\vector-edk-master\\Build\\OvmfX64\\RELEASE_VS2010x86\\X64\\MdeModulePkg\\Universal\\Network\\Ip4ConfigDxe\\Ip4ConfigDxe\\DEBUG\\Ip4ConfigDxeStrDefs.h"
+#line 1 "c:\\vector-edk-master\\MdeModulePkg\\Universal\\Network\\Ip4ConfigDxe\\Ip4ConfigDxe.vfr"
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "c:\\vector-edk-master\\mdemodulepkg\\universal\\network\\ip4configdxe\\Ip4NvData.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "c:\\vector-edk-master\\MdeModulePkg\\Include\\Guid/Ip4ConfigHii.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern EFI_GUID gNicIp4ConfigNvDataGuid;
+
+#line 26 "c:\\vector-edk-master\\MdeModulePkg\\Include\\Guid/Ip4ConfigHii.h"
+#line 19 "c:\\vector-edk-master\\mdemodulepkg\\universal\\network\\ip4configdxe\\Ip4NvData.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef struct {
+  UINT8           Configure;                         
+  UINT8           DhcpEnable;                        
+  CHAR16          StationAddress[16];  
+  CHAR16          SubnetMask[16];      
+  CHAR16          GatewayAddress[16];  
+} IP4_CONFIG_IFR_NVDATA;
+
+#line 48 "c:\\vector-edk-master\\mdemodulepkg\\universal\\network\\ip4configdxe\\Ip4NvData.h"
+
+#line 15 "c:\\vector-edk-master\\MdeModulePkg\\Universal\\Network\\Ip4ConfigDxe\\Ip4ConfigDxe.vfr"
+
+
+
+formset
+>00000000: 0E A7 3F B5 D5 09 B0 F4 59 4F A0 B1 7B 57 D3 5C 0E 05 02 00 03 00 01 71 99 03 93 45 85 04 4B B4 5E 32 EB 83 26 04 0E 
+>00000051: 5C 06 00 00 00 00 
+>00000057: 5C 06 00 00 01 00 
+  guid     = { 0x9d5b53f, 0xf4b0, 0x4f59, { 0xa0, 0xb1, 0x7b, 0x57, 0xd3, 0x5c, 0xe, 0x5 } },
+  title    = STRING_TOKEN(0x0002),
+  help     = STRING_TOKEN(0x0003),
+  class    = 0x04,
+>00000027: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 03 04 00 
+  subclass = 0x03,
+>0000003C: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 04 03 00 
+
+  varstore IP4_CONFIG_IFR_NVDATA,
+>0000005D: 24 2E 3F B5 D5 09 B0 F4 59 4F A0 B1 7B 57 D3 5C 0E 05 01 00 62 00 45 66 69 4E 69 63 49 70 34 43 6F 6E 66 69 67 56 61 72 69 61 62 6C 65 00 
+    name = EfiNicIp4ConfigVariable,
+    guid = { 0x9d5b53f, 0xf4b0, 0x4f59, { 0xa0, 0xb1, 0x7b, 0x57, 0xd3, 0x5c, 0xe, 0x5 } };
+
+  form formid = 1,
+>0000008B: 01 86 01 00 04 00 
+    title  = STRING_TOKEN(0x0004);
+
+    checkbox varid = EfiNicIp4ConfigVariable.Configure,
+>00000091: 06 8E 06 00 06 00 00 01 01 00 00 00 04 00 
+            prompt = STRING_TOKEN(0x0006),
+            help   = STRING_TOKEN(0x0006),
+            flags  = INTERACTIVE,
+            key    = 0x100,
+    endcheckbox;
+>0000009F: 29 02 
+
+    suppressif ideqval EfiNicIp4ConfigVariable.Configure == 0x00;
+>000000A1: 0A 82 
+>000000A3: 12 06 00 01 00 00 
+
+      checkbox varid = EfiNicIp4ConfigVariable.DhcpEnable,
+>000000A9: 06 8E 07 00 07 00 01 01 01 00 01 00 04 00 
+              prompt = STRING_TOKEN(0x0007),
+              help   = STRING_TOKEN(0x0007),
+              flags  = INTERACTIVE,
+              key    = 0x101,
+      endcheckbox;
+>000000B7: 29 02 
+    endif;
+>000000B9: 29 02 
+
+    suppressif ideqval EfiNicIp4ConfigVariable.DhcpEnable == 0x01 OR ideqval EfiNicIp4ConfigVariable.Configure == 0x00;
+>000000BB: 0A 82 
+>000000BD: 12 86 01 01 01 00 
+>000000C3: 12 06 00 01 00 00 
+>000000C9: 16 02 
+>000000CB: 29 02 
+
+      string  varid   = EfiNicIp4ConfigVariable.StationAddress,
+>000000CD: 1C 90 08 00 0B 00 02 01 01 00 02 00 04 07 0F 00 
+              prompt  = STRING_TOKEN(0x0008),
+              help    = STRING_TOKEN(0x000B),
+              flags   = INTERACTIVE,
+              key     = 0x102,
+              minsize = 7,
+              maxsize = 15,
+      endstring;
+>000000DD: 29 02 
+
+      string  varid   = EfiNicIp4ConfigVariable.SubnetMask,
+>000000DF: 1C 90 09 00 0B 00 03 01 01 00 22 00 04 07 0F 00 
+              prompt  = STRING_TOKEN(0x0009),
+              help    = STRING_TOKEN(0x000B),
+              flags   = INTERACTIVE,
+              key     = 0x103,
+              minsize = 7,
+             maxsize = 15,
+      endstring;
+>000000EF: 29 02 
+
+      string  varid   = EfiNicIp4ConfigVariable.GatewayAddress,
+>000000F1: 1C 90 0A 00 0B 00 04 01 01 00 42 00 04 07 0F 00 
+              prompt  = STRING_TOKEN(0x000A),
+              help    = STRING_TOKEN(0x000B),
+              flags   = INTERACTIVE,
+              key     = 0x104,
+              minsize = 7,
+              maxsize = 15,
+      endstring;
+>00000101: 29 02 
+
+    endif;
+>00000103: 29 02 
+
+    subtitle text = STRING_TOKEN(0x000D);
+>00000105: 02 87 0D 00 00 00 00 
+>0000010C: 29 02 
+    
+    text
+      help   = STRING_TOKEN(0x000C),
+      text   = STRING_TOKEN(0x000C),
+        text   = STRING_TOKEN(0x000C),
+      flags  = INTERACTIVE,
+>0000010E: 0C 8F 0C 00 0C 00 05 01 00 00 FF FF 04 00 00 
+      key    = 0x105;
+>0000011D: 29 02 
+      
+  endform;
+>0000011F: 29 02 
+
+endformset;
+>00000121: 29 02 
+
+
+//
+// All Opcode Record List 
+//
+>00000000: 0E A7 3F B5 D5 09 B0 F4 59 4F A0 B1 7B 57 D3 5C 0E 05 02 00 03 00 01 71 99 03 93 45 85 04 4B B4 5E 32 EB 83 26 04 0E 
+>00000027: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 03 04 00 
+>0000003C: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 04 03 00 
+>00000051: 5C 06 00 00 00 00 
+>00000057: 5C 06 00 00 01 00 
+>0000005D: 24 2E 3F B5 D5 09 B0 F4 59 4F A0 B1 7B 57 D3 5C 0E 05 01 00 62 00 45 66 69 4E 69 63 49 70 34 43 6F 6E 66 69 67 56 61 72 69 61 62 6C 65 00 
+>0000008B: 01 86 01 00 04 00 
+>00000091: 06 8E 06 00 06 00 00 01 01 00 00 00 04 00 
+>0000009F: 29 02 
+>000000A1: 0A 82 
+>000000A3: 12 06 00 01 00 00 
+>000000A9: 06 8E 07 00 07 00 01 01 01 00 01 00 04 00 
+>000000B7: 29 02 
+>000000B9: 29 02 
+>000000BB: 0A 82 
+>000000BD: 12 86 01 01 01 00 
+>000000C3: 12 06 00 01 00 00 
+>000000C9: 16 02 
+>000000CB: 29 02 
+>000000CD: 1C 90 08 00 0B 00 02 01 01 00 02 00 04 07 0F 00 
+>000000DD: 29 02 
+>000000DF: 1C 90 09 00 0B 00 03 01 01 00 22 00 04 07 0F 00 
+>000000EF: 29 02 
+>000000F1: 1C 90 0A 00 0B 00 04 01 01 00 42 00 04 07 0F 00 
+>00000101: 29 02 
+>00000103: 29 02 
+>00000105: 02 87 0D 00 00 00 00 
+>0000010C: 29 02 
+>0000010E: 0C 8F 0C 00 0C 00 05 01 00 00 FF FF 04 00 00 
+>0000011D: 29 02 
+>0000011F: 29 02 
+>00000121: 29 02 
+
+Total Size of all record is 0x00000123
+
+
+***************************************************************
+		mPackAlign = 8
+		struct IP4_CONFIG_IFR_NVDATA : mAlign [2] mTotalSize [0x62]
+
+		struct IP4_CONFIG_IFR_NVDATA {
+			+00000000[00000000] Configure <UINT8>
+			+00000001[00000001] DhcpEnable <UINT8>
+			+00000002[00000002] StationAddress[16] <UINT16>
+			+00000034[00000022] SubnetMask[16] <UINT16>
+			+00000066[00000042] GatewayAddress[16] <UINT16>
+		};
+---------------------------------------------------------------
+		struct EFI_HII_REF : mAlign [16] mTotalSize [0x16]
+
+		struct EFI_HII_REF {
+			+00000000[00000000] QuestionId <UINT16>
+			+00000002[00000002] FormId <UINT16>
+			+00000004[00000004] FormSetGuid <(null)>
+			+00000020[00000014] DevicePath <EFI_STRING_ID>
+		};
+---------------------------------------------------------------
+		struct EFI_HII_TIME : mAlign [1] mTotalSize [0x3]
+
+		struct EFI_HII_TIME {
+			+00000000[00000000] Hours <UINT8>
+			+00000001[00000001] Minutes <UINT8>
+			+00000002[00000002] Seconds <UINT8>
+		};
+---------------------------------------------------------------
+		struct EFI_STRING_ID : mAlign [2] mTotalSize [0x2]
+
+		struct EFI_STRING_ID {
+		};
+---------------------------------------------------------------
+		struct EFI_HII_DATE : mAlign [2] mTotalSize [0x4]
+
+		struct EFI_HII_DATE {
+			+00000000[00000000] Year <UINT16>
+			+00000002[00000002] Month <UINT8>
+			+00000003[00000003] Day <UINT8>
+		};
+---------------------------------------------------------------
+		struct BOOLEAN : mAlign [1] mTotalSize [0x1]
+
+		struct BOOLEAN {
+		};
+---------------------------------------------------------------
+		struct UINT8 : mAlign [1] mTotalSize [0x1]
+
+		struct UINT8 {
+		};
+---------------------------------------------------------------
+		struct UINT16 : mAlign [2] mTotalSize [0x2]
+
+		struct UINT16 {
+		};
+---------------------------------------------------------------
+		struct UINT32 : mAlign [4] mTotalSize [0x4]
+
+		struct UINT32 {
+		};
+---------------------------------------------------------------
+		struct UINT64 : mAlign [8] mTotalSize [0x8]
+
+		struct UINT64 {
+		};
+---------------------------------------------------------------
+***************************************************************

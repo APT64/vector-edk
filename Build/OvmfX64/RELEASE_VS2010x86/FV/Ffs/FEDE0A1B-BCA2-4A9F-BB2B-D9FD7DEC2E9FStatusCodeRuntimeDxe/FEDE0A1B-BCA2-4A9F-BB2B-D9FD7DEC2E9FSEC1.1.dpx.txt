@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\FEDE0A1B-BCA2-4A9F-BB2B-D9FD7DEC2E9FStatusCodeRuntimeDxe\FEDE0A1B-BCA2-4A9F-BB2B-D9FD7DEC2E9FSEC1.1.dpx c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\IntelFrameworkModulePkg\Universal\StatusCode\RuntimeDxe\StatusCodeRuntimeDxe\OUTPUT\StatusCodeRuntimeDxe.depex

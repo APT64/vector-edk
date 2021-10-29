@@ -1,0 +1,2050 @@
+#line 1 "c:\\vector-edk-master\\Build\\OvmfX64\\RELEASE_VS2010x86\\X64\\OvmfPkg\\AcpiTables\\AcpiTables\\OUTPUT\\.\\Dsdt.i"
+#line 1 "c:\\vector-edk-master\\Build\\OvmfX64\\RELEASE_VS2010x86\\X64\\OvmfPkg\\AcpiTables\\AcpiTables\\DEBUG\\AutoGen.h"
+/**
+  DO NOT EDIT
+  FILE auto-generated
+  Module name:
+    AutoGen.h
+  Abstract:       Auto-generated AutoGen.h for building module or library.
+**/
+
+
+
+
+
+
+
+
+#line 1 "c:\\vector-edk-master\\MdePkg\\Include\\Base.h"
+/** @file
+  Root include file for Mde Package Base type modules
+
+  This is the include file for any module of type base. Base modules only use
+  types defined via this include file and can be ported easily to any
+  environment. There are a set of base libraries in the Mde Package that can
+  be used to implement base modules.
+
+Copyright (c) 2006 - 2013, Intel Corporation. All rights reserved.<BR>
+Portions copyright (c) 2008 - 2009, Apple Inc. All rights reserved.<BR>
+This program and the accompanying materials
+are licensed and made available under the terms and conditions of the BSD License
+which accompanies this distribution.  The full text of the license may be found at
+http://opensource.org/licenses/bsd-license.php.
+
+THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+
+**/
+
+
+
+
+
+//
+// Include processor specific binding
+//
+#line 1 "c:\\vector-edk-master\\MdePkg\\Include\\X64\\ProcessorBind.h"
+/** @file
+  Processor or Compiler specific defines and types x64 (Intel 64, AMD64).
+
+  Copyright (c) 2006 - 2013, Intel Corporation. All rights reserved.<BR>
+  This program and the accompanying materials                          
+  are licensed and made available under the terms and conditions of the BSD License         
+  which accompanies this distribution.  The full text of the license may be found at        
+  http://opensource.org/licenses/bsd-license.php                                            
+
+  THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,                     
+  WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.             
+
+**/
+
+
+
+
+///
+/// Define the processor type so other code can make processor based choices
+///
+
+
+//
+// Make sure we are using the correct packing rules per EFI specification
+//
+
+#pragma pack()
+#line 29 "c:\\vector-edk-master\\MdePkg\\Include\\X64\\ProcessorBind.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 57 "c:\\vector-edk-master\\MdePkg\\Include\\X64\\ProcessorBind.h"
+
+
+
+
+//
+// Disable warning that make it impossible to compile at /W4
+// This only works for Microsoft* tools
+//
+
+//
+// Disabling bitfield type checking warnings.
+//
+#pragma warning ( disable : 4214 )
+
+//
+// Disabling the unreferenced formal parameter warnings.
+//
+#pragma warning ( disable : 4100 )
+
+//
+// Disable slightly different base types warning as CHAR8 * can not be set
+// to a constant string.
+//
+#pragma warning ( disable : 4057 )
+
+//
+// ASSERT(FALSE) or while (TRUE) are legal constructes so supress this warning
+//
+#pragma warning ( disable : 4127 )
+
+//
+// This warning is caused by functions defined but not used. For precompiled header only.
+//
+#pragma warning ( disable : 4505 )
+
+//
+// This warning is caused by empty (after preprocessing) source file. For precompiled header only.
+//
+#pragma warning ( disable : 4206 )
+
+#line 98 "c:\\vector-edk-master\\MdePkg\\Include\\X64\\ProcessorBind.h"
+
+
+
+  //
+  // use Microsoft C complier dependent integer width types 
+  //
+
+  ///
+  /// 8-byte unsigned value
+  ///
+  typedef unsigned __int64    UINT64;
+  ///
+  /// 8-byte signed value
+  ///
+  typedef __int64             INT64;
+  ///
+  /// 4-byte unsigned value
+  ///
+  typedef unsigned __int32    UINT32;
+  ///
+  /// 4-byte signed value
+  ///
+  typedef __int32             INT32;
+  ///
+  /// 2-byte unsigned value
+  ///
+  typedef unsigned short      UINT16;
+  ///
+  /// 2-byte Character.  Unless otherwise specified all strings are stored in the
+  /// UTF-16 encoding format as defined by Unicode 2.1 and ISO/IEC 10646 standards.
+  ///
+  typedef unsigned short      CHAR16;
+  ///
+  /// 2-byte signed value
+  ///
+  typedef short               INT16;
+  ///
+  /// Logical Boolean.  1-byte value containing 0 for FALSE or a 1 for TRUE.  Other
+  /// values are undefined.
+  ///
+  typedef unsigned char       BOOLEAN;
+  ///
+  /// 1-byte unsigned value
+  ///
+  typedef unsigned char       UINT8;
+  ///
+  /// 1-byte Character
+  ///
+  typedef char                CHAR8;
+  ///
+  /// 1-byte signed value
+  ///
+  typedef signed char         INT8;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 199 "c:\\vector-edk-master\\MdePkg\\Include\\X64\\ProcessorBind.h"
+
+///
+/// Unsigned value of native width.  (4 bytes on supported 32-bit processor instructions,
+/// 8 bytes on supported 64-bit processor instructions)
+///
+typedef UINT64  UINTN;
+///
+/// Signed value of native width.  (4 bytes on supported 32-bit processor instructions,
+/// 8 bytes on supported 64-bit processor instructions)
+///
+typedef INT64   INTN;
+
+
+//
+// Processor specific defines
+//
+
+///
+/// A value of native width with the highest bit set.
+///
+
+///
+/// A value of native width with the two highest bits set.
+///
+
+
+///
+/// Maximum legal x64 address
+///
+
+
+///
+/// Maximum legal x64 INTN and UINTN values.
+///
+
+
+
+///
+/// The stack alignment required for x64
+///
+
+
+//
+// Modifier to ensure that all protocol member functions and EFI intrinsics
+// use the correct C calling convention. All protocol member functions and
+// EFI intrinsics are required to modify their member functions with EFIAPI.
+//
+
+
+
+
+
+  ///
+  /// Microsoft* compiler specific method for EFIAPI calling convension
+  /// 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 272 "c:\\vector-edk-master\\MdePkg\\Include\\X64\\ProcessorBind.h"
+
+
+
+
+
+
+
+#line 280 "c:\\vector-edk-master\\MdePkg\\Include\\X64\\ProcessorBind.h"
+
+/**
+  Return the pointer to the first instruction of a function given a function pointer.
+  On x64 CPU architectures, these two pointer values are the same, 
+  so the implementation of this macro is very simple.
+  
+  @param  FunctionPointer   A pointer to a function.
+
+  @return The pointer to the first instruction of a function given a function pointer.
+  
+**/
+
+
+#line 294 "c:\\vector-edk-master\\MdePkg\\Include\\X64\\ProcessorBind.h"
+
+#line 29 "c:\\vector-edk-master\\MdePkg\\Include\\Base.h"
+
+
+/**
+  Verifies the storage size of a given data type.
+
+  This macro generates a divide by zero error or a zero size array declaration in
+  the preprocessor if the size is incorrect.  These are declared as "extern" so
+  the space for these arrays will not be in the modules.
+
+  @param  TYPE  The date type to determine the size of.
+  @param  Size  The expected size for the TYPE.
+
+**/
+
+
+//
+// Verify that ProcessorBind.h produced UEFI Data Types that are compliant with
+// Section 2.3.1 of the UEFI 2.3 Specification.
+//
+extern UINT8 _VerifySizeofBOOLEAN[(sizeof(BOOLEAN) == (1)) / (sizeof(BOOLEAN) == (1))];
+extern UINT8 _VerifySizeofINT8[(sizeof(INT8) == (1)) / (sizeof(INT8) == (1))];
+extern UINT8 _VerifySizeofUINT8[(sizeof(UINT8) == (1)) / (sizeof(UINT8) == (1))];
+extern UINT8 _VerifySizeofINT16[(sizeof(INT16) == (2)) / (sizeof(INT16) == (2))];
+extern UINT8 _VerifySizeofUINT16[(sizeof(UINT16) == (2)) / (sizeof(UINT16) == (2))];
+extern UINT8 _VerifySizeofINT32[(sizeof(INT32) == (4)) / (sizeof(INT32) == (4))];
+extern UINT8 _VerifySizeofUINT32[(sizeof(UINT32) == (4)) / (sizeof(UINT32) == (4))];
+extern UINT8 _VerifySizeofINT64[(sizeof(INT64) == (8)) / (sizeof(INT64) == (8))];
+extern UINT8 _VerifySizeofUINT64[(sizeof(UINT64) == (8)) / (sizeof(UINT64) == (8))];
+extern UINT8 _VerifySizeofCHAR8[(sizeof(CHAR8) == (1)) / (sizeof(CHAR8) == (1))];
+extern UINT8 _VerifySizeofCHAR16[(sizeof(CHAR16) == (2)) / (sizeof(CHAR16) == (2))];
+
+//
+// The Microsoft* C compiler can removed references to unreferenced data items
+//  if the /OPT:REF linker option is used. We defined a macro as this is a
+//  a non standard extension
+//
+
+  ///
+  /// Remove global variable from the linked image if there are no references to
+  /// it after all compiler and linker optimizations have been performed.
+  ///
+  ///
+  
+
+
+
+
+
+
+
+#line 80 "c:\\vector-edk-master\\MdePkg\\Include\\Base.h"
+
+//
+// For symbol name in GNU assembly code, an extra "_" is necessary
+//
+
+
+
+
+
+
+
+
+
+
+
+
+#line 97 "c:\\vector-edk-master\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+
+#line 105 "c:\\vector-edk-master\\MdePkg\\Include\\Base.h"
+  
+#line 107 "c:\\vector-edk-master\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+
+
+  
+#line 117 "c:\\vector-edk-master\\MdePkg\\Include\\Base.h"
+
+///
+/// 128 bit buffer containing a unique identifier value.
+/// Unless otherwise specified, aligned on a 64 bit boundary.
+///
+typedef struct {
+  UINT32  Data1;
+  UINT16  Data2;
+  UINT16  Data3;
+  UINT8   Data4[8];
+} GUID;
+
+//
+// 8-bytes unsigned value that represents a physical system address.
+//
+typedef UINT64 PHYSICAL_ADDRESS;
+
+///
+/// LIST_ENTRY structure definition.
+///
+typedef struct _LIST_ENTRY LIST_ENTRY;
+
+///
+/// _LIST_ENTRY structure definition.
+///
+struct _LIST_ENTRY {
+  LIST_ENTRY  *ForwardLink;
+  LIST_ENTRY  *BackLink;
+};
+
+//
+// Modifiers to abstract standard types to aid in debug of problems
+//
+
+///
+/// Datum is read-only.
+///
+
+
+///
+/// Datum is scoped to the current file or function.
+///
+
+
+///
+/// Undeclared type.
+///
+
+
+//
+// Modifiers for Data Types used to self document code.
+// This concept is borrowed for UEFI specification.
+//
+
+///
+/// Datum is passed to the function.
+///
+
+
+///
+/// Datum is returned from the function.
+///
+
+
+///
+/// Passing the datum to the function is optional, and a NULL
+/// is passed if the value is not supplied.
+///
+
+
+//
+//  UEFI specification claims 1 and 0. We are concerned about the
+//  complier portability so we did it this way.
+//
+
+///
+/// Boolean true value.  UEFI Specification defines this value to be 1,
+/// but this form is more portable.
+///
+
+
+///
+/// Boolean false value.  UEFI Specification defines this value to be 0,
+/// but this form is more portable.
+///
+
+
+///
+/// NULL pointer (VOID *)
+///
+
+
+///
+/// Maximum values for common UEFI Data Types
+///
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//  Support for variable length argument lists using the ANSI standard.
+//
+//  Since we are using the ANSI standard we used the standard naming and
+//  did not follow the coding convention
+//
+//  VA_LIST  - typedef for argument list.
+//  VA_START (VA_LIST Marker, argument before the ...) - Init Marker for use.
+//  VA_END (VA_LIST Marker) - Clear Marker
+//  VA_ARG (VA_LIST Marker, var arg size) - Use Marker to get an argument from
+//    the ... list. You must know the size and pass it in this macro.
+//  VA_COPY (VA_LIST Dest, VA_LIST Start) - Initialize Dest as a copy of Start.
+//
+//  example:
+//
+//  UINTN
+//  ExampleVarArg (
+//    IN UINTN  NumberOfArgs,
+//    ...
+//    )
+//  {
+//    VA_LIST Marker;
+//    UINTN   Index;
+//    UINTN   Result;
+//
+//    //
+//    // Initialize the Marker
+//    //
+//    VA_START (Marker, NumberOfArgs);
+//    for (Index = 0, Result = 0; Index < NumberOfArgs; Index++) {
+//      //
+//      // The ... list is a series of UINTN values, so average them up.
+//      //
+//      Result += VA_ARG (Marker, UINTN);
+//    }
+//
+//    VA_END (Marker);
+//    return Result
+//  }
+//
+
+/**
+  Return the size of argument that has been aligned to sizeof (UINTN).
+
+  @param  n    The parameter size to be aligned.
+
+  @return The aligned size.
+**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 477 "c:\\vector-edk-master\\MdePkg\\Include\\Base.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 496 "c:\\vector-edk-master\\MdePkg\\Include\\Base.h"
+///
+/// Variable used to traverse the list of arguments. This type can vary by
+/// implementation and could be an array or structure.
+///
+typedef CHAR8 *VA_LIST;
+
+/**
+  Retrieves a pointer to the beginning of a variable argument list, based on
+  the name of the parameter that immediately precedes the variable argument list.
+
+  This function initializes Marker to point to the beginning of the variable
+  argument list that immediately follows Parameter.  The method for computing the
+  pointer to the next argument in the argument list is CPU-specific following the
+  EFIAPI ABI.
+
+  @param   Marker       The VA_LIST used to traverse the list of arguments.
+  @param   Parameter    The name of the parameter that immediately precedes
+                        the variable argument list.
+
+  @return  A pointer to the beginning of a variable argument list.
+
+**/
+
+
+/**
+  Returns an argument of a specified type from a variable argument list and updates
+  the pointer to the variable argument list to point to the next argument.
+
+  This function returns an argument of the type specified by TYPE from the beginning
+  of the variable argument list specified by Marker.  Marker is then updated to point
+  to the next argument in the variable argument list.  The method for computing the
+  pointer to the next argument in the argument list is CPU-specific following the EFIAPI ABI.
+
+  @param   Marker   VA_LIST used to traverse the list of arguments.
+  @param   TYPE     The type of argument to retrieve from the beginning
+                    of the variable argument list.
+
+  @return  An argument of the type specified by TYPE.
+
+**/
+
+
+/**
+  Terminates the use of a variable argument list.
+
+  This function initializes Marker so it can no longer be used with VA_ARG().
+  After this macro is used, the only way to access the variable argument list is
+  by using VA_START() again.
+
+  @param   Marker   VA_LIST used to traverse the list of arguments.
+
+**/
+
+
+/**
+  Initializes a VA_LIST as a copy of an existing VA_LIST.
+
+  This macro initializes Dest as a copy of Start, as if the VA_START macro had been applied to Dest
+  followed by the same sequence of uses of the VA_ARG macro as had previously been used to reach
+  the present state of Start. 
+
+  @param   Dest   VA_LIST used to traverse the list of arguments.
+  @param   Start  VA_LIST used to traverse the list of arguments.
+
+**/
+
+
+#line 564 "c:\\vector-edk-master\\MdePkg\\Include\\Base.h"
+
+///
+/// Pointer to the start of a variable argument list stored in a memory buffer. Same as UINT8 *.
+///
+typedef UINTN  *BASE_LIST;
+
+/**
+  Returns the size of a data type in sizeof(UINTN) units rounded up to the nearest UINTN boundary.
+
+  @param  TYPE  The date type to determine the size of.
+
+  @return The size of TYPE in sizeof (UINTN) units rounded up to the nearest UINTN boundary.
+**/
+
+
+/**
+  Returns an argument of a specified type from a variable argument list and updates
+  the pointer to the variable argument list to point to the next argument.
+
+  This function returns an argument of the type specified by TYPE from the beginning
+  of the variable argument list specified by Marker.  Marker is then updated to point
+  to the next argument in the variable argument list.  The method for computing the
+  pointer to the next argument in the argument list is CPU specific following the EFIAPI ABI.
+
+  @param   Marker   The pointer to the beginning of a variable argument list.
+  @param   TYPE     The type of argument to retrieve from the beginning
+                    of the variable argument list.
+
+  @return  An argument of the type specified by TYPE.
+
+**/
+
+
+/**
+  The macro that returns the byte offset of a field in a data structure.
+
+  This function returns the offset, in bytes, of field specified by Field from the
+  beginning of the  data structure specified by TYPE. If TYPE does not contain Field,
+  the module will not compile.
+
+  @param   TYPE     The name of the data structure that contains the field specified by Field.
+  @param   Field    The name of the field in the data structure.
+
+  @return  Offset, in bytes, of field.
+
+**/
+
+
+
+
+
+
+
+
+#line 619 "c:\\vector-edk-master\\MdePkg\\Include\\Base.h"
+
+/**
+  Macro that returns a pointer to the data structure that contains a specified field of
+  that data structure.  This is a lightweight method to hide information by placing a
+  public data structure inside a larger private data structure and using a pointer to
+  the public data structure to retrieve a pointer to the private data structure.
+
+  This function computes the offset, in bytes, of field specified by Field from the beginning
+  of the  data structure specified by TYPE.  This offset is subtracted from Record, and is
+  used to return a pointer to a data structure of the type specified by TYPE. If the data type
+  specified by TYPE does not contain the field specified by Field, then the module will not compile.
+
+  @param   Record   Pointer to the field specified by Field within a data structure of type TYPE.
+  @param   TYPE     The name of the data structure type to return.  This data structure must
+                    contain the field specified by Field.
+  @param   Field    The name of the field in the data structure specified by TYPE to which Record points.
+
+  @return  A pointer to the structure from one of it's elements.
+
+**/
+
+
+/**
+  Rounds a value up to the next boundary using a specified alignment.
+
+  This function rounds Value up to the next boundary using the specified Alignment.
+  This aligned value is returned.
+
+  @param   Value      The value to round up.
+  @param   Alignment  The alignment boundary used to return the aligned value.
+
+  @return  A value up to the next boundary.
+
+**/
+
+
+/**
+  Adjust a pointer by adding the minimum offset required for it to be aligned on
+  a specified alignment boundary.
+
+  This function rounds the pointer specified by Pointer to the next alignment boundary
+  specified by Alignment. The pointer to the aligned address is returned.
+
+  @param   Pointer    The pointer to round up.
+  @param   Alignment  The alignment boundary to use to return an aligned pointer.
+
+  @return  Pointer to the aligned address.
+
+**/
+
+
+/**
+  Rounds a value up to the next natural boundary for the current CPU.
+  This is 4-bytes for 32-bit CPUs and 8-bytes for 64-bit CPUs.
+
+  This function rounds the value specified by Value up to the next natural boundary for the
+  current CPU. This rounded value is returned.
+
+  @param   Value      The value to round up.
+
+  @return  Rounded value specified by Value.
+
+**/
+
+
+
+/**
+  Return the maximum of two operands.
+
+  This macro returns the maximum of two operand specified by a and b.
+  Both a and b must be the same numerical types, signed or unsigned.
+
+  @param   a        The first operand with any numerical type.
+  @param   b        The second operand. Can be any numerical type as long as is
+                    the same type as a.
+
+  @return  Maximum of two operands.
+
+**/
+
+
+
+/**
+  Return the minimum of two operands.
+
+  This macro returns the minimal of two operand specified by a and b.
+  Both a and b must be the same numerical types, signed or unsigned.
+
+  @param   a        The first operand with any numerical type.
+  @param   b        The second operand. It should be the same any numerical type with a.
+
+  @return  Minimum of two operands.
+
+**/
+
+
+
+/**
+  Return the absolute value of a signed operand.
+
+  This macro returns the absolute value of the signed operand specified by a.
+
+  @param   a        The signed operand.
+
+  @return  The absolute value of the signed operand.
+
+**/
+
+
+
+//
+// Status codes common to all execution phases
+//
+typedef UINTN RETURN_STATUS;
+
+/**
+  Produces a RETURN_STATUS code with the highest bit set.
+
+  @param  StatusCode    The status code value to convert into a warning code.
+                        StatusCode must be in the range 0x00000000..0x7FFFFFFF.
+
+  @return The value specified by StatusCode with the highest bit set.
+
+**/
+
+
+/**
+  Produces a RETURN_STATUS code with the highest bit clear.
+
+  @param  StatusCode    The status code value to convert into a warning code.
+                        StatusCode must be in the range 0x00000000..0x7FFFFFFF.
+
+  @return The value specified by StatusCode with the highest bit clear.
+
+**/
+
+
+/**
+  Returns TRUE if a specified RETURN_STATUS code is an error code.
+
+  This function returns TRUE if StatusCode has the high bit set.  Otherwise, FALSE is returned.
+
+  @param  StatusCode    The status code value to evaluate.
+
+  @retval TRUE          The high bit of StatusCode is set.
+  @retval FALSE         The high bit of StatusCode is clear.
+
+**/
+
+
+///
+/// The operation completed successfully.
+///
+
+
+///
+/// The image failed to load.
+///
+
+
+///
+/// The parameter was incorrect.
+///
+
+
+///
+/// The operation is not supported.
+///
+
+
+///
+/// The buffer was not the proper size for the request.
+///
+
+
+///
+/// The buffer was not large enough to hold the requested data.
+/// The required buffer size is returned in the appropriate
+/// parameter when this error occurs.
+///
+
+
+///
+/// There is no data pending upon return.
+///
+
+
+///
+/// The physical device reported an error while attempting the
+/// operation.
+///
+
+
+///
+/// The device can not be written to.
+///
+
+
+///
+/// The resource has run out.
+///
+
+
+///
+/// An inconsistency was detected on the file system causing the
+/// operation to fail.
+///
+
+
+///
+/// There is no more space on the file system.
+///
+
+
+///
+/// The device does not contain any medium to perform the
+/// operation.
+///
+
+
+///
+/// The medium in the device has changed since the last
+/// access.
+///
+
+
+///
+/// The item was not found.
+///
+
+
+///
+/// Access was denied.
+///
+
+
+///
+/// The server was not found or did not respond to the request.
+///
+
+
+///
+/// A mapping to the device does not exist.
+///
+
+
+///
+/// A timeout time expired.
+///
+
+
+///
+/// The protocol has not been started.
+///
+
+
+///
+/// The protocol has already been started.
+///
+
+
+///
+/// The operation was aborted.
+///
+
+
+///
+/// An ICMP error occurred during the network operation.
+///
+
+
+///
+/// A TFTP error occurred during the network operation.
+///
+
+
+///
+/// A protocol error occurred during the network operation.
+///
+
+
+///
+/// A function encountered an internal version that was
+/// incompatible with a version requested by the caller.
+///
+
+
+///
+/// The function was not performed due to a security violation.
+///
+
+
+///
+/// A CRC error was detected.
+///
+
+
+///
+/// The beginning or end of media was reached.
+///
+
+
+///
+/// The end of the file was reached.
+///
+
+
+///
+/// The language specified was invalid.
+///
+
+
+///
+/// The security status of the data is unknown or compromised
+/// and the data must be updated or replaced to restore a valid
+/// security status.
+///
+
+
+///
+/// The string contained one or more characters that
+/// the device could not render and were skipped.
+///
+
+
+///
+/// The handle was closed, but the file was not deleted.
+///
+
+
+///
+/// The handle was closed, but the data to the file was not
+/// flushed properly.
+///
+
+
+///
+/// The resulting buffer was too small, and the data was
+/// truncated to the buffer size.
+///
+
+
+///
+/// The data has not been updated within the timeframe set by
+/// local policy for this type of data.
+///
+
+
+/**
+  Returns a 16-bit signature built from 2 ASCII characters.
+
+  This macro returns a 16-bit value built from the two ASCII characters specified
+  by A and B.
+
+  @param  A    The first ASCII character.
+  @param  B    The second ASCII character.
+
+  @return A 16-bit value built from the two ASCII characters specified by A and B.
+
+**/
+
+
+/**
+  Returns a 32-bit signature built from 4 ASCII characters.
+
+  This macro returns a 32-bit value built from the four ASCII characters specified
+  by A, B, C, and D.
+
+  @param  A    The first ASCII character.
+  @param  B    The second ASCII character.
+  @param  C    The third ASCII character.
+  @param  D    The fourth ASCII character.
+
+  @return A 32-bit value built from the two ASCII characters specified by A, B,
+          C and D.
+
+**/
+
+
+/**
+  Returns a 64-bit signature built from 8 ASCII characters.
+
+  This macro returns a 64-bit value built from the eight ASCII characters specified
+  by A, B, C, D, E, F, G,and H.
+
+  @param  A    The first ASCII character.
+  @param  B    The second ASCII character.
+  @param  C    The third ASCII character.
+  @param  D    The fourth ASCII character.
+  @param  E    The fifth ASCII character.
+  @param  F    The sixth ASCII character.
+  @param  G    The seventh ASCII character.
+  @param  H    The eighth ASCII character.
+
+  @return A 64-bit value built from the two ASCII characters specified by A, B,
+          C, D, E, F, G and H.
+
+**/
+
+
+
+#line 1021 "c:\\vector-edk-master\\MdePkg\\Include\\Base.h"
+
+
+#line 17 "c:\\vector-edk-master\\Build\\OvmfX64\\RELEASE_VS2010x86\\X64\\OvmfPkg\\AcpiTables\\AcpiTables\\DEBUG\\AutoGen.h"
+
+extern GUID  gEfiCallerIdGuid;
+extern CHAR8 *gEfiCallerBaseName;
+
+
+
+
+
+
+
+
+
+#line 30 "c:\\vector-edk-master\\Build\\OvmfX64\\RELEASE_VS2010x86\\X64\\OvmfPkg\\AcpiTables\\AcpiTables\\DEBUG\\AutoGen.h"
+#line 1 "c:\\vector-edk-master\\Build\\OvmfX64\\RELEASE_VS2010x86\\X64\\OvmfPkg\\AcpiTables\\AcpiTables\\OUTPUT\\.\\Dsdt.i"
+
+
+/** @file
+  Contains root level name space objects for the platform
+
+  Copyright (c) 2008, Intel Corporation. All rights reserved.<BR>
+  This program and the accompanying materials are
+  licensed and made available under the terms and conditions of the BSD License
+  which accompanies this distribution.  The full text of the license may be found at
+  http://opensource.org/licenses/bsd-license.php
+
+  THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+  WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+
+**/
+
+DefinitionBlock ("Dsdt.aml", "DSDT", 1, "INTEL ", "OVMF    ", 4) {
+  //
+  // System Sleep States
+  //
+  // We build S3 and S4 with GetSuspendStates() in
+  // "OvmfPkg/AcpiPlatformDxe/Qemu.c".
+  //
+  Name (\_S0, Package () {5, 0, 0, 0}) // Working
+  Name (\_S5, Package () {0, 0, 0, 0}) // Soft Off
+
+  //
+  //  System Bus
+  //
+  Scope (\_SB) {
+    //
+    // PCI Root Bridge
+    //
+    Device (PCI0) {
+      Name (_HID, EISAID ("PNP0A03"))
+      Name (_ADR, 0x00000000)
+      Name (_BBN, 0x00)
+      Name (_UID, 0x00)
+
+      //
+      // BUS, I/O, and MMIO resources
+      //
+      Name (CRES, ResourceTemplate () {
+        WORDBusNumber (          // Bus number resource (0); the bridge produces bus numbers for its subsequent buses
+          ResourceProducer,      // bit 0 of general flags is 1
+          MinFixed,              // Range is fixed
+          MaxFixed,              // Range is fixed
+          PosDecode,             // PosDecode
+          0x0000,                // Granularity
+          0x0000,                // Min
+          0x00FF,                // Max
+          0x0000,                // Translation
+          0x0100                 // Range Length = Max-Min+1
+          )
+
+        IO (Decode16, 0xCF8, 0xCF8, 0x01, 0x08)       //Consumed resource (0xCF8-0xCFF)
+
+        WORDIO (                 // Consumed-and-produced resource (all I/O below CF8)
+          ResourceProducer,      // bit 0 of general flags is 0
+          MinFixed,              // Range is fixed
+          MaxFixed,              // Range is fixed
+          PosDecode,
+          EntireRange,
+          0x0000,                // Granularity
+          0x0000,                // Min
+          0x0CF7,                // Max
+          0x0000,                // Translation
+          0x0CF8                 // Range Length
+          )
+
+        WORDIO (                 // Consumed-and-produced resource (all I/O above CFF)
+          ResourceProducer,      // bit 0 of general flags is 0
+          MinFixed,              // Range is fixed
+          MaxFixed,              // Range is fixed
+          PosDecode,
+          EntireRange,
+          0x0000,                // Granularity
+          0x0D00,                // Min
+          0xFFFF,                // Max
+          0x0000,                // Translation
+          0xF300                 // Range Length
+          )
+
+        DWORDMEMORY (            // Descriptor for legacy VGA video RAM
+          ResourceProducer,      // bit 0 of general flags is 0
+          PosDecode,
+          MinFixed,              // Range is fixed
+          MaxFixed,              // Range is Fixed
+          Cacheable,
+          ReadWrite,
+          0x00000000,            // Granularity
+          0x000A0000,            // Min
+          0x000BFFFF,            // Max
+          0x00000000,            // Translation
+          0x00020000             // Range Length
+          )
+
+        DWORDMEMORY (            // Descriptor for 32-bit MMIO
+          ResourceProducer,      // bit 0 of general flags is 0
+          PosDecode,
+          MinFixed,              // Range is fixed
+          MaxFixed,              // Range is Fixed
+          NonCacheable,
+          ReadWrite,
+          0x00000000,            // Granularity
+          0xF8000000,            // Min
+          0xFFFBFFFF,            // Max
+          0x00000000,            // Translation
+          0x07FC0000,            // Range Length
+          ,                      // ResourceSourceIndex
+          ,                      // ResourceSource
+          PW32                   // DescriptorName
+          )
+      })
+
+      Name (CR64, ResourceTemplate () {
+        QWordMemory (            // Descriptor for 64-bit MMIO
+            ResourceProducer,    // bit 0 of general flags is 0
+            PosDecode,
+            MinFixed,            // Range is fixed
+            MaxFixed,            // Range is Fixed
+            Cacheable,
+            ReadWrite,
+            0x00000000,          // Granularity
+            0x8000000000,        // Min
+            0xFFFFFFFFFF,        // Max
+            0x00000000,          // Translation
+            0x8000000000,        // Range Length
+            ,                    // ResourceSourceIndex
+            ,                    // ResourceSource
+            PW64                 // DescriptorName
+            )
+      })
+
+      Method (_CRS, 0) {
+        //
+        // see the FIRMWARE_DATA structure in "OvmfPkg/AcpiPlatformDxe/Qemu.c"
+        //
+        External (FWDT, OpRegionObj)
+        Field(FWDT, QWordAcc, NoLock, Preserve) {
+          P0S, 64,               // PciWindow32.Base
+          P0E, 64,               // PciWindow32.End
+          P0L, 64,               // PciWindow32.Length
+          P1S, 64,               // PciWindow64.Base
+          P1E, 64,               // PciWindow64.End
+          P1L, 64                // PciWindow64.Length
+        }
+        Field(FWDT, DWordAcc, NoLock, Preserve) {
+          P0SL, 32,              // PciWindow32.Base,   low  32 bits
+          P0SH, 32,              // PciWindow32.Base,   high 32 bits
+          P0EL, 32,              // PciWindow32.End,    low  32 bits
+          P0EH, 32,              // PciWindow32.End,    high 32 bits
+          P0LL, 32,              // PciWindow32.Length, low  32 bits
+          P0LH, 32,              // PciWindow32.Length, high 32 bits
+          P1SL, 32,              // PciWindow64.Base,   low  32 bits
+          P1SH, 32,              // PciWindow64.Base,   high 32 bits
+          P1EL, 32,              // PciWindow64.End,    low  32 bits
+          P1EH, 32,              // PciWindow64.End,    high 32 bits
+          P1LL, 32,              // PciWindow64.Length, low  32 bits
+          P1LH, 32               // PciWindow64.Length, high 32 bits
+        }
+
+        //
+        // fixup 32-bit PCI IO window
+        //
+        CreateDWordField (CRES, \_SB.PCI0.PW32._MIN, PS32)
+        CreateDWordField (CRES, \_SB.PCI0.PW32._MAX, PE32)
+        CreateDWordField (CRES, \_SB.PCI0.PW32._LEN, PL32)
+        Store (P0SL, PS32)
+        Store (P0EL, PE32)
+        Store (P0LL, PL32)
+
+        If (LAnd (LEqual (P1SL, 0x00), LEqual (P1SH, 0x00))) {
+          Return (CRES)
+        } Else {
+          //
+          // fixup 64-bit PCI IO window
+          //
+          CreateQWordField (CR64, \_SB.PCI0.PW64._MIN, PS64)
+          CreateQWordField (CR64, \_SB.PCI0.PW64._MAX, PE64)
+          CreateQWordField (CR64, \_SB.PCI0.PW64._LEN, PL64)
+          Store (P1S, PS64)
+          Store (P1E, PE64)
+          Store (P1L, PL64)
+
+          //
+          // add window and return result
+          //
+          ConcatenateResTemplate (CRES, CR64, Local0)
+          Return (Local0)
+        }
+      }
+
+      //
+      // PCI Interrupt Routing Table - PIC Mode Only
+      //
+      Method (_PRT, 0, NotSerialized) {
+        Return (
+          Package () {
+            //
+            // Bus 0; Devices 0 to 15
+            //
+            Package () {0x0000FFFF, 0x00, \_SB.PCI0.LPC.LNKD, 0x00},
+            Package () {0x0000FFFF, 0x01, \_SB.PCI0.LPC.LNKA, 0x00},
+            Package () {0x0000FFFF, 0x02, \_SB.PCI0.LPC.LNKB, 0x00},
+            Package () {0x0000FFFF, 0x03, \_SB.PCI0.LPC.LNKC, 0x00},
+
+            //
+            // Bus 0, Device 1, Pin 0 (INTA) is special; it corresponds to the
+            // internally generated SCI (System Control Interrupt), which is
+            // always routed to GSI 9. By setting the third (= Source) field to
+            // zero, we could use the fourth (= Source Index) field to hardwire
+            // the pin to GSI 9 directly.
+            //
+            // That way however, in accordance with the ACPI spec's description
+            // of SCI, the interrupt would be treated as "active low,
+            // shareable, level", and that doesn't match qemu.
+            //
+            // In QemuInstallAcpiMadtTable() [OvmfPkg/AcpiPlatformDxe/Qemu.c]
+            // we install an Interrupt Override Structure for the identity
+            // mapped IRQ#9 / GSI 9 (the corresponding bit being set in
+            // Pcd8259LegacyModeEdgeLevel), which describes the correct
+            // polarity (active high). As a consequence, some OS'en (eg. Linux)
+            // override the default (active low) polarity originating from the
+            // _PRT; others (eg. FreeBSD) don't. Therefore we need a separate
+            // link device just to specify a polarity that matches the MADT.
+            //
+            Package () {0x0001FFFF, 0x00, \_SB.PCI0.LPC.LNKS, 0x00},
+
+            Package () {0x0001FFFF, 0x01, \_SB.PCI0.LPC.LNKB, 0x00},
+            Package () {0x0001FFFF, 0x02, \_SB.PCI0.LPC.LNKC, 0x00},
+            Package () {0x0001FFFF, 0x03, \_SB.PCI0.LPC.LNKD, 0x00},
+
+            Package () {0x0002FFFF, 0x00, \_SB.PCI0.LPC.LNKB, 0x00},
+            Package () {0x0002FFFF, 0x01, \_SB.PCI0.LPC.LNKC, 0x00},
+            Package () {0x0002FFFF, 0x02, \_SB.PCI0.LPC.LNKD, 0x00},
+            Package () {0x0002FFFF, 0x03, \_SB.PCI0.LPC.LNKA, 0x00},
+
+            Package () {0x0003FFFF, 0x00, \_SB.PCI0.LPC.LNKC, 0x00},
+            Package () {0x0003FFFF, 0x01, \_SB.PCI0.LPC.LNKD, 0x00},
+            Package () {0x0003FFFF, 0x02, \_SB.PCI0.LPC.LNKA, 0x00},
+            Package () {0x0003FFFF, 0x03, \_SB.PCI0.LPC.LNKB, 0x00},
+
+            Package () {0x0004FFFF, 0x00, \_SB.PCI0.LPC.LNKD, 0x00},
+            Package () {0x0004FFFF, 0x01, \_SB.PCI0.LPC.LNKA, 0x00},
+            Package () {0x0004FFFF, 0x02, \_SB.PCI0.LPC.LNKB, 0x00},
+            Package () {0x0004FFFF, 0x03, \_SB.PCI0.LPC.LNKC, 0x00},
+
+            Package () {0x0005FFFF, 0x00, \_SB.PCI0.LPC.LNKA, 0x00},
+            Package () {0x0005FFFF, 0x01, \_SB.PCI0.LPC.LNKB, 0x00},
+            Package () {0x0005FFFF, 0x02, \_SB.PCI0.LPC.LNKC, 0x00},
+            Package () {0x0005FFFF, 0x03, \_SB.PCI0.LPC.LNKD, 0x00},
+
+            Package () {0x0006FFFF, 0x00, \_SB.PCI0.LPC.LNKB, 0x00},
+            Package () {0x0006FFFF, 0x01, \_SB.PCI0.LPC.LNKC, 0x00},
+            Package () {0x0006FFFF, 0x02, \_SB.PCI0.LPC.LNKD, 0x00},
+            Package () {0x0006FFFF, 0x03, \_SB.PCI0.LPC.LNKA, 0x00},
+
+            Package () {0x0007FFFF, 0x00, \_SB.PCI0.LPC.LNKC, 0x00},
+            Package () {0x0007FFFF, 0x01, \_SB.PCI0.LPC.LNKD, 0x00},
+            Package () {0x0007FFFF, 0x02, \_SB.PCI0.LPC.LNKA, 0x00},
+            Package () {0x0007FFFF, 0x03, \_SB.PCI0.LPC.LNKB, 0x00},
+
+            Package () {0x0008FFFF, 0x00, \_SB.PCI0.LPC.LNKD, 0x00},
+            Package () {0x0008FFFF, 0x01, \_SB.PCI0.LPC.LNKA, 0x00},
+            Package () {0x0008FFFF, 0x02, \_SB.PCI0.LPC.LNKB, 0x00},
+            Package () {0x0008FFFF, 0x03, \_SB.PCI0.LPC.LNKC, 0x00},
+
+            Package () {0x0009FFFF, 0x00, \_SB.PCI0.LPC.LNKA, 0x00},
+            Package () {0x0009FFFF, 0x01, \_SB.PCI0.LPC.LNKB, 0x00},
+            Package () {0x0009FFFF, 0x02, \_SB.PCI0.LPC.LNKC, 0x00},
+            Package () {0x0009FFFF, 0x03, \_SB.PCI0.LPC.LNKD, 0x00},
+
+            Package () {0x000AFFFF, 0x00, \_SB.PCI0.LPC.LNKB, 0x00},
+            Package () {0x000AFFFF, 0x01, \_SB.PCI0.LPC.LNKC, 0x00},
+            Package () {0x000AFFFF, 0x02, \_SB.PCI0.LPC.LNKD, 0x00},
+            Package () {0x000AFFFF, 0x03, \_SB.PCI0.LPC.LNKA, 0x00},
+
+            Package () {0x000BFFFF, 0x00, \_SB.PCI0.LPC.LNKC, 0x00},
+            Package () {0x000BFFFF, 0x01, \_SB.PCI0.LPC.LNKD, 0x00},
+            Package () {0x000BFFFF, 0x02, \_SB.PCI0.LPC.LNKA, 0x00},
+            Package () {0x000BFFFF, 0x03, \_SB.PCI0.LPC.LNKB, 0x00},
+
+            Package () {0x000CFFFF, 0x00, \_SB.PCI0.LPC.LNKD, 0x00},
+            Package () {0x000CFFFF, 0x01, \_SB.PCI0.LPC.LNKA, 0x00},
+            Package () {0x000CFFFF, 0x02, \_SB.PCI0.LPC.LNKB, 0x00},
+            Package () {0x000CFFFF, 0x03, \_SB.PCI0.LPC.LNKC, 0x00},
+
+            Package () {0x000DFFFF, 0x00, \_SB.PCI0.LPC.LNKA, 0x00},
+            Package () {0x000DFFFF, 0x01, \_SB.PCI0.LPC.LNKB, 0x00},
+            Package () {0x000DFFFF, 0x02, \_SB.PCI0.LPC.LNKC, 0x00},
+            Package () {0x000DFFFF, 0x03, \_SB.PCI0.LPC.LNKD, 0x00},
+
+            Package () {0x000EFFFF, 0x00, \_SB.PCI0.LPC.LNKB, 0x00},
+            Package () {0x000EFFFF, 0x01, \_SB.PCI0.LPC.LNKC, 0x00},
+            Package () {0x000EFFFF, 0x02, \_SB.PCI0.LPC.LNKD, 0x00},
+            Package () {0x000EFFFF, 0x03, \_SB.PCI0.LPC.LNKA, 0x00},
+
+            Package () {0x000FFFFF, 0x00, \_SB.PCI0.LPC.LNKC, 0x00},
+            Package () {0x000FFFFF, 0x01, \_SB.PCI0.LPC.LNKD, 0x00},
+            Package () {0x000FFFFF, 0x02, \_SB.PCI0.LPC.LNKA, 0x00},
+            Package () {0x000FFFFF, 0x03, \_SB.PCI0.LPC.LNKB, 0x00}
+          }
+        )
+      }
+
+      //
+      // PCI to ISA Bridge (Bus 0, Device 1, Function 0)
+      // "Low Pin Count"
+      //
+      Device (LPC) {
+        Name (_ADR, 0x00010000)
+
+        //
+        // The SCI cannot be rerouted or disabled with PIRQRC[A:D]; we only
+        // need this link device in order to specify the polarity.
+        //
+        Device (LNKS) {
+          Name (_HID, EISAID("PNP0C0F"))
+          Name (_UID, 0)
+
+          Name (_STA, 0xB) // 0x1: device present
+                           // 0x2: enabled and decoding resources
+                           // 0x8: functioning properly
+
+          Method (_SRS, 1, NotSerialized) { /* no-op */ }
+          Method (_DIS, 0, NotSerialized) { /* no-op */ }
+
+          Name (_PRS, ResourceTemplate () {
+            Interrupt (ResourceConsumer, Level, ActiveHigh, Shared) { 9 }
+            //
+            // list of IRQs occupied thus far: 9
+            //
+          })
+          Method (_CRS, 0, NotSerialized) { Return (_PRS) }
+        }
+
+        //
+        // PCI Interrupt Routing Configuration Registers, PIRQRC[A:D]
+        //
+        OperationRegion (PRR0, PCI_Config, 0x60, 0x04)
+        Field (PRR0, ANYACC, NOLOCK, PRESERVE) {
+          PIRA, 8,
+          PIRB, 8,
+          PIRC, 8,
+          PIRD, 8
+        }
+
+        //
+        // _STA method for LNKA, LNKB, LNKC, LNKD
+        // Arg0[in]: value of PIRA / PIRB / PIRC / PIRD
+        //
+        Method (PSTA, 1, NotSerialized) {
+          If (And (Arg0, 0x80)) { // disable-bit set?
+            Return (0x9)          // "device present" | "functioning properly"
+          } Else {
+            Return (0xB)          // same | "enabled and decoding resources"
+          }
+        }
+
+        //
+        // _CRS method for LNKA, LNKB, LNKC, LNKD
+        // Arg0[in]: value of PIRA / PIRB / PIRC / PIRD
+        //
+        Method (PCRS, 1, NotSerialized) {
+          //
+          // create temporary buffer with an Extended Interrupt Descriptor
+          // whose single vector defaults to zero
+          //
+          Name (BUF0, ResourceTemplate () {
+              Interrupt (ResourceConsumer, Level, ActiveHigh, Shared){0}
+            }
+          )
+
+          //
+          // define reference to first interrupt vector in buffer
+          //
+          CreateDWordField (BUF0, 0x05, IRQW)
+
+          //
+          // If the disable-bit is clear, overwrite the default zero vector
+          // with the value in Arg0 (ie. PIRQRC[A:D]). Reserved bits are read
+          // as 0.
+          //
+          If (LNot (And (Arg0, 0x80))) {
+            Store (Arg0, IRQW)
+          }
+          Return (BUF0)
+        }
+
+        //
+        // _PRS resource for LNKA, LNKB, LNKC, LNKD
+        //
+        Name (PPRS, ResourceTemplate () {
+          Interrupt (ResourceConsumer, Level, ActiveHigh, Shared) {5, 10, 11}
+          //
+          // list of IRQs occupied thus far: 9, 5, 10, 11
+          //
+        })
+
+        //
+        // PCI IRQ Link A
+        //
+        Device (LNKA) {
+          Name (_HID, EISAID("PNP0C0F"))
+          Name (_UID, 1)
+
+          Method (_STA, 0, NotSerialized) { Return (PSTA (PIRA)) }
+          Method (_DIS, 0, NotSerialized) {
+            Or (PIRA, 0x80, PIRA) // set disable-bit
+          }
+          Method (_CRS, 0, NotSerialized) { Return (PCRS (PIRA)) }
+          Method (_PRS, 0, NotSerialized) { Return (PPRS) }
+          Method (_SRS, 1, NotSerialized) {
+            CreateDWordField (Arg0, 0x05, IRQW)
+            Store (IRQW, PIRA)
+          }
+        }
+
+        //
+        // PCI IRQ Link B
+        //
+        Device (LNKB) {
+          Name (_HID, EISAID("PNP0C0F"))
+          Name (_UID, 2)
+
+          Method (_STA, 0, NotSerialized) { Return (PSTA (PIRB)) }
+          Method (_DIS, 0, NotSerialized) {
+            Or (PIRB, 0x80, PIRB) // set disable-bit
+          }
+          Method (_CRS, 0, NotSerialized) { Return (PCRS (PIRB)) }
+          Method (_PRS, 0, NotSerialized) { Return (PPRS) }
+          Method (_SRS, 1, NotSerialized) {
+            CreateDWordField (Arg0, 0x05, IRQW)
+            Store (IRQW, PIRB)
+          }
+        }
+
+        //
+        // PCI IRQ Link C
+        //
+        Device (LNKC) {
+          Name (_HID, EISAID("PNP0C0F"))
+          Name (_UID, 3)
+
+          Method (_STA, 0, NotSerialized) { Return (PSTA (PIRC)) }
+          Method (_DIS, 0, NotSerialized) {
+            Or (PIRC, 0x80, PIRC) // set disable-bit
+          }
+          Method (_CRS, 0, NotSerialized) { Return (PCRS (PIRC)) }
+          Method (_PRS, 0, NotSerialized) { Return (PPRS) }
+          Method (_SRS, 1, NotSerialized) {
+            CreateDWordField (Arg0, 0x05, IRQW)
+            Store (IRQW, PIRC)
+          }
+        }
+
+        //
+        // PCI IRQ Link D
+        //
+        Device (LNKD) {
+          Name (_HID, EISAID("PNP0C0F"))
+          Name (_UID, 4)
+
+          Method (_STA, 0, NotSerialized) { Return (PSTA (PIRD)) }
+          Method (_DIS, 0, NotSerialized) {
+            Or (PIRD, 0x80, PIRD) // set disable-bit
+          }
+          Method (_CRS, 0, NotSerialized) { Return (PCRS (PIRD)) }
+          Method (_PRS, 0, NotSerialized) { Return (PPRS) }
+          Method (_SRS, 1, NotSerialized) {
+            CreateDWordField (Arg0, 0x05, IRQW)
+            Store (IRQW, PIRD)
+          }
+        }
+
+        //
+        // Programmable Interrupt Controller (PIC)
+        //
+        Device(PIC) {
+          Name (_HID, EISAID ("PNP0000"))
+          Name (_CRS, ResourceTemplate () {
+            IO (Decode16, 0x020, 0x020, 0x00, 0x02)
+            IO (Decode16, 0x0A0, 0x0A0, 0x00, 0x02)
+            IO (Decode16, 0x4D0, 0x4D0, 0x00, 0x02)
+            IRQNoFlags () {2}
+            //
+            // list of IRQs occupied thus far: 9, 5, 10, 11, 2
+            //
+          })
+        }
+
+        //
+        // ISA DMA
+        //
+        Device (DMAC) {
+          Name (_HID, EISAID ("PNP0200"))
+          Name (_CRS, ResourceTemplate () {
+            IO (Decode16, 0x00, 0x00, 0, 0x10)
+            IO (Decode16, 0x81, 0x81, 0, 0x03)
+            IO (Decode16, 0x87, 0x87, 0, 0x01)
+            IO (Decode16, 0x89, 0x89, 0, 0x03)
+            IO (Decode16, 0x8f, 0x8f, 0, 0x01)
+            IO (Decode16, 0xc0, 0xc0, 0, 0x20)
+            DMA (Compatibility, NotBusMaster, Transfer8) {4}
+          })
+        }
+
+        //
+        // 8254 Timer
+        //
+        Device(TMR) {
+          Name(_HID,EISAID("PNP0100"))
+          Name(_CRS, ResourceTemplate () {
+            IO (Decode16, 0x40, 0x40, 0x00, 0x04)
+            IRQNoFlags () {0}
+            //
+            // list of IRQs occupied thus far: 9, 5, 10, 11, 2, 0
+            //
+          })
+        }
+
+        //
+        // Real Time Clock
+        //
+        Device (RTC) {
+          Name (_HID, EISAID ("PNP0B00"))
+          Name (_CRS, ResourceTemplate () {
+            IO (Decode16, 0x70, 0x70, 0x00, 0x02)
+            IRQNoFlags () {8}
+            //
+            // list of IRQs occupied thus far: 9, 5, 10, 11, 2, 0, 8
+            //
+          })
+        }
+
+        //
+        // PCAT Speaker
+        //
+        Device(SPKR) {
+          Name (_HID, EISAID("PNP0800"))
+          Name (_CRS, ResourceTemplate () {
+            IO (Decode16, 0x61, 0x61, 0x01, 0x01)
+          })
+        }
+
+        //
+        // Floating Point Coprocessor
+        //
+        Device(FPU) {
+          Name (_HID, EISAID("PNP0C04"))
+          Name (_CRS, ResourceTemplate () {
+            IO (Decode16, 0xF0, 0xF0, 0x00, 0x10)
+            IRQNoFlags () {13}
+            //
+            // list of IRQs occupied thus far: 9, 5, 10, 11, 2, 0, 8, 13
+            //
+          })
+        }
+
+        //
+        // Generic motherboard devices and pieces that don't fit anywhere else
+        //
+        Device(XTRA) {
+          Name (_HID, EISAID ("PNP0C02"))
+          Name (_UID, 0x01)
+          Name (_CRS, ResourceTemplate () {
+            IO (Decode16, 0x010, 0x010, 0x00, 0x10)
+            IO (Decode16, 0x022, 0x022, 0x00, 0x1E)
+            IO (Decode16, 0x044, 0x044, 0x00, 0x1C)
+            IO (Decode16, 0x062, 0x062, 0x00, 0x02)
+            IO (Decode16, 0x065, 0x065, 0x00, 0x0B)
+            IO (Decode16, 0x072, 0x072, 0x00, 0x0E)
+            IO (Decode16, 0x080, 0x080, 0x00, 0x01)
+            IO (Decode16, 0x084, 0x084, 0x00, 0x03)
+            IO (Decode16, 0x088, 0x088, 0x00, 0x01)
+            IO (Decode16, 0x08c, 0x08c, 0x00, 0x03)
+            IO (Decode16, 0x090, 0x090, 0x00, 0x10)
+            IO (Decode16, 0x0A2, 0x0A2, 0x00, 0x1E)
+            IO (Decode16, 0x0E0, 0x0E0, 0x00, 0x10)
+            IO (Decode16, 0x1E0, 0x1E0, 0x00, 0x10)
+            IO (Decode16, 0x160, 0x160, 0x00, 0x10)
+            IO (Decode16, 0x278, 0x278, 0x00, 0x08)
+            IO (Decode16, 0x370, 0x370, 0x00, 0x02)
+            IO (Decode16, 0x378, 0x378, 0x00, 0x08)
+            IO (Decode16, 0x402, 0x402, 0x00, 0x01)        // QEMU debug console, should use FixedPcdGet16 (PcdDebugIoPort)
+            IO (Decode16, 0x440, 0x440, 0x00, 0x10)
+            IO (Decode16, 0x678, 0x678, 0x00, 0x08)
+            IO (Decode16, 0x778, 0x778, 0x00, 0x08)
+            IO (Decode16, 0xafe0, 0xafe0, 0x00, 0x04)      // QEMU GPE0 BLK
+            IO (Decode16, 0xb000, 0xb000, 0x00, 0x40)      // PMBLK1
+            Memory32Fixed (ReadOnly, 0xFEC00000, 0x1000)   // IO APIC
+            Memory32Fixed (ReadOnly, 0xFEE00000, 0x100000) // LAPIC
+          })
+        }
+
+        //
+        // PS/2 Keyboard and PC/AT Enhanced Keyboard 101/102
+        //
+        Device (PS2K) {
+          Name (_HID, EISAID ("PNP0303"))
+          Name (_CID, EISAID ("PNP030B"))
+          Name(_CRS,ResourceTemplate() {
+            IO (Decode16, 0x60, 0x60, 0x00, 0x01)
+            IO (Decode16, 0x64, 0x64, 0x00, 0x01)
+            IRQNoFlags () {1}
+            //
+            // list of IRQs occupied thus far: 9, 5, 10, 11, 2, 0, 8, 13, 1
+            //
+          })
+        }
+
+        //
+        // PS/2 Mouse and Microsoft Mouse
+        //
+        Device (PS2M) {  // PS/2 stype mouse port
+          Name (_HID, EISAID ("PNP0F03"))
+          Name (_CID, EISAID ("PNP0F13"))
+          Name (_CRS, ResourceTemplate() {
+            IRQNoFlags () {12}
+            //
+            // list of IRQs occupied thus far:
+            // 9, 5, 10, 11, 2, 0, 8, 13, 1, 12
+            //
+          })
+        }
+
+        //
+        // UART Serial Port - COM1
+        //
+        Device (UAR1) {
+          Name (_HID, EISAID ("PNP0501"))
+          Name (_DDN, "COM1")
+          Name (_UID, 0x01)
+          Name(_CRS,ResourceTemplate() {
+            IO (Decode16, 0x3F8, 0x3F8, 0x01, 0x08)
+            IRQ (Edge, ActiveHigh, Exclusive, ) {4}
+            //
+            // list of IRQs occupied thus far:
+            // 9, 5, 10, 11, 2, 0, 8, 13, 1, 12, 4
+            //
+          })
+        }
+
+        //
+        // UART Serial Port - COM2
+        //
+        Device (UAR2) {
+          Name (_HID, EISAID ("PNP0501"))
+          Name (_DDN, "COM2")
+          Name (_UID, 0x02)
+          Name(_CRS,ResourceTemplate() {
+            IO (Decode16, 0x2F8, 0x2F8, 0x01, 0x08)
+            IRQ (Edge, ActiveHigh, Exclusive, ) {3}
+            //
+            // list of IRQs occupied thus far:
+            // 9, 5, 10, 11, 2, 0, 8, 13, 1, 12, 4, 3
+            //
+          })
+        }
+
+        //
+        // Floppy Disk Controller
+        //
+        Device (FDC) {
+          Name (_HID, EISAID ("PNP0700"))
+          Name (_CRS,ResourceTemplate() {
+            IO (Decode16, 0x3F0, 0x3F0, 0x01, 0x06)
+            IO (Decode16, 0x3F7, 0x3F7, 0x01, 0x01)
+            IRQNoFlags () {6}
+            //
+            // list of IRQs occupied thus far:
+            // 9, 5, 10, 11, 2, 0, 8, 13, 1, 12, 4, 3, 6
+            //
+            DMA (Compatibility, NotBusMaster, Transfer8) {2}
+          })
+        }
+
+        //
+        // parallel port -- no DMA for now
+        //
+        Device (PAR1) {
+          Name (_HID, EISAID ("PNP0400"))
+          Name (_DDN, "LPT1")
+          Name (_UID, 0x01)
+          Name(_CRS, ResourceTemplate() {
+            IO (Decode16, 0x0378, 0x0378, 0x00, 0x08)
+            IRQNoFlags () {7}
+            //
+            // list of IRQs occupied thus far:
+            // 9, 5, 10, 11, 2, 0, 8, 13, 1, 12, 4, 3, 6, 7
+            // in order:
+            // 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
+            //
+          })
+        }
+      }
+    }
+  }
+}

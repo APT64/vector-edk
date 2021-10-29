@@ -1,0 +1,70 @@
+ fsbg
+
+ Timestamp is 617b1174 (Fri Oct 29 00:09:08 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000148H .data                   CODE
+ 0001:00000150 00000162H .rdata                  CODE
+ 0001:000002c0 00000ff2H .text                   CODE
+ 0001:000012b8 00000038H .bss                    CODE
+ 0002:00000000 000000a8H .pdata                  DATA
+ 0003:00000000 000000c8H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       gEfiFileInfoGuid           0000000000000280     fsbg:AutoGen.obj
+ 0001:00000010       gEfiSimpleFileSystemProtocolGuid 0000000000000290     fsbg:AutoGen.obj
+ 0001:00000020       gEfiLoadedImageProtocolGuid 00000000000002a0     fsbg:AutoGen.obj
+ 0001:00000030       gEfiDevicePathProtocolGuid 00000000000002b0     fsbg:AutoGen.obj
+ 0001:00000040       gEfiDevicePathUtilitiesProtocolGuid 00000000000002c0     fsbg:AutoGen.obj
+ 0001:00000050       g_NAME_SCOUT               00000000000002d0     fsbg:fsbg.obj
+ 0001:000000a0       g_NAME_SOLDIER             0000000000000320     fsbg:fsbg.obj
+ 0001:000000f0       g_NAME_ELITE               0000000000000370     fsbg:fsbg.obj
+ 0001:00000138       gEfiGlobalFileVariableGuid 00000000000003b8     fsbg:fsbg.obj
+ 0001:00000150       _gUefiDriverRevision       00000000000003d0     fsbg:AutoGen.obj
+ 0001:00000158       ??_C@_17DIOOPMBD@?$AAf?$AAT?$AAA?$AA?$AA@ 00000000000003d8     fsbg:fsbg.obj
+ 0001:00000160       ??_C@_1IA@PAOGAAKF@?$AA?2?$AAA?$AAp?$AAp?$AAD?$AAa?$AAt?$AAa?$AA?2?$AAR?$AAo?$AAa?$AAm?$AAi?$AAn?$AAg?$AA?2?$AAM?$AAi?$AAc?$AAr?$AAo?$AAs?$AAo?$AAf?$AAt?$AA?2?$AAW?$AAi?$AAn?$AAd?$AAo@ 00000000000003e0     fsbg:fsbg.obj
+ 0001:000001e0       ??_C@_1CA@IMCMGMGA@?$AA?2?$AAA?$AAp?$AAp?$AAD?$AAa?$AAt?$AAa?$AA?2?$AAL?$AAo?$AAc?$AAa?$AAl?$AA?2?$AA?$AA@ 0000000000000460     fsbg:fsbg.obj
+ 0001:00000200       ??_C@_1DE@NOEABFLE@?$AA?2?$AAA?$AAp?$AAp?$AAD?$AAa?$AAt?$AAa?$AA?2?$AAL?$AAo?$AAc?$AAa?$AAl?$AA?2?$AAM?$AAi?$AAc?$AAr?$AAo?$AAs?$AAo?$AAf?$AAt?$AA?2?$AA?$AA@ 0000000000000480     fsbg:fsbg.obj
+ 0001:00000238       ??_C@_1BA@DHMKHNCM@?$AA?4?$AA?2?$AAU?$AAs?$AAe?$AAr?$AAs?$AA?$AA@ 00000000000004b8     fsbg:fsbg.obj
+ 0001:00000248       ??_C@_13JOFGPIOO@?$AA?4?$AA?$AA@ 00000000000004c8     fsbg:fsbg.obj
+ 0001:0000024c       ??_C@_15DDHGOCBH@?$AA?4?$AA?4?$AA?$AA@ 00000000000004cc     fsbg:fsbg.obj
+ 0001:00000258       ??_C@_1O@OBJINMIH@?$AAP?$AAu?$AAb?$AAl?$AAi?$AAc?$AA?$AA@ 00000000000004d8     fsbg:fsbg.obj
+ 0001:00000268       ??_C@_1BM@LGMDCJGP@?$AAA?$AAd?$AAm?$AAi?$AAn?$AAi?$AAs?$AAt?$AAr?$AAa?$AAt?$AAo?$AAr?$AA?$AA@ 00000000000004e8     fsbg:fsbg.obj
+ 0001:00000288       ??_C@_1BC@JGFOOBPP@?$AA?4?$AA?2?$AAU?$AAs?$AAe?$AAr?$AAs?$AA?2?$AA?$AA@ 0000000000000508     fsbg:fsbg.obj
+ 0001:000002a0       ??_C@_1BC@CCFGBAAD@?$AA?2?$AAD?$AAe?$AAs?$AAk?$AAt?$AAo?$AAp?$AA?$AA@ 0000000000000520     fsbg:fsbg.obj
+ 0001:000002c0       _ModuleEntryPoint          0000000000000540 f   UefiApplicationEntryPoint:ApplicationEntryPoint.obj
+ 0001:0000031c       ProcessModuleEntryPointList 000000000000059c f   fsbg:AutoGen.obj
+ 0001:00000410       CheckAL                    0000000000000690 f   fsbg:fsbg.obj
+ 0001:000005fc       InstallAgent               000000000000087c f   fsbg:fsbg.obj
+ 0001:000006b8       InsertFileLock             0000000000000938 f   fsbg:fsbg.obj
+ 0001:00000758       TestIsUserNotEmpty         00000000000009d8 f   fsbg:fsbg.obj
+ 0001:00000b68       FileHandleIsDirectory      0000000000000de8 f   fsbg:fsbg.obj
+ 0001:00000c28       FileHandleFindFirstFile    0000000000000ea8 f   fsbg:fsbg.obj
+ 0001:00000d04       FileHandleFindNextFile     0000000000000f84 f   fsbg:fsbg.obj
+ 0001:00000d58       CheckUsers                 0000000000000fd8 f   fsbg:fsbg.obj
+ 0001:00000f20       GetImageEx                 00000000000011a0 f   fsbg:fsbg.obj
+ 0001:000010e8       StrCpy                     0000000000001368 f   BaseLib:String.obj
+ 0001:00001114       StrCat                     0000000000001394 f   BaseLib:String.obj
+ 0001:00001148       StrStr                     00000000000013c8 f   BaseLib:String.obj
+ 0001:0000119c       InternalAllocatePool       000000000000141c f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000011d0       AllocateZeroPool           0000000000001450 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001200       InternalMemZeroMem         0000000000001480 f   BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00001220       InternalMemSetMem          00000000000014a0 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:00001240       InternalMemCopyMem         00000000000014c0 f   BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00001280       InternalMemSetMem32        0000000000001500 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000012a0       InternalMemSetMem64        0000000000001520 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000012b8       gImageHandle               0000000000001538     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:000012c0       gST                        0000000000001540     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:000012c8       gBS                        0000000000001548     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:000012d0       gRT                        0000000000001550     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0001:000012d8       mDevicePathLibDevicePathUtilities 0000000000001558     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:000012e0       pSectiondata               0000000000001560     <common>
+ 0001:000012e8       VirtualSize                0000000000001568     <common>
+
+ entry point at        0001:000002c0
+
+ Static symbols
+

@@ -1,0 +1,43 @@
+ StatusCodePei
+
+ Timestamp is 617b112d (Fri Oct 29 00:07:57 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000050H .data                   CODE
+ 0001:00000050 00000000H .rdata                  CODE
+ 0001:00000050 00000274H .text                   CODE
+ 0001:000002c8 00000002H .bss                    CODE
+ 0002:00000000 00000030H .pdata                  DATA
+ 0003:00000000 00000028H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __ImageBase                0000000000000000     <linker-defined>
+ 0001:00000000       gMemoryStatusCodeRecordGuid 0000000000000280     StatusCodePei:AutoGen.obj
+ 0001:00000010       gEfiPeiStatusCodePpiGuid   0000000000000290     StatusCodePei:AutoGen.obj
+ 0001:00000020       gUartBase                  00000000000002a0     PcAtSerialPortLib:SerialPortLib.obj
+ 0001:00000022       gData                      00000000000002a2     PcAtSerialPortLib:SerialPortLib.obj
+ 0001:00000023       gStop                      00000000000002a3     PcAtSerialPortLib:SerialPortLib.obj
+ 0001:00000028       gBps                       00000000000002a8     PcAtSerialPortLib:SerialPortLib.obj
+ 0001:00000030       mStatusCodePpi             00000000000002b0     StatusCodePei:StatusCodePei.obj
+ 0001:00000038       mStatusCodePpiDescriptor   00000000000002b8     StatusCodePei:StatusCodePei.obj
+ 0001:00000050       _ModuleEntryPoint          00000000000002d0 f   PeimEntryPoint:PeimEntryPoint.obj
+ 0001:000000bc       ReportDispatcher           000000000000033c f   StatusCodePei:StatusCodePei.obj
+ 0001:000000d8       MemoryStatusCodeReportWorker 0000000000000358 f   StatusCodePei:MemoryStausCodeWorker.obj
+ 0001:0000019c       InternalPeiCreateHob       000000000000041c f   PeiHobLib:HobLib.obj
+ 0001:000001f0       InternalMemCopyMem         0000000000000470 f   BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000230       InternalMemZeroMem         00000000000004b0 f   BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000250       InternalMemSetMem          00000000000004d0 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000270       InternalMemSetMem32        00000000000004f0 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000290       InternalMemSetMem64        0000000000000510 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:000002b0       InternalX86WriteIdtr       0000000000000530 f   BaseLib:WriteIdtr.obj
+ 0001:000002c0       InternalX86ReadIdtr        0000000000000540 f   BaseLib:ReadIdtr.obj
+ 0001:000002c8       gParity                    0000000000000548     PcAtSerialPortLib:SerialPortLib.obj
+ 0001:000002c9       gBreakSet                  0000000000000549     PcAtSerialPortLib:SerialPortLib.obj
+
+ entry point at        0001:00000050
+
+ Static symbols
+

@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_RAW -o c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\4579B72D-7EC4-4dd4-8486-083C86B182A7IScsi4Dxe\IScsi4DxeOffset.raw c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\4579B72D-7EC4-4dd4-8486-083C86B182A7IScsi4Dxe\IScsi4Dxe.offset

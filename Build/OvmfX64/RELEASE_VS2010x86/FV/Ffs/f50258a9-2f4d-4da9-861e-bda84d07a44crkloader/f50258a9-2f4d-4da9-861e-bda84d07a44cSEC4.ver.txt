@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_VERSION -n 1.0 -o c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\f50258a9-2f4d-4da9-861e-bda84d07a44crkloader\f50258a9-2f4d-4da9-861e-bda84d07a44cSEC4.ver

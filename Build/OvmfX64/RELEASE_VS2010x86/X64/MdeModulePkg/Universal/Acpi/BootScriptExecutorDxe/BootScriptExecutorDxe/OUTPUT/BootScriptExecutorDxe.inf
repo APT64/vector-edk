@@ -1,0 +1,162 @@
+## @file
+# Boot Script Executor Module
+#
+# This is a standalone Boot Script Executor. Standalone means it does not
+# depends on any PEI or DXE service.
+#
+# Copyright (c) 2006 - 2013, Intel Corporation. All rights reserved.<BR>
+#
+# This program and the accompanying materials are
+# licensed and made available under the terms and conditions of the BSD License
+# which accompanies this distribution.  The full text of the license may be found at
+# http://opensource.org/licenses/bsd-license.php
+#
+# THE PROGRAM IS DISTRIBUTED UNDER THE BSD LICENSE ON AN "AS IS" BASIS,
+# WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
+#
+##
+
+[Defines]
+  INF_VERSION                = 0x00010016
+  BASE_NAME                  = BootScriptExecutorDxe
+  FILE_GUID                  = FA20568B-548B-4b2b-81EF-1BA08D4A3CEC
+  MODULE_TYPE                = DXE_DRIVER
+  VERSION_STRING             = 1.0
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+
+[Binaries.X64]
+  PE32|BootScriptExecutorDxe.efi
+  DXE_DEPEX|BootScriptExecutorDxe.depex
+
+[PatchPcd.X64]
+[Protocols.X64]
+  # ALWAYS_CONSUMED
+  gEfiDxeSmmReadyToLockProtocolGuid
+
+  ## CONSUMES
+  gPcdProtocolGuid
+
+  ## CONSUMES
+  gEfiPcdProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gGetPcdInfoProtocolGuid
+
+  ## SOMETIMES_CONSUMES
+  gEfiGetPcdInfoProtocolGuid
+
+  ## CONSUMES
+  gEfiDevicePathProtocolGuid
+
+  ## CONSUMES
+  gEfiDevicePathUtilitiesProtocolGuid
+
+  ## CONSUMES
+  gEfiDevicePathToTextProtocolGuid
+
+  ## CONSUMES
+  gEfiDevicePathFromTextProtocolGuid
+
+  ## PRODUCES
+  gEfiDriverBindingProtocolGuid
+
+  ## CONSUMES
+  gEfiSimpleTextOutProtocolGuid
+
+  ## CONSUMES
+  gEfiGraphicsOutputProtocolGuid
+
+  ## CONSUMES
+  gEfiHiiFontProtocolGuid
+
+  ## SOMETIMES_CONSUMES (Consumes if gEfiGraphicsOutputProtocolGuid uninstalled)
+  gEfiUgaDrawProtocolGuid
+
+  ## SOMETIMES_PRODUCES (User chooses to produce it)
+  gEfiComponentNameProtocolGuid
+
+  ## SOMETIMES_PRODUCES (User chooses to produce it)
+  gEfiComponentName2ProtocolGuid
+
+  ## SOMETIMES_CONSUMES (User chooses to produce it)
+  gEfiDriverConfigurationProtocolGuid
+
+  ## SOMETIMES_CONSUMES (User chooses to produce it)
+  gEfiDriverConfiguration2ProtocolGuid
+
+  ## SOMETIMES_CONSUMES (User chooses to produce it)
+  gEfiDriverDiagnosticsProtocolGuid
+
+  ## SOMETIMES_CONSUMES (User chooses to produce it)
+  gEfiDriverDiagnostics2ProtocolGuid
+
+  ## CONSUMES
+  ## CONSUMES
+  gEfiLoadedImageProtocolGuid
+
+  # ALWAYS_CONSUMED
+  gEfiSmmBase2ProtocolGuid
+
+  # ALWAYS_CONSUMED
+  gEfiSmmReadyToLockProtocolGuid
+
+  ## CONSUMES
+  gEfiFirmwareVolume2ProtocolGuid
+
+  ## CONSUMES
+  gEfiLoadFileProtocolGuid
+
+  ## CONSUMES
+  gEfiLoadFile2ProtocolGuid
+
+  ## CONSUMES
+  gEfiSimpleFileSystemProtocolGuid
+
+[Ppis.X64]
+  gEfiVectorHandoffInfoPpiGuid
+
+[Guids.X64]
+  gEfiBootScriptExecutorVariableGuid
+
+  gEfiBootScriptExecutorContextGuid
+
+  gPerformanceProtocolGuid
+
+  gEfiEventExitBootServicesGuid
+
+  ## CONSUMES  ## Event
+  gEfiEventReadyToBootGuid
+
+  ## CONSUMES  ## Event
+  gEfiEventLegacyBootGuid
+
+  ## CONSUMES  ## Variable
+  gEfiGlobalVariableGuid
+
+  ## CONSUMES
+  gEfiFileInfoGuid
+
+[PcdEx.X64]
+
+## @AsBuilt
+##   MSFT:RELEASE_VS2010x86_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   MSFT:RELEASE_VS2010x86_X64_ASLDLINK_FLAGS = /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:CONSOLE
+##   MSFT:RELEASE_VS2010x86_X64_VFR_FLAGS = -l -n
+##   MSFT:RELEASE_VS2010x86_X64_PP_FLAGS = /nologo /E /TC /FIAutoGen.h
+##   MSFT:RELEASE_VS2010x86_X64_GENFW_FLAGS = 
+##   MSFT:RELEASE_VS2010x86_X64_SLINK_FLAGS = /NOLOGO /LTCG
+##   MSFT:RELEASE_VS2010x86_X64_ASM_FLAGS = /nologo /c /WX /W3 /Cx /Zd
+##   MSFT:RELEASE_VS2010x86_X64_ASL_FLAGS = 
+##   MSFT:RELEASE_VS2010x86_X64_CC_FLAGS = /nologo /c /WX /GS- /X /W4 /Gs32768 /D UNICODE /O1ib2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /D MDEPKG_NDEBUG
+##   MSFT:RELEASE_VS2010x86_X64_VFRPP_FLAGS = /nologo /E /TC /DVFRCOMPILE /FI$(MODULE_NAME)StrDefs.h
+##   MSFT:RELEASE_VS2010x86_X64_ASLCC_FLAGS = /nologo /c /FIAutoGen.h /TC /Dmain=ReferenceAcpiTable
+##   MSFT:RELEASE_VS2010x86_X64_APP_FLAGS = /nologo /E /TC
+##   MSFT:RELEASE_VS2010x86_X64_OPTROM_FLAGS = -e
+##   MSFT:RELEASE_VS2010x86_X64_DLINK_FLAGS = /NOLOGO /NODEFAULTLIB /IGNORE:4001 /IGNORE:4254 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /Machine:X64 /LTCG /DLL /ENTRY:$(IMAGE_ENTRY_POINT) /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /MERGE:.data=.text /MERGE:.rdata=.text
+##   MSFT:RELEASE_VS2010x86_X64_ASLPP_FLAGS = /nologo /E /C /FIAutoGen.h
+##   MSFT:RELEASE_VS2010x86_X64_OBJCOPY_FLAGS = objcopy not needed for
+##   MSFT:RELEASE_VS2010x86_X64_MAKE_FLAGS = /nologo
+##   MSFT:RELEASE_VS2010x86_X64_ASMLINK_FLAGS = /nologo /tiny

@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\0abd8284-6da3-4616-971a-83a5148067baIsaFloppyDxe\0abd8284-6da3-4616-971a-83a5148067baSEC2.1.pe32 c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\IntelFrameworkModulePkg\Bus\Isa\IsaFloppyDxe\IsaFloppyDxe\OUTPUT\IsaFloppyDxe.efi

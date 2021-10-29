@@ -1,0 +1,55 @@
+ CapsuleRuntimeDxe
+
+ Timestamp is 617b1146 (Fri Oct 29 00:08:22 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000060H .data                   CODE
+ 0001:00000060 00000004H .rdata                  CODE
+ 0001:00000070 00000492H .text                   CODE
+ 0001:00000508 00000080H .bss                    CODE
+ 0002:00000000 0000003cH .pdata                  DATA
+ 0003:00000000 00000038H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       gEfiFmpCapsuleGuid         0000000000000280     CapsuleRuntimeDxe:AutoGen.obj
+ 0001:00000010       gEfiEventExitBootServicesGuid 0000000000000290     CapsuleRuntimeDxe:AutoGen.obj
+ 0001:00000020       gEfiEventVirtualAddressChangeGuid 00000000000002a0     CapsuleRuntimeDxe:AutoGen.obj
+ 0001:00000030       gEfiHobListGuid            00000000000002b0     CapsuleRuntimeDxe:AutoGen.obj
+ 0001:00000040       gEfiCapsuleArchProtocolGuid 00000000000002c0     CapsuleRuntimeDxe:AutoGen.obj
+ 0001:00000050       gEfiDevicePathUtilitiesProtocolGuid 00000000000002d0     CapsuleRuntimeDxe:AutoGen.obj
+ 0001:00000060       _gUefiDriverRevision       00000000000002e0     CapsuleRuntimeDxe:AutoGen.obj
+ 0001:00000070       _ModuleEntryPoint          00000000000002f0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000100       ProcessLibraryConstructorList 0000000000000380 f   CapsuleRuntimeDxe:AutoGen.obj
+ 0001:00000248       UpdateCapsule              00000000000004c8 f   CapsuleRuntimeDxe:CapsuleService.obj
+ 0001:00000340       QueryCapsuleCapabilities   00000000000005c0 f   CapsuleRuntimeDxe:CapsuleService.obj
+ 0001:00000424       RuntimeLibExitBootServicesEvent 00000000000006a4 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:0000042c       RuntimeLibVirtualNotifyEvent 00000000000006ac f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:00000450       InternalMemZeroMem         00000000000006d0 f   BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000470       InternalMemSetMem          00000000000006f0 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:00000490       InternalMemCopyMem         0000000000000710 f   BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000004d0       InternalMemSetMem32        0000000000000750 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000004f0       InternalMemSetMem64        0000000000000770 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000508       mNewHandle                 0000000000000788     CapsuleRuntimeDxe:CapsuleService.obj
+ 0001:00000510       mTimes                     0000000000000790     CapsuleRuntimeDxe:CapsuleService.obj
+ 0001:00000518       mMaxSizePopulateCapsule    0000000000000798     CapsuleRuntimeDxe:CapsuleService.obj
+ 0001:0000051c       mMaxSizeNonPopulateCapsule 000000000000079c     CapsuleRuntimeDxe:CapsuleService.obj
+ 0001:00000520       gImageHandle               00000000000007a0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000528       gST                        00000000000007a8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000530       gBS                        00000000000007b0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000538       gRT                        00000000000007b8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0001:00000540       mEfiGoneVirtual            00000000000007c0     UefiRuntimeLib:RuntimeLib.obj
+ 0001:00000541       mEfiAtRuntime              00000000000007c1     UefiRuntimeLib:RuntimeLib.obj
+ 0001:00000548       mLockBoxGlobal             00000000000007c8     LockBoxBaseLib:LockBoxLib.obj
+ 0001:00000560       mHobList                   00000000000007e0     DxeHobLib:HobLib.obj
+ 0001:00000568       mDevicePathLibDevicePathUtilities 00000000000007e8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00000570       mInternalRT                00000000000007f0     <common>
+ 0001:00000578       mEfiVirtualNotifyEvent     00000000000007f8     <common>
+ 0001:00000580       mEfiExitBootServicesEvent  0000000000000800     <common>
+
+ entry point at        0001:00000070
+
+ Static symbols
+

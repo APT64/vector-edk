@@ -1,0 +1,157 @@
+## @file
+#  CHIPSEC
+#
+#  Porting of CHIPSEC project as UEFI native application
+#  (c) 2014-1025, ]HackingTeam[
+#  http://www.hackingteam.com
+#  cod
+##
+
+[Defines]
+  INF_VERSION                = 0x00010016
+  BASE_NAME                  = chipsec
+  FILE_GUID                  = C2AA29A2-065C-4FC5-BE01-7FAA761EAA7E
+  MODULE_TYPE                = UEFI_APPLICATION
+  VERSION_STRING             = 1.0
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ShellPkg/ShellPkg.dec
+
+[Binaries.X64]
+  PE32|chipsec.efi
+
+[PatchPcd.X64]
+[Protocols.X64]
+  # ALWAYS_CONSUMED
+  # SOMETIMES_CONSUMED
+  gEfiShellParametersProtocolGuid
+
+  # SOMETIMES_CONSUMED
+  # SOMETIMES_CONSUMED
+  gEfiShellInterfaceGuid
+
+  ## CONSUMES
+  ## CONSUMED
+  gEfiSimpleTextInProtocolGuid
+
+  ## CONSUMES
+  ## CONSUMED
+  ## CONSUMES
+  gEfiSimpleTextOutProtocolGuid
+
+  ## CONSUMES
+  # ALWAYS_CONSUMED
+  ## CONSUMES
+  gEfiDevicePathProtocolGuid
+
+  ## SOMETIMES_CONSUMES ## GUID
+  gEfiDebugPortProtocolGuid
+
+  # ALWAYS_CONSUMED
+  gEfiUnicodeCollation2ProtocolGuid
+
+  ## CONSUMES
+  gEfiFormBrowser2ProtocolGuid
+
+  # ALWAYS_USED
+  # ALWAYS_CONSUMED
+  gEfiSimpleFileSystemProtocolGuid
+
+  ## PRODUCES
+  gEfiDriverBindingProtocolGuid
+
+  ## CONSUMES
+  gEfiGraphicsOutputProtocolGuid
+
+  ## CONSUMES
+  gEfiHiiFontProtocolGuid
+
+  ## SOMETIMES_CONSUMES (Consumes if gEfiGraphicsOutputProtocolGuid uninstalled)
+  gEfiUgaDrawProtocolGuid
+
+  ## SOMETIMES_PRODUCES (User chooses to produce it)
+  gEfiComponentNameProtocolGuid
+
+  ## SOMETIMES_PRODUCES (User chooses to produce it)
+  gEfiComponentName2ProtocolGuid
+
+  ## SOMETIMES_CONSUMES (User chooses to produce it)
+  gEfiDriverConfigurationProtocolGuid
+
+  ## SOMETIMES_CONSUMES (User chooses to produce it)
+  gEfiDriverConfiguration2ProtocolGuid
+
+  ## SOMETIMES_CONSUMES (User chooses to produce it)
+  gEfiDriverDiagnosticsProtocolGuid
+
+  ## SOMETIMES_CONSUMES (User chooses to produce it)
+  gEfiDriverDiagnostics2ProtocolGuid
+
+  # shell 2.0
+  # SOMETIMES_CONSUMED
+  gEfiShellProtocolGuid
+
+  # 'old' shell
+  # SOMETIMES_CONSUMED
+  gEfiShellEnvironment2Guid
+
+  gEfiHiiStringProtocolGuid
+
+  gEfiHiiImageProtocolGuid
+
+  gEfiHiiDatabaseProtocolGuid
+
+  gEfiHiiConfigRoutingProtocolGuid
+
+[Ppis.X64]
+[Guids.X64]
+  gEfiVTUTF8Guid
+
+  gEfiVT100Guid
+
+  gEfiVT100PlusGuid
+
+  gEfiPcAnsiGuid
+
+  gEfiUartDevicePathGuid
+
+  gEfiSasDevicePathGuid
+
+  # ALWAYS_CONSUMED
+  # ALWAYS_CONSUMED
+  gEfiFileInfoGuid
+
+  ## CONSUMES  ## Event
+  gEfiEventReadyToBootGuid
+
+  ## CONSUMES  ## Event
+  gEfiEventLegacyBootGuid
+
+  ## CONSUMES  ## Variable
+  gEfiGlobalVariableGuid
+
+  # ALWAYS_CONSUMED
+  gEfiShellEnvironment2ExtGuid
+
+[PcdEx.X64]
+
+## @AsBuilt
+##   MSFT:DEBUG_VS2010x86_X64_SYMRENAME_FLAGS = Symbol renaming not needed for
+##   MSFT:DEBUG_VS2010x86_X64_ASLDLINK_FLAGS = /NODEFAULTLIB /ENTRY:ReferenceAcpiTable /SUBSYSTEM:CONSOLE
+##   MSFT:DEBUG_VS2010x86_X64_VFR_FLAGS = -l -n
+##   MSFT:DEBUG_VS2010x86_X64_PP_FLAGS = /nologo /E /TC /FIAutoGen.h
+##   MSFT:DEBUG_VS2010x86_X64_GENFW_FLAGS = 
+##   MSFT:DEBUG_VS2010x86_X64_OPTROM_FLAGS = -e
+##   MSFT:DEBUG_VS2010x86_X64_SLINK_FLAGS = /NOLOGO /LTCG
+##   MSFT:DEBUG_VS2010x86_X64_ASM_FLAGS = /nologo /c /WX /W3 /Cx /Zd /Zi
+##   MSFT:DEBUG_VS2010x86_X64_ASL_FLAGS = 
+##   MSFT:DEBUG_VS2010x86_X64_CC_FLAGS = /nologo /c /WX /GS- /X /W4 /Gs32768 /D UNICODE /O1ib2s /GL /Gy /FIAutoGen.h /EHs-c- /GR- /GF /Zi /Gm /wd4018 /wd4054 /wd4055 /wd4101 /wd4131 /wd4152 /wd4204 /wd4210 /wd4244 /wd4267 /wd4305 /wd4310 /wd4389 /wd4701 /wd4702 /wd4706 /X /Zc:wchar_t /D UEFI_C_SOURCE
+##   MSFT:DEBUG_VS2010x86_X64_VFRPP_FLAGS = /nologo /E /TC /DVFRCOMPILE /FI$(MODULE_NAME)StrDefs.h
+##   MSFT:DEBUG_VS2010x86_X64_ASLCC_FLAGS = /nologo /c /FIAutoGen.h /TC /Dmain=ReferenceAcpiTable
+##   MSFT:DEBUG_VS2010x86_X64_APP_FLAGS = /nologo /E /TC
+##   MSFT:DEBUG_VS2010x86_X64_DLINK_FLAGS = /NOLOGO /NODEFAULTLIB /IGNORE:4001 /OPT:REF /OPT:ICF=10 /MAP /ALIGN:32 /SECTION:.xdata,D /SECTION:.pdata,D /Machine:X64 /LTCG /DLL /ENTRY:$(IMAGE_ENTRY_POINT) /SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER /SAFESEH:NO /BASE:0 /DRIVER /DEBUG
+##   MSFT:DEBUG_VS2010x86_X64_ASLPP_FLAGS = /nologo /E /C /FIAutoGen.h
+##   MSFT:DEBUG_VS2010x86_X64_OBJCOPY_FLAGS = objcopy not needed for
+##   MSFT:DEBUG_VS2010x86_X64_MAKE_FLAGS = /nologo
+##   MSFT:DEBUG_VS2010x86_X64_ASMLINK_FLAGS = /nologo /tiny

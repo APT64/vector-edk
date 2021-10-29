@@ -1,0 +1,110 @@
+ ArpDxe
+
+ Timestamp is 617b115d (Fri Oct 29 00:08:45 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000254H .data                   CODE
+ 0001:00000260 00000070H .rdata                  CODE
+ 0001:000002d0 00002b42H .text                   CODE
+ 0001:00002e18 00000060H .bss                    CODE
+ 0002:00000000 000001e0H .pdata                  DATA
+ 0003:00000000 0000022cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       gEfiManagedNetworkServiceBindingProtocolGuid 0000000000000260     ArpDxe:AutoGen.obj
+ 0001:00000010       gEfiArpServiceBindingProtocolGuid 0000000000000270     ArpDxe:AutoGen.obj
+ 0001:00000020       gEfiManagedNetworkProtocolGuid 0000000000000280     ArpDxe:AutoGen.obj
+ 0001:00000030       gEfiArpProtocolGuid        0000000000000290     ArpDxe:AutoGen.obj
+ 0001:00000040       gEfiDevicePathUtilitiesProtocolGuid 00000000000002a0     ArpDxe:AutoGen.obj
+ 0001:00000050       gEfiHiiFontProtocolGuid    00000000000002b0     ArpDxe:AutoGen.obj
+ 0001:00000060       gEfiHiiStringProtocolGuid  00000000000002c0     ArpDxe:AutoGen.obj
+ 0001:00000070       gEfiHiiImageProtocolGuid   00000000000002d0     ArpDxe:AutoGen.obj
+ 0001:00000080       gEfiHiiDatabaseProtocolGuid 00000000000002e0     ArpDxe:AutoGen.obj
+ 0001:00000090       gEfiHiiConfigRoutingProtocolGuid 00000000000002f0     ArpDxe:AutoGen.obj
+ 0001:000000a0       gEfiDriverBindingProtocolGuid 0000000000000300     ArpDxe:AutoGen.obj
+ 0001:000000b0       gEfiComponentNameProtocolGuid 0000000000000310     ArpDxe:AutoGen.obj
+ 0001:000000c0       gEfiComponentName2ProtocolGuid 0000000000000320     ArpDxe:AutoGen.obj
+ 0001:000000d0       gEfiLoadedImageProtocolGuid 0000000000000330     ArpDxe:AutoGen.obj
+ 0001:000000e0       gEfiDpcProtocolGuid        0000000000000340     ArpDxe:AutoGen.obj
+ 0001:000000f0       mEfiArpProtocolTemplate    0000000000000350     ArpDxe:ArpImpl.obj
+ 0001:00000128       gArpDriverBinding          0000000000000388     ArpDxe:ArpDriver.obj
+ 0001:00000158       gArpComponentName          00000000000003b8     ArpDxe:ComponentName.obj
+ 0001:00000170       gArpComponentName2         00000000000003d0     ArpDxe:ComponentName.obj
+ 0001:00000188       mArpDriverNameTable        00000000000003e8     ArpDxe:ComponentName.obj
+ 0001:000001a8       mArpControllerNameTable    0000000000000408     ArpDxe:ComponentName.obj
+ 0001:000001d0       gIp4AllMasks               0000000000000430     DxeNetLib:DxeNetLib.obj
+ 0001:00000260       _gUefiDriverRevision       00000000000004c0     ArpDxe:AutoGen.obj
+ 0001:00000268       ??_C@_1BO@OPAEHCBJ@?$AAA?$AAR?$AAP?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AAl?$AAe?$AAr?$AA?$AA@ 00000000000004c8     ArpDxe:ComponentName.obj
+ 0001:00000288       ??_C@_1DG@MAGPPHDD@?$AAA?$AAR?$AAP?$AA?5?$AAN?$AAe?$AAt?$AAw?$AAo?$AAr?$AAk?$AA?5?$AAS?$AAe?$AAr?$AAv?$AAi?$AAc?$AAe?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$AA@ 00000000000004e8     ArpDxe:ComponentName.obj
+ 0001:000002c0       ??_C@_06DALJLGPG@eng?$DLen?$AA@ 0000000000000520     ArpDxe:ComponentName.obj
+ 0001:000002c8       ??_C@_02LFNMGJAP@en?$AA@   0000000000000528     ArpDxe:ComponentName.obj
+ 0001:000002cc       ??_C@_03LKLGDMJI@eng?$AA@  000000000000052c     ArpDxe:ComponentName.obj
+ 0001:000002d0       _DriverUnloadHandler       0000000000000530 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000454       _ModuleEntryPoint          00000000000006b4 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000004f8       ProcessLibraryConstructorList 0000000000000758 f   ArpDxe:AutoGen.obj
+ 0001:000005f0       ArpCreateService           0000000000000850 f   ArpDxe:ArpDriver.obj
+ 0001:000007dc       ArpCleanService            0000000000000a3c f   ArpDxe:ArpDriver.obj
+ 0001:000008c0       ArpDestroyChildEntryInHandleBuffer 0000000000000b20 f   ArpDxe:ArpDriver.obj
+ 0001:000008e4       ArpDriverBindingSupported  0000000000000b44 f   ArpDxe:ArpDriver.obj
+ 0001:00000968       ArpDriverBindingStart      0000000000000bc8 f   ArpDxe:ArpDriver.obj
+ 0001:00000a14       ArpDriverBindingStop       0000000000000c74 f   ArpDxe:ArpDriver.obj
+ 0001:00000b54       ArpServiceBindingCreateChild 0000000000000db4 f   ArpDxe:ArpDriver.obj
+ 0001:00000d14       ArpServiceBindingDestroyChild 0000000000000f74 f   ArpDxe:ArpDriver.obj
+ 0001:00000e8c       ArpComponentNameGetDriverName 00000000000010ec f   ArpDxe:ComponentName.obj
+ 0001:00000ec0       ArpComponentNameGetControllerName 0000000000001120 f   ArpDxe:ComponentName.obj
+ 0001:00000f98       ArpOnFrameRcvdDpc          00000000000011f8 f   ArpDxe:ArpImpl.obj
+ 0001:00001244       ArpOnFrameRcvd             00000000000014a4 f   ArpDxe:ArpImpl.obj
+ 0001:00001260       ArpOnFrameSentDpc          00000000000014c0 f   ArpDxe:ArpImpl.obj
+ 0001:000012b4       ArpOnFrameSent             0000000000001514 f   ArpDxe:ArpImpl.obj
+ 0001:000012d0       ArpTimerHandler            0000000000001530 f   ArpDxe:ArpImpl.obj
+ 0001:0000143c       ArpFindNextCacheEntryInTable 000000000000169c f   ArpDxe:ArpImpl.obj
+ 0001:00001524       ArpFindDeniedCacheEntry    0000000000001784 f   ArpDxe:ArpImpl.obj
+ 0001:00001594       ArpAllocCacheEntry         00000000000017f4 f   ArpDxe:ArpImpl.obj
+ 0001:00001630       ArpAddressResolved         0000000000001890 f   ArpDxe:ArpImpl.obj
+ 0001:00001708       ArpFillAddressInCacheEntry 0000000000001968 f   ArpDxe:ArpImpl.obj
+ 0001:0000178c       ArpConfigureInstance       00000000000019ec f   ArpDxe:ArpImpl.obj
+ 0001:00001988       ArpSendFrame               0000000000001be8 f   ArpDxe:ArpImpl.obj
+ 0001:00001bf4       ArpDeleteCacheEntryInTable 0000000000001e54 f   ArpDxe:ArpImpl.obj
+ 0001:00001cd8       ArpDeleteCacheEntry        0000000000001f38 f   ArpDxe:ArpImpl.obj
+ 0001:00001d54       ArpCancelRequest           0000000000001fb4 f   ArpDxe:ArpImpl.obj
+ 0001:00001e28       ArpFindCacheEntry          0000000000002088 f   ArpDxe:ArpImpl.obj
+ 0001:00002124       ArpConfigure               0000000000002384 f   ArpDxe:ArpMain.obj
+ 0001:000021a8       ArpAdd                     0000000000002408 f   ArpDxe:ArpMain.obj
+ 0001:000023a4       ArpFind                    0000000000002604 f   ArpDxe:ArpMain.obj
+ 0001:00002490       ArpDelete                  00000000000026f0 f   ArpDxe:ArpMain.obj
+ 0001:00002534       ArpFlush                   0000000000002794 f   ArpDxe:ArpMain.obj
+ 0001:000025bc       ArpRequest                 000000000000281c f   ArpDxe:ArpMain.obj
+ 0001:000028ac       ArpCancel                  0000000000002b0c f   ArpDxe:ArpMain.obj
+ 0001:0000296c       InternalAllocatePool       0000000000002bcc f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000029a0       AllocateZeroPool           0000000000002c00 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:000029c4       EfiTestChildHandle         0000000000002c24 f   UefiLib:UefiLib.obj
+ 0001:00002a18       LookupUnicodeString2       0000000000002c78 f   UefiLib:UefiLib.obj
+ 0001:00002ba4       NetDestroyLinkList         0000000000002e04 f   DxeNetLib:DxeNetLib.obj
+ 0001:00002c68       NetMapAllocItem            0000000000002ec8 f   DxeNetLib:DxeNetLib.obj
+ 0001:00002cd8       NetMapInsertTail           0000000000002f38 f   DxeNetLib:DxeNetLib.obj
+ 0001:00002d40       InternalMemCompareMem      0000000000002fa0 f   BaseMemoryLibRepStr:CompareMem.obj
+ 0001:00002d60       InternalMemCopyMem         0000000000002fc0 f   BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00002da0       InternalMemZeroMem         0000000000003000 f   BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00002dc0       InternalMemSetMem          0000000000003020 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:00002de0       InternalMemSetMem32        0000000000003040 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00002e00       InternalMemSetMem64        0000000000003060 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00002e18       gImageHandle               0000000000003078     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00002e20       gST                        0000000000003080     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00002e28       gBS                        0000000000003088     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00002e30       gRT                        0000000000003090     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0001:00002e38       gHiiFont                   0000000000003098     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0001:00002e40       gHiiString                 00000000000030a0     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0001:00002e48       gHiiImage                  00000000000030a8     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0001:00002e50       gHiiDatabase               00000000000030b0     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0001:00002e58       gHiiConfigRouting          00000000000030b8     UefiHiiServicesLib:UefiHiiServicesLib.obj
+ 0001:00002e60       mUefiFormBrowser2          00000000000030c0     UefiHiiLib:HiiLib.obj
+ 0001:00002e68       mDevicePathLibDevicePathUtilities 00000000000030c8     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:00002e70       mDpc                       00000000000030d0     <common>
+
+ entry point at        0001:00000454
+
+ Static symbols
+

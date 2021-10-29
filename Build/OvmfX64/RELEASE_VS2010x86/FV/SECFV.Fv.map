@@ -1,0 +1,43 @@
+EFI_FV_TOTAL_SIZE = 0x14000
+EFI_FV_TAKEN_SIZE = 0x2d18
+EFI_FV_SPACE_SIZE = 0x112e8
+
+df1ccef6-f301-4a63-9661-fc6030dcc880 (Fixed Flash Address, BaseAddress=0x00fffec064, EntryPoint=0x00fffee624)
+(GUID=DF1CCEF6-F301-4A63-9661-FC6030DCC880 .textbaseaddress=0x00fffec2c4 .databaseaddress=0x00fffec064)
+
+  0x00fffec334    FindFfsSectionInstance
+  0x00fffec398    FindFfsFileAndSection
+  0x00fffec438    DecompressMemFvs
+  0x00fffec6a8    FindAndReportEntryPoints
+  0x00fffec894    SecCoreStartupWithStack
+  0x00fffec9a4    SecStartupPhase2
+  0x00fffeca00    TemporaryRamMigration
+  0x00fffecac0    ProcessLibraryConstructorList
+  0x00fffecb7c    SzFree
+  0x00fffecb7c    InternalAssertJumpBuffer
+  0x00fffecb80    GetExtractGuidedSectionHandlerInfo
+  0x00fffecbb0    PeCoffLoaderGetPdbPointer
+  0x00fffeccd0    LzmaGuidedSectionGetInfo
+  0x00fffecd90    LzmaGuidedSectionExtraction
+  0x00fffece0c    SzAlloc
+  0x00fffece2c    LzmaUefiDecompress
+  0x00fffee278    LzmaDec_DecodeToDic
+  0x00fffee52c    LzmaProps_Decode
+  0x00fffee624    _ModuleEntryPoint
+  0x00fffee644    InitializeFloatingPointUnits
+  0x00fffee664    InternalMemCopyMem
+  0x00fffee6a4    InternalMemZeroMem
+  0x00fffee6c4    SetJump
+  0x00fffee754    InternalLongJump
+  0x00fffee7d4    InternalX86WriteIdtr
+  0x00fffee7e4    InternalX86ReadIdtr
+  0x00fffee7f4    InternalMemSetMem
+  0x00fffee814    InternalMemSetMem32
+  0x00fffee834    InternalMemSetMem64
+  0x00fffecf68    LzmaDec_DecodeReal
+  0x00fffedb30    LzmaDec_WriteRem
+  0x00fffedbd0    LzmaDec_DecodeReal2
+  0x00fffedc70    LzmaDec_TryDummy
+  0x00fffee5b0    LzmaDec_AllocateProbs2
+
+

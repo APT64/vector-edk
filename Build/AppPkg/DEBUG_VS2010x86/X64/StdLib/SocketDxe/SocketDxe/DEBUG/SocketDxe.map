@@ -1,0 +1,250 @@
+ SocketDxe
+
+ Timestamp is 617b0f1f (Thu Oct 28 23:59:11 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00007053H .text                   CODE
+ 0002:00000000 00000abfH .rdata                  DATA
+ 0002:00000ac0 0000007dH .rdata$debug            DATA
+ 0003:00000000 00000230H .data                   DATA
+ 0003:00000240 000000a8H .bss                    DATA
+ 0004:00000000 000004d4H .pdata                  DATA
+ 0005:00000000 00000310H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       _ModuleEntryPoint          00000000000002c0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:0000002c       ProcessLibraryConstructorList 00000000000002ec f   SocketDxe:AutoGen.obj
+ 0001:000000e8       ProcessLibraryDestructorList 00000000000003a8 f   SocketDxe:AutoGen.obj
+ 0001:00000124       ProcessModuleEntryPointList 00000000000003e4 f   SocketDxe:AutoGen.obj
+ 0001:0000029c       DriverUnload               000000000000055c f   SocketDxe:EntryUnload.obj
+ 0001:00000458       GetDriverName              0000000000000718 f   SocketDxe:ComponentName.obj
+ 0001:000005c0       GetControllerName          0000000000000880 f   SocketDxe:ComponentName.obj
+ 0001:000005d4       DriverSupported            0000000000000894 f   SocketDxe:DriverBinding.obj
+ 0001:00000698       DriverStart                0000000000000958 f   SocketDxe:DriverBinding.obj
+ 0001:000006a4       DriverStop                 0000000000000964 f   SocketDxe:DriverBinding.obj
+ 0001:00000808       DebugAssert                0000000000000ac8 f   BaseDebugLibNull:DebugLib.obj
+ 0001:0000080c       DebugAssertEnabled         0000000000000acc f   BaseDebugLibNull:DebugLib.obj
+ 0001:00000810       EfiGetCurrentTpl           0000000000000ad0 f   UefiLib:UefiLib.obj
+ 0001:00000840       EslDxeCreateChild          0000000000000b00 f   EfiSocketLib:DxeSupport.obj
+ 0001:00000858       EslDxeDestroyChild         0000000000000b18 f   EfiSocketLib:DxeSupport.obj
+ 0001:000008a4       EslServiceConnect          0000000000000b64 f   EfiSocketLib:Service.obj
+ 0001:00000ac8       EslSocket                  0000000000000d88 f   EfiSocketLib:Socket.obj
+ 0001:00000c04       EslSocketAccept            0000000000000ec4 f   EfiSocketLib:Socket.obj
+ 0001:00000df4       EslSocketAllocate          00000000000010b4 f   EfiSocketLib:Socket.obj
+ 0001:00000fa4       EslSocketBind              0000000000001264 f   EfiSocketLib:Socket.obj
+ 0001:00001130       EslSocketBindTest          00000000000013f0 f   EfiSocketLib:Socket.obj
+ 0001:000011b8       EslSocketClosePoll         0000000000001478 f   EfiSocketLib:Socket.obj
+ 0001:000012c0       EslSocketCloseStart        0000000000001580 f   EfiSocketLib:Socket.obj
+ 0001:000013a8       EslSocketConnect           0000000000001668 f   EfiSocketLib:Socket.obj
+ 0001:00001630       EslSocketCopyFragmentedBuffer 00000000000018f0 f   EfiSocketLib:Socket.obj
+ 0001:000016c8       EslSocketFree              0000000000001988 f   EfiSocketLib:Socket.obj
+ 0001:000017a0       EslSocketGetLocalAddress   0000000000001a60 f   EfiSocketLib:Socket.obj
+ 0001:00001940       EslSocketGetPeerAddress    0000000000001c00 f   EfiSocketLib:Socket.obj
+ 0001:00001af8       EslSocketIoFree            0000000000001db8 f   EfiSocketLib:Socket.obj
+ 0001:00001b5c       EslSocketIoInit            0000000000001e1c f   EfiSocketLib:Socket.obj
+ 0001:00001c0c       EslSocketIsConfigured      0000000000001ecc f   EfiSocketLib:Socket.obj
+ 0001:00001ca4       EslSocketListen            0000000000001f64 f   EfiSocketLib:Socket.obj
+ 0001:00001e28       EslSocketOptionGet         00000000000020e8 f   EfiSocketLib:Socket.obj
+ 0001:00001fb8       EslSocketOptionSet         0000000000002278 f   EfiSocketLib:Socket.obj
+ 0001:0000211c       EslSocketPacketAllocate    00000000000023dc f   EfiSocketLib:Socket.obj
+ 0001:0000219c       EslSocketPoll              000000000000245c f   EfiSocketLib:Socket.obj
+ 0001:0000230c       EslSocketPortAllocate      00000000000025cc f   EfiSocketLib:Socket.obj
+ 0001:000025a8       EslSocketPortClose         0000000000002868 f   EfiSocketLib:Socket.obj
+ 0001:000027b4       EslSocketPortCloseComplete 0000000000002a74 f   EfiSocketLib:Socket.obj
+ 0001:0000280c       EslSocketPortCloseRxDone   0000000000002acc f   EfiSocketLib:Socket.obj
+ 0001:00002854       EslSocketPortCloseStart    0000000000002b14 f   EfiSocketLib:Socket.obj
+ 0001:000028bc       EslSocketPortCloseTxDone   0000000000002b7c f   EfiSocketLib:Socket.obj
+ 0001:00002958       EslSocketReceive           0000000000002c18 f   EfiSocketLib:Socket.obj
+ 0001:00002df0       EslSocketRxComplete        00000000000030b0 f   EfiSocketLib:Socket.obj
+ 0001:00002f7c       EslSocketRxStart           000000000000323c f   EfiSocketLib:Socket.obj
+ 0001:000030cc       EslSocketShutdown          000000000000338c f   EfiSocketLib:Socket.obj
+ 0001:000031f4       EslSocketTransmit          00000000000034b4 f   EfiSocketLib:Socket.obj
+ 0001:000033ac       EslSocketTxComplete        000000000000366c f   EfiSocketLib:Socket.obj
+ 0001:000034b4       EslSocketTxStart           0000000000003774 f   EfiSocketLib:Socket.obj
+ 0001:00003598       EslUdp4LocalAddressGet     0000000000003858 f   EfiSocketLib:Udp4.obj
+ 0001:000035dc       EslUdp4LocalAddressSet     000000000000389c f   EfiSocketLib:Udp4.obj
+ 0001:000036e0       EslUdp4PacketFree          00000000000039a0 f   EfiSocketLib:Udp4.obj
+ 0001:00003704       EslUdp4PortAllocate        00000000000039c4 f   EfiSocketLib:Udp4.obj
+ 0001:00003778       EslUdp4Receive             0000000000003a38 f   EfiSocketLib:Udp4.obj
+ 0001:00003814       EslUdp4RemoteAddressGet    0000000000003ad4 f   EfiSocketLib:Udp4.obj
+ 0001:00003858       EslUdp4RemoteAddressSet    0000000000003b18 f   EfiSocketLib:Udp4.obj
+ 0001:000038ac       EslUdp4RxComplete          0000000000003b6c f   EfiSocketLib:Udp4.obj
+ 0001:000038d0       EslUdp4SocketIsConfigured  0000000000003b90 f   EfiSocketLib:Udp4.obj
+ 0001:00003a8c       EslUdp4TxBuffer            0000000000003d4c f   EfiSocketLib:Udp4.obj
+ 0001:00003ca4       EslUdp4TxComplete          0000000000003f64 f   EfiSocketLib:Udp4.obj
+ 0001:00003cfc       EslUdp4VerifyLocalIpAddress 0000000000003fbc f   EfiSocketLib:Udp4.obj
+ 0001:00003e2c       EslIp4LocalAddressGet      00000000000040ec f   EfiSocketLib:Ip4.obj
+ 0001:00003e4c       EslIp4LocalAddressSet      000000000000410c f   EfiSocketLib:Ip4.obj
+ 0001:00003ef4       EslIp4OptionGet            00000000000041b4 f   EfiSocketLib:Ip4.obj
+ 0001:00003f28       EslIp4OptionSet            00000000000041e8 f   EfiSocketLib:Ip4.obj
+ 0001:00003f4c       EslIp4PacketFree           000000000000420c f   EfiSocketLib:Ip4.obj
+ 0001:00003f70       EslIp4PortAllocate         0000000000004230 f   EfiSocketLib:Ip4.obj
+ 0001:00004008       EslIp4Receive              00000000000042c8 f   EfiSocketLib:Ip4.obj
+ 0001:000040d4       EslIp4RemoteAddressGet     0000000000004394 f   EfiSocketLib:Ip4.obj
+ 0001:000040f4       EslIp4RemoteAddressSet     00000000000043b4 f   EfiSocketLib:Ip4.obj
+ 0001:0000412c       EslIp4RxComplete           00000000000043ec f   EfiSocketLib:Ip4.obj
+ 0001:00004154       EslIp4SocketIsConfigured   0000000000004414 f   EfiSocketLib:Ip4.obj
+ 0001:0000431c       EslIp4TxBuffer             00000000000045dc f   EfiSocketLib:Ip4.obj
+ 0001:00004558       EslIp4VerifyLocalIpAddress 0000000000004818 f   EfiSocketLib:Ip4.obj
+ 0001:00004688       EslUdp6LocalAddressGet     0000000000004948 f   EfiSocketLib:Udp6.obj
+ 0001:000046cc       EslUdp6LocalAddressSet     000000000000498c f   EfiSocketLib:Udp6.obj
+ 0001:00004758       EslUdp6PacketFree          0000000000004a18 f   EfiSocketLib:Udp6.obj
+ 0001:0000477c       EslUdp6PortAllocate        0000000000004a3c f   EfiSocketLib:Udp6.obj
+ 0001:000047f4       EslUdp6Receive             0000000000004ab4 f   EfiSocketLib:Udp6.obj
+ 0001:00004890       EslUdp6RemoteAddressGet    0000000000004b50 f   EfiSocketLib:Udp6.obj
+ 0001:000048d4       EslUdp6RemoteAddressSet    0000000000004b94 f   EfiSocketLib:Udp6.obj
+ 0001:00004918       EslUdp6RxComplete          0000000000004bd8 f   EfiSocketLib:Udp6.obj
+ 0001:0000493c       EslUdp6SocketIsConfigured  0000000000004bfc f   EfiSocketLib:Udp6.obj
+ 0001:00004afc       EslUdp6TxBuffer            0000000000004dbc f   EfiSocketLib:Udp6.obj
+ 0001:00004cf8       EslUdp6TxComplete          0000000000004fb8 f   EfiSocketLib:Udp6.obj
+ 0001:00004cf8       EslIp4TxComplete           0000000000004fb8 f   EfiSocketLib:Ip4.obj
+ 0001:00004d50       EslUdp6VerifyLocalIpAddress 0000000000005010 f   EfiSocketLib:Udp6.obj
+ 0001:00004fd8       EslTcp6Accept              0000000000005298 f   EfiSocketLib:Tcp6.obj
+ 0001:0000505c       EslTcp6ConnectComplete     000000000000531c f   EfiSocketLib:Tcp6.obj
+ 0001:000050f4       EslTcp6ConnectPoll         00000000000053b4 f   EfiSocketLib:Tcp6.obj
+ 0001:000050f4       EslTcp4ConnectPoll         00000000000053b4 f   EfiSocketLib:Tcp4.obj
+ 0001:000052ac       EslTcp6ConnectStart        000000000000556c f   EfiSocketLib:Tcp6.obj
+ 0001:000053c4       EslTcp6Listen              0000000000005684 f   EfiSocketLib:Tcp6.obj
+ 0001:000055c0       EslTcp6ListenComplete      0000000000005880 f   EfiSocketLib:Tcp6.obj
+ 0001:000057a4       EslTcp6LocalAddressGet     0000000000005a64 f   EfiSocketLib:Tcp6.obj
+ 0001:000057e8       EslTcp6LocalAddressSet     0000000000005aa8 f   EfiSocketLib:Tcp6.obj
+ 0001:00005884       EslTcp4PacketFree          0000000000005b44 f   EfiSocketLib:Tcp4.obj
+ 0001:00005884       EslTcp6PacketFree          0000000000005b44 f   EfiSocketLib:Tcp6.obj
+ 0001:0000588c       EslTcp6PortAllocate        0000000000005b4c f   EfiSocketLib:Tcp6.obj
+ 0001:0000597c       EslTcp6PortClose           0000000000005c3c f   EfiSocketLib:Tcp6.obj
+ 0001:000059d0       EslTcp6PortCloseOp         0000000000005c90 f   EfiSocketLib:Tcp6.obj
+ 0001:000059f0       EslTcp6Receive             0000000000005cb0 f   EfiSocketLib:Tcp6.obj
+ 0001:00005abc       EslTcp6RemoteAddressGet    0000000000005d7c f   EfiSocketLib:Tcp6.obj
+ 0001:00005b00       EslTcp6RemoteAddressSet    0000000000005dc0 f   EfiSocketLib:Tcp6.obj
+ 0001:00005b44       EslTcp6SocketIsConfigured  0000000000005e04 f   EfiSocketLib:Tcp6.obj
+ 0001:00005b44       EslTcp4SocketIsConfigured  0000000000005e04 f   EfiSocketLib:Tcp4.obj
+ 0001:00005b60       EslTcp6TxBuffer            0000000000005e20 f   EfiSocketLib:Tcp6.obj
+ 0001:00005b60       EslTcp4TxBuffer            0000000000005e20 f   EfiSocketLib:Tcp4.obj
+ 0001:00005d8c       EslTcp4TxComplete          000000000000604c f   EfiSocketLib:Tcp4.obj
+ 0001:00005d8c       EslTcp6TxComplete          000000000000604c f   EfiSocketLib:Tcp6.obj
+ 0001:00005ddc       EslTcp4TxOobComplete       000000000000609c f   EfiSocketLib:Tcp4.obj
+ 0001:00005ddc       EslTcp6TxOobComplete       000000000000609c f   EfiSocketLib:Tcp6.obj
+ 0001:00005e30       EslTcp6VerifyLocalIpAddress 00000000000060f0 f   EfiSocketLib:Tcp6.obj
+ 0001:000060b8       EslTcp4Accept              0000000000006378 f   EfiSocketLib:Tcp4.obj
+ 0001:00006158       EslTcp4ConnectComplete     0000000000006418 f   EfiSocketLib:Tcp4.obj
+ 0001:000061f0       EslTcp4ConnectStart        00000000000064b0 f   EfiSocketLib:Tcp4.obj
+ 0001:00006308       EslTcp4Listen              00000000000065c8 f   EfiSocketLib:Tcp4.obj
+ 0001:00006504       EslTcp4ListenComplete      00000000000067c4 f   EfiSocketLib:Tcp4.obj
+ 0001:000066e0       EslTcp4LocalAddressGet     00000000000069a0 f   EfiSocketLib:Tcp4.obj
+ 0001:00006724       EslTcp4LocalAddressSet     00000000000069e4 f   EfiSocketLib:Tcp4.obj
+ 0001:00006834       EslTcp4PortAllocate        0000000000006af4 f   EfiSocketLib:Tcp4.obj
+ 0001:00006924       EslTcp4PortClose           0000000000006be4 f   EfiSocketLib:Tcp4.obj
+ 0001:00006978       EslTcp4PortCloseOp         0000000000006c38 f   EfiSocketLib:Tcp4.obj
+ 0001:00006998       EslTcp4Receive             0000000000006c58 f   EfiSocketLib:Tcp4.obj
+ 0001:00006a64       EslTcp4RemoteAddressGet    0000000000006d24 f   EfiSocketLib:Tcp4.obj
+ 0001:00006aa8       EslTcp4RemoteAddressSet    0000000000006d68 f   EfiSocketLib:Tcp4.obj
+ 0001:00006b1c       EslTcp4RxComplete          0000000000006ddc f   EfiSocketLib:Tcp4.obj
+ 0001:00006b1c       EslTcp6RxComplete          0000000000006ddc f   EfiSocketLib:Tcp6.obj
+ 0001:00006b44       EslTcp6RxStart             0000000000006e04 f   EfiSocketLib:Tcp6.obj
+ 0001:00006b44       EslTcp4RxStart             0000000000006e04 f   EfiSocketLib:Tcp4.obj
+ 0001:00006b6c       EslTcp4VerifyLocalIpAddress 0000000000006e2c f   EfiSocketLib:Tcp4.obj
+ 0001:00006c9c       RuntimeLibExitBootServicesEvent 0000000000006f5c f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:00006ca4       RuntimeLibVirtualNotifyEvent 0000000000006f64 f   UefiRuntimeLib:RuntimeLib.obj
+ 0001:00006cc8       InternalAllocatePool       0000000000006f88 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00006cfc       AsciiStrLen                0000000000006fbc f   BaseLib:String.obj
+ 0001:00006d84       AsciiStrnCmp               0000000000007044 f   BaseLib:String.obj
+ 0001:00006e70       ReadUnaligned24            0000000000007130 f   BaseLib:Unaligned.obj
+ 0001:00006eac       SwapBytes16                000000000000716c f   BaseLib:SwapBytes16.obj
+ 0001:00006ebc       CopyMem                    000000000000717c f   BaseMemoryLib:CopyMemWrapper.obj
+ 0001:00006f70       ZeroMem                    0000000000007230 f   BaseMemoryLib:ZeroMemWrapper.obj
+ 0001:00006fec       InternalMemCopyMem         00000000000072ac f   BaseMemoryLib:CopyMem.obj
+ 0001:00007034       InternalMemZeroMem         00000000000072f4 f   BaseMemoryLib:MemLibGeneric.obj
+ 0001:0000703c       InternalMemSetMem          00000000000072fc f   BaseMemoryLib:SetMem.obj
+ 0002:00000020       ??_C@_0DF@NOKFGMJ@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 0000000000007340     BaseLib:String.obj
+ 0002:00000058       ??_C@_0BH@MAAHKCPC@String?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$AA@ 0000000000007378     BaseLib:String.obj
+ 0002:00000070       ??_C@_0DI@MDIKFADO@Length?5?$DM?5_gPcd_FixedAtBuild_PcdM@ 0000000000007390     BaseLib:String.obj
+ 0002:000000a8       ??_C@_0BM@EDNOKLLE@AsciiStrSize?5?$CISecondString?$CJ?$AA@ 00000000000073c8     BaseLib:String.obj
+ 0002:000000c8       ??_C@_0BL@IKFBNFIL@AsciiStrSize?5?$CIFirstString?$CJ?$AA@ 00000000000073e8     BaseLib:String.obj
+ 0002:000000e8       ??_C@_0DJ@JJHGIFMP@Length?5?$DM?$DN?5_gPcd_FixedAtBuild_Pcd@ 0000000000007408     BaseLib:String.obj
+ 0002:00000128       ??_C@_0DI@FFLANPHC@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 0000000000007448     BaseLib:Unaligned.obj
+ 0002:00000160       ??_C@_0DO@MAOBOFEG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFF@ 0000000000007480     BaseMemoryLib:CopyMemWrapper.obj
+ 0002:000001a0       ??_C@_0ED@ELDFININ@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 00000000000074c0     BaseMemoryLib:CopyMemWrapper.obj
+ 0002:000001f0       ??_C@_0ED@MKGCMJG@?$CILength?5?9?51?$CJ?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFF@ 0000000000007510     BaseMemoryLib:CopyMemWrapper.obj
+ 0002:00000238       ??_C@_0DG@EEENIGGL@Length?5?$DM?$DN?5?$CI0xFFFFFFFFFFFFFFFFULL@ 0000000000007558     BaseMemoryLib:MemLibGuid.obj
+ 0002:00000270       ??_C@_0ED@PPJHOMEK@c?3?2vector?9edk?9master?2MdePkg?2Libr@ 0000000000007590     BaseMemoryLib:ZeroMemWrapper.obj
+ 0002:000002b8       ??_C@_0CI@MNELLLEK@?$CB?$CIBuffer?5?$DN?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?5?$CG?$CG?5Leng@ 00000000000075d8     BaseMemoryLib:ZeroMemWrapper.obj
+ 0002:000002e0       _gPcd_FixedAtBuild_PcdMaximumAsciiStringLength 0000000000007600     SocketDxe:AutoGen.obj
+ 0002:000002f0       cEslTcp4Api                0000000000007610     EfiSocketLib:Tcp4.obj
+ 0002:000003f8       cEslSocketBindingEntries   0000000000007718     EfiSocketLib:Socket.obj
+ 0002:00000400       cEslTcp6Api                0000000000007720     EfiSocketLib:Tcp6.obj
+ 0002:00000508       cEslAfInetApiSize          0000000000007828     EfiSocketLib:Socket.obj
+ 0002:0000050c       cEslAfInet6ApiSize         000000000000782c     EfiSocketLib:Socket.obj
+ 0002:00000510       cEslUdp6Api                0000000000007830     EfiSocketLib:Udp6.obj
+ 0002:00000618       _gUefiDriverRevision       0000000000007938     SocketDxe:AutoGen.obj
+ 0002:00000620       cEslIp4Api                 0000000000007940     EfiSocketLib:Ip4.obj
+ 0002:00000730       cEslUdp4Api                0000000000007a50     EfiSocketLib:Udp4.obj
+ 0002:00000840       cEslSocketBinding          0000000000007b60     EfiSocketLib:Socket.obj
+ 0002:00000980       mEslIp4ServiceGuid         0000000000007ca0     SocketDxe:EntryUnload.obj
+ 0002:00000990       mEslTcp4ServiceGuid        0000000000007cb0     SocketDxe:EntryUnload.obj
+ 0002:000009a0       mEslTcp6ServiceGuid        0000000000007cc0     SocketDxe:EntryUnload.obj
+ 0002:000009b0       mEslUdp4ServiceGuid        0000000000007cd0     SocketDxe:EntryUnload.obj
+ 0002:000009c0       mEslUdp6ServiceGuid        0000000000007ce0     SocketDxe:EntryUnload.obj
+ 0002:000009d0       mEfiServiceBinding         0000000000007cf0     SocketDxe:EntryUnload.obj
+ 0002:000009e0       ??_C@_1CI@LBAGCFPD@?$AAS?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?5?$AAL?$AAa?$AAy?$AAe?$AAr?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$AA@ 0000000000007d00     SocketDxe:ComponentName.obj
+ 0002:00000a08       ??_C@_06DALJLGPG@eng?$DLen?$AA@ 0000000000007d28     SocketDxe:ComponentName.obj
+ 0002:00000a10       ??_C@_02LFNMGJAP@en?$AA@   0000000000007d30     SocketDxe:ComponentName.obj
+ 0002:00000a14       ??_C@_03LKLGDMJI@eng?$AA@  0000000000007d34     SocketDxe:ComponentName.obj
+ 0002:00000a18       ??_C@_1BK@HFFCCPMC@?$AAS?$AAo?$AAc?$AAk?$AAe?$AAt?$AA?5?$AAL?$AAa?$AAy?$AAe?$AAr?$AA?$AA@ 0000000000007d38     SocketDxe:ComponentName.obj
+ 0002:00000a38       ??_C@_19MJILNOHI@?$AAU?$AAd?$AAp?$AA6?$AA?$AA@ 0000000000007d58     EfiSocketLib:Socket.obj
+ 0002:00000a48       ??_C@_19GDICBGPD@?$AAU?$AAd?$AAp?$AA4?$AA?$AA@ 0000000000007d68     EfiSocketLib:Socket.obj
+ 0002:00000a58       ??_C@_19CMIMLMFP@?$AAT?$AAc?$AAp?$AA6?$AA?$AA@ 0000000000007d78     EfiSocketLib:Socket.obj
+ 0002:00000a68       ??_C@_19IGIFHENE@?$AAT?$AAc?$AAp?$AA4?$AA?$AA@ 0000000000007d88     EfiSocketLib:Socket.obj
+ 0002:00000a78       ??_C@_17NIGEJLGH@?$AAI?$AAp?$AA4?$AA?$AA@ 0000000000007d98     EfiSocketLib:Socket.obj
+ 0002:00000a80       ??_C@_05JPFGNBCG@UDPv4?$AA@ 0000000000007da0     EfiSocketLib:Udp4.obj
+ 0002:00000a88       ??_C@_04EMGFNKGN@IPv4?$AA@ 0000000000007da8     EfiSocketLib:Ip4.obj
+ 0002:00000a90       ??_C@_05KNGALDKE@UDPv6?$AA@ 0000000000007db0     EfiSocketLib:Udp6.obj
+ 0002:00000a98       ??_C@_05NEBMLMBB@TCPv6?$AA@ 0000000000007db8     EfiSocketLib:Tcp6.obj
+ 0002:00000aa0       ??_C@_05OGCKNOJD@TCPv4?$AA@ 0000000000007dc0     EfiSocketLib:Tcp4.obj
+ 0002:00000aa8       ??_C@_0BH@IACGKAP@Buffer?5?$CB?$DN?5?$CI?$CIvoid?5?$CK?$CJ?50?$CJ?$AA@ 0000000000007dc8     UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0003:00000000       gEfiCallerIdGuid           0000000000007e60     SocketDxe:AutoGen.obj
+ 0003:00000010       gEfiEventExitBootServicesGuid 0000000000007e70     SocketDxe:AutoGen.obj
+ 0003:00000020       gEfiEventVirtualAddressChangeGuid 0000000000007e80     SocketDxe:AutoGen.obj
+ 0003:00000030       gEfiTcp4ProtocolGuid       0000000000007e90     SocketDxe:AutoGen.obj
+ 0003:00000040       gEfiTcp4ServiceBindingProtocolGuid 0000000000007ea0     SocketDxe:AutoGen.obj
+ 0003:00000050       gEfiUdp4ProtocolGuid       0000000000007eb0     SocketDxe:AutoGen.obj
+ 0003:00000060       gEfiUdp4ServiceBindingProtocolGuid 0000000000007ec0     SocketDxe:AutoGen.obj
+ 0003:00000070       gEfiSocketProtocolGuid     0000000000007ed0     SocketDxe:AutoGen.obj
+ 0003:00000080       gEfiSocketServiceBindingProtocolGuid 0000000000007ee0     SocketDxe:AutoGen.obj
+ 0003:00000090       gEfiDriverBindingProtocolGuid 0000000000007ef0     SocketDxe:AutoGen.obj
+ 0003:000000a0       gEfiComponentNameProtocolGuid 0000000000007f00     SocketDxe:AutoGen.obj
+ 0003:000000b0       gEfiComponentName2ProtocolGuid 0000000000007f10     SocketDxe:AutoGen.obj
+ 0003:000000c0       gEfiIp4ConfigProtocolGuid  0000000000007f20     SocketDxe:AutoGen.obj
+ 0003:000000d0       gEfiIp6ConfigProtocolGuid  0000000000007f30     SocketDxe:AutoGen.obj
+ 0003:000000e0       gEfiIp4ProtocolGuid        0000000000007f40     SocketDxe:AutoGen.obj
+ 0003:000000f0       gEfiIp4ServiceBindingProtocolGuid 0000000000007f50     SocketDxe:AutoGen.obj
+ 0003:00000100       gEfiTcp6ProtocolGuid       0000000000007f60     SocketDxe:AutoGen.obj
+ 0003:00000110       gEfiTcp6ServiceBindingProtocolGuid 0000000000007f70     SocketDxe:AutoGen.obj
+ 0003:00000120       gEfiUdp6ProtocolGuid       0000000000007f80     SocketDxe:AutoGen.obj
+ 0003:00000130       gEfiUdp6ServiceBindingProtocolGuid 0000000000007f90     SocketDxe:AutoGen.obj
+ 0003:00000140       gEfiLoadedImageProtocolGuid 0000000000007fa0     SocketDxe:AutoGen.obj
+ 0003:00000150       mComponentName             0000000000007fb0     SocketDxe:ComponentName.obj
+ 0003:00000168       mComponentName2            0000000000007fc8     SocketDxe:ComponentName.obj
+ 0003:00000180       mDriverNameTable           0000000000007fe0     SocketDxe:ComponentName.obj
+ 0003:000001a0       cEslAfInetApi              0000000000008000     EfiSocketLib:Socket.obj
+ 0003:000001d0       cEslAfInet6Api             0000000000008030     EfiSocketLib:Socket.obj
+ 0003:00000200       mDriverBinding             0000000000008060     SocketDxe:DriverBinding.obj
+ 0003:00000240       mpfnEslConstructor         00000000000080a0     SocketDxe:EntryUnload.obj
+ 0003:00000248       mpfnEslDestructor          00000000000080a8     SocketDxe:EntryUnload.obj
+ 0003:00000250       gImageHandle               00000000000080b0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000258       gST                        00000000000080b8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000260       gBS                        00000000000080c0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0003:00000268       gRT                        00000000000080c8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0003:00000270       mEfiGoneVirtual            00000000000080d0     UefiRuntimeLib:RuntimeLib.obj
+ 0003:00000271       mEfiAtRuntime              00000000000080d1     UefiRuntimeLib:RuntimeLib.obj
+ 0003:00000278       mInternalRT                00000000000080d8     <common>
+ 0003:00000280       mEfiVirtualNotifyEvent     00000000000080e0     <common>
+ 0003:00000288       mEfiExitBootServicesEvent  00000000000080e8     <common>
+ 0003:000002a0       mEslLayer                  0000000000008100     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+

@@ -1,0 +1,155 @@
+ ConSplitterDxe
+
+ Timestamp is 617b1147 (Fri Oct 29 00:08:23 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000748H .data                   CODE
+ 0001:00000750 00000190H .rdata                  CODE
+ 0001:000008e0 00003c32H .text                   CODE
+ 0001:00004518 00000030H .bss                    CODE
+ 0002:00000000 000002f4H .pdata                  DATA
+ 0003:00000000 0000028cH .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       gEfiConsoleInDeviceGuid    0000000000000280     ConSplitterDxe:AutoGen.obj
+ 0001:00000010       gEfiStandardErrorDeviceGuid 0000000000000290     ConSplitterDxe:AutoGen.obj
+ 0001:00000020       gEfiConsoleOutDeviceGuid   00000000000002a0     ConSplitterDxe:AutoGen.obj
+ 0001:00000030       gConnectConInEventGuid     00000000000002b0     ConSplitterDxe:AutoGen.obj
+ 0001:00000040       gEfiSimplePointerProtocolGuid 00000000000002c0     ConSplitterDxe:AutoGen.obj
+ 0001:00000050       gEfiAbsolutePointerProtocolGuid 00000000000002d0     ConSplitterDxe:AutoGen.obj
+ 0001:00000060       gEfiSimpleTextInProtocolGuid 00000000000002e0     ConSplitterDxe:AutoGen.obj
+ 0001:00000070       gEfiSimpleTextInputExProtocolGuid 00000000000002f0     ConSplitterDxe:AutoGen.obj
+ 0001:00000080       gEfiSimpleTextOutProtocolGuid 0000000000000300     ConSplitterDxe:AutoGen.obj
+ 0001:00000090       gEfiGraphicsOutputProtocolGuid 0000000000000310     ConSplitterDxe:AutoGen.obj
+ 0001:000000a0       gEfiUgaDrawProtocolGuid    0000000000000320     ConSplitterDxe:AutoGen.obj
+ 0001:000000b0       gEfiDevicePathUtilitiesProtocolGuid 0000000000000330     ConSplitterDxe:AutoGen.obj
+ 0001:000000c0       gEfiDriverBindingProtocolGuid 0000000000000340     ConSplitterDxe:AutoGen.obj
+ 0001:000000d0       gEfiComponentNameProtocolGuid 0000000000000350     ConSplitterDxe:AutoGen.obj
+ 0001:000000e0       gEfiComponentName2ProtocolGuid 0000000000000360     ConSplitterDxe:AutoGen.obj
+ 0001:000000f0       mCrLfString                0000000000000370     ConSplitterDxe:ConSplitterGraphics.obj
+ 0001:000000f8       gConSplitterConInDriverBinding 0000000000000378     ConSplitterDxe:ConSplitter.obj
+ 0001:00000128       gConSplitterConOutDriverBinding 00000000000003a8     ConSplitterDxe:ConSplitter.obj
+ 0001:00000158       gConSplitterStdErrDriverBinding 00000000000003d8     ConSplitterDxe:ConSplitter.obj
+ 0001:00000188       gConSplitterSimplePointerDriverBinding 0000000000000408     ConSplitterDxe:ConSplitter.obj
+ 0001:000001b8       gConSplitterAbsolutePointerDriverBinding 0000000000000438     ConSplitterDxe:ConSplitter.obj
+ 0001:000001e8       _gPcd_BinaryPatch_PcdConOutRow 0000000000000468     ConSplitterDxe:AutoGen.obj
+ 0001:000001ec       _gPcd_BinaryPatch_PcdConOutColumn 000000000000046c     ConSplitterDxe:AutoGen.obj
+ 0001:000001f0       mConIn                     0000000000000470     ConSplitterDxe:ConSplitter.obj
+ 0001:00000360       mGraphicsOutputProtocolTemplate 00000000000005e0     ConSplitterDxe:ConSplitter.obj
+ 0001:00000380       mConOut                    0000000000000600     ConSplitterDxe:ConSplitter.obj
+ 0001:00000490       mStdErr                    0000000000000710     ConSplitterDxe:ConSplitter.obj
+ 0001:00000598       gConSplitterConInComponentName 0000000000000818     ConSplitterDxe:ComponentName.obj
+ 0001:000005b0       gConSplitterConInComponentName2 0000000000000830     ConSplitterDxe:ComponentName.obj
+ 0001:000005c8       gConSplitterSimplePointerComponentName 0000000000000848     ConSplitterDxe:ComponentName.obj
+ 0001:000005e0       gConSplitterSimplePointerComponentName2 0000000000000860     ConSplitterDxe:ComponentName.obj
+ 0001:000005f8       gConSplitterAbsolutePointerComponentName 0000000000000878     ConSplitterDxe:ComponentName.obj
+ 0001:00000610       gConSplitterAbsolutePointerComponentName2 0000000000000890     ConSplitterDxe:ComponentName.obj
+ 0001:00000628       gConSplitterConOutComponentName 00000000000008a8     ConSplitterDxe:ComponentName.obj
+ 0001:00000640       gConSplitterConOutComponentName2 00000000000008c0     ConSplitterDxe:ComponentName.obj
+ 0001:00000658       gConSplitterStdErrComponentName 00000000000008d8     ConSplitterDxe:ComponentName.obj
+ 0001:00000670       gConSplitterStdErrComponentName2 00000000000008f0     ConSplitterDxe:ComponentName.obj
+ 0001:00000688       mConSplitterDriverNameTable 0000000000000908     ConSplitterDxe:ComponentName.obj
+ 0001:000006a8       mConSplitterConInControllerNameTable 0000000000000928     ConSplitterDxe:ComponentName.obj
+ 0001:000006c8       mConSplitterSimplePointerControllerNameTable 0000000000000948     ConSplitterDxe:ComponentName.obj
+ 0001:000006e8       mConSplitterAbsolutePointerControllerNameTable 0000000000000968     ConSplitterDxe:ComponentName.obj
+ 0001:00000708       mConSplitterConOutControllerNameTable 0000000000000988     ConSplitterDxe:ComponentName.obj
+ 0001:00000728       mConSplitterStdErrControllerNameTable 00000000000009a8     ConSplitterDxe:ComponentName.obj
+ 0001:00000750       _gUefiDriverRevision       00000000000009d0     ConSplitterDxe:AutoGen.obj
+ 0001:00000758       ??_C@_1DM@CGJEGEAD@?$AAP?$AAr?$AAi?$AAm?$AAa?$AAr?$AAy?$AA?5?$AAS?$AAt?$AAa?$AAn?$AAd?$AAa?$AAr?$AAd?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$AA@ 00000000000009d8     ConSplitterDxe:ComponentName.obj
+ 0001:00000798       ??_C@_1DM@NOLCCLLG@?$AAP?$AAr?$AAi?$AAm?$AAa?$AAr?$AAy?$AA?5?$AAC?$AAo?$AAn?$AAs?$AAo?$AAl?$AAe?$AA?5?$AAO?$AAu?$AAt?$AAp?$AAu?$AAt?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$AA@ 0000000000000a18     ConSplitterDxe:ComponentName.obj
+ 0001:000007e0       ??_C@_1EA@LLKMJMNI@?$AAP?$AAr?$AAi?$AAm?$AAa?$AAr?$AAy?$AA?5?$AAA?$AAb?$AAs?$AAo?$AAl?$AAu?$AAt?$AAe?$AA?5?$AAP?$AAo?$AAi?$AAn?$AAt?$AAe?$AAr?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$AA@ 0000000000000a60     ConSplitterDxe:ComponentName.obj
+ 0001:00000820       ??_C@_1DM@OAFGPKJI@?$AAP?$AAr?$AAi?$AAm?$AAa?$AAr?$AAy?$AA?5?$AAS?$AAi?$AAm?$AAp?$AAl?$AAe?$AA?5?$AAP?$AAo?$AAi?$AAn?$AAt?$AAe?$AAr?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$AA@ 0000000000000aa0     ConSplitterDxe:ComponentName.obj
+ 0001:00000860       ??_C@_1DK@KOBFONJK@?$AAP?$AAr?$AAi?$AAm?$AAa?$AAr?$AAy?$AA?5?$AAC?$AAo?$AAn?$AAs?$AAo?$AAl?$AAe?$AA?5?$AAI?$AAn?$AAp?$AAu?$AAt?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$AA@ 0000000000000ae0     ConSplitterDxe:ComponentName.obj
+ 0001:000008a0       ??_C@_1DA@HHHHCPNF@?$AAC?$AAo?$AAn?$AAs?$AAo?$AAl?$AAe?$AA?5?$AAS?$AAp?$AAl?$AAi?$AAt?$AAt?$AAe?$AAr?$AA?5?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$AA@ 0000000000000b20     ConSplitterDxe:ComponentName.obj
+ 0001:000008d0       ??_C@_06DALJLGPG@eng?$DLen?$AA@ 0000000000000b50     ConSplitterDxe:ComponentName.obj
+ 0001:000008d8       ??_C@_02LFNMGJAP@en?$AA@   0000000000000b58     ConSplitterDxe:ComponentName.obj
+ 0001:000008dc       ??_C@_03LKLGDMJI@eng?$AA@  0000000000000b5c     ConSplitterDxe:ComponentName.obj
+ 0001:000008e0       _ModuleEntryPoint          0000000000000b60 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000934       ConSplitterDriverEntry     0000000000000bb4 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00000cf4       ConSplitterTextOutConstructor 0000000000000f74 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00000ed0       ConSplitterSupported       0000000000001150 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00000f68       ConSplitterConInDriverBindingSupported 00000000000011e8 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00000f74       ConSplitterSimplePointerDriverBindingSupported 00000000000011f4 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00000f80       ConSplitterAbsolutePointerDriverBindingSupported 0000000000001200 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00000f8c       ConSplitterConOutDriverBindingSupported 000000000000120c f   ConSplitterDxe:ConSplitter.obj
+ 0001:00000f98       ConSplitterStdErrDriverBindingSupported 0000000000001218 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00000fa4       ConSplitterStart           0000000000001224 f   ConSplitterDxe:ConSplitter.obj
+ 0001:000010a4       ConSplitterConInDriverBindingStart 0000000000001324 f   ConSplitterDxe:ConSplitter.obj
+ 0001:000011ac       ConSplitterSimplePointerDriverBindingStart 000000000000142c f   ConSplitterDxe:ConSplitter.obj
+ 0001:00001244       ConSplitterAbsolutePointerDriverBindingStart 00000000000014c4 f   ConSplitterDxe:ConSplitter.obj
+ 0001:000012dc       ConSplitterConOutDriverBindingStart 000000000000155c f   ConSplitterDxe:ConSplitter.obj
+ 0001:000013e0       ConSplitterStdErrDriverBindingStart 0000000000001660 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00001454       ConSplitterStop            00000000000016d4 f   ConSplitterDxe:ConSplitter.obj
+ 0001:000014f0       ConSplitterConInDriverBindingStop 0000000000001770 f   ConSplitterDxe:ConSplitter.obj
+ 0001:0000166c       ConSplitterSimplePointerDriverBindingStop 00000000000018ec f   ConSplitterDxe:ConSplitter.obj
+ 0001:0000171c       ConSplitterAbsolutePointerDriverBindingStop 000000000000199c f   ConSplitterDxe:ConSplitter.obj
+ 0001:000017cc       ConSplitterConOutDriverBindingStop 0000000000001a4c f   ConSplitterDxe:ConSplitter.obj
+ 0001:00001820       ConSplitterStdErrDriverBindingStop 0000000000001aa0 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00001874       ConSplitterGrowBuffer      0000000000001af4 f   ConSplitterDxe:ConSplitter.obj
+ 0001:000018c0       ConSplitterTextInExAddDevice 0000000000001b40 f   ConSplitterDxe:ConSplitter.obj
+ 0001:000019cc       ConSplitterGrowMapTable    0000000000001c4c f   ConSplitterDxe:ConSplitter.obj
+ 0001:00001ac0       ConSplitterAddOutputMode   0000000000001d40 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00001bbc       ConSplitterGetIntersection 0000000000001e3c f   ConSplitterDxe:ConSplitter.obj
+ 0001:00001c80       ConSplitterSyncOutputMode  0000000000001f00 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00001db4       ConSplitterGetIntersectionBetweenConOutAndStrErr 0000000000002034 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00002088       ConSplitterAddGraphicsOutputMode 0000000000002308 f   ConSplitterDxe:ConSplitter.obj
+ 0001:000025dc       ConsplitterSetConsoleOutMode 000000000000285c f   ConSplitterDxe:ConSplitter.obj
+ 0001:000026cc       ConSplitterTextOutAddDevice 000000000000294c f   ConSplitterDxe:ConSplitter.obj
+ 0001:00002810       ConSplitterTextOutDeleteDevice 0000000000002a90 f   ConSplitterDxe:ConSplitter.obj
+ 0001:000029b8       ConSplitterTextInReset     0000000000002c38 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00002a1c       ConSplitterTextInReadKeyStroke 0000000000002c9c f   ConSplitterDxe:ConSplitter.obj
+ 0001:00002a98       ConSplitterTextInWaitForKey 0000000000002d18 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00002b14       ConSplitterTextInResetEx   0000000000002d94 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00002b78       ConSplitterTextInReadKeyStrokeEx 0000000000002df8 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00002c2c       ConSplitterTextInSetState  0000000000002eac f   ConSplitterDxe:ConSplitter.obj
+ 0001:00002c8c       ConSplitterTextInRegisterKeyNotify 0000000000002f0c f   ConSplitterDxe:ConSplitter.obj
+ 0001:00002e90       ConSplitterTextInUnregisterKeyNotify 0000000000003110 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00002f3c       ConSplitterSimplePointerReset 00000000000031bc f   ConSplitterDxe:ConSplitter.obj
+ 0001:00002fa8       ConSplitterSimplePointerGetState 0000000000003228 f   ConSplitterDxe:ConSplitter.obj
+ 0001:000030ec       ConSplitterSimplePointerWaitForInput 000000000000336c f   ConSplitterDxe:ConSplitter.obj
+ 0001:00003170       ConSplitterAbsolutePointerReset 00000000000033f0 f   ConSplitterDxe:ConSplitter.obj
+ 0001:000031dc       ConSplitterAbsolutePointerGetState 000000000000345c f   ConSplitterDxe:ConSplitter.obj
+ 0001:000032d4       ConSplitterAbsolutePointerWaitForInput 0000000000003554 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00003358       ConSplitterTextOutReset    00000000000035d8 f   ConSplitterDxe:ConSplitter.obj
+ 0001:000033f0       ConSplitterTextOutOutputString 0000000000003670 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00003534       ConSplitterTextOutTestString 00000000000037b4 f   ConSplitterDxe:ConSplitter.obj
+ 0001:000035b0       ConSplitterTextOutQueryMode 0000000000003830 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00003618       ConSplitterTextOutSetMode  0000000000003898 f   ConSplitterDxe:ConSplitter.obj
+ 0001:000036e0       ConSplitterTextOutSetAttribute 0000000000003960 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00003774       ConSplitterTextOutClearScreen 00000000000039f4 f   ConSplitterDxe:ConSplitter.obj
+ 0001:000037e8       ConSplitterTextOutSetCursorPosition 0000000000003a68 f   ConSplitterDxe:ConSplitter.obj
+ 0001:000038b0       ConSplitterTextOutEnableCursor 0000000000003b30 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00003930       ConSplitterEmptyCallbackFunction 0000000000003bb0 f   ConSplitterDxe:ConSplitter.obj
+ 0001:00003934       ConSplitterGraphicsOutputQueryMode 0000000000003bb4 f   ConSplitterDxe:ConSplitterGraphics.obj
+ 0001:00003a18       ConSplitterGraphicsOutputSetMode 0000000000003c98 f   ConSplitterDxe:ConSplitterGraphics.obj
+ 0001:00003c20       ConSplitterGraphicsOutputBlt 0000000000003ea0 f   ConSplitterDxe:ConSplitterGraphics.obj
+ 0001:00003da0       ConSplitterComponentNameGetDriverName 0000000000004020 f   ConSplitterDxe:ComponentName.obj
+ 0001:00003e08       ConSplitterTestControllerHandles 0000000000004088 f   ConSplitterDxe:ComponentName.obj
+ 0001:00003f14       ConSplitterConInComponentNameGetControllerName 0000000000004194 f   ConSplitterDxe:ComponentName.obj
+ 0001:00003f84       ConSplitterSimplePointerComponentNameGetControllerName 0000000000004204 f   ConSplitterDxe:ComponentName.obj
+ 0001:00003ff4       ConSplitterAbsolutePointerComponentNameGetControllerName 0000000000004274 f   ConSplitterDxe:ComponentName.obj
+ 0001:00004064       ConSplitterConOutComponentNameGetControllerName 00000000000042e4 f   ConSplitterDxe:ComponentName.obj
+ 0001:000040d4       ConSplitterStdErrComponentNameGetControllerName 0000000000004354 f   ConSplitterDxe:ComponentName.obj
+ 0001:00004144       InternalAllocatePool       00000000000043c4 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004178       InternalReallocatePool     00000000000043f8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00004204       LookupUnicodeString2       0000000000004484 f   UefiLib:UefiLib.obj
+ 0001:00004390       EfiLibInstallDriverBindingComponentName2 0000000000004610 f   UefiLib:UefiDriverModel.obj
+ 0001:00004460       InternalMemCopyMem         00000000000046e0 f   BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000044a0       InternalMemZeroMem         0000000000004720 f   BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:000044c0       InternalMemSetMem          0000000000004740 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:000044e0       InternalMemSetMem32        0000000000004760 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00004500       InternalMemSetMem64        0000000000004780 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00004518       mConInIsConnect            0000000000004798     ConSplitterDxe:ConSplitter.obj
+ 0001:00004520       gImageHandle               00000000000047a0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00004528       gST                        00000000000047a8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00004530       gBS                        00000000000047b0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00004538       gRT                        00000000000047b8     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0001:00004540       mDevicePathLibDevicePathUtilities 00000000000047c0     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+
+ entry point at        0001:000008e0
+
+ Static symbols
+

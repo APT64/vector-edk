@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\49970331-E3FA-4637-9ABC-3B7868676970AcpiPlatform\49970331-E3FA-4637-9ABC-3B7868676970SEC2.1.pe32 c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\AcpiPlatformDxe\AcpiPlatformDxe\OUTPUT\AcpiPlatform.efi

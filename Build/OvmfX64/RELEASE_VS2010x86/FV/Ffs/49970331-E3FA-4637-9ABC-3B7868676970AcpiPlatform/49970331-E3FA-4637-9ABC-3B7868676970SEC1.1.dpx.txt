@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_DXE_DEPEX -o c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\49970331-E3FA-4637-9ABC-3B7868676970AcpiPlatform\49970331-E3FA-4637-9ABC-3B7868676970SEC1.1.dpx c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\AcpiPlatformDxe\AcpiPlatformDxe\OUTPUT\AcpiPlatform.depex

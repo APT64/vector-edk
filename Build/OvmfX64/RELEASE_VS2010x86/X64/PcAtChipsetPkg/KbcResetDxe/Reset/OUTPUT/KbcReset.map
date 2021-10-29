@@ -1,0 +1,40 @@
+ KbcReset
+
+ Timestamp is 617b113c (Fri Oct 29 00:08:12 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000010H .data                   CODE
+ 0001:00000010 00000004H .rdata                  CODE
+ 0001:00000020 00000343H .text                   CODE
+ 0001:00000368 00000020H .bss                    CODE
+ 0002:00000000 00000048H .pdata                  DATA
+ 0003:00000000 00000030H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       gEfiResetArchProtocolGuid  0000000000000280     KbcReset:AutoGen.obj
+ 0001:00000010       _gUefiDriverRevision       0000000000000290     KbcReset:AutoGen.obj
+ 0001:00000020       _ModuleEntryPoint          00000000000002a0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000fc       KbcResetSystem             000000000000037c f   KbcReset:ResetEntry.obj
+ 0001:00000190       InternalAcpiDelay          0000000000000410 f   AcpiTimerLib:AcpiTimerLib.obj
+ 0001:00000210       PciCf8Read8                0000000000000490 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:00000258       PciCf8Read32               00000000000004d8 f   BasePciCf8Lib:PciCf8Lib.obj
+ 0001:000002a0       SaveAndDisableInterrupts   0000000000000520 f   BaseLib:Cpu.obj
+ 0001:000002d0       InternalMemSetMem          0000000000000550 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:000002f0       InternalMemSetMem32        0000000000000570 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000310       InternalMemSetMem64        0000000000000590 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000330       CpuPause                   00000000000005b0 f   BaseLib:CpuPause.obj
+ 0001:00000340       DisableInterrupts          00000000000005c0 f   BaseLib:DisableInterrupts.obj
+ 0001:00000350       EnableInterrupts           00000000000005d0 f   BaseLib:EnableInterrupts.obj
+ 0001:00000360       AsmReadEflags              00000000000005e0 f   BaseLib:ReadEflags.obj
+ 0001:00000368       mResetHandle               00000000000005e8     KbcReset:ResetEntry.obj
+ 0001:00000370       gImageHandle               00000000000005f0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000378       gST                        00000000000005f8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00000380       gBS                        0000000000000600     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+
+ entry point at        0001:00000020
+
+ Static symbols
+

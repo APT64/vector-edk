@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_PE32 -o c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\6F0198AA-1F1D-426D-AE3E-39AB633FCC28KbcReset\6F0198AA-1F1D-426D-AE3E-39AB633FCC28SEC2.1.pe32 c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\PcAtChipsetPkg\KbcResetDxe\Reset\OUTPUT\KbcReset.efi

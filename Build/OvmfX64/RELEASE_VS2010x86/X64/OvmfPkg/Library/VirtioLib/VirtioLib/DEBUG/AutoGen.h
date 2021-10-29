@@ -1,0 +1,28 @@
+/**
+  DO NOT EDIT
+  FILE auto-generated
+  Module name:
+    AutoGen.h
+  Abstract:       Auto-generated AutoGen.h for building module or library.
+**/
+
+#ifndef _AUTOGENH_90CED1D9_18F2_47CC_BF24_41EC29406637
+#define _AUTOGENH_90CED1D9_18F2_47CC_BF24_41EC29406637
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <Base.h>
+#include <Uefi.h>
+
+extern GUID  gEfiCallerIdGuid;
+extern CHAR8 *gEfiCallerBaseName;
+
+
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

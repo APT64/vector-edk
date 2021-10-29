@@ -1,0 +1,1 @@
+GenSec -s EFI_SECTION_RAW -o c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\FV\Ffs\7E374E25-8E01-4FEE-87F2-390C23C606CDPlatformAcpiTables\7E374E25-8E01-4FEE-87F2-390C23C606CDSEC1.3.raw c:\vector-edk-master\Build\OvmfX64\RELEASE_VS2010x86\X64\OvmfPkg\AcpiTables\AcpiTables\OUTPUT\Madt.acpi

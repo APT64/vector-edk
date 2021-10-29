@@ -1,0 +1,671 @@
+//
+//  VFR compiler version  2.00 (UEFI 2.4) Build 2649
+//
+#line 1 "c:\\vector-edk-master\\MdeModulePkg\\Universal\\Network\\IScsiDxe\\IScsiConfigDxe.vfr"
+#line 1 "c:\\vector-edk-master\\Build\\OvmfX64\\RELEASE_VS2010x86\\X64\\MdeModulePkg\\Universal\\Network\\IScsiDxe\\IScsiDxe\\DEBUG\\IScsi4DxeStrDefs.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern unsigned char IScsi4DxeStrings[];
+
+
+
+
+#line 58 "c:\\vector-edk-master\\Build\\OvmfX64\\RELEASE_VS2010x86\\X64\\MdeModulePkg\\Universal\\Network\\IScsiDxe\\IScsiDxe\\DEBUG\\IScsi4DxeStrDefs.h"
+#line 1 "c:\\vector-edk-master\\MdeModulePkg\\Universal\\Network\\IScsiDxe\\IScsiConfigDxe.vfr"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "c:\\vector-edk-master\\mdemodulepkg\\universal\\network\\iscsidxe\\IScsiConfigNVDataStruc.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#line 1 "c:\\vector-edk-master\\MdeModulePkg\\Include\\Guid/Ip4IScsiConfigHii.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+extern EFI_GUID gIp4IScsiConfigGuid;
+extern EFI_GUID gIScsiCHAPAuthInfoGuid;
+
+#line 32 "c:\\vector-edk-master\\MdeModulePkg\\Include\\Guid/Ip4IScsiConfigHii.h"
+#line 19 "c:\\vector-edk-master\\mdemodulepkg\\universal\\network\\iscsidxe\\IScsiConfigNVDataStruc.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma pack(1)
+typedef struct {
+  CHAR16  InitiatorName[224];
+
+  UINT8   Enabled;
+
+  UINT8   InitiatorInfoFromDhcp;
+  CHAR16  LocalIp[16];
+  CHAR16  SubnetMask[16];
+  CHAR16  Gateway[16];
+
+  CHAR16  TargetName[224];
+  CHAR16  TargetIp[16];
+  UINT16  TargetPort;
+  CHAR16  BootLun[21];
+  UINT8   TargetInfoFromDhcp;
+
+  UINT8   CHAPType;
+  CHAR16  CHAPName[127];
+  CHAR16  CHAPSecret[17];
+  CHAR16  ReverseCHAPName[127];
+  CHAR16  ReverseCHAPSecret[17];
+
+  CHAR16  IsId[13];
+} ISCSI_CONFIG_IFR_NVDATA;
+#pragma pack()
+
+#line 110 "c:\\vector-edk-master\\mdemodulepkg\\universal\\network\\iscsidxe\\IScsiConfigNVDataStruc.h"
+#line 17 "c:\\vector-edk-master\\MdeModulePkg\\Universal\\Network\\IScsiDxe\\IScsiConfigDxe.vfr"
+
+
+formset 
+>00000000: 0E A7 61 ED 56 64 79 35 C9 41 8A 26 0A 0B D6 2B 78 FC 02 00 03 00 01 71 99 03 93 45 85 04 4B B4 5E 32 EB 83 26 04 0E 
+>00000051: 5C 06 00 00 00 00 
+>00000057: 5C 06 00 00 01 00 
+  guid     = { 0x6456ed61, 0x3579, 0x41c9, { 0x8a, 0x26, 0x0a, 0x0b, 0xd6, 0x2b, 0x78, 0xfc } },
+  title    = STRING_TOKEN(0x0002),
+  help     = STRING_TOKEN(0x0003),
+  class    = 0x04,
+>00000027: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 03 04 00 
+  subclass = 0x03,
+>0000003C: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 04 03 00 
+
+  varstore ISCSI_CONFIG_IFR_NVDATA,
+>0000005D: 24 2E 61 ED 56 64 79 35 C9 41 8A 26 0A 0B D6 2B 78 FC 01 00 8A 06 49 53 43 53 49 5F 43 4F 4E 46 49 47 5F 49 46 52 5F 4E 56 44 41 54 41 00 
+    name = ISCSI_CONFIG_IFR_NVDATA,
+    guid = { 0x6456ed61, 0x3579, 0x41c9, { 0x8a, 0x26, 0x0a, 0x0b, 0xd6, 0x2b, 0x78, 0xfc } };
+  form formid = 1,
+>0000008B: 01 86 01 00 04 00 
+    title  = STRING_TOKEN(0x0004);
+
+    string  varid   = ISCSI_CONFIG_IFR_NVDATA.InitiatorName, 
+>00000091: 1C 90 05 00 06 00 01 01 01 00 00 00 04 04 DF 00 
+            prompt  = STRING_TOKEN(0x0005),
+            help    = STRING_TOKEN(0x0006),
+            flags   = INTERACTIVE,
+            key     = 0x101,
+            minsize = 4,
+            maxsize = 223,
+    endstring;
+>000000A1: 29 02 
+
+    label 0x1234;
+>000000A3: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 34 12 
+    label 0xffff;
+>000000B8: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+
+  endform;
+>000000CD: 29 02 
+
+  form formid = 2,
+>000000CF: 01 86 02 00 07 00 
+    title  = STRING_TOKEN(0x0007);
+
+    checkbox varid = ISCSI_CONFIG_IFR_NVDATA.Enabled,
+>000000D5: 06 8E 08 00 22 00 01 00 01 00 C0 01 00 00 
+            prompt = STRING_TOKEN(0x0008),
+            help   = STRING_TOKEN(0x0022),
+            flags  = 0,
+    endcheckbox;
+>000000E3: 29 02 
+
+    checkbox varid = ISCSI_CONFIG_IFR_NVDATA.InitiatorInfoFromDhcp,
+>000000E5: 06 8E 12 00 12 00 02 01 01 00 C1 01 04 00 
+            prompt = STRING_TOKEN(0x0012),
+            help   = STRING_TOKEN(0x0012),
+            flags  = INTERACTIVE,
+            key    = 0x102,
+    endcheckbox;
+>000000F3: 29 02 
+
+    suppressif ideqval ISCSI_CONFIG_IFR_NVDATA.InitiatorInfoFromDhcp == 0x01; 
+>000000F5: 0A 82 
+>000000F7: 12 06 02 01 01 00 
+    string  varid   = ISCSI_CONFIG_IFR_NVDATA.LocalIp, 
+>000000FD: 1C 90 09 00 0C 00 03 01 01 00 C2 01 04 07 0F 00 
+            prompt  = STRING_TOKEN(0x0009),
+            help    = STRING_TOKEN(0x000C),
+            flags   = INTERACTIVE,
+            key     = 0x103,
+            minsize = 7,
+            maxsize = 15,
+    endstring;
+>0000010D: 29 02 
+
+    string  varid   = ISCSI_CONFIG_IFR_NVDATA.SubnetMask, 
+>0000010F: 1C 90 0A 00 0C 00 04 01 01 00 E2 01 04 07 0F 00 
+            prompt  = STRING_TOKEN(0x000A),
+            help    = STRING_TOKEN(0x000C),
+            flags   = INTERACTIVE,
+            key     = 0x104,
+            minsize = 7,
+            maxsize = 15,
+    endstring;
+>0000011F: 29 02 
+
+    string  varid   = ISCSI_CONFIG_IFR_NVDATA.Gateway, 
+>00000121: 1C 90 0B 00 0C 00 05 01 01 00 02 02 04 07 0F 00 
+            prompt  = STRING_TOKEN(0x000B),
+            help    = STRING_TOKEN(0x000C),
+            flags   = INTERACTIVE,
+            key     = 0x105,
+            minsize = 7,
+            maxsize = 15,
+    endstring;
+>00000131: 29 02 
+    endif;
+>00000133: 29 02 
+
+    subtitle text = STRING_TOKEN(0x0022); 
+>00000135: 02 87 22 00 00 00 00 
+>0000013C: 29 02 
+
+    suppressif ideqval ISCSI_CONFIG_IFR_NVDATA.InitiatorInfoFromDhcp == 0x00; 
+>0000013E: 0A 82 
+>00000140: 12 06 02 01 00 00 
+    checkbox varid  = ISCSI_CONFIG_IFR_NVDATA.TargetInfoFromDhcp,
+>00000146: 06 8E 13 00 13 00 02 00 01 00 2E 04 00 00 
+             prompt = STRING_TOKEN(0x0013),
+             help   = STRING_TOKEN(0x0013),
+             flags  = 0,
+    endcheckbox;
+>00000154: 29 02 
+    endif;
+>00000156: 29 02 
+      
+    suppressif ideqval ISCSI_CONFIG_IFR_NVDATA.TargetInfoFromDhcp == 0x01; 
+>00000158: 0A 82 
+>0000015A: 12 06 02 00 01 00 
+
+    string  varid   = ISCSI_CONFIG_IFR_NVDATA.TargetName, 
+>00000160: 1C 90 0D 00 0D 00 0C 01 01 00 22 02 04 04 DF 00 
+            prompt  = STRING_TOKEN(0x000D),
+            help    = STRING_TOKEN(0x000D),
+            flags   = INTERACTIVE,
+            key     = 0x10c,
+            minsize = 4,
+            maxsize = 223,
+    endstring;
+>00000170: 29 02 
+
+    string  varid   = ISCSI_CONFIG_IFR_NVDATA.TargetIp, 
+>00000172: 1C 90 0E 00 0C 00 06 01 01 00 E2 03 04 07 0F 00 
+            prompt  = STRING_TOKEN(0x000E),
+            help    = STRING_TOKEN(0x000C),
+            flags   = INTERACTIVE,
+            key     = 0x106,
+            minsize = 7,
+            maxsize = 15,
+    endstring;
+>00000182: 29 02 
+    
+    numeric varid   = ISCSI_CONFIG_IFR_NVDATA.TargetPort, 
+>00000184: 07 94 0F 00 0F 00 03 00 01 00 02 04 00 11 00 00 FF FF 00 00 
+            prompt  = STRING_TOKEN(0x000F),
+            help    = STRING_TOKEN(0x000F),
+            flags   = 0,
+            minimum = 0,
+            maximum = 65535,     
+            step    = 0,
+    endnumeric;
+>00000198: 29 02 
+    
+    string varid    = ISCSI_CONFIG_IFR_NVDATA.BootLun, 
+>0000019A: 1C 90 10 00 11 00 0D 01 01 00 04 04 04 01 14 00 
+            prompt  = STRING_TOKEN(0x0010),
+            help    = STRING_TOKEN(0x0011),
+            flags   = INTERACTIVE,
+            key     = 0x10d,
+            minsize = 1,
+            maxsize = 20,
+    endstring;
+>000001AA: 29 02 
+    endif;
+>000001AC: 29 02 
+
+    subtitle text = STRING_TOKEN(0x0022); 
+>000001AE: 02 87 22 00 00 00 00 
+>000001B5: 29 02 
+
+    oneof varid  = ISCSI_CONFIG_IFR_NVDATA.CHAPType,
+>000001B7: 05 91 14 00 15 00 04 00 01 00 2F 04 00 10 00 02 00 
+          prompt = STRING_TOKEN(0x0014),
+          help   = STRING_TOKEN(0x0015),  
+          option text = STRING_TOKEN(0x0016),   value = 0,   flags = DEFAULT;
+>000001C8: 09 07 16 00 10 00 00 
+          option text = STRING_TOKEN(0x0017),    value = 1,    flags = 0;
+>000001CF: 09 07 17 00 00 00 01 
+          option text = STRING_TOKEN(0x0018), value = 2, flags = 0;
+>000001D6: 09 07 18 00 00 00 02 
+    endoneof;
+>000001DD: 29 02 
+
+    suppressif ideqval ISCSI_CONFIG_IFR_NVDATA.CHAPType == 0; 
+>000001DF: 0A 82 
+>000001E1: 12 06 04 00 00 00 
+
+    string  varid   = ISCSI_CONFIG_IFR_NVDATA.CHAPName, 
+>000001E7: 1C 90 19 00 19 00 07 01 01 00 30 04 04 00 7E 00 
+            prompt  = STRING_TOKEN(0x0019),
+            help    = STRING_TOKEN(0x0019),
+            flags   = INTERACTIVE,
+            key     = 0x107,
+            minsize = 0,
+            maxsize = 126,
+    endstring;
+>000001F7: 29 02 
+
+    string  varid    = ISCSI_CONFIG_IFR_NVDATA.CHAPSecret, 
+>000001F9: 1C 90 1A 00 1B 00 08 01 01 00 2E 05 04 0C 10 00 
+            prompt   = STRING_TOKEN(0x001A),
+            help     = STRING_TOKEN(0x001B),
+            flags    = INTERACTIVE,
+            key      = 0x108,
+            minsize  = 12,
+            maxsize  = 16,
+    endstring;
+>00000209: 29 02 
+
+    endif;
+>0000020B: 29 02 
+
+    suppressif NOT ideqval ISCSI_CONFIG_IFR_NVDATA.CHAPType == 2;
+>0000020D: 0A 82 
+>0000020F: 12 86 04 00 02 00 
+>00000215: 17 02 
+>00000217: 29 02 
+
+    string  varid   = ISCSI_CONFIG_IFR_NVDATA.ReverseCHAPName, 
+>00000219: 1C 90 1C 00 1C 00 09 01 01 00 50 05 04 00 7E 00 
+            prompt  = STRING_TOKEN(0x001C),
+            help    = STRING_TOKEN(0x001C),
+            flags   = INTERACTIVE,
+            key     = 0x109,
+            minsize = 0,
+            maxsize = 126,
+    endstring;
+>00000229: 29 02 
+
+    string  varid    = ISCSI_CONFIG_IFR_NVDATA.ReverseCHAPSecret, 
+>0000022B: 1C 90 1D 00 1B 00 0A 01 01 00 4E 06 04 0C 10 00 
+            prompt   = STRING_TOKEN(0x001D),
+            help     = STRING_TOKEN(0x001B),
+            flags    = INTERACTIVE,
+            key      = 0x10a,
+            minsize  = 12,
+            maxsize  = 16,
+    endstring;
+>0000023B: 29 02 
+
+    endif;
+>0000023D: 29 02 
+
+    subtitle text = STRING_TOKEN(0x0022); 
+>0000023F: 02 87 22 00 00 00 00 
+>00000246: 29 02 
+
+    string  varid   = ISCSI_CONFIG_IFR_NVDATA.IsId, 
+>00000248: 1C 90 1E 00 1F 00 0E 01 01 00 70 06 04 06 0C 00 
+            prompt  = STRING_TOKEN(0x001E),
+            help    = STRING_TOKEN(0x001F),
+            flags   = INTERACTIVE,
+            key     = 0x10e,
+            minsize = 6,
+            maxsize = 12,
+    endstring;
+>00000258: 29 02 
+
+    subtitle text = STRING_TOKEN(0x0022); 
+>0000025A: 02 87 22 00 00 00 00 
+>00000261: 29 02 
+
+    text
+      help   = STRING_TOKEN (0x0021),
+      text   = STRING_TOKEN (0x0021),
+        text   = STRING_TOKEN (0x0021),
+      flags  = INTERACTIVE,
+>00000263: 0C 8F 21 00 21 00 0B 01 00 00 FF FF 04 00 00 
+      key    = 0x10b;
+>00000272: 29 02 
+      
+    goto 1, 
+>00000274: 0F 0F 20 00 20 00 05 00 00 00 FF FF 00 01 00 
+    prompt = STRING_TOKEN (0x0020), 
+    help   = STRING_TOKEN (0x0020),
+    flags  = 0;
+
+  endform;
+>00000283: 29 02 
+
+endformset;
+>00000285: 29 02 
+
+
+//
+// All Opcode Record List 
+//
+>00000000: 0E A7 61 ED 56 64 79 35 C9 41 8A 26 0A 0B D6 2B 78 FC 02 00 03 00 01 71 99 03 93 45 85 04 4B B4 5E 32 EB 83 26 04 0E 
+>00000027: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 03 04 00 
+>0000003C: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 04 03 00 
+>00000051: 5C 06 00 00 00 00 
+>00000057: 5C 06 00 00 01 00 
+>0000005D: 24 2E 61 ED 56 64 79 35 C9 41 8A 26 0A 0B D6 2B 78 FC 01 00 8A 06 49 53 43 53 49 5F 43 4F 4E 46 49 47 5F 49 46 52 5F 4E 56 44 41 54 41 00 
+>0000008B: 01 86 01 00 04 00 
+>00000091: 1C 90 05 00 06 00 01 01 01 00 00 00 04 04 DF 00 
+>000000A1: 29 02 
+>000000A3: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 34 12 
+>000000B8: 5F 15 35 17 0B 0F A0 87 93 41 B2 66 53 8C 38 AF 48 CE 00 FF FF 
+>000000CD: 29 02 
+>000000CF: 01 86 02 00 07 00 
+>000000D5: 06 8E 08 00 22 00 01 00 01 00 C0 01 00 00 
+>000000E3: 29 02 
+>000000E5: 06 8E 12 00 12 00 02 01 01 00 C1 01 04 00 
+>000000F3: 29 02 
+>000000F5: 0A 82 
+>000000F7: 12 06 02 01 01 00 
+>000000FD: 1C 90 09 00 0C 00 03 01 01 00 C2 01 04 07 0F 00 
+>0000010D: 29 02 
+>0000010F: 1C 90 0A 00 0C 00 04 01 01 00 E2 01 04 07 0F 00 
+>0000011F: 29 02 
+>00000121: 1C 90 0B 00 0C 00 05 01 01 00 02 02 04 07 0F 00 
+>00000131: 29 02 
+>00000133: 29 02 
+>00000135: 02 87 22 00 00 00 00 
+>0000013C: 29 02 
+>0000013E: 0A 82 
+>00000140: 12 06 02 01 00 00 
+>00000146: 06 8E 13 00 13 00 02 00 01 00 2E 04 00 00 
+>00000154: 29 02 
+>00000156: 29 02 
+>00000158: 0A 82 
+>0000015A: 12 06 02 00 01 00 
+>00000160: 1C 90 0D 00 0D 00 0C 01 01 00 22 02 04 04 DF 00 
+>00000170: 29 02 
+>00000172: 1C 90 0E 00 0C 00 06 01 01 00 E2 03 04 07 0F 00 
+>00000182: 29 02 
+>00000184: 07 94 0F 00 0F 00 03 00 01 00 02 04 00 11 00 00 FF FF 00 00 
+>00000198: 29 02 
+>0000019A: 1C 90 10 00 11 00 0D 01 01 00 04 04 04 01 14 00 
+>000001AA: 29 02 
+>000001AC: 29 02 
+>000001AE: 02 87 22 00 00 00 00 
+>000001B5: 29 02 
+>000001B7: 05 91 14 00 15 00 04 00 01 00 2F 04 00 10 00 02 00 
+>000001C8: 09 07 16 00 10 00 00 
+>000001CF: 09 07 17 00 00 00 01 
+>000001D6: 09 07 18 00 00 00 02 
+>000001DD: 29 02 
+>000001DF: 0A 82 
+>000001E1: 12 06 04 00 00 00 
+>000001E7: 1C 90 19 00 19 00 07 01 01 00 30 04 04 00 7E 00 
+>000001F7: 29 02 
+>000001F9: 1C 90 1A 00 1B 00 08 01 01 00 2E 05 04 0C 10 00 
+>00000209: 29 02 
+>0000020B: 29 02 
+>0000020D: 0A 82 
+>0000020F: 12 86 04 00 02 00 
+>00000215: 17 02 
+>00000217: 29 02 
+>00000219: 1C 90 1C 00 1C 00 09 01 01 00 50 05 04 00 7E 00 
+>00000229: 29 02 
+>0000022B: 1C 90 1D 00 1B 00 0A 01 01 00 4E 06 04 0C 10 00 
+>0000023B: 29 02 
+>0000023D: 29 02 
+>0000023F: 02 87 22 00 00 00 00 
+>00000246: 29 02 
+>00000248: 1C 90 1E 00 1F 00 0E 01 01 00 70 06 04 06 0C 00 
+>00000258: 29 02 
+>0000025A: 02 87 22 00 00 00 00 
+>00000261: 29 02 
+>00000263: 0C 8F 21 00 21 00 0B 01 00 00 FF FF 04 00 00 
+>00000272: 29 02 
+>00000274: 0F 0F 20 00 20 00 05 00 00 00 FF FF 00 01 00 
+>00000283: 29 02 
+>00000285: 29 02 
+
+Total Size of all record is 0x00000287
+
+
+***************************************************************
+		mPackAlign = 1
+		struct ISCSI_CONFIG_IFR_NVDATA : mAlign [1] mTotalSize [0x68a]
+
+		struct ISCSI_CONFIG_IFR_NVDATA {
+			+00000000[00000000] InitiatorName[224] <UINT16>
+			+00000448[000001c0] Enabled <UINT8>
+			+00000449[000001c1] InitiatorInfoFromDhcp <UINT8>
+			+00000450[000001c2] LocalIp[16] <UINT16>
+			+00000482[000001e2] SubnetMask[16] <UINT16>
+			+00000514[00000202] Gateway[16] <UINT16>
+			+00000546[00000222] TargetName[224] <UINT16>
+			+00000994[000003e2] TargetIp[16] <UINT16>
+			+00001026[00000402] TargetPort <UINT16>
+			+00001028[00000404] BootLun[21] <UINT16>
+			+00001070[0000042e] TargetInfoFromDhcp <UINT8>
+			+00001071[0000042f] CHAPType <UINT8>
+			+00001072[00000430] CHAPName[127] <UINT16>
+			+00001326[0000052e] CHAPSecret[17] <UINT16>
+			+00001360[00000550] ReverseCHAPName[127] <UINT16>
+			+00001614[0000064e] ReverseCHAPSecret[17] <UINT16>
+			+00001648[00000670] IsId[13] <UINT16>
+		};
+---------------------------------------------------------------
+		struct EFI_HII_REF : mAlign [16] mTotalSize [0x16]
+
+		struct EFI_HII_REF {
+			+00000000[00000000] QuestionId <UINT16>
+			+00000002[00000002] FormId <UINT16>
+			+00000004[00000004] FormSetGuid <(null)>
+			+00000020[00000014] DevicePath <EFI_STRING_ID>
+		};
+---------------------------------------------------------------
+		struct EFI_HII_TIME : mAlign [1] mTotalSize [0x3]
+
+		struct EFI_HII_TIME {
+			+00000000[00000000] Hours <UINT8>
+			+00000001[00000001] Minutes <UINT8>
+			+00000002[00000002] Seconds <UINT8>
+		};
+---------------------------------------------------------------
+		struct EFI_STRING_ID : mAlign [2] mTotalSize [0x2]
+
+		struct EFI_STRING_ID {
+		};
+---------------------------------------------------------------
+		struct EFI_HII_DATE : mAlign [2] mTotalSize [0x4]
+
+		struct EFI_HII_DATE {
+			+00000000[00000000] Year <UINT16>
+			+00000002[00000002] Month <UINT8>
+			+00000003[00000003] Day <UINT8>
+		};
+---------------------------------------------------------------
+		struct BOOLEAN : mAlign [1] mTotalSize [0x1]
+
+		struct BOOLEAN {
+		};
+---------------------------------------------------------------
+		struct UINT8 : mAlign [1] mTotalSize [0x1]
+
+		struct UINT8 {
+		};
+---------------------------------------------------------------
+		struct UINT16 : mAlign [2] mTotalSize [0x2]
+
+		struct UINT16 {
+		};
+---------------------------------------------------------------
+		struct UINT32 : mAlign [4] mTotalSize [0x4]
+
+		struct UINT32 {
+		};
+---------------------------------------------------------------
+		struct UINT64 : mAlign [8] mTotalSize [0x8]
+
+		struct UINT64 {
+		};
+---------------------------------------------------------------
+***************************************************************

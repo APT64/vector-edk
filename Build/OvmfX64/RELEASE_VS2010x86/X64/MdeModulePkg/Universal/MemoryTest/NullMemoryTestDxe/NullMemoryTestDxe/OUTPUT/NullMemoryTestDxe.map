@@ -1,0 +1,45 @@
+ NullMemoryTestDxe
+
+ Timestamp is 617b1151 (Fri Oct 29 00:08:33 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000050H .data                   CODE
+ 0001:00000050 00000004H .rdata                  CODE
+ 0001:00000060 00000322H .text                   CODE
+ 0001:00000388 00000048H .bss                    CODE
+ 0002:00000000 00000024H .pdata                  DATA
+ 0003:00000000 00000024H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       gEfiDxeServicesTableGuid   0000000000000260     NullMemoryTestDxe:AutoGen.obj
+ 0001:00000010       gEfiGenericMemTestProtocolGuid 0000000000000270     NullMemoryTestDxe:AutoGen.obj
+ 0001:00000020       gEfiDevicePathUtilitiesProtocolGuid 0000000000000280     NullMemoryTestDxe:AutoGen.obj
+ 0001:00000030       mGenericMemoryTest         0000000000000290     NullMemoryTestDxe:NullMemoryTest.obj
+ 0001:00000050       _gUefiDriverRevision       00000000000002b0     NullMemoryTestDxe:AutoGen.obj
+ 0001:00000060       _ModuleEntryPoint          00000000000002c0 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:00000124       InitializeMemoryTest       0000000000000384 f   NullMemoryTestDxe:NullMemoryTest.obj
+ 0001:0000023c       GenPerformMemoryTest       000000000000049c f   NullMemoryTestDxe:NullMemoryTest.obj
+ 0001:00000260       GenMemoryTestFinished      00000000000004c0 f   NullMemoryTestDxe:NullMemoryTest.obj
+ 0001:00000264       GenCompatibleRangeTest     00000000000004c4 f   NullMemoryTestDxe:NullMemoryTest.obj
+ 0001:000002d0       InternalMemSetMem          0000000000000530 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:000002f0       InternalMemCopyMem         0000000000000550 f   BaseMemoryLibRepStr:CopyMem.obj
+ 0001:00000330       InternalMemZeroMem         0000000000000590 f   BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00000350       InternalMemSetMem32        00000000000005b0 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:00000370       InternalMemSetMem64        00000000000005d0 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00000388       mTestedSystemMemory        00000000000005e8     NullMemoryTestDxe:NullMemoryTest.obj
+ 0001:00000390       mTotalSystemMemory         00000000000005f0     NullMemoryTestDxe:NullMemoryTest.obj
+ 0001:00000398       gImageHandle               00000000000005f8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:000003a0       gST                        0000000000000600     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:000003a8       gBS                        0000000000000608     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:000003b0       gRT                        0000000000000610     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0001:000003b8       gDS                        0000000000000618     DxeServicesTableLib:DxeServicesTableLib.obj
+ 0001:000003c0       mDevicePathLibDevicePathUtilities 0000000000000620     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+ 0001:000003c8       mGenericMemoryTestHandle   0000000000000628     <common>
+
+ entry point at        0001:00000060
+
+ Static symbols
+

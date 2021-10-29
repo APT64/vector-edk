@@ -1,0 +1,73 @@
+ FaultTolerantWriteDxe
+
+ Timestamp is 617b1144 (Fri Oct 29 00:08:20 2021)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000080H .data                   CODE
+ 0001:00000080 00000004H .rdata                  CODE
+ 0001:00000090 0000208dH .text                   CODE
+ 0001:00002120 00000078H .bss                    CODE
+ 0002:00000000 00000108H .pdata                  DATA
+ 0003:00000000 00000148H .xdata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0001:00000000       gEfiCallerIdGuid           0000000000000280     FaultTolerantWriteDxe:AutoGen.obj
+ 0001:00000010       gEdkiiWorkingBlockSignatureGuid 0000000000000290     FaultTolerantWriteDxe:AutoGen.obj
+ 0001:00000020       gEfiSwapAddressRangeProtocolGuid 00000000000002a0     FaultTolerantWriteDxe:AutoGen.obj
+ 0001:00000030       gEfiFirmwareVolumeBlockProtocolGuid 00000000000002b0     FaultTolerantWriteDxe:AutoGen.obj
+ 0001:00000040       gEfiFaultTolerantWriteProtocolGuid 00000000000002c0     FaultTolerantWriteDxe:AutoGen.obj
+ 0001:00000050       gPcdProtocolGuid           00000000000002d0     FaultTolerantWriteDxe:AutoGen.obj
+ 0001:00000060       gEfiDevicePathUtilitiesProtocolGuid 00000000000002e0     FaultTolerantWriteDxe:AutoGen.obj
+ 0001:00000070       gEfiStatusCodeRuntimeProtocolGuid 00000000000002f0     FaultTolerantWriteDxe:AutoGen.obj
+ 0001:00000080       _gUefiDriverRevision       0000000000000300     FaultTolerantWriteDxe:AutoGen.obj
+ 0001:00000090       _ModuleEntryPoint          0000000000000310 f   UefiDriverEntryPoint:DriverEntryPoint.obj
+ 0001:000000dc       ProcessModuleEntryPointList 000000000000035c f   FaultTolerantWriteDxe:AutoGen.obj
+ 0001:000001e8       FvbNotificationEvent       0000000000000468 f   FaultTolerantWriteDxe:FaultTolerantWriteDxe.obj
+ 0001:0000025c       GetFvbByAddress            00000000000004dc f   FaultTolerantWriteDxe:FtwMisc.obj
+ 0001:00000338       IsBootBlock                00000000000005b8 f   FaultTolerantWriteDxe:FtwMisc.obj
+ 0001:000003d0       FlushSpareBlockToBootBlock 0000000000000650 f   FaultTolerantWriteDxe:FtwMisc.obj
+ 0001:000005dc       FlushSpareBlockToTargetBlock 000000000000085c f   FaultTolerantWriteDxe:FtwMisc.obj
+ 0001:0000071c       FlushSpareBlockToWorkingBlock 000000000000099c f   FaultTolerantWriteDxe:FtwMisc.obj
+ 0001:0000093c       FtwUpdateFvState           0000000000000bbc f   FaultTolerantWriteDxe:FtwMisc.obj
+ 0001:000009cc       FtwGetLastWriteHeader      0000000000000c4c f   FaultTolerantWriteDxe:FtwMisc.obj
+ 0001:00000a10       FtwGetLastWriteRecord      0000000000000c90 f   FaultTolerantWriteDxe:FtwMisc.obj
+ 0001:00000a60       FindFvbForFtw              0000000000000ce0 f   FaultTolerantWriteDxe:FtwMisc.obj
+ 0001:00000d18       InitFtwProtocol            0000000000000f98 f   FaultTolerantWriteDxe:FtwMisc.obj
+ 0001:0000105c       FtwGetMaxBlockSize         00000000000012dc f   FaultTolerantWriteDxe:FaultTolerantWrite.obj
+ 0001:00001068       FtwAllocate                00000000000012e8 f   FaultTolerantWriteDxe:FaultTolerantWrite.obj
+ 0001:000011c8       FtwWriteRecord             0000000000001448 f   FaultTolerantWriteDxe:FaultTolerantWrite.obj
+ 0001:0000131c       FtwWrite                   000000000000159c f   FaultTolerantWriteDxe:FaultTolerantWrite.obj
+ 0001:00001784       FtwRestart                 0000000000001a04 f   FaultTolerantWriteDxe:FaultTolerantWrite.obj
+ 0001:00001850       FtwAbort                   0000000000001ad0 f   FaultTolerantWriteDxe:FaultTolerantWrite.obj
+ 0001:000018cc       FtwGetLastWrite            0000000000001b4c f   FaultTolerantWriteDxe:FaultTolerantWrite.obj
+ 0001:00001a28       WorkSpaceRefresh           0000000000001ca8 f   FaultTolerantWriteDxe:UpdateWorkingBlock.obj
+ 0001:00001b78       FtwReclaimWorkSpace        0000000000001df8 f   FaultTolerantWriteDxe:UpdateWorkingBlock.obj
+ 0001:00001f3c       GetPcdProtocol             00000000000021bc f   DxePcdLib:DxePcdLib.obj
+ 0001:00001f78       InternalAllocatePool       00000000000021f8 f   UefiMemoryAllocationLib:MemoryAllocationLib.obj
+ 0001:00001fac       InternalReportStatusCode   000000000000222c f   DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00002040       InternalMemSetMem          00000000000022c0 f   BaseMemoryLibRepStr:SetMem.obj
+ 0001:00002060       InternalMemCopyMem         00000000000022e0 f   BaseMemoryLibRepStr:CopyMem.obj
+ 0001:000020a0       InternalMemCompareMem      0000000000002320 f   BaseMemoryLibRepStr:CompareMem.obj
+ 0001:000020c0       InternalMemSetMem32        0000000000002340 f   BaseMemoryLibRepStr:SetMem32.obj
+ 0001:000020e0       InternalMemSetMem64        0000000000002360 f   BaseMemoryLibRepStr:SetMem64.obj
+ 0001:00002100       InternalMemZeroMem         0000000000002380 f   BaseMemoryLibRepStr:ZeroMem.obj
+ 0001:00002120       mFvbRegistration           00000000000023a0     FaultTolerantWriteDxe:FaultTolerantWriteDxe.obj
+ 0001:00002128       mWorkingBlockHeader        00000000000023a8     FaultTolerantWriteDxe:UpdateWorkingBlock.obj
+ 0001:00002148       mPcd                       00000000000023c8     DxePcdLib:DxePcdLib.obj
+ 0001:00002150       mPiPcd                     00000000000023d0     DxePcdLib:DxePcdLib.obj
+ 0001:00002158       mPcdInfo                   00000000000023d8     DxePcdLib:DxePcdLib.obj
+ 0001:00002160       mPiPcdInfo                 00000000000023e0     DxePcdLib:DxePcdLib.obj
+ 0001:00002168       gImageHandle               00000000000023e8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00002170       gST                        00000000000023f0     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00002178       gBS                        00000000000023f8     UefiBootServicesTableLib:UefiBootServicesTableLib.obj
+ 0001:00002180       gRT                        0000000000002400     UefiRuntimeServicesTableLib:UefiRuntimeServicesTableLib.obj
+ 0001:00002188       mReportStatusCodeLibStatusCodeProtocol 0000000000002408     DxeReportStatusCodeLib:ReportStatusCodeLib.obj
+ 0001:00002190       mDevicePathLibDevicePathUtilities 0000000000002410     UefiDevicePathLibDevicePathProtocol:UefiDevicePathLib.obj
+
+ entry point at        0001:00000090
+
+ Static symbols
+
